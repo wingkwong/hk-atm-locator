@@ -19,10 +19,10 @@ URL = 'https://www.sc.com/hk/data/atm-branch/v2/all-atms-branches.json'
 ## TODO
 ###########################################################
 ## 1. Handle column 'regularHours'
-## 2. Column 'services' is not included at this moment
+## 2. Column 'services', 'postalCode', 'placeId', 'city' are not included at this moment
 ###########################################################
 COLUMNS = [
-    'id', 'name', 'address', 'is-24-hours', 'status', 'telephone', 'types'
+    'id', 'name', 'address', 'is-24-hours', 'status', 'telephone', 'types', 'latitude', 'longitude'
 ]
 
 # Fetching data from HKBEA
@@ -39,9 +39,17 @@ condition = pd.Series(df['types']).str.contains('atm', regex=False)
 df = df.loc[condition]
 df['types'] = [types[0] for types in df['types']]
 
+# Retrieving address values
+address_values = pd.Series(df['address']).values
+
+# Adding Latitude
+df['latitude'] = [d.get('latitude') for d in address_values]
+
+# Adding Longitude
+df['longitude'] = [d.get('longitude') for d in address_values]
+
 # Concatenating ['address']['addressLines']
-address = pd.Series(df['address']).values
-addr_dict = [d.get('addressLines') for d in address]
+addr_dict = [d.get('addressLines') for d in address_values]
 concat_addr = [', '.join(addrStr for addrStr in addr) for addr in addr_dict]
 df['address'] = concat_addr
 

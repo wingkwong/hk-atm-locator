@@ -1,13 +1,30 @@
-# hk-atm-locator
+# Hong Kong Automated Teller Machine (ATM) Locator
 Centralising Automated Teller Machine (ATM) Data in Hong Kong
 
-> There are 22 licensed banks in Hong Kong and each provides ATM locator info on their official website. However, gathering all ATM data is frustrating as there is no a common format and some of the data are unstructured. This project aims to centralise Hong Kong ATM data in a well-defined yet common format and release APIs for other usages.
+### Project Synopsis
+
+There are 22 licensed banks in Hong Kong and each provides ATM locator info on their official website. However, gathering all ATM data is frustrating as there is no a standardised format and some of the data are unstructured. This project aims to centralise Hong Kong ATM data in a well-defined yet common format and release APIs for other usages.
+
+Hong Kong Monetary Authority (HKMA) will provide APIs for retrieving ATM information (The release date is still unknown). Based on [Open API Framework for the Hong Kong Banking Sector](https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2018/20180718e5a2.pdf), no standardised open API functions will be provided at the first release.
+
+Paragraph #20
+> Throughout the discussion and consultation period, the HKMA recognises the industry’s desire to see a common set of Open APIs for better interoperability. However, a number of international banks operating in Hong Kong have already implemented their group standard for implementing Open APIs at global or regional levels, and have demonstrated elsewhere that requiring banks to adhere to a prescribed set of standardised Open API functions is challenging.
+
+Paragraph #21
+> Some opinions from the technology sector also indicate that it would be more desirable for banks to quickly offer Open APIs than to wait for standardised Open APIs that would take time to emerge. Furthermore, it is believed that once an ecosystem has been developed and becomes mature, convergence to standardised Open APIs will likely occur in response to the needs of the market.
+
+Each bank will implement their own standards and there is no single API endpoint which will be provided. Besides, the request only take geographic locations optionally. This design is not flexible enough.
+
+---
+
+## Project Roadmap
 
 ### Phrase I (In Progress)
-* Scrape all ATM data from below-mentioned banks for further analysis
+* Scrape all ATM data from below-mentioned banks for further analysis. 
+(P.S. JETCO provides standardised ATM data for most banks distributed in several XML files. However, the data is not guaranteed to be the latest one.) 
 
 ### Phrase II
-* Define a common schema for all banks 
+* Define a standardised schema for ATM data for all banks 
 * Develop a program to convert existing data to a desired format
 
 ### Phrase III
@@ -16,7 +33,9 @@ Centralising Automated Teller Machine (ATM) Data in Hong Kong
 
 ### Phrase IV
 * Upload the final dataset to Google Map
-* Develop a web portal
+* Develop a web portal (TBC)
+
+---
 
 ## Licensed Banks Incorporated in Hong Kong
 | Clearing Code 	| Bank Name                                      	| Chinese Name                   	|

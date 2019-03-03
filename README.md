@@ -1,5 +1,22 @@
 # hk-atm-locator
-Centralising ATM data in Hong Kong
+Centralising Automated Teller Machine (ATM) Data in Hong Kong
+
+> There are 22 licensed banks in Hong Kong and each provides ATM locator info on their official website. However, gathering all ATM data is frustrating as there is no a common format and some of the data are unstructured. This project aims to centralise Hong Kong ATM data in a well-defined yet common format and release APIs for other usages.
+
+### Phrase I (In Progress)
+* Scrape all ATM data from below-mentioned banks for further analysis
+
+### Phrase II
+* Define a common schema for all banks 
+* Develop a program to convert existing data to a desired format
+
+### Phrase III
+* Define API Specification
+* Build APIs
+
+### Phrase IV
+* Upload the final dataset to Google Map
+* Develop a web portal
 
 ## Licensed Banks Incorporated in Hong Kong
 | Clearing Code 	| Bank Name                                      	| Chinese Name                   	|

@@ -18,7 +18,7 @@ COLUMNS = [
     'location'
 ]
 
-# Fetching data from HKBEA
+# Fetching data from China Construction Bank (Asia)
 req = requests.get(URL)
 
 # Parsing XML data
@@ -28,6 +28,7 @@ data = list(data.values())[0]
 # Hong Kong Island
 df1 = pd.DataFrame()
 df1['title'] = data['title1']
+df1['address'] = data['address1']
 df1['longitude'] = data['pointLeft1']
 df1['latitude'] = data['pointRight1']
 df1['phone'] = data['phone1']
@@ -38,8 +39,9 @@ df1['location'] = 'Hong Kong Island'
 # Kowloon
 df2 = pd.DataFrame()
 df2['title'] = data['title2']
-df2['pointLeft'] = data['pointLeft2']
-df2['pointRight'] = data['pointRight2']
+df2['address'] = data['address2']
+df2['longitude'] = data['pointLeft2']
+df2['latitude'] = data['pointRight2']
 df2['phone'] = data['phone2']
 df2['time'] = data['time2']
 df2['disabled'] = data['disabled2']
@@ -48,8 +50,9 @@ df2['location'] = 'Kowloon'
 # New Territories
 df3 = pd.DataFrame()
 df3['title'] = data['title3']
-df3['pointLeft'] = data['pointLeft3']
-df3['pointRight'] = data['pointRight3']
+df3['address'] = data['address3']
+df3['longitude'] = data['pointLeft3']
+df3['latitude'] = data['pointRight3']
 df3['phone'] = data['phone3']
 df3['time'] = data['time3']
 df3['disabled'] = data['disabled3']
@@ -57,6 +60,9 @@ df3['location'] = 'New Territories'
 
 # Concatenating data from three locations
 df = pd.concat([df1, df2, df3], axis=0, ignore_index=True)
+
+# Reordering columns
+df = df[COLUMNS]
 
 # Writing the result to data folder
 df.to_csv('../data/ccb.csv', encoding='utf-8', index=False)

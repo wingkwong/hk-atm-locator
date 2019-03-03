@@ -25,7 +25,7 @@ COLUMNS = [
     'id', 'name', 'address', 'is-24-hours', 'status', 'telephone', 'types', 'latitude', 'longitude'
 ]
 
-# Fetching data from HKBEA
+# Fetching data from Standard Chartered Hong Kong
 req = requests.get(URL)
 
 # Decoding JSON data

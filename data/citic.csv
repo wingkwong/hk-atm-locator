@@ -1,0 +1,32 @@
+branch,address,cheque_drop_box,atm,safe_deposit_box,first_banking_centre,region
+Sheung Wan,"232 Des Voeux Road Central, HK",✔,✔,✔,✔,Hong Kong
+Causeway Bay,"451-453 Hennessy Road, HK",✔,✔,✘,✔,Hong Kong
+CITIC Tower,"Shop 202 & 207, 2/F, CITIC Tower, 1 Tim Mei Avenue, Central, HK",✔,✔,✘,✔,Hong Kong
+Des Voeux Road Central,"The Chinese Bank Building,61-65 Des Voeux Road Central, HK",✔,✔,✔,✔,Hong Kong
+Lippo Centre,"Lippo Centre, 89 Queensway, HK",✔,✔,✘,✔,Hong Kong
+North Point,"Shop B3, G/F,Hang Ying House,318-328 King's Road, HK",✔,✔,✘,✔,Hong Kong
+Quarry Bay,"G/F, Westlands Gardens,1025 King's Road,Quarry Bay, HK",✔,✔,✘,✘,Hong Kong
+Queen's Road West,"G/F, Sun On Building,488 Queen's Road West, HK",✔,✔,✘,✘,Hong Kong
+Taikoo Shing,"Shop 063, Cityplaza,Taikoo Shing, HK",✔,✔,✘,✘,Hong Kong
+Wanchai,"164-166 Hennessy Road,Wanchai, HK",✔,✔,✘,✘,Hong Kong
+Wanchai CITICfirst Centre,"Shop A, G/F, 156-162 Hennessy Road, Wanchai, HK",✘,✘,✘,✔,Hong Kong
+Hoi Yuen Road,"Shop 3, G/F,Hewlett Centre,54 Hoi Yuen Road, Kln",✔,✔,✘,✔,Kowloon
+Hung Hom,"61-63 Wuhu Street,Hung Hom, Kln",✔,✔,✘,✘,Kowloon
+Kowloon Bay,"Shop 7, G/F,Chevalier Commercial Centre,8 Wang Hoi Road, Kowloon Bay, Kln",✔,✔,✘,✘,Kowloon
+Kowloon City,"G/F & M/F,29-31 Fuk Lo Tsun Road,Kowloon City,Kln",✔,✔,✘,✔,Kowloon
+Mei Foo,"Shop N28, G/F,20B Nassau Street,Mei Foo Sun Chuen Phase 5, Kln",✔,✔,✘,✔,Kowloon
+Prince Edward,"G/F and 1/F,751B Nathan Road,Mongkok, Kln",✔,✔,✘,✔,Kowloon
+Nathan Road,"Shop A, G/F and M/F, 554 Nathan Road,Mongkok, Kln",✔,✔,✘,✘,Kowloon
+Shanghai Street,"520A-522 Shanghai Street,Mongkok, Kln",✔,✔,✘,✘,Kowloon
+Tsim Sha Tsui,"Shop No. 3 - 5, G/F,Mass Resources Development Building,12 Humphreys Avenue,Tsim Sha Tsui, Kln",✔,✔,✘,✔,Kowloon
+Shamshuipo,"G/F, 210-214 Yu Chau Street, Kln",✔,✔,✘,✘,Kowloon
+Metroplaza,"Shop 473C & 473F,Level 4, Metroplaza,Kwai Fong, NT",✔,✔,✘,✘,New Territories
+KCC Banking Centre,"Shop OS1a and OS1b,Level 1, Kowloon Commerce Centre,51 Kwai Cheong Road, Kwai Chung, NT",✘,✔,✘,✘,New Territories
+Shatin Centre,"Shop 52C, Level 3,Shatin Centre,2 - 16 Wang Pok Street,Shatin, NT",✔,✔,✘,✔,New Territories
+Sheung Shui,"138 San Fung Avenue,Sheung Shui, NT",✔,✔,✘,✘,New Territories
+Tai Po,"Shop B, G/F, Fung Nin House, 28-32 Tai Wing Lane,Tai Po, NT",✔,✔,✘,✔,New Territories
+Tai Wai,"G/F, Shop B,Yuet On Building,49-53 Tai Wai Road,Shatin, NT",✔,✘,✘,✔,New Territories
+Tseung Kwan O,"Shops 217G & 233East Point City,8 Chung Wa Road,Tseung Kwan O, NT",✔,✔,✘,✘,New Territories
+Tsuen Wan,"Shop C on G/F & 1/F,Shui Sang Building,13-19 Chung On Street, Tsuen Wan, NT",✔,✔,✘,✔,New Territories
+Tuen Mun,"Shop 4-5, G/F,Ming Wai Building,18-20 Tuen Mun Heung Sze Wui Road,Tuen Mun, NT",✔,✔,✘,✘,New Territories
+Yuen Long,"G/F, Chek Wing Court,No.171A–171B,Castle Peak Road Yuen Long,Yuen Long, NT",✔,✔,✘,✔,New Territories

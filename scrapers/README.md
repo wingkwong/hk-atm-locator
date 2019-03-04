@@ -26,6 +26,7 @@ python3 hkbea.py
 - China Construction Bank (Asia)
 - DBS Bank (Hong Kong)
 - The Bank of East Asia, Limited
+- China CITIC Bank International
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -35,7 +36,6 @@ python3 hkbea.py
 
 ### Incomplete
 - Hongkong and Shanghai Banking Corporation
-- China CITIC Bank International
 - Wing Lung Bank
 - Bank of Communications (Hong Kong)
 - Public Bank (Hong Kong)

@@ -1,0 +1,33 @@
+branch,address,phone,fax,atm,region,monday_to_friday,saturday
+Main Branch,"Public Bank Centre, 120 Des Voeux Road, Central, Hong Kong ",2541 9222,2545 2866,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Central Branch,"Unit A, G/F, Wing On House,71 Des Voeux Road Central, Hong Kong",2147 2140,2147 2244,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Aberdeen Branch,"Shop B, G/F, Kong Kai Building, 184 Aberdeen Main Road, Hong Kong",2871 0928,2871 0383,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Shek Tong Tsui Branch,"Shop B1, G/F, Hong Kong Plaza, 188 Connaught Road West, Hong Kong",2546 2055,2559 7962,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Western Branch,"Shop 2-3, G/F, Kam Kwan Building,163-173 Des Voeux Road West, Hong Kong",2858 2220,2858 2638,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Wanchai Commercial Centre,"Unit A, 9/F, China Overseas Building, 139 Hennessy Road, Wanchai, Hong Kong",2891 4171,2834 1012,N,Hong Kong,9:00a.m. to 5:30p.m.,N/A
+Causeway Bay Branch,"G/F and M/F, 447 Hennessy Road,Causeway Bay, Hong Kong",2572 2363,2572 3033,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+North Point Branch,"Shop 2, G/F, Two Chinachem Exchange Square,338 King’s Road, North Point, Hong Kong",2568 5141,2567 0655,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Quarry Bay Branch,"Shop 8, G/F, Oceanic Mansion, 1010-1026 King’s Road, Quarry Bay, Hong Kong",2856 3880,2856 0833,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Shau Kei Wan Branch,"Shop 2, G/F, Hong Tai Building, 326-332 Shaukeiwan Road, Hong Kong",2884 3993,2885 9283,Y,Hong Kong,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Hunghom Branch,"G/F, Hunghom Commercial Centre, 37 Ma Tau Wai Road, Hunghom, Kowloon",2363 9213,2363 3195,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Tsim Sha Tsui Branch,"G/F (Front Portion), 43 Mody Road, Tsim Sha Tsui, Kowloon",2721 1218,2721 1028,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Yaumatei Branch,"G/F, Ek Nam Building, 486 Nathan Road, Kowloon",2381 1678,2395 6398,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Mongkok Branch,"G/F, JCG Building, 16 Mongkok Road, Kowloon",2391 8393,2391 6909,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Prince Edward Branch,"G/F, 751 Nathan Road, Kowloon",2397 3830,2397 1006,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Tai Kok Tsui Branch,"Shop 2B, G/F, Tai Chuen Building, 88-102 Ivy Street, Tai Kok Tsui, Kowloon",2392 1538,2392 1101,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Cheung Sha Wan Branch,"Unit C2, G/F, 746 Cheung Sha Wan Road, Kowloon",2786 9858,2786 9506,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Wong Tai Sin Branch,"Shop 641–642, 6/F, Tsz Wan Shan Shopping Centre, Wong Tai Sin, Kowloon",2328 7332,2328 7991,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+To Kwa Wan Branch,"Shop Nos. 109 & 120, G/F, Block B, I-Feng Mansions, No. 237A, To Kwa Wan Road, To Kwa Wan, Kowloon",2362 0238,2362 3999,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Kowloon City Branch,"15 Nga Tsin Wai Road, Kowloon City, Kowloon",2382 0147,2718 4281,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+San Po Kong Branch,"Shop B, G/F, Perfect Industrial Building, 31 Tai Yau Street, San Po Kong, Kowloon",2326 8318,2326 9180,Y,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Kwun Tong Branch,"Unit 2310, Tower 1, Millennium City 1, 388 Kwun Tong Road, Kowloon",2389 9119,2389 9969,N,Kowloon,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Tseung Kwan O Branch,"G105-106, G/F, Metro City Plaza I, Tseung Kwan O, New Territories",2701 7688,2701 7628,Y,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Sai Kung Branch,"G/F, 16 Yi Chun Street, Sai Kung, New Territories",2792 8588,2791 0077,Y,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Kwai Chung Branch,"Shop 88B of Trendy Place, 3/F, Kwai Chung Plaza,7-11 Kwai Foo Road, Kwai Chung, New Territories",2480 0002,2401 2367,N,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Tsuen Wan Branch,"G/F, Victory Court, 185-187 Castle Peak Road, Tsuen Wan, New Territories",2490 4191,2490 4811,Y,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Tuen Mun Branch,"Shop E, G/F, Kam Lai Building, Nos. 1 – 7,Kai Man Path, Tuen Mun, New Territories",2440 1298,2440 1398,N,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Yuen Long Branch,"Shop 5, G/F, Fu Ho Building, 3-7 Kau Yuk Road,Yuen Long, New Territories",2479 4265,2473 3934,Y,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Shatin Branch,"Shop 4 – 6B, Lucky Plaza Commercial Centre, Shatin, New Territories, Hong Kong",2601 6308,2601 3686,Y,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Tai Po Branch,"Eastmost Shop on G/F, Nos. 37/39 Po Yick Street, Tai Po, New Territories",2657 2861,2657 7389,Y,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Fanling Branch,"G/F, 11 Wo Lung Street, Luen Wo Market, Fanling, New Territories",2669 1559,2669 8780,N,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.
+Sheung Shui Branch,"G/F, 137 San Shing Avenue, Sheung Shui, New Territories",2639 0307,3124 0091,N,New Territories,9:00a.m. to 5:30p.m.,9:00a.m. to 1:00p.m.

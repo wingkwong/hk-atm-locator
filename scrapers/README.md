@@ -36,6 +36,7 @@ python3 hkbea.py
 - DBS Bank (Hong Kong)
 - The Bank of East Asia, Limited
 - China CITIC Bank International
+- Industrial and Commercial Bank of China (Asia)
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -55,6 +56,5 @@ python3 hkbea.py
 - Chong Hing Bank
 - Nanyang Commercial Bank
 - Tai Sang Bank Limited
-- Industrial and Commercial Bank of China (Asia)
 - Fubon Bank (Hong Kong)
 - Citibank (Hong Kong)

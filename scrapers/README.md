@@ -37,6 +37,7 @@ python3 hkbea.py
 - The Bank of East Asia, Limited
 - China CITIC Bank International
 - Industrial and Commercial Bank of China (Asia)
+- Public Bank (Hong Kong)
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -48,7 +49,6 @@ python3 hkbea.py
 - Hongkong and Shanghai Banking Corporation
 - Wing Lung Bank
 - Bank of Communications (Hong Kong)
-- Public Bank (Hong Kong)
 - OCBC Wing Hang Bank
 - Tai Yau Bank
 - Chiyu Banking Corporation

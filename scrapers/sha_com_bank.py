@@ -38,4 +38,4 @@ df = json_normalize(data, 'outlets')
 df = df[COLUMNS]
 
 # Writing the result to data folder
-df.to_csv('../data/shacombank.csv', encoding='utf-8', index=False)
+df.to_csv('../data/sha_com_bank.csv', encoding='utf-8', index=False)

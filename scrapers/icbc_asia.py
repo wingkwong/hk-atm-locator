@@ -81,4 +81,4 @@ for regionIdx, region in enumerate(regions):
 df = df[COLUMNS]
 
 # Writing the result to data folder
-df.to_csv('../data/icbcasia.csv', encoding='utf-8', index=False)
+df.to_csv('../data/icbc_asia.csv', encoding='utf-8', index=False)

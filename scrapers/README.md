@@ -1,9 +1,18 @@
 # Scraping ATM data from all banks in Hong Kong
 
 ## Installing
+
+For MacOS Users:
 ````
 python3 -mvenv ./env
 source ./env/bin/activate
+pip3 install -r requirements.txt
+````
+
+For Windows Users:
+````
+pip3 install -U pip virtualenv
+virtualenv --system-site-packages -p python3 ./venv
 pip3 install -r requirements.txt
 ````
 

@@ -38,6 +38,7 @@ python3 hkbea.py
 - China CITIC Bank International
 - Industrial and Commercial Bank of China (Asia)
 - Public Bank (Hong Kong)
+- Nanyang Commercial Bank
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -54,7 +55,6 @@ python3 hkbea.py
 - Chiyu Banking Corporation
 - Dah Sing Bank
 - Chong Hing Bank
-- Nanyang Commercial Bank
 - Tai Sang Bank Limited
 - Fubon Bank (Hong Kong)
 - Citibank (Hong Kong)

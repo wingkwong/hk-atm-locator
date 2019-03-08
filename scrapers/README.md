@@ -39,6 +39,7 @@ python3 hkbea.py
 - Industrial and Commercial Bank of China (Asia)
 - Public Bank (Hong Kong)
 - Nanyang Commercial Bank
+- Dah Sing Bank
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -53,7 +54,6 @@ python3 hkbea.py
 - OCBC Wing Hang Bank
 - Tai Yau Bank
 - Chiyu Banking Corporation
-- Dah Sing Bank
 - Chong Hing Bank
 - Tai Sang Bank Limited
 - Fubon Bank (Hong Kong)

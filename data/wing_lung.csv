@@ -1,0 +1,13 @@
+district,address,tel,atm,atm_with_rmb,atm_cash_deposit,atm_cheque_deposit
+Head Office,45 Des Voeux Road Central ,(852) 2530 5798,Y,Y,Y,Y
+Central District Branch,189 Des Voeux Road Central ,(852) 2544 7486,Y,Y,Y,Y
+Western District Branch,262 Queen's Road West ,(852) 2858 9214,Y,Y,N,N
+Kennedy Town Branch,28 Catchick Street ,(852) 2816 6026,Y,Y,N,N
+Johnston Road Branch,118 Johnston Road ,(852) 2575 2165,Y,Y,N,N
+Happy Valley Branch,44 King Kwong Street ,(852) 2834 5305,Y,Y,N,N
+Causeway Bay Branch,262 Gloucester Road ,(852) 2576 4202,Y,Y,Y,Y
+Fortress Hill Branch,101 King's Road ,(852) 2512 8966,Y,Y,N,N
+North Point Branch,361 King's Road ,(852) 2510 8017,Y,Y,Y,Y
+Quarry Bay Branch,1A Westlands Road ,(852) 2565 7444,Y,Y,N,N
+Sai Wan Ho Branch,123 Shaukeiwan Road ,(852) 2513 1623,Y,Y,N,N
+Aberdeen Branch,201 Aberdeen Main Road ,(852) 2552 4225,Y,Y,N,N

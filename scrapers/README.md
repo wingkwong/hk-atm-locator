@@ -43,9 +43,9 @@ python3 hkbea.py
 - Chong Hing Bank
 - Fubon Bank (Hong Kong)
 - Wing Lung Bank
+- Bank of China (Hong Kong)
 
 ### Follow-up Required
-- Bank of China (Hong Kong)
 - Hang Seng Bank
 - Standard Chartered Hong Kong
 - Shanghai Commercial Bank

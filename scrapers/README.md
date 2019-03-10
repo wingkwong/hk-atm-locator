@@ -43,6 +43,7 @@ python3 hkbea.py
 - Chong Hing Bank
 - Fubon Bank (Hong Kong)
 - Tai Sang Bank Limited (No ATM Service provided)
+- Wing Lung Bank
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -52,7 +53,6 @@ python3 hkbea.py
 
 ### Incomplete
 - Hongkong and Shanghai Banking Corporation
-- Wing Lung Bank
 - Bank of Communications (Hong Kong)
 - OCBC Wing Hang Bank
 - Tai Yau Bank

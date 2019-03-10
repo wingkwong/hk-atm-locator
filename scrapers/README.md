@@ -42,6 +42,7 @@ python3 hkbea.py
 - Dah Sing Bank
 - Chong Hing Bank
 - Fubon Bank (Hong Kong)
+- Tai Sang Bank Limited (No ATM Service provided)
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -56,5 +57,4 @@ python3 hkbea.py
 - OCBC Wing Hang Bank
 - Tai Yau Bank
 - Chiyu Banking Corporation
-- Tai Sang Bank Limited
 - Citibank (Hong Kong)

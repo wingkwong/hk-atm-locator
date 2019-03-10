@@ -1,0 +1,25 @@
+address,cat,displaybox,district,lat,lng,name,openId,type,telephone,mon_to_fri,sat,sat_sun_ph
+"Fubon Bank Building, 38 Des Voeux Road, Central",Branch,locator,HKI,22.2830426,114.1566174,Central Main Branch,0,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop 1, LG/F, 44A-46 Belcher's Street, Lexington Hill, Kennedy Town",Branch,locator,HKI,22.282766,114.129495,Western District Branch,1,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F & 1/F, Ngan House, 210 Des Voeux Road, Central",Branch,locator,HKI,22.286121,114.153098,Sheung Wan Branch,2,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop 2, G/F, Wu Chung House, 213 Queen's Road East",Branch,locator,HKI,22.274419,114.172875,Queen's Road East Branch,3,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F, Shing Wah Mansion, 455-457 Hennessy Road",Branch,locator,HKI,22.279883,114.181924,Causeway Bay Branch,4,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop 2, G/F, Tsing Wan Building, 334-336 King's Road",Branch,locator,HKI,22.290249,114.197013,North Point Branch,5,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shops 82-83 & 85-86, Lower G/F, Koway Plaza, 111 Chai Wan Road ",Branch,locator,HKI,22.266501,114.234163,Chai Wan Branch,6,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F & 1/F, 731 Nathan Road, Mong Kok",Branch,locator,KL,22.321564,114.168729,Kowloon Main Branch,7,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F, Grand Right Centre, 10-10A Cameron Road ",Branch,locator,KL,22.298661,114.173115,Tsim Sha Tsui Branch,8,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop A, G/F, Ka Woo Building, 131-137 Woo Sung Street ",Branch,locator,KL,22.305107,114.169943,Jordan Branch,9,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F, President Commercial Centre, 602 Nathan Road",Branch,locator,KL,22.316461,114.170138,Mong Kok Branch,10,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shops D & E, G/F, Wing Lung Building,  220-240A, Castle Peak Road",Branch,locator,KL,22.337174,114.158233,Cheung Sha Wan Branch,11,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F, 26B Nassau Street",Branch,locator,KL,22.338108,114.139317,Mei Foo Branch,12,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Unit 1501, 15/F, Millennium City 6, 392 Kwun Tong Road<br>(No Cash Transaction Services Available)",Branch,locator,KL,22.313571,114.222215,Kwun Tong Branch,13,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shops 111-112 & 117-118,  Richland Gardens, Commercial Complex, Wang Kwong Road ",Branch,locator,KL,22.329561,114.205685,Richland Gardens Branch,14,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop A3, G/F, 13 Tak Man Street, Wong Po Sun Tsuen",Branch,locator,KL,22.306382,114.187637,Hung Hom Branch,15,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F & 1/F, Wing On Mansion, 22-28 Tai Ho Road",Branch,locator,NT,22.3725,114.116,Tsuen Wan Branch,16,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop 11, G/F, Mei Hang Building, 15-45 Kai Man Path ",Branch,locator,NT,22.396365,113.97508,Tuen Mun Branch,17,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"G/F, Hing Fat House, 9 Kau Yuk Road",Branch,locator,NT,22.442811,114.027493,Yuen Long Branch,18,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shop 28, G/F, Jade Plaza, On Chee Road",Branch,locator,NT,22.453136,114.16848,Tai Po Branch,19,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"Shops Nos. 15 B, C, D & E, Level 1, Shatin Lucky Plaza, Nos. 1-15 Wang Pok Street",Branch,locator,NT,22.382611,114.19125,Shatin Branch,20,locator,2566 8181,9:00am to 5:00pm,9:00am to 12:30pm,Closed
+"1/F, 731 Nathan Road, Mong Kok",Commercial Banking Centre,locator,KL,22.321564,114.168729,Commercial Banking Centre,21,locator,3129 1719,9:00am to 5:00pm,N/A,Closed
+"Shop D&E on G/F, Wing On Mansion, 22-28 Tai Ho Road, Tsuen Wan",Securities Services Centre,locator,NT,22.3725,114.116,Tsuen Wan Securities Services Centre,22,locator,2842 1628,9:00am to 5:30pm,N/A,Closed
+"Rooms 603 & 604, HSBC Building,  150-160 Castle Peak Road, Yuen Long",Securities Services Centre,locator,NT,22.444257,114.027499,Yuen Long Securities Services Centre,23,locator,2842 7558,8:30am to 5:30pm,N/A,Closed

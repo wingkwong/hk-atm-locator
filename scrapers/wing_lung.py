@@ -13,94 +13,108 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 # Defining variables
-URL = 'https://www.winglungbank.com/wlb_corporate/en/about-us/service-guide/contact-us/atm-and-branches/atm-and-branches-hong-kong.html'
+URL_HK = 'https://www.winglungbank.com/wlb_corporate/en/about-us/service-guide/contact-us/atm-and-branches/atm-and-branches-hong-kong.html'
+URL_KL = 'https://www.winglungbank.com/wlb_corporate/en/about-us/service-guide/contact-us/atm-and-branches/atm-and-branches-kowloon.html'
+URL_NT = 'https://www.winglungbank.com/wlb_corporate/en/about-us/service-guide/contact-us/atm-and-branches/atm-and-branches-new-territories.html'
 COLUMNS = [
     'district', 'address', 'tel', 'atm', 'atm_with_rmb', 'atm_cash_deposit',
     'atm_cheque_deposit'
 ]
+regions = ['Hong Kong', 'Kowloon', 'New Terroritories']
+urls = []
+urls.append(URL_HK)
+urls.append(URL_KL)
+urls.append(URL_NT)
 
 # Initializing final data frame
 df = pd.DataFrame()
-df_atm = pd.DataFrame()
 df_tmp_atm = []
 df_tmp_atm_with_rmb = []
 df_tmp_atm_cash_deposit = []
 df_tmp_atm_cheque_deposit = []
 
 # Fetching html page from China Wing Lung Bank
-req = requests.get(URL)
-soup = BeautifulSoup(req.content, 'html.parser')
+for url in urls:
+    req = requests.get(url)
+    soup = BeautifulSoup(req.content, 'html.parser')
 
-blocks = soup.find_all('div', {'class': 'inner-content_branch-district'})
-for block in blocks:
-    df_tmp = pd.DataFrame()
-    lists = block.find('ul')
-    divs = lists.find_all('div')
-    districts = lists.find_all('div',
-                               {'class': 'inner-content_branch-header-region'})
-    addresses = lists.find_all('div',
-                               {'class': 'inner-content_branch-header-addr'})
-    tels = lists.find_all('div', {'class': 'inner-content_branch-header-tel'})
-    facilities = lists.find_all(
-        'div', {'class': 'inner-content_branch-header-facilities'})
+    df_atm = pd.DataFrame()
 
-    district = [
-        districts.text.replace('\n', '').replace('\t', '').replace(
-            '                                             ', ' ').rstrip()
-        for districts in districts
-    ]
-    address = [address.text for address in addresses]
-    tel = [tel.text for tel in tels]
+    blocks = soup.find_all('div', {'class': 'inner-content_branch-district'})
+    for block in blocks:
+        df_tmp = pd.DataFrame()
+        lists = block.find('ul')
+        divs = lists.find_all('div')
+        districts = lists.find_all(
+            'div', {'class': 'inner-content_branch-header-region'})
+        addresses = lists.find_all(
+            'div', {'class': 'inner-content_branch-header-addr'})
+        tels = lists.find_all('div',
+                              {'class': 'inner-content_branch-header-tel'})
+        facilities = lists.find_all(
+            'div', {'class': 'inner-content_branch-header-facilities'})
 
-    for f in facilities:
-        spans = f.find_all('span')
-        atm = 'N'
-        atm_with_rmb = 'N'
-        atm_cash_deposit = 'N'
-        atm_cheque_deposit = 'N'
+        district = [
+            districts.text.replace('\n', '').replace('\t', '').replace(
+                '                                             ', ' ').rstrip()
+            for districts in districts
+        ]
+        address = [
+            address.text.replace('\n', '').replace('\t', '').replace(
+                '                                                ', '')
+            for address in addresses
+        ]
+        tel = [tel.text for tel in tels]
 
-        for span in spans:
-            if 'inner-content_branch-atm-icon' in span['class']:
-                atm = 'Y'
-            if 'inner-content_branch-atm-with-rmb-withdrawal-icon' in span[
-                    'class']:
-                atm_with_rmb = 'Y'
+        for f in facilities:
+            spans = f.find_all('span')
+            atm = 'N'
+            atm_with_rmb = 'N'
+            atm_cash_deposit = 'N'
+            atm_cheque_deposit = 'N'
 
-            if 'inner-content_branch-atm-csh' in span['class']:
-                atm_cash_deposit = 'Y'
+            for span in spans:
+                if 'inner-content_branch-atm-icon' in span['class']:
+                    atm = 'Y'
+                if 'inner-content_branch-atm-with-rmb-withdrawal-icon' in span[
+                        'class']:
+                    atm_with_rmb = 'Y'
 
-            if 'inner-content_branch-atm-chq' in span['class']:
-                atm_cheque_deposit = 'Y'
+                if 'inner-content_branch-atm-csh' in span['class']:
+                    atm_cash_deposit = 'Y'
 
-        if atm == 'Y':
-            df_tmp_atm.append('Y')
-        else:
-            df_tmp_atm.append('N')
+                if 'inner-content_branch-atm-chq' in span['class']:
+                    atm_cheque_deposit = 'Y'
 
-        if atm_with_rmb == 'Y':
-            df_tmp_atm_with_rmb.append('Y')
-        else:
-            df_tmp_atm_with_rmb.append('N')
+            if atm == 'Y':
+                df_tmp_atm.append('Y')
+            else:
+                df_tmp_atm.append('N')
 
-        if atm_cash_deposit == 'Y':
-            df_tmp_atm_cash_deposit.append('Y')
-        else:
-            df_tmp_atm_cash_deposit.append('N')
+            if atm_with_rmb == 'Y':
+                df_tmp_atm_with_rmb.append('Y')
+            else:
+                df_tmp_atm_with_rmb.append('N')
 
-        if atm_cheque_deposit == 'Y':
-            df_tmp_atm_cheque_deposit.append('Y')
-        else:
-            df_tmp_atm_cheque_deposit.append('N')
+            if atm_cash_deposit == 'Y':
+                df_tmp_atm_cash_deposit.append('Y')
+            else:
+                df_tmp_atm_cash_deposit.append('N')
 
-    df_tmp['district'] = district
-    df_tmp['address'] = address
-    df_tmp['tel'] = tel
-    df = df.append(df_tmp, ignore_index=True)
+            if atm_cheque_deposit == 'Y':
+                df_tmp_atm_cheque_deposit.append('Y')
+            else:
+                df_tmp_atm_cheque_deposit.append('N')
 
-df_atm['atm'] = df_tmp_atm
-df_atm['atm_with_rmb'] = df_tmp_atm_with_rmb
-df_atm['atm_cash_deposit'] = df_tmp_atm_cash_deposit
-df_atm['atm_cheque_deposit'] = df_tmp_atm_cheque_deposit
+        df_tmp['district'] = district
+        df_tmp['address'] = address
+        df_tmp['tel'] = tel
+        df = df.append(df_tmp, ignore_index=True)
+
+    df_atm['atm'] = df_tmp_atm
+    df_atm['atm_with_rmb'] = df_tmp_atm_with_rmb
+    df_atm['atm_cash_deposit'] = df_tmp_atm_cash_deposit
+    df_atm['atm_cheque_deposit'] = df_tmp_atm_cheque_deposit
 
 # Merging data frames
 df = pd.concat([df, df_atm], axis=1)

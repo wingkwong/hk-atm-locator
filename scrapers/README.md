@@ -41,6 +41,7 @@ python3 hkbea.py
 - Nanyang Commercial Bank
 - Dah Sing Bank
 - Chong Hing Bank
+- Fubon Bank (Hong Kong)
 
 ### Follow-up Required
 - Bank of China (Hong Kong)
@@ -56,5 +57,4 @@ python3 hkbea.py
 - Tai Yau Bank
 - Chiyu Banking Corporation
 - Tai Sang Bank Limited
-- Fubon Bank (Hong Kong)
 - Citibank (Hong Kong)

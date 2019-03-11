@@ -44,6 +44,7 @@ python3 hkbea.py
 - Fubon Bank (Hong Kong)
 - Wing Lung Bank
 - Bank of China (Hong Kong)
+- Citibank (Hong Kong)
 
 ### Follow-up Required
 - Hang Seng Bank
@@ -53,10 +54,9 @@ python3 hkbea.py
 ### Incomplete
 - Hongkong and Shanghai Banking Corporation
 - Bank of Communications (Hong Kong)
-- OCBC Wing Hang Bank
 - Tai Yau Bank
 - Chiyu Banking Corporation
-- Citibank (Hong Kong)
+- OCBC Wing Hang Bank (*Manual Process may be needed)
 
 ### No ATM 
 - Tai Yau Bank

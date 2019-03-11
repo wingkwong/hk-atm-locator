@@ -36,6 +36,23 @@ Each bank will implement their own standards and there is no single API endpoint
 * Develop a web portal (TBC)
 
 ---
+## Contributions
+We are looking for technical and non-technoical contributors:
+
+### Technical contributors
+Preferably with experience with knowledge in Python (Beautiful Soup 4, Pandas) and Open APIs
+- Data Scraping
+- API Development
+- Schema Definition
+
+### Non-technical contributors
+- Provide manual checking on the scraped data
+- Data Enrichment
+
+If you are interested, please join the telegram group for further discussion:
+https://t.me/joinchat/I_FIgxaIhCVeWKp1JKcMGQ
+
+---
 
 ## Licensed Banks Incorporated in Hong Kong
 | Clearing Code 	| Bank Name                                      	| Chinese Name                   	|

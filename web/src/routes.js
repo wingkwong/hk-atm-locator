@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Route, Layout } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import App from './containers/App/App';
 import Landing from './containers/Landing/Landing';
 

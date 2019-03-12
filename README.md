@@ -18,16 +18,17 @@ Paragraph #21
 
 ## Project Roadmap
 
-### Phrase I (In Progress)
-* Retrieve ATM data from three above-mentioned networks
+### Phrase I
+* Retrieve ATM data from HSBC and Hang Seng Banks from API Portals
 
-### Phrase II
-* Define a standardised schema for ATM data for all banks 
-* Develop a program to convert existing data to a desired format
+### Phrase II (In Progress)
+* Develop a web portal
 
 ### Phrase III
-* Develop an API (On Hold)
-* Develop a web portal
+* Retrieve ATM data from APIX
+* Define a standardised schema for ATM data for all banks 
+* Develop a program to convert existing data to a desired format
+* Integrate into the existing web portal
 
 ---
 ## Contributions

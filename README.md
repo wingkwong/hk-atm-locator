@@ -3,7 +3,8 @@ Centralising Automated Teller Machine (ATM) Data in Hong Kong
 
 ### Project Synopsis
 
-There are 22 licensed banks in Hong Kong and each provides ATM locator info on their official website. However, gathering all ATM data is frustrating as there is no a standardised format and some of the data are unstructured. This project aims to centralise Hong Kong ATM data in a well-defined yet common format and release APIs for other usages.
+HSBC, Hang Seng Bank and JETCO are networks of ATMs in Hong Kong. ATMs data can be retrieved via APIs provided by HSBC, Hang Seng Bank and APIX. However, gathering all ATM data is frustrating as the format is not aligned. This project aims to centralise Hong Kong ATM data in a well-defined yet standardised format and display in a web portal for public usage. 
+
 
 Hong Kong Monetary Authority (HKMA) will provide APIs for retrieving ATM information (The release date is still unknown). Based on [Open API Framework for the Hong Kong Banking Sector](https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2018/20180718e5a2.pdf), no standardised open API functions will be provided at the first release.
 
@@ -13,41 +14,27 @@ Paragraph #20
 Paragraph #21
 > Some opinions from the technology sector also indicate that it would be more desirable for banks to quickly offer Open APIs than to wait for standardised Open APIs that would take time to emerge. Furthermore, it is believed that once an ecosystem has been developed and becomes mature, convergence to standardised Open APIs will likely occur in response to the needs of the market.
 
-Each bank will implement their own standards and there is no single API endpoint which will be provided. Besides, the request only take geographic locations optionally. This design is not flexible enough.
-
 ---
 
 ## Project Roadmap
 
 ### Phrase I (In Progress)
-* Scrape all ATM data from below-mentioned banks for further analysis. 
-(P.S. JETCO provides standardised ATM data for most banks distributed in several XML files. However, the data is not guaranteed to be the latest one.) 
+* Retrieve ATM data from three above-mentioned networks
 
 ### Phrase II
 * Define a standardised schema for ATM data for all banks 
 * Develop a program to convert existing data to a desired format
 
 ### Phrase III
-* Define API Specification
-* Build APIs
-
-### Phrase IV
-* Upload the final dataset to Google Map
-* Develop a web portal (TBC)
+* Develop an API (On Hold)
+* Develop a web portal
 
 ---
 ## Contributions
 We are looking for technical and non-technoical contributors:
 
 ### Technical contributors
-Preferably with experience with knowledge in Python (Beautiful Soup 4, Pandas) and Open APIs
-- Data Scraping
-- API Development
-- Schema Definition
-
-### Non-technical contributors
-- Provide manual checking on the scraped data
-- Data Enrichment
+Preferably with experience with knowledge in Open APIs and Web Development
 
 If you are interested, please join the telegram group for further discussion:
 https://t.me/joinchat/I_FIgxaIhCVeWKp1JKcMGQ

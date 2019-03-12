@@ -1,5 +1,7 @@
 # Scraping ATM data from all banks in Hong Kong
 
+> This folder is deprecated. Data will be retrieved from HSBC, Hang Seng API Portals and APIX.
+
 ## Installing
 
 For MacOS Users:
@@ -27,6 +29,7 @@ Example:
 ````
 python3 hkbea.py
 ````
+
 ## Status
 
 ---

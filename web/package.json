@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-intl": "^2.8.0",
+    "react-redux": "^6.0.1",
+    "react-router-redux": "^4.0.8",
+    "react-router-dom ": "",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "redux-logger": "^2.6.1",
+    "redux-persist": "^3.2.2",
+    "redux-responsive": "^2.2.0",
+    "redux-thunk": "^2.1.0",
+    "prop-types": ""
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +34,20 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingkwong/hk-atm-locator.git"
+  },
+  "keywords": [
+    "hk-atm-locator",
+    "atm-locator",
+    "atm"
+  ],
+  "author": "WONG, Wing Kam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wingkwong/hk-atm-locator/issues"
+  },
+  "homepage": "https://github.com/wingkwong/hk-atm-locator#readme"
 }

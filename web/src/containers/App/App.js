@@ -7,34 +7,20 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme();
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+const App = (WrappedComponent) => {
+  class AppHOC extends Component {
+    render() {
+      return (
+        <MuiThemeProvider theme={theme}>
+          <div>
+              <AppNavbar location={this.props.location}/>
+              <WrappedComponent/>
+          </div>
+        </MuiThemeProvider>
+      );
+    }
   }
-
-  render() {
-    return (
-      <MuiThemeProvider theme={theme}>
-        <div>
-            <AppNavbar location={this.props.location}/>
-            {this.props.children}
-        </div>
-      </MuiThemeProvider>
-    );
-  }
+  return AppHOC;
 }
 
-App.propTypes = {
-  children: PropTypes.node.isRequired,
-  location: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => {
-  return {
-    
-  };
-};
-
-export default connect(
-  mapStateToProps
-)(App);
+export default App;

@@ -7,8 +7,7 @@ export default class Routes extends Component{
     render() {
         return (
             <div>
-                <Route path='/' component={App}/>
-                <Route path='/map' component={Landing} />
+                <Route path='/' component={App(Landing)}/>
             </div>
         )
     }

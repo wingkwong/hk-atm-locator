@@ -16,7 +16,7 @@ function AppNavbar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="secondary">
+      <AppBar position="fixed" color="secondary">
         <Toolbar>
           <Typography variant="h6" color="inherit">
             Hong Kong ATM Locator

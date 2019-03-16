@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import ATMListing from '../../components/ATMListing/ATMListing';
 
 const styles = {
     mapContainer: {
@@ -23,17 +24,20 @@ class Landing extends Component{
         const { classes } = this.props;
         const position = [this.state.lat, this.state.lng]
         return (
-            <Map center={position} zoom={this.state.zoom} className={classes.mapContainer}>
-                <TileLayer
-                attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={position}>
-                <Popup>
-                    Meet-up at Eaton HK 1/F at 8:00 P.M. 
-                </Popup>
-                </Marker>
-            </Map>
+            <React.Fragment>
+                <ATMListing/>
+                <Map center={position} zoom={this.state.zoom} className={classes.mapContainer}>
+                    <TileLayer
+                    attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={position}>
+                    <Popup>
+                        Meet-up at Eaton HK 1/F at 8:00 P.M. 
+                    </Popup>
+                    </Marker>
+                </Map>
+            </React.Fragment>
         )
     }
 }

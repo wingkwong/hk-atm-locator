@@ -19,26 +19,26 @@ Paragraph #21
 ## Project Roadmap
 
 ### Phrase I
-* Retrieve ATM data from HSBC and Hang Seng Banks from API Portals
+- [x] Retrieve ATM data from HSBC and Hang Seng Banks from API Portals
 
 ### Phrase II (In Progress)
-* Develop a web portal
+- [ ] Develop a web portal
 
 ### Phrase III
-* Retrieve ATM data from APIX
-* Define a standardised schema for ATM data for all banks 
-* Develop a program to convert existing data to a desired format
-* Integrate into the existing web portal
+- [ ] Retrieve ATM data from APIX
+- [ ] Define a standardised schema for ATM data for all banks 
+- [ ] Develop a program to convert existing data to a desired format
+- [ ] Integrate into the existing web portal
 
 ---
 ## Contributions
-We are looking for technical and non-technoical contributors:
-
-### Technical contributors
 Preferably with experience with knowledge in Open APIs and Web Development
 
 If you are interested, please join the telegram group for further discussion:
 https://t.me/joinchat/I_FIgxaIhCVeWKp1JKcMGQ
+
+Trello: 
+https://trello.com/b/FfBaG2b6/hk-atm-locator-web-portal
 
 ---
 

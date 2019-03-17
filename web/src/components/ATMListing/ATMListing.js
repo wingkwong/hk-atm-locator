@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -7,8 +8,6 @@ import Hidden from '@material-ui/core/Hidden';
 import List from '@material-ui/core/List';
 import { withStyles } from '@material-ui/core/styles';
 import ATMItem from './ATMItem';
-import HANG_SENG_DATA from '../../data/hang_seng.json';
-import HSBC_DATA from '../../data/hsbc.json';
 
 const drawerWidth = 320;
 
@@ -43,22 +42,7 @@ class ATMListing extends React.Component {
     super(props);
     this.state = {
         mobileOpen: false,
-        allATMs: [],
-        hangSengATMs: [],
-        hsbcATMs: []
     };
-  }
-
-  componentDidMount() {
-    const hangSengATMs = HANG_SENG_DATA.data[0].Brand[0].ATM;
-    const hsbcATMs = HSBC_DATA.data[0].Brand[0].ATM;
-    const allATMs = [...hangSengATMs, ...hsbcATMs];
-
-    this.setState({
-        hangSengATMs,
-        hsbcATMs,
-        allATMs
-    });
   }
 
   handleDrawerToggle = () => {
@@ -66,8 +50,13 @@ class ATMListing extends React.Component {
   };
 
   renderATMItems = () => {
-    const { allATMs } = this.state;
-    return allATMs.map((atm, idx) => {
+    const allATMs = this.props.atm;
+    if(allATMs == undefined) {
+      return <div>Loading</div>
+    }
+
+    if(allATMs.length > 0) {
+      return allATMs.map((atm, idx) => {
         return (
             <React.Fragment key={idx}>
                 <ATMItem atm={atm} idx={idx}/>
@@ -75,6 +64,9 @@ class ATMListing extends React.Component {
             </React.Fragment>
         );
     });
+    } else {
+      return <div>No ATM data</div>
+    }
   };
 
   render() {
@@ -127,4 +119,10 @@ ATMListing.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(ATMListing);
+const mapStateToProps = (state, ownProps) => {
+  return {
+    atm: state.atm.data
+  };
+}
+
+export default connect(mapStateToProps)(withStyles(styles, { withTheme: true })(ATMListing));

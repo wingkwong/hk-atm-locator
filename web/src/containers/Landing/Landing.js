@@ -25,11 +25,29 @@ class Landing extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            lat: 22.308,
-            lng: 114.1716,
+            currentLocation: {
+                lat: 22.308,
+                lng: 114.1716
+            },
             zoom: 14,
         }
+        this.detectCurrentLocation();
         this.initATMData();
+    }
+
+    detectCurrentLocation() {
+        const me = this;
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+             function success(position) {
+                me.setState({
+                    currentLocation: {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    }
+                });
+             });
+          } 
     }
 
     initATMData() {
@@ -45,17 +63,17 @@ class Landing extends Component{
 
     render() {
         const { classes } = this.props;
-        const position = [this.state.lat, this.state.lng]
+        const position = [this.state.currentLocation.lat, this.state.currentLocation.lng];
+        
         return (
             <React.Fragment>
                 <ATMListing/>
-                <Map center={position} zoom={this.state.zoom} maxZoom={16} className={classes.mapContainer}>
+                <Map center={position} zoom={this.state.zoom} maxZoom={20} className={classes.mapContainer}>
                     <TileLayer
                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <ATMMarkerClusterGroup/>
-                    
                 </Map>
             </React.Fragment>
         )

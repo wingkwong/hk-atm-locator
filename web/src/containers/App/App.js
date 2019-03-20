@@ -5,7 +5,11 @@ import AppNavbar from '../AppNavbar/AppNavbar';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
+});
 
 const App = (WrappedComponent) => {
   class AppHOC extends Component {

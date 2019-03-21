@@ -6,6 +6,7 @@ import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGrou
 import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
 import HSBC_DATA from '../../data/hsbc.json';
+import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 
 import {
     setATMData
@@ -31,8 +32,8 @@ class Landing extends Component{
             },
             zoom: 14,
         }
-        this.detectCurrentLocation();
         this.initATMData();
+        this.detectCurrentLocation();
     }
 
     detectCurrentLocation() {
@@ -46,8 +47,11 @@ class Landing extends Component{
                         lng: position.coords.longitude
                     }
                 });
+                me.sortATMData();
              });
-          } 
+        } else {
+            me.sortATMData();
+        }
     }
 
     initATMData() {
@@ -59,6 +63,22 @@ class Landing extends Component{
             - Data enrichment: (lat, lng for hang seng atms)
         */
         this.props.setATMData(allATMs);
+    }
+
+    sortATMData() {
+        const { atm } = this.props;
+        const { currentLocation } = this.state;
+        const sortedAllATMs = [].concat(atm)
+         .sort( (x, y) => {
+            if(x.ATMAddress.LatitudeDescription != null && x.ATMAddress.LongitudeDescription != null &&
+                y.ATMAddress.LatitudeDescription != null && y.ATMAddress.LongitudeDescription != null ) {
+                    const distanceX = distanceBetweenTwoGeoPoints(currentLocation.lat, currentLocation.lng, x.ATMAddress.LatitudeDescription, x.ATMAddress.LongitudeDescription);
+                    const distanceY = distanceBetweenTwoGeoPoints(currentLocation.lat, currentLocation.lng, y.ATMAddress.LatitudeDescription, y.ATMAddress.LongitudeDescription);
+                    return distanceX > distanceY ? 1 : -1;
+                }
+            return -1;
+        })
+        this.props.setATMData(sortedAllATMs);
     }
 
     render() {
@@ -82,7 +102,7 @@ class Landing extends Component{
 
 const mapStateToProps = (state, ownProps) => {
     return {
-
+        atm: state.atm.data
     };
 }
 

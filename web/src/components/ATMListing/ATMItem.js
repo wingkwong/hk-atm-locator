@@ -6,7 +6,10 @@ import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
-
+    footer: {
+        display: 'flex',
+        flexWrap: 'wrap',
+      }
 });
 
 class ATMItem extends React.Component {
@@ -30,16 +33,32 @@ class ATMItem extends React.Component {
         closeTime.setMinutes(closeTimeMinute);
 
         return (
-            <Chip
-                label={ currentTime > closeTime ? 'Opening' : 'Closed' }
-                color={ currentTime > closeTime ? 'primary' : 'secondary' }
-            />
+            <React.Fragment>
+                <br/>
+                <Chip
+                    label={ currentTime > closeTime ? 'Opening' : 'Closed' }
+                    color={ currentTime > closeTime ? 'primary' : 'secondary' }
+                />
+            </React.Fragment>
+        )
+    }
+
+    renderDistance(distance) {
+        if(isNaN(distance)) {
+            return (null);
+        }
+
+        distance = distance > 1 ? Math.round(distance) + ' km' : Math.round(distance * 1000) + ' m';
+        return (
+            <React.Fragment>
+                { `${distance} from your current location` }
+            </React.Fragment>
         )
     }
 
     render() {
         const { idx, atm, classes } = this.props;
-        const { ATMName, ATMAddress } = atm;
+        const { ATMName, ATMAddress, distance } = atm;
         
         return (
             <ListItem button key={ idx }>
@@ -49,6 +68,7 @@ class ATMItem extends React.Component {
                         <React.Fragment>
                             { ATMAddress.AddressLine }
                             <br/>
+                            { this.renderDistance(distance) }
                             { this.renderOpeningClosingTag(atm.OpeningHours) }
                         </React.Fragment>
                     }

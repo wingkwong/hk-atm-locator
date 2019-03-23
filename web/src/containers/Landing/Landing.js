@@ -78,6 +78,11 @@ class Landing extends Component{
                 }
             return -1;
         })
+        .map( (atm) => ({
+            ...atm,
+            distance: distanceBetweenTwoGeoPoints(currentLocation.lat, currentLocation.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription)
+        }));
+
         this.props.setATMData(sortedAllATMs);
     }
 

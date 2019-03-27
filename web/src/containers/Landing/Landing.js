@@ -9,7 +9,8 @@ import HSBC_DATA from '../../data/hsbc.json';
 import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 
 import {
-    setATMData
+    setATMData,
+    setCurrentLocation
 } from '../../actions'
 
 const styles = {
@@ -41,12 +42,13 @@ class Landing extends Component{
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(
              function success(position) {
-                me.setState({
-                    currentLocation: {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    }
-                });
+                // me.setState({
+                //     currentLocation: {
+                //         lat: position.coords.latitude,
+                //         lng: position.coords.longitude
+                //     }
+                // });
+                me.props.setCurrentLocation(position.coords.latitude, position.coords.longitude);
                 me.sortATMData();
              });
         } else {
@@ -87,8 +89,12 @@ class Landing extends Component{
     }
 
     render() {
-        const { classes } = this.props;
-        const position = [this.state.currentLocation.lat, this.state.currentLocation.lng];
+        const { classes, currentLocation } = this.props;
+        let position = [this.state.currentLocation.lat, this.state.currentLocation.lng];
+
+        if(Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
+            position = [currentLocation.lat, currentLocation.lng];
+        }
         
         return (
             <React.Fragment>
@@ -107,7 +113,8 @@ class Landing extends Component{
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        atm: state.atm.data
+        atm: state.atm.data,
+        currentLocation: state.location
     };
 }
 
@@ -115,6 +122,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         setATMData: (atmData) => {
             dispatch(setATMData(atmData));
+        },
+        setCurrentLocation: (lat, lng) => {
+            dispatch(setCurrentLocation(lat, lng))
         }
     };
 }

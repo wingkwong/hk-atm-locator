@@ -7,6 +7,10 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
+import {
+    setCurrentLocation
+} from '../../actions'
+
 const styles = theme => ({
     popUpContent: {
         padding: 0,
@@ -17,8 +21,15 @@ const styles = theme => ({
 });
 
 class ATMMarkerClusterGroup extends React.Component {
-    componentDidMount() {
+    componentDidMount() {    
+    }
+
+    markerOnClick(data) {
+        // Center the map 
+        const { ATMAddress } = data;
+        this.props.setCurrentLocation(ATMAddress.LatitudeDescription, ATMAddress.LongitudeDescription);
         
+        // TODO: Toggle detail block
     }
 
     renderPopUp(data) {
@@ -62,6 +73,7 @@ class ATMMarkerClusterGroup extends React.Component {
                                     onMouseOut= { (e) => {
                                         // e.target.closePopup();
                                     }}
+                                    onClick = { () => this.markerOnClick(data) }
                                 >
                                 { this.renderPopUp(data) }
                                 </Marker>
@@ -91,7 +103,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-
+        setCurrentLocation: (lat, lng) => {
+            dispatch(setCurrentLocation(lat, lng))
+        }
     };
 }
 

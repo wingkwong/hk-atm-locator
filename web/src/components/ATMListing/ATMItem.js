@@ -1,9 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
+
+import {
+    setCurrentLocation
+} from '../../actions'
 
 const styles = theme => ({
     footer: {
@@ -56,12 +61,19 @@ class ATMItem extends React.Component {
         )
     }
 
+    atmListItemOnClick(atm) {
+        const { ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
+        if(LatitudeDescription && LongitudeDescription){
+            this.props.setCurrentLocation(LatitudeDescription, LongitudeDescription);
+        }
+    }
+
     render() {
         const { idx, atm, classes } = this.props;
         const { ATMName, ATMAddress, distance } = atm;
         
         return (
-            <ListItem button key={ idx }>
+            <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm)}>
                 <ListItemText
                     primary={ ATMName }
                     secondary={
@@ -84,5 +96,19 @@ ATMItem.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles, { withTheme: true })(ATMItem);
+const mapStateToProps = (state, ownProps) => {
+    return {
+        
+    };
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        setCurrentLocation: (lat, lng) => {
+            dispatch(setCurrentLocation(lat, lng))
+        }
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles, { withTheme: true })(ATMItem));
   

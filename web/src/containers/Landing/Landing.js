@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
+import ATMFilter from '../../components/ATMFilter/ATMFilter';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
 import HSBC_DATA from '../../data/hsbc.json';
@@ -98,6 +99,7 @@ class Landing extends Component{
         
         return (
             <React.Fragment>
+                <ATMFilter/>
                 <ATMListing/>
                 <Map center={position} zoom={this.state.zoom} maxZoom={20} className={classes.mapContainer}>
                     <TileLayer

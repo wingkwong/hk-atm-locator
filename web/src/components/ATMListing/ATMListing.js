@@ -29,7 +29,7 @@ const styles = theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    marginTop: '64px'
+    marginTop: '112px'
   },
   content: {
     flexGrow: 1,

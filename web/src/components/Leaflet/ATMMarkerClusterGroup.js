@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 import {
-    setCurrentLocation
+    setSelectedLocation
 } from '../../actions'
 
 const styles = theme => ({
@@ -27,7 +27,7 @@ class ATMMarkerClusterGroup extends React.Component {
     markerOnClick(data) {
         // Center the map 
         const { ATMAddress } = data;
-        this.props.setCurrentLocation(ATMAddress.LatitudeDescription, ATMAddress.LongitudeDescription);
+        this.props.setSelectedLocation(ATMAddress.LatitudeDescription, ATMAddress.LongitudeDescription);
         
         // TODO: Toggle detail block
     }
@@ -103,8 +103,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setCurrentLocation: (lat, lng) => {
-            dispatch(setCurrentLocation(lat, lng))
+        setSelectedLocation: (lat, lng) => {
+            dispatch(setSelectedLocation(lat, lng))
         }
     };
 }

@@ -7,7 +7,7 @@ import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
 
 import {
-    setCurrentLocation
+    setSelectedLocation
 } from '../../actions'
 
 const styles = theme => ({
@@ -64,7 +64,7 @@ class ATMItem extends React.Component {
     atmListItemOnClick(atm) {
         const { ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
         if(LatitudeDescription && LongitudeDescription){
-            this.props.setCurrentLocation(LatitudeDescription, LongitudeDescription);
+            this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription);
         }
     }
 
@@ -104,8 +104,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setCurrentLocation: (lat, lng) => {
-            dispatch(setCurrentLocation(lat, lng))
+        setSelectedLocation: (lat, lng) => {
+            dispatch(setSelectedLocation(lat, lng))
         }
     };
 }

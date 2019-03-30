@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
+import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
 import ATMFilter from '../../components/ATMFilter/ATMFilter';
@@ -8,6 +9,7 @@ import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
 import HSBC_DATA from '../../data/hsbc.json';
 import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
+import currentLocationIcon from '../../static/images/you_are_here.png';
 
 import {
     setATMData,
@@ -92,6 +94,11 @@ class Landing extends Component{
     render() {
         const { classes, currentLocation } = this.props;
         let position = [this.state.currentLocation.lat, this.state.currentLocation.lng];
+        let icon = L.icon({
+            iconUrl: currentLocationIcon,
+            shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+            iconSize: [70, 70]
+       })
 
         if(Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
             position = [currentLocation.lat, currentLocation.lng];
@@ -107,6 +114,7 @@ class Landing extends Component{
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <ATMMarkerClusterGroup/>
+                    <Marker position={position} icon={icon}/>
                 </Map>
             </React.Fragment>
         )

@@ -17,9 +17,9 @@ import {
 const styles = {
     mapContainer: {
         position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
+        top: '64px',
+        left: '320px',
+        width: 'calc(100% - 320px)',
         height: '100%',
     },
   };

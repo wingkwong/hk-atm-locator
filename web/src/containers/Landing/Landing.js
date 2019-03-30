@@ -73,23 +73,31 @@ class Landing extends Component{
 
     sortATMData() {
         const { atm } = this.props;
-        const { selectedLocation } = this.state;
-        const sortedAllATMs = [].concat(atm)
-         .sort( (x, y) => {
-            if(x.ATMAddress.LatitudeDescription != null && x.ATMAddress.LongitudeDescription != null &&
-                y.ATMAddress.LatitudeDescription != null && y.ATMAddress.LongitudeDescription != null ) {
-                    const distanceX = distanceBetweenTwoGeoPoints(selectedLocation.lat, selectedLocation.lng, x.ATMAddress.LatitudeDescription, x.ATMAddress.LongitudeDescription);
-                    const distanceY = distanceBetweenTwoGeoPoints(selectedLocation.lat, selectedLocation.lng, y.ATMAddress.LatitudeDescription, y.ATMAddress.LongitudeDescription);
-                    return distanceX > distanceY ? 1 : -1;
-                }
-            return -1;
-        })
-        .map( (atm) => ({
-            ...atm,
-            distance: distanceBetweenTwoGeoPoints(selectedLocation.lat, selectedLocation.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription)
-        }));
+        const { currentLocation } = this.state;
+        let location = currentLocation;
 
-        this.props.setATMData(sortedAllATMs);
+        if(atm) {
+            if(this.props.currentLocation != undefined) {
+                location = this.props.currentLocation 
+            }
+    
+            const sortedAllATMs = [].concat(atm)
+             .sort( (x, y) => {
+                if(x.ATMAddress.LatitudeDescription != null && x.ATMAddress.LongitudeDescription != null &&
+                    y.ATMAddress.LatitudeDescription != null && y.ATMAddress.LongitudeDescription != null ) {
+                        const distanceX = distanceBetweenTwoGeoPoints(location.lat, location.lng, x.ATMAddress.LatitudeDescription, x.ATMAddress.LongitudeDescription);
+                        const distanceY = distanceBetweenTwoGeoPoints(location.lat, location.lng, y.ATMAddress.LatitudeDescription, y.ATMAddress.LongitudeDescription);
+                        return distanceX > distanceY ? 1 : -1;
+                    }
+                return -1;
+            })
+            .map( (atm) => ({
+                ...atm,
+                distance: distanceBetweenTwoGeoPoints(location.lat, location.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription)
+            }));
+    
+            this.props.setATMData(sortedAllATMs);
+        }
     }
 
     render() {

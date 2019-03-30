@@ -5,6 +5,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
+import HANG_SENG_LATLNG_DATA from '../../data/hang_seng_latlng.json';
 import HSBC_DATA from '../../data/hsbc.json';
 import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 
@@ -58,8 +59,24 @@ class Landing extends Component{
 
     initATMData() {
         const hangSengATMs = HANG_SENG_DATA.data[0].Brand[0].ATM;
+        let hangSengLatLngLUT = new Object();
+        for (let i=0;i<HANG_SENG_LATLNG_DATA.length; i++){
+            let rec = HANG_SENG_LATLNG_DATA[i];
+            hangSengLatLngLUT[rec.address] = {'lat': rec.lat, 'lng': rec.lng};
+        }
+        for (let i=0;i<hangSengATMs.length; i++){
+            let rec = hangSengATMs[i];
+            let latlng = hangSengLatLngLUT[rec.ATMAddress.AddressLine[0]];
+            if (latlng){
+                rec.ATMAddress.LatitudeDescription = latlng.lat;
+                rec.ATMAddress.LongitudeDescription = latlng.lng;
+            }
+        }
+
         const hsbcATMs = HSBC_DATA.data[0].Brand[0].ATM;
         const allATMs = [...hangSengATMs, ...hsbcATMs];
+
+
         /*
             TODO: 
             - Data enrichment: (lat, lng for hang seng atms)

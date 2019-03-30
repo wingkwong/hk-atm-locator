@@ -13,6 +13,7 @@ import currentLocationIcon from '../../static/images/you_are_here.png';
 
 import {
     setATMData,
+    setCurrentLocation,
     setSelectedLocation
 } from '../../actions'
 
@@ -41,22 +42,16 @@ class Landing extends Component{
             zoom: 14,
         }
         this.initATMData();
-        this.detectSelectedLocation();
+        this.detectCurrentLocation();
     }
 
-    detectSelectedLocation() {
+    detectCurrentLocation() {
         const me = this;
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(
              function success(position) {
-                // TODO: change it to setCurrentLocation in redux
-                me.setState({
-                    currentLocation: {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    }
-                });
 
+                me.props.setCurrentLocation(position.coords.latitude, position.coords.longitude);
                 me.props.setSelectedLocation(position.coords.latitude, position.coords.longitude);
                 me.sortATMData();
              });
@@ -98,7 +93,7 @@ class Landing extends Component{
     }
 
     render() {
-        const { classes, selectedLocation } = this.props;
+        const { classes, selectedLocation, currentLocation } = this.props;
         let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
         let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
         let icon = L.icon({
@@ -107,8 +102,12 @@ class Landing extends Component{
             iconSize: [70, 70]
        })
 
-        if(Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
+        if(selectedLocation != null && Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
             selectedPosition = [selectedLocation.lat, selectedLocation.lng];
+        }
+
+        if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
+            currentPosition = [currentLocation.lat, currentLocation.lng];
         }
         
         return (
@@ -131,7 +130,8 @@ class Landing extends Component{
 const mapStateToProps = (state, ownProps) => {
     return {
         atm: state.atm.data,
-        selectedLocation: state.location
+        selectedLocation: state.location.selectedLocation,
+        currentLocation: state.location.currentLocation
     };
 }
 
@@ -142,6 +142,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         setSelectedLocation: (lat, lng) => {
             dispatch(setSelectedLocation(lat, lng))
+        },
+        setCurrentLocation: (lat, lng) => {
+            dispatch(setCurrentLocation(lat, lng))
         }
     };
 }

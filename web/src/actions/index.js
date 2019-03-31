@@ -8,8 +8,8 @@ const dispatchSetATMData = (data) => {
     return {type: SET_ATM_DATA, data: data};
 }
 
-const dispatchSetSelectedLocation = (lat, lng) => {
-    return {type: SET_SELECTED_LOCATION, lat: lat, lng: lng}
+const dispatchSetSelectedLocation = (lat, lng, zoomLvl) => {
+    return {type: SET_SELECTED_LOCATION, lat: lat, lng: lng, zoomLvl:zoomLvl}
 }
 
 const dispatchSetCurrentLocation = (lat, lng) => {
@@ -22,9 +22,9 @@ export const setATMData = (data) => {
     }
 }
 
-export const setSelectedLocation = (lat, lng) => {
+export const setSelectedLocation = (lat, lng, zoomLvl=-1) => {
     return dispatch => {
-        dispatch(dispatchSetSelectedLocation(lat, lng));
+        dispatch(dispatchSetSelectedLocation(lat, lng, zoomLvl));
     }
 }
 

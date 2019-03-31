@@ -32,7 +32,15 @@ Paragraph #21
 
 ---
 ## Contributions
-Preferably with experience with knowledge in Open APIs and Web Development
+We are looking for technical & non-technical contributors:
+
+Technical Contributors:
+- Responsible for developing the whole solution
+- Preferably with experience with knowledge in Open APIs and Web Development
+
+Non-technical Contributors:
+- Responsible for updating documentation
+- Good command of written in English and Chinese
 
 If you are interested, please join the telegram group for further discussion:
 https://t.me/joinchat/I_FIgxaIhCVeWKp1JKcMGQ

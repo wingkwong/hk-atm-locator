@@ -23,12 +23,22 @@ class ATMItem extends React.Component {
             return (null);
         }
 
-        const weekday = new Date().getDay();
+        let weekday = new Date().getDay();
+        // Sunday   - weekday: 0
         // Monday   - weekday: 1
         // Tuesday  - weekday: 2
         // ...
-        // Sunday   - weekday: 7
+        // Saturday - weekday: 6
 
+        if(weekday == 0) {
+            weekday = 7;
+        }
+
+        // openingHours
+        // [0]  - Monday 
+        // [0]  - Tuesday 
+        // ...
+        // [6]] - Sunday 
         const closeTimeInHHMMFormat = openingHours[weekday - 1].CloseTime;
         const closeTimeHour = closeTimeInHHMMFormat.split(":")[0];
         const closeTimeMinute = closeTimeInHHMMFormat.split(":")[1];

@@ -117,10 +117,17 @@ class Landing extends Component{
         }
     }
 
+    handleMoveEnd = (evt) => {
+        let latlng = evt.target.getCenter();
+        let zoomLvl = evt.target.getZoom();
+        this.props.setSelectedLocation(latlng.lat, latlng.lng, zoomLvl);
+    }
+
     render() {
-        const { classes, selectedLocation, currentLocation } = this.props;
+        const { classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
         let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
         let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
+        let zoomLvlToUse = selectedZoomLvl;
         let icon = L.icon({
             iconUrl: currentLocationIcon,
             shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
@@ -134,12 +141,16 @@ class Landing extends Component{
         if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
             currentPosition = [currentLocation.lat, currentLocation.lng];
         }
-        
+
+        if (!zoomLvlToUse || zoomLvlToUse<0) zoomLvlToUse=this.state.zoom;
+
         return (
             <React.Fragment>
                 <ATMFilter/>
                 <ATMListing/>
-                <Map center={selectedPosition} zoom={this.state.zoom} maxZoom={20} className={classes.mapContainer}>
+                <Map center={selectedPosition} zoom={zoomLvlToUse} maxZoom={20} className={classes.mapContainer}
+                     onmoveend={this.handleMoveEnd}
+                >
                     <TileLayer
                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -156,6 +167,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
         atm: state.atm.data,
         selectedLocation: state.location.selectedLocation,
+        selectedZoomLvl: state.location.selectedZoomLvl,
         currentLocation: state.location.currentLocation
     };
 }
@@ -165,8 +177,8 @@ const mapDispatchToProps = (dispatch) => {
         setATMData: (atmData) => {
             dispatch(setATMData(atmData));
         },
-        setSelectedLocation: (lat, lng) => {
-            dispatch(setSelectedLocation(lat, lng))
+        setSelectedLocation: (lat, lng, zoomLvl=-1) => {
+            dispatch(setSelectedLocation(lat, lng, zoomLvl))
         },
         setCurrentLocation: (lat, lng) => {
             dispatch(setCurrentLocation(lat, lng))

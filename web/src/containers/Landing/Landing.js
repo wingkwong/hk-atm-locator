@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
+import ATMRouting from '../../components/Leaflet/ATMRouting';
 import ATMFilter from '../../components/ATMFilter/ATMFilter';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
@@ -41,6 +42,7 @@ class Landing extends Component{
                 lng: 114.1716
             },
             zoom: 14,
+            isMapInit: false
         }
         this.initATMData();
         this.detectCurrentLocation();
@@ -118,9 +120,20 @@ class Landing extends Component{
     }
 
     handleMoveEnd = (evt) => {
-        let latlng = evt.target.getCenter();
+        // let latlng = evt.target.getCenter();
+        /*
+            TODO: better add a new function called setZoomLevel as selectedLocation should not be evt.target.getCenter()
+        */
+        let latlng = this.props.selectedLocation;
         let zoomLvl = evt.target.getZoom();
         this.props.setSelectedLocation(latlng.lat, latlng.lng, zoomLvl);
+    }
+
+    saveMap = (map) => {
+        this.map = map;
+        this.setState({
+            isMapInit: true
+        })
     }
 
     render() {
@@ -148,15 +161,24 @@ class Landing extends Component{
             <React.Fragment>
                 <ATMFilter/>
                 <ATMListing/>
-                <Map center={selectedPosition} zoom={zoomLvlToUse} maxZoom={20} className={classes.mapContainer}
-                     onmoveend={this.handleMoveEnd}
-                >
+                <Map 
+                    className={classes.mapContainer}
+                    center={selectedPosition} 
+                    zoom= {zoomLvlToUse}
+                    maxZoom={zoomLvlToUse + 2} 
+                    onmoveend={this.handleMoveEnd}
+                    ref={this.saveMap}>
+
                     <TileLayer
                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <ATMMarkerClusterGroup/>
                     <Marker position={currentPosition} icon={icon}/>
+                    {
+                        this.state.isMapInit && 
+                            <ATMRouting map={this.map} from={currentPosition} to={selectedPosition}/>
+                    }
                 </Map>
             </React.Fragment>
         )

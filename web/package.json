@@ -6,6 +6,7 @@
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "leaflet": "^1.4.0",
+    "leaflet-routing-machine": "^3.2.12",
     "leaflet.markercluster": "^1.4.1",
     "prop-types": "15.7.2",
     "react": "^16.8.4",

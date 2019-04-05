@@ -34,7 +34,7 @@ const styles = {
   },
 };
 
-function ATMFilter(props) {
+function ATMSearch(props) {
   const { classes } = props;
 
   return (
@@ -51,8 +51,8 @@ function ATMFilter(props) {
   );
 }
 
-ATMFilter.propTypes = {
+ATMSearch.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ATMFilter);
+export default withStyles(styles)(ATMSearch);

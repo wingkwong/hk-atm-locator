@@ -4,28 +4,15 @@ import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
-import Hidden from '@material-ui/core/Hidden';
 import List from '@material-ui/core/List';
 import { withStyles } from '@material-ui/core/styles';
 import ATMItem from './ATMItem';
 
-const drawerWidth = 320;
+const drawerWidth = '100%';
 
 const styles = theme => ({
   root: {
     display: 'flex',
-  },
-  drawer: {
-    [theme.breakpoints.up('sm')]: {
-      width: drawerWidth,
-      flexShrink: 0,
-    },
-  },
-  menuButton: {
-    marginRight: 20,
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
   },
   drawerPaper: {
     width: drawerWidth,
@@ -84,22 +71,7 @@ class ATMListing extends React.Component {
         <CssBaseline />
         <nav className={classes.drawer}>
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-          <Hidden smUp implementation="css">
-            <Drawer
-              container={this.props.container}
-              variant="temporary"
-              anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-              open={this.state.mobileOpen}
-              onClose={this.handleDrawerToggle}
-              classes={{
-                paper: classes.drawerPaper,
-              }}
-            >
-              {drawer}
-            </Drawer>
-          </Hidden>
-          <Hidden xsDown implementation="css">
-            <Drawer
+          <Drawer
               classes={{
                 paper: classes.drawerPaper,
               }}
@@ -108,7 +80,6 @@ class ATMListing extends React.Component {
             >
               {drawer}
             </Drawer>
-          </Hidden>
         </nav>
     </div>
     );

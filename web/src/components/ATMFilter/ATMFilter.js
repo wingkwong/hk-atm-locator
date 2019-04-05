@@ -13,7 +13,7 @@ const styles = {
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center',
-    width: 320,
+    width: '100%',
     zIndex: 1200,
     marginTop: '64px',
     position: 'fixed',

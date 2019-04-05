@@ -9,6 +9,9 @@ const styles = {
   root: {
     flexGrow: 1,
   },
+  appBar: {
+    alignItems: 'center',
+  }
 };
 
 function AppNavbar(props) {
@@ -16,7 +19,7 @@ function AppNavbar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" color="secondary">
+      <AppBar position="fixed" color="secondary" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit">
             Hong Kong ATM Locator

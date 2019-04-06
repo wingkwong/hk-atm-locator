@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import L from 'leaflet';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
-import ATMRouting from '../../components/Leaflet/ATMRouting';
 import ATMSearch from '../../components/ATMFilter/ATMSearch';
+import ATMFilterPanel from '../../components/ATMFilter/ATMFilterPanel';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
 import HANG_SENG_LATLNG_DATA from '../../data/hang_seng_latlng.json';
@@ -160,6 +158,7 @@ class LandingListView extends Component{
         return (
             <React.Fragment>
                 <ATMSearch/>
+                <ATMFilterPanel/>
                 <ATMListing/>
             </React.Fragment>
         )

@@ -16,7 +16,7 @@ const styles = theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    marginTop: '112px'
+    position: 'relative'
   },
   content: {
     flexGrow: 1,

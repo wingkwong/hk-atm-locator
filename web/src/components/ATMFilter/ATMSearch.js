@@ -15,8 +15,6 @@ const styles = {
     alignItems: 'center',
     width: '100%',
     zIndex: 1200,
-    marginTop: '64px',
-    position: 'fixed',
     borderBottomRightRadius: 0,
     borderBottomLeftRadius: 0
   },

@@ -42,7 +42,8 @@ class ATMFilterPanel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        network: 'all'
+        network: 'all',
+        bank: 'all'
     }
   }
 
@@ -74,6 +75,44 @@ class ATMFilterPanel extends Component {
               <MenuItem value="hsbc">HSBC</MenuItem>
               <MenuItem value="hang-seng">Hang Seng</MenuItem>
               <MenuItem value="jetco">JETCO</MenuItem>
+          </Select>
+        </FormControl>
+    );
+  }
+
+  renderBankSelect() {
+    const { classes } = this.props;
+    /*
+      TODO: put below const to constants file
+    */
+    const bankIndexes = ['hsbc', 'hang-seng', 'bochk', 'bankcomm', 'cncbinternational', 'asia-ccb', 'cmbchina', 'chiyubank', 'chiyubank', 'citibank', 'cmbwinglungbank',
+  'dahsing', 'dbs', 'fubonbank', 'icbcasia', 'ocbcwhhk', 'publicbank', 'shacombank', 'standardchartered', 'hkbea'];
+    const banks = ['HSBC', 'Hang Seng Bank', 'Bank of China(Hong Kong) Limited', 'Bank of Communications (Hong Kong) Limited', 'China CITIC Bank International Limited',
+  'China Construction Bank (Asia) Corporation Limited', 'China Merchants Bank Hong Kong Branch', 'Chiyu Banking Corporation Limited', 'Chong Hing Bank Limited', 'Citibank (Hong Kong) Limited', 'CMB Wing Lung Bank Limited', 'Dah Sing Bank, Limited', 
+'DBS Bank (Hong Kong) Limited', 'Fubon Bank (Hong Kong) Limited', 'Industrial and Commercial Bank of China (Asia) Limited', 'Nanyang Commercial Bank Limited', 'OCBC Wing Hang Bank Limited'
+, 'Public Bank (Hong Kong) Limited', 'Shanghai Commercial Bank Limited', 'Standard Chartered Bank (Hong Kong) Limited', 'The Bank of East Asia, Limited'];
+    return (
+      <FormControl className={classes.formControl}>
+          <InputLabel htmlFor="bank-select">Bank</InputLabel>
+          <Select
+              value={this.state.bank}
+              onChange={this.handleSelectChange}
+              inputProps={{
+              name: 'bank',
+              id: 'bank-select',
+              }}
+              MenuProps={MenuProps}
+          >
+              <MenuItem value="all">
+              <em>All</em>
+              </MenuItem>
+              {
+                bankIndexes.map((bankIndex, index) => {
+                  return (
+                    <MenuItem value={bankIndex}>{ banks[index] }</MenuItem>
+                  );
+                })
+              }
           </Select>
         </FormControl>
     );
@@ -211,6 +250,8 @@ class ATMFilterPanel extends Component {
             </ExpansionPanelSummary>
             <ExpansionPanelDetails className={classes.details}>
                 { this.renderNetworkSelect() }
+                <Divider variant="middle" />
+                { this.renderBankSelect() }
                 <Divider variant="middle" />
                 { this.renderServicesCheckbox() }
                 <Divider variant="middle" />

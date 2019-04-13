@@ -30,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,5 +57,8 @@
   "bugs": {
     "url": "https://github.com/wingkwong/hk-atm-locator/issues"
   },
-  "homepage": "https://github.com/wingkwong/hk-atm-locator#readme"
+  "homepage": "https://wingkwong.github.io/hk-atm-locator",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

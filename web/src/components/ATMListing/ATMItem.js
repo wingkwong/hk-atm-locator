@@ -11,10 +11,9 @@ import {
 } from '../../actions'
 
 const styles = theme => ({
-    footer: {
-        display: 'flex',
-        flexWrap: 'wrap',
-      }
+    chip: {
+        borderRadius: 0
+    }
 });
 
 class ATMItem extends React.Component {
@@ -46,13 +45,14 @@ class ATMItem extends React.Component {
         let closeTime = new Date();
         closeTime.setHours(closeTimeHour);
         closeTime.setMinutes(closeTimeMinute);
-
+        const { classes } = this.props;
         return (
             <React.Fragment>
                 <br/>
                 <Chip
                     label={ currentTime > closeTime ? 'Opening' : 'Closed' }
                     color={ currentTime > closeTime ? 'primary' : 'secondary' }
+                    className={classes.chip}
                 />
             </React.Fragment>
         )
@@ -79,7 +79,7 @@ class ATMItem extends React.Component {
     }
 
     render() {
-        const { idx, atm, classes } = this.props;
+        const { idx, atm } = this.props;
         const { ATMName, ATMAddress, distance } = atm;
         
         return (

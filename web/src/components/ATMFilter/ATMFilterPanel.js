@@ -20,6 +20,8 @@ import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
+import { jetco } from '../../constants/banks';
+import { networks } from '../../constants/networks';
 
 const styles = {
     root: {
@@ -69,28 +71,26 @@ class ATMFilterPanel extends Component {
               }}
               MenuProps={MenuProps}
           >
-              <MenuItem value="all">
-              <em>All</em>
-              </MenuItem>
-              <MenuItem value="hsbc">HSBC</MenuItem>
-              <MenuItem value="hang-seng">Hang Seng</MenuItem>
-              <MenuItem value="jetco">JETCO</MenuItem>
+            <MenuItem value='all'>All</MenuItem>
+              {
+                networks.map((network, index) => {
+                  return (
+                    <MenuItem value={network.idx} key={index}>
+                      {network.en}
+                    </MenuItem>
+                  );
+                })
+              }
           </Select>
         </FormControl>
     );
   }
 
   renderBankSelect() {
-    const { classes } = this.props;
     /*
-      TODO: put below const to constants file
+      TODO: the value s restricted based on Network
     */
-    const bankIndexes = ['hsbc', 'hang-seng', 'bochk', 'bankcomm', 'cncbinternational', 'asia-ccb', 'cmbchina', 'chiyubank', 'chiyubank', 'citibank', 'cmbwinglungbank',
-  'dahsing', 'dbs', 'fubonbank', 'icbcasia', 'ocbcwhhk', 'publicbank', 'shacombank', 'standardchartered', 'hkbea'];
-    const banks = ['HSBC', 'Hang Seng Bank', 'Bank of China(Hong Kong) Limited', 'Bank of Communications (Hong Kong) Limited', 'China CITIC Bank International Limited',
-  'China Construction Bank (Asia) Corporation Limited', 'China Merchants Bank Hong Kong Branch', 'Chiyu Banking Corporation Limited', 'Chong Hing Bank Limited', 'Citibank (Hong Kong) Limited', 'CMB Wing Lung Bank Limited', 'Dah Sing Bank, Limited', 
-'DBS Bank (Hong Kong) Limited', 'Fubon Bank (Hong Kong) Limited', 'Industrial and Commercial Bank of China (Asia) Limited', 'Nanyang Commercial Bank Limited', 'OCBC Wing Hang Bank Limited'
-, 'Public Bank (Hong Kong) Limited', 'Shanghai Commercial Bank Limited', 'Standard Chartered Bank (Hong Kong) Limited', 'The Bank of East Asia, Limited'];
+    const { classes } = this.props;
     return (
       <FormControl className={classes.formControl}>
           <InputLabel htmlFor="bank-select">Bank</InputLabel>
@@ -103,22 +103,25 @@ class ATMFilterPanel extends Component {
               }}
               MenuProps={MenuProps}
           >
-              <MenuItem value="all">
-              <em>All</em>
-              </MenuItem>
-              {
-                bankIndexes.map((bankIndex, index) => {
-                  return (
-                    <MenuItem value={bankIndex}>{ banks[index] }</MenuItem>
-                  );
-                })
-              }
+            <MenuItem value='all'>All</MenuItem>
+            {
+              jetco.map((bank, index) => {
+                return (
+                  <MenuItem value={bank.idx} key={index}>
+                    {bank.en}
+                  </MenuItem>
+                );
+              })
+            }
           </Select>
         </FormControl>
     );
   }
 
   renderServicesCheckbox() {
+    /*
+      TODO: put services to constants
+    */
     const serviceIndexes = [
       'coinSort',
       'foreignCurrency',

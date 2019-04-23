@@ -1,7 +1,8 @@
 import {
     SET_ATM_DATA,
     SET_SELECTED_LOCATION,
-    SET_CURRENT_LOCATION
+    SET_CURRENT_LOCATION,
+    TOGGLE_ATM_DETAIL_DIALOG
 } from './types';
 
 const dispatchSetATMData = (data) => {
@@ -14,6 +15,10 @@ const dispatchSetSelectedLocation = (lat, lng, zoomLvl) => {
 
 const dispatchSetCurrentLocation = (lat, lng) => {
     return {type: SET_CURRENT_LOCATION, lat: lat, lng: lng}
+}
+
+const dispatchToggleATMDetailDialog = (open) => {
+    return {type: TOGGLE_ATM_DETAIL_DIALOG, open: open}
 }
 
 export const setATMData = (data) => {
@@ -31,5 +36,11 @@ export const setSelectedLocation = (lat, lng, zoomLvl=-1) => {
 export const setCurrentLocation = (lat, lng) => {
     return dispatch => {
         dispatch(dispatchSetCurrentLocation(lat, lng));
+    }
+}
+
+export const toggleATMDetailDialog = (open) => {
+    return dispatch => {
+        dispatch(dispatchToggleATMDetailDialog(open))
     }
 }

@@ -7,7 +7,8 @@ import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
 
 import {
-    setSelectedLocation
+    setSelectedLocation,
+    toggleATMDetailDialog
 } from '../../actions'
 
 const styles = theme => ({
@@ -17,6 +18,13 @@ const styles = theme => ({
 });
 
 class ATMItem extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false
+        }
+    }
+    
     renderOpeningClosingTag(openingHours) {
         if(openingHours == undefined) {
             return (null);
@@ -76,6 +84,9 @@ class ATMItem extends React.Component {
         if(LatitudeDescription && LongitudeDescription){
             this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription);
         }
+
+        // toggle detail page
+        this.props.toggleATMDetailDialog(true);
     }
 
     render() {
@@ -83,19 +94,21 @@ class ATMItem extends React.Component {
         const { ATMName, ATMAddress, distance } = atm;
         
         return (
-            <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm)}>
-                <ListItemText
-                    primary={ ATMName }
-                    secondary={
-                        <React.Fragment>
-                            { ATMAddress.AddressLine }
-                            <br/>
-                            { this.renderDistance(distance) }
-                            { this.renderOpeningClosingTag(atm.OpeningHours) }
-                        </React.Fragment>
-                    }
-                />
-            </ListItem>
+            <React.Fragment>
+                <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm)}>
+                    <ListItemText
+                        primary={ ATMName }
+                        secondary={
+                            <React.Fragment>
+                                { ATMAddress.AddressLine }
+                                <br/>
+                                { this.renderDistance(distance) }
+                                { this.renderOpeningClosingTag(atm.OpeningHours) }
+                            </React.Fragment>
+                        }
+                    />
+                </ListItem>
+            </React.Fragment>
         );
     }
 }
@@ -116,6 +129,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         setSelectedLocation: (lat, lng) => {
             dispatch(setSelectedLocation(lat, lng))
+        },
+        toggleATMDetailDialog: (open) => {
+            dispatch(toggleATMDetailDialog(open))
         }
     };
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -7,6 +7,7 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import { withStyles } from '@material-ui/core/styles';
 import ATMItem from './ATMItem';
+import ATMItemDialog from './ATMItemDialog';
 
 const drawerWidth = '100%';
 
@@ -59,11 +60,12 @@ class ATMListing extends React.Component {
   render() {
     const { classes, theme } = this.props;
     const drawer = (
-      <div>
+      <React.Fragment>
         <List>
             {this.renderATMItems()}
         </List>
-      </div>
+        <ATMItemDialog/>
+      </React.Fragment>
     );
 
     return (

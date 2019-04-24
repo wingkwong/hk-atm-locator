@@ -79,10 +79,11 @@ class ATMItem extends React.Component {
         )
     }
 
-    atmListItemOnClick(atm) {
+    atmListItemOnClick(atm, idx) {
         const { ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
+        console.log(atm)
         if(LatitudeDescription && LongitudeDescription){
-            this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription);
+            this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription, idx);
         }
 
         // toggle detail page
@@ -95,7 +96,7 @@ class ATMItem extends React.Component {
         
         return (
             <React.Fragment>
-                <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm)}>
+                <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
                     <ListItemText
                         primary={ ATMName }
                         secondary={
@@ -127,8 +128,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        setSelectedLocation: (lat, lng) => {
-            dispatch(setSelectedLocation(lat, lng))
+        setSelectedLocation: (lat, lng, idx) => {
+            dispatch(setSelectedLocation(lat, lng, idx))
         },
         toggleATMDetailDialog: (open) => {
             dispatch(toggleATMDetailDialog(open))

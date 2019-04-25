@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
 import Slide from '@material-ui/core/Slide';
-import ATMItemDetail from './ATMItemDetail';
+import ATMItemDetail from '../ATMDetail/ATMItemDetail';
 
 const styles = {
 
@@ -44,6 +44,7 @@ class ATMItemDialog extends React.Component {
 
 ATMItemDialog.propTypes = {
   classes: PropTypes.object.isRequired,
+  atm: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {

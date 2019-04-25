@@ -44,7 +44,7 @@ class ATMItemDialog extends React.Component {
 
 ATMItemDialog.propTypes = {
   classes: PropTypes.object.isRequired,
-  atm: PropTypes.object.isRequired,
+  atm: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {

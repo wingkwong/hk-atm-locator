@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
-import L from 'leaflet';
+import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 import ATMSearch from '../../components/ATMFilter/ATMSearch';
 import ATMFilterPanel from '../../components/ATMFilter/ATMFilterPanel';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import HANG_SENG_DATA from '../../data/hang_seng.json';
 import HANG_SENG_LATLNG_DATA from '../../data/hang_seng_latlng.json';
 import HSBC_DATA from '../../data/hsbc.json';
-import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
-import currentLocationIcon from '../../static/images/you_are_here.png';
 
 import {
     setATMData,
@@ -18,13 +16,7 @@ import {
 } from '../../actions'
 
 const styles = {
-    mapContainer: {
-        position: 'absolute',
-        top: '64px',
-        left: '320px',
-        width: 'calc(100% - 320px)',
-        height: '100%',
-    },
+   
   };
 
 class LandingListView extends Component{
@@ -80,11 +72,6 @@ class LandingListView extends Component{
         const hsbcATMs = HSBC_DATA.data[0].Brand[0].ATM;
         const allATMs = [...hangSengATMs, ...hsbcATMs];
 
-
-        /*
-            TODO: 
-            - Data enrichment: (lat, lng for hang seng atms)
-        */
         this.props.setATMData(allATMs);
     }
 
@@ -117,44 +104,7 @@ class LandingListView extends Component{
         }
     }
 
-    handleMoveEnd = (evt) => {
-        // let latlng = evt.target.getCenter();
-        /*
-            TODO: better add a new function called setZoomLevel as selectedLocation should not be evt.target.getCenter()
-        */
-        let latlng = this.props.selectedLocation;
-        let zoomLvl = evt.target.getZoom();
-        this.props.setSelectedLocation(latlng.lat, latlng.lng, zoomLvl);
-    }
-
-    saveMap = (map) => {
-        this.map = map;
-        this.setState({
-            isMapInit: true
-        })
-    }
-
     render() {
-        const { classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
-        let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
-        let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
-        let zoomLvlToUse = selectedZoomLvl;
-        let icon = L.icon({
-            iconUrl: currentLocationIcon,
-            shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-            iconSize: [70, 70]
-       })
-
-        if(selectedLocation != null && Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
-            selectedPosition = [selectedLocation.lat, selectedLocation.lng];
-        }
-
-        if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
-            currentPosition = [currentLocation.lat, currentLocation.lng];
-        }
-
-        if (!zoomLvlToUse || zoomLvlToUse<0) zoomLvlToUse=this.state.zoom;
-
         return (
             <React.Fragment>
                 <ATMSearch/>

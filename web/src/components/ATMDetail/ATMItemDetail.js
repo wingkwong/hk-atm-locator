@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import { withStyles } from '@material-ui/core/styles';
+import ATMDetailContent from './ATMDetailContent';
 import {
     toggleATMDetailDialog
 } from '../../actions';
@@ -45,7 +46,7 @@ class ATMItemDetail extends React.Component {
                     </Typography>
                 </Toolbar>
                 </AppBar>
-                TODO: Detail Goes Here
+                <ATMDetailContent atm={atm} />
             </React.Fragment>
         );
     }

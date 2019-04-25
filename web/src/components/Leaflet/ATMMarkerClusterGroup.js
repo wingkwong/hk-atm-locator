@@ -26,10 +26,8 @@ class ATMMarkerClusterGroup extends React.Component {
 
     markerOnClick(data) {
         // Center the map 
-        const { ATMAddress } = data;
-        this.props.setSelectedLocation(ATMAddress.LatitudeDescription, ATMAddress.LongitudeDescription);
-        
-        // TODO: Toggle detail block
+        // const { ATMAddress } = data;
+        // this.props.setSelectedLocation(ATMAddress.LatitudeDescription, ATMAddress.LongitudeDescription);
     }
 
     renderPopUp(data) {

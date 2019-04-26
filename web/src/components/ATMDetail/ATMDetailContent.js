@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
 import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
 import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 import {
@@ -13,13 +13,24 @@ import {
     setSelectedLocation
 } from '../../actions';
 
+const drawerWidth = 240;
 
 const styles = theme => ({
     mapContainer: {
         position: 'absolute',
         top: '64px',
-        width: '100%',
-        height: 'calc(100% - 64px)',
+        width: 'calc(100% - 240px)',
+        height: '100%',
+    },
+    drawer: {
+        width: drawerWidth,
+        flexShrink: 0,
+    },
+    drawerPaper: {
+        width: drawerWidth,
+    },
+    content: {
+        flexGrow: 1,
     },
 });
 
@@ -76,6 +87,21 @@ class ATMDetailContent extends React.Component {
         })
     }
 
+    renderDrawer = () => {
+        const { classes } = this.props;
+        return (
+            <Drawer
+                className={classes.drawer}
+                variant="permanent"
+                classes={{
+                paper: classes.drawerPaper,
+                }}
+            >
+                    Drawer Goes Here
+            </Drawer>
+        );
+    }
+
     render() {
         const { atm, classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
         let icon = L.icon({
@@ -89,23 +115,26 @@ class ATMDetailContent extends React.Component {
         
         return (
             <React.Fragment>
-               <Map 
-                     className={classes.mapContainer}
-                     center={selectedLocation} 
-                     zoom= {zoomLvlToUse}
-                     maxZoom={18}
-                    //  onmoveend={this.handleMoveEnd}
-                    // dragging={false}
-                     ref={this.saveMap}>
+                { this.renderDrawer() }
+                <div className={classes.content}> 
+                    <Map 
+                        className={classes.mapContainer}
+                        center={selectedLocation} 
+                        zoom= {zoomLvlToUse}
+                        maxZoom={18}
+                        //  onmoveend={this.handleMoveEnd}
+                        // dragging={false}
+                        ref={this.saveMap}>
 
-                     <TileLayer
-                     attribution='&amp;copy <a href="http:osm.org/copyright">OpenStreetMap</a> contributors'
-                     url="https:{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                     />
-                     {/* <ATMMarkerClusterGroup/> */}
-                     <Marker position={currentLocation} icon={icon}/>
-                     <ATMMarker atm={atm}/>
-                 </Map>
+                        <TileLayer
+                        attribution='&amp;copy <a href="http:osm.org/copyright">OpenStreetMap</a> contributors'
+                        url="https:{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        {/* <ATMMarkerClusterGroup/> */}
+                        <Marker position={currentLocation} icon={icon}/>
+                        <ATMMarker atm={atm}/>
+                    </Map>
+                </div>
             </React.Fragment>
         );
     }

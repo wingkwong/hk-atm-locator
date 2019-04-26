@@ -15,8 +15,11 @@ import {
 
 const styles = theme => ({
     appBar: {
-        position: 'relative',
-      },
+        zIndex: theme.zIndex.drawer + 1,
+    },
+    root: {
+        display: 'flex',
+    }
 });
 
 class ATMItemDetail extends React.Component {
@@ -36,17 +39,19 @@ class ATMItemDetail extends React.Component {
         
         return (
             <React.Fragment>
-                <AppBar className={classes.appBar} color="secondary">
-                <Toolbar>
-                    <IconButton  onClick={this.handleDialogClose} aria-label="Close">
-                    <CloseIcon />
-                    </IconButton>
-                    <Typography variant="h6" color="inherit" className={classes.flex}>
-                        {atm.ATMName}
-                    </Typography>
-                </Toolbar>
-                </AppBar>
-                <ATMDetailContent atm={atm} />
+                <div className={classes.root}>
+                    <AppBar className={classes.appBar} position="fixed" color="secondary">
+                    <Toolbar>
+                        <IconButton  onClick={this.handleDialogClose} aria-label="Close">
+                        <CloseIcon />
+                        </IconButton>
+                        <Typography variant="h6" color="inherit" className={classes.flex}>
+                            {atm.ATMName}
+                        </Typography>
+                    </Toolbar>
+                    </AppBar>
+                    <ATMDetailContent atm={atm} />
+                </div>
             </React.Fragment>
         );
     }

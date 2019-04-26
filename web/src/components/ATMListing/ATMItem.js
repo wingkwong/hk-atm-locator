@@ -24,9 +24,9 @@ class ATMItem extends React.Component {
             open: false
         }
     }
-    
+
     renderOpeningClosingTag(openingHours) {
-        if(openingHours == undefined) {
+        if(openingHours == undefined || openingHours.length === 0) {
             return (null);
         }
 
@@ -42,10 +42,10 @@ class ATMItem extends React.Component {
         }
 
         // openingHours
-        // [0]  - Monday 
-        // [0]  - Tuesday 
+        // [0]  - Monday
+        // [0]  - Tuesday
         // ...
-        // [6]] - Sunday 
+        // [6]] - Sunday
         const closeTimeInHHMMFormat = openingHours[weekday - 1].CloseTime;
         const closeTimeHour = closeTimeInHHMMFormat.split(":")[0];
         const closeTimeMinute = closeTimeInHHMMFormat.split(":")[1];
@@ -93,7 +93,7 @@ class ATMItem extends React.Component {
     render() {
         const { idx, atm } = this.props;
         const { ATMName, ATMAddress, distance } = atm;
-        
+
         return (
             <React.Fragment>
                 <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
@@ -122,7 +122,7 @@ ATMItem.propTypes = {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+
     };
 }
 
@@ -138,4 +138,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles, { withTheme: true })(ATMItem));
-  

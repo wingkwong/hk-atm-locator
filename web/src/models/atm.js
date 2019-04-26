@@ -45,7 +45,13 @@ export class HangSengATM extends ATM {
   constructor(record) {
     super(record);
     if (record.ATMServices.AutomatedTellerMachineOperatingHour === '24-hours') {
-      this.OpeningHours = get247OpeningHours();
+      this.OpeningHours = createGenericOpeningHours("00:00", "23:59");
+    } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Around 06:00 - midnight 01:00 (Follows Station First/Last Trains Service Hours)') {
+      // TODO: fix this
+      this.OpeningHours = createGenericOpeningHours("06:00", "23:59");
+    } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Subject to Mall Opening Hours') {
+      // Just give a generic mall open/close time
+      this.OpeningHours = createGenericOpeningHours("10:00", "20:00");
     }
 
     this.ATMServices.CashDepositIndicator = record.ATMServices.CashDepositMachineIndicator;
@@ -60,42 +66,11 @@ export class HangSengATM extends ATM {
 export class HsbcATM extends ATM {
 }
 
-function get247OpeningHours() {
-  return [
-    {
-      "OpenDayDescription": "Monday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    },
-    {
-      "OpenDayDescription": "Tuesday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    },
-    {
-      "OpenDayDescription": "Wednesday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    },
-    {
-      "OpenDayDescription": "Thursday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    },
-    {
-      "OpenDayDescription": "Friday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    },
-    {
-      "OpenDayDescription": "Saturday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    },
-    {
-      "OpenDayDescription": "Sunday",
-      "OpenTime": "0:00",
-      "CloseTime": "23:59"
-    }
-  ];
+const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday' ,'Thursday' ,'Friday' ,'Saturday' ,'Sunday']
+function createGenericOpeningHours(openTime, closeTime) {
+  return WEEK_DAYS.map(weekday => ({
+    OpenDayDescription: weekday,
+    OpenTime: openTime,
+    CloseTime: closeTime
+  }));
 }

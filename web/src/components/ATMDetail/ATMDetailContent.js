@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
+import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 import {
     toggleATMDetailDialog,
@@ -18,7 +19,7 @@ const styles = theme => ({
         position: 'absolute',
         top: '64px',
         width: '100%',
-        height: '100%',
+        height: 'calc(100% - 64px)',
     },
 });
 
@@ -34,8 +35,24 @@ class ATMDetailContent extends React.Component {
                 lat: 22.308,
                 lng: 114.1716
             },
-            zoom: 14,
+            zoom: 16,
             isMapInit: false
+        }
+    }
+
+    componentDidMount() {
+        const { selectedLocation, currentLocation } = this.props;
+        let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
+        let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
+
+        if(selectedLocation != null && Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
+            selectedPosition = [selectedLocation.lat, selectedLocation.lng];
+            this.setState({selectedLocation: selectedPosition})
+        }
+
+        if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
+            currentPosition = [currentLocation.lat, currentLocation.lng];
+            this.setState({currentLocation: currentPosition})
         }
     }
 
@@ -61,42 +78,33 @@ class ATMDetailContent extends React.Component {
 
     render() {
         const { atm, classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
-        let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
-        let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
-        let zoomLvlToUse = selectedZoomLvl;
         let icon = L.icon({
             iconUrl: currentLocationIcon,
             shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
             iconSize: [70, 70]
        })
 
-       if(selectedLocation != null && Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
-            selectedPosition = [selectedLocation.lat, selectedLocation.lng];
-        }
-
-        if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
-            currentPosition = [currentLocation.lat, currentLocation.lng];
-        }
-
+       let zoomLvlToUse = selectedZoomLvl;
         if (!zoomLvlToUse || zoomLvlToUse<0) zoomLvlToUse=this.state.zoom;
         
         return (
             <React.Fragment>
-                sdasdasd
                <Map 
                      className={classes.mapContainer}
-                     center={selectedPosition} 
+                     center={selectedLocation} 
                      zoom= {zoomLvlToUse}
-                     maxZoom={zoomLvlToUse + 2} 
-                     onmoveend={this.handleMoveEnd}
+                     maxZoom={18}
+                    //  onmoveend={this.handleMoveEnd}
+                    // dragging={false}
                      ref={this.saveMap}>
 
                      <TileLayer
                      attribution='&amp;copy <a href="http:osm.org/copyright">OpenStreetMap</a> contributors'
                      url="https:{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                      />
-                     <ATMMarkerClusterGroup/>
-                     <Marker position={currentPosition} icon={icon}/>
+                     {/* <ATMMarkerClusterGroup/> */}
+                     <Marker position={currentLocation} icon={icon}/>
+                     <ATMMarker atm={atm}/>
                  </Map>
             </React.Fragment>
         );

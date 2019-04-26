@@ -47,6 +47,13 @@ export class HangSengATM extends ATM {
     if (record.ATMServices.AutomatedTellerMachineOperatingHour === '24-hours') {
       this.OpeningHours = get247OpeningHours();
     }
+
+    this.ATMServices.CashDepositIndicator = record.ATMServices.CashDepositMachineIndicator;
+    this.ATMServices.ChequeDepositIndicator = record.ATMServices.ChequeDepositMachineIndicator;
+    this.ATMServices.ForeignCurrencyIndicator =
+        record.ATMServices.RMBandForeignCurrencyATMIndicator
+        && !record.ATMServices.RMBATMwithoutForeignCurrencyIndicator;
+
   }
 }
 

@@ -5,6 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
+import * as moment from 'moment';
 
 import {
     setSelectedLocation,
@@ -24,9 +25,9 @@ class ATMItem extends React.Component {
             open: false
         }
     }
-    
+
     renderOpeningClosingTag(openingHours) {
-        if(openingHours == undefined) {
+        if(openingHours == undefined || openingHours.length === 0) {
             return (null);
         }
 
@@ -42,24 +43,22 @@ class ATMItem extends React.Component {
         }
 
         // openingHours
-        // [0]  - Monday 
-        // [0]  - Tuesday 
+        // [0]  - Monday
+        // [0]  - Tuesday
         // ...
-        // [6]] - Sunday 
+        // [6]] - Sunday
+        const openTimeInHHMMFormat = openingHours[weekday - 1].OpenTime;
         const closeTimeInHHMMFormat = openingHours[weekday - 1].CloseTime;
-        const closeTimeHour = closeTimeInHHMMFormat.split(":")[0];
-        const closeTimeMinute = closeTimeInHHMMFormat.split(":")[1];
-        const currentTime = new Date();
-        let closeTime = new Date();
-        closeTime.setHours(closeTimeHour);
-        closeTime.setMinutes(closeTimeMinute);
+        const openTime = moment(openTimeInHHMMFormat, 'HH:mm');
+        const closeTime = moment(closeTimeInHHMMFormat, 'HH:mm');
+        const isOpen = moment().isBetween(openTime, closeTime);
         const { classes } = this.props;
         return (
             <React.Fragment>
                 <br/>
                 <Chip
-                    label={ currentTime > closeTime ? 'Opening' : 'Closed' }
-                    color={ currentTime > closeTime ? 'primary' : 'secondary' }
+                    label={ isOpen ? 'Opening' : 'Closed' }
+                    color={ isOpen ? 'primary' : 'secondary' }
                     className={classes.chip}
                 />
             </React.Fragment>
@@ -93,7 +92,7 @@ class ATMItem extends React.Component {
     render() {
         const { idx, atm } = this.props;
         const { ATMName, ATMAddress, distance } = atm;
-        
+
         return (
             <React.Fragment>
                 <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
@@ -122,7 +121,7 @@ ATMItem.propTypes = {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+
     };
 }
 
@@ -138,4 +137,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles, { withTheme: true })(ATMItem));
-  

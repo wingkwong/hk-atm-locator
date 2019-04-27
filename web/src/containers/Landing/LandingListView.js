@@ -5,9 +5,8 @@ import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 import ATMSearch from '../../components/ATMFilter/ATMSearch';
 import ATMFilterPanel from '../../components/ATMFilter/ATMFilterPanel';
 import ATMListing from '../../components/ATMListing/ATMListing';
-import HANG_SENG_DATA from '../../data/hang_seng.json';
-import HANG_SENG_LATLNG_DATA from '../../data/hang_seng_latlng.json';
-import HSBC_DATA from '../../data/hsbc.json';
+import { loadAllData } from '../../utils/dataLoader';
+
 
 import {
     setATMData,
@@ -16,7 +15,7 @@ import {
 } from '../../actions'
 
 const styles = {
-   
+
   };
 
 class LandingListView extends Component{
@@ -54,24 +53,8 @@ class LandingListView extends Component{
     }
 
     initATMData() {
-        const hangSengATMs = HANG_SENG_DATA.data[0].Brand[0].ATM;
-        let hangSengLatLngLUT = new Object();
-        for (let i=0;i<HANG_SENG_LATLNG_DATA.length; i++){
-            let rec = HANG_SENG_LATLNG_DATA[i];
-            hangSengLatLngLUT[rec.address] = {'lat': rec.lat, 'lng': rec.lng};
-        }
-        for (let i=0;i<hangSengATMs.length; i++){
-            let rec = hangSengATMs[i];
-            let latlng = hangSengLatLngLUT[rec.ATMAddress.AddressLine[0]];
-            if (latlng){
-                rec.ATMAddress.LatitudeDescription = latlng.lat;
-                rec.ATMAddress.LongitudeDescription = latlng.lng;
-            }
-        }
 
-        const hsbcATMs = HSBC_DATA.data[0].Brand[0].ATM;
-        const allATMs = [...hangSengATMs, ...hsbcATMs];
-
+        const allATMs = loadAllData();
         this.props.setATMData(allATMs);
     }
 
@@ -82,9 +65,9 @@ class LandingListView extends Component{
 
         if(atm) {
             if(this.props.currentLocation != undefined) {
-                location = this.props.currentLocation 
+                location = this.props.currentLocation
             }
-    
+
             const sortedAllATMs = [].concat(atm)
              .sort( (x, y) => {
                 if(x.ATMAddress.LatitudeDescription != null && x.ATMAddress.LongitudeDescription != null &&
@@ -99,7 +82,7 @@ class LandingListView extends Component{
                 ...atm,
                 distance: distanceBetweenTwoGeoPoints(location.lat, location.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription)
             }));
-    
+
             this.props.setATMData(sortedAllATMs);
         }
     }
@@ -137,6 +120,6 @@ const mapDispatchToProps = (dispatch) => {
         }
     };
 }
-  
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(LandingListView));

@@ -39,14 +39,17 @@ class LandingListView extends Component{
 
     detectCurrentLocation() {
         const me = this;
+
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(
              function success(position) {
-
                 me.props.setCurrentLocation(position.coords.latitude, position.coords.longitude);
                 me.props.setSelectedLocation(position.coords.latitude, position.coords.longitude);
                 me.sortATMData();
-             });
+             }, (err) => {
+               // cannot get location, sort data anyway
+                me.sortATMData();
+             },{ timeout:2000 });
         } else {
             me.sortATMData();
         }
@@ -62,7 +65,6 @@ class LandingListView extends Component{
         const { atm } = this.props;
         const { currentLocation } = this.state;
         let location = currentLocation;
-
         if(atm) {
             if(this.props.currentLocation != undefined) {
                 location = this.props.currentLocation
@@ -78,10 +80,10 @@ class LandingListView extends Component{
                     }
                 return -1;
             })
-            .map( (atm) => ({
-                ...atm,
-                distance: distanceBetweenTwoGeoPoints(location.lat, location.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription)
-            }));
+            .map( (atm) => {
+                atm.distance = distanceBetweenTwoGeoPoints(location.lat, location.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription);
+                return atm;
+            });
 
             this.props.setATMData(sortedAllATMs);
         }

@@ -1,6 +1,16 @@
 import { isArray } from "util";
+import {
+  SERVICE_BILL_PAYMENT, SERVICE_CASH_DEPOSIT, SERVICE_CASH_WITHDRAWAL, SERVICE_CHEQUE_DEPOSIT, SERVICE_COIN_SORT,
+  SERVICE_DISABLED_ACCESS, SERVICE_FOREIGN_CURRENCY
+} from '../constants/services';
+
+import * as banks from '../constants/banks';
+import * as networks from '../constants/networks';
+import * as moment from 'moment';
 
 class ATM {
+  Bank = "";
+  Network = "";
   ATMName = "";
   HotlineNumber = "";
   ATMAddress = {
@@ -24,10 +34,43 @@ class ATM {
     copyFields(this, record);
   }
 
-  isATMOpen() {
+  isServiceAvaliable(serviceKey) {
+    if (serviceKey === SERVICE_COIN_SORT) {
+       return this.isServiceIndicatorReturnTrue('CoinSortIndicator');
+    } else if (serviceKey === SERVICE_FOREIGN_CURRENCY) {
+      return this.isServiceIndicatorReturnTrue('ForeignCurrencyIndicator');
+    } else if (serviceKey === SERVICE_DISABLED_ACCESS) {
+      return this.isServiceIndicatorReturnTrue('DisabledAccessIndicator');
+    } else if (serviceKey === SERVICE_BILL_PAYMENT) {
+      return this.isServiceIndicatorReturnTrue('BillPaymentIndicator');
+    } else if (serviceKey === SERVICE_CASH_WITHDRAWAL) {
+      return this.isServiceIndicatorReturnTrue('CashWithdrawalIndicator');
+    } else if (serviceKey === SERVICE_CASH_DEPOSIT) {
+      return this.isServiceIndicatorReturnTrue('CashDepositIndicator');
+    } else if (serviceKey === SERVICE_CHEQUE_DEPOSIT) {
+      return this.isServiceIndicatorReturnTrue('ChequeDepositIndicator');
+    }
+  }
 
+  isServiceIndicatorReturnTrue(field) {
+    return this.ATMServices
+      && this.ATMServices[field] !== undefined
+      && this.ATMServices[field] === true;
+  }
+
+  isOpenNow() {
+    const dayOfWeek = moment().format('dddd');
+    const openingHour = this.OpeningHours.find(oh => oh.OpenDayDescription === dayOfWeek);
+    if (!openingHour) {
+      return null;
+    }
+    const openTime = moment(openingHour.OpenTime, 'HH:mm');
+    const closeTime = moment(openingHour.CloseTime, 'HH:mm');
+    return moment().isBetween(openTime, closeTime);
   }
 }
+
+
 
 function copyFields(copyTo, copyFrom) {
   for (const field of Object.keys(copyTo)) {
@@ -44,6 +87,9 @@ function copyFields(copyTo, copyFrom) {
 export class HangSengATM extends ATM {
   constructor(record) {
     super(record);
+    this.Bank = banks.hangSeng.idx;
+    this.Network = networks.hangseng.idx;
+
     if (record.ATMServices.AutomatedTellerMachineOperatingHour === '24-hours') {
       this.OpeningHours = createGenericOpeningHours("00:00", "23:59");
     } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Around 06:00 - midnight 01:00 (Follows Station First/Last Trains Service Hours)') {
@@ -64,6 +110,11 @@ export class HangSengATM extends ATM {
 }
 
 export class HsbcATM extends ATM {
+  constructor(record) {
+    super(record);
+    this.Bank = banks.hsbc.idx;
+    this.Network = networks.HSBC.idx;
+  }
 }
 
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday' ,'Thursday' ,'Friday' ,'Saturday' ,'Sunday']

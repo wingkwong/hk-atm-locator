@@ -25,6 +25,8 @@ declare interface ATMServices {
 }
 
 declare interface ATM {
+  Bank: string;
+  Network: string;
   ATMName: string;
   HotlineNumber: string;
   ATMAddress: ATMAddress;

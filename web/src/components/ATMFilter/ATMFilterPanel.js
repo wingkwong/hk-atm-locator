@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -8,11 +7,9 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
@@ -22,6 +19,13 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
+import { connect } from 'react-redux';
+import { SERVICES, SERVICE_NAMES } from '../../constants/services';
+
+import {
+  toggleFilterOption
+} from '../../actions'
+
 
 const styles = {
     root: {
@@ -49,22 +53,26 @@ class ATMFilterPanel extends Component {
     }
   }
 
-  handleSelectChange = event => {
-    this.setState({ [event.target.name]: event.target.value });
+  handleSelectChange(event) {
+      // this.setState({ [event.target.name]: event.target.value });
+      this.props.toggleFilterOption(event.target.name, event.target.value);
   };
 
-  handleCheckboxChange = name => event => {
-    this.setState({ [name]: event.target.checked });
+  handleCheckboxChange(name) {
+      return function(event){
+          // this.setState({ [name]: event.target.checked });
+          this.props.toggleFilterOption(name, event.target.checked);
+      }
   };
 
   renderNetworkSelect() {
-    const { classes } = this.props;
+    const { classes, filters: { network }} = this.props;
     return (
       <FormControl className={classes.formControl}>
           <InputLabel htmlFor="network-select">Network</InputLabel>
           <Select
-              value={this.state.network}
-              onChange={this.handleSelectChange}
+              value={network === undefined ? 'all' : network}
+              onChange={this.handleSelectChange.bind(this)}
               inputProps={{
               name: 'network',
               id: 'network-select',
@@ -90,13 +98,13 @@ class ATMFilterPanel extends Component {
     /*
       TODO: the value s restricted based on Network
     */
-    const { classes } = this.props;
+    const { classes, filters: { bank } } = this.props;
     return (
       <FormControl className={classes.formControl}>
           <InputLabel htmlFor="bank-select">Bank</InputLabel>
           <Select
-              value={this.state.bank}
-              onChange={this.handleSelectChange}
+              value={bank === undefined ? 'all' : bank}
+              onChange={this.handleSelectChange.bind(this)}
               inputProps={{
               name: 'bank',
               id: 'bank-select',
@@ -119,28 +127,9 @@ class ATMFilterPanel extends Component {
   }
 
   renderServicesCheckbox() {
-    /*
-      TODO: put services to constants
-    */
-    const serviceIndexes = [
-      'coinSort',
-      'foreignCurrency',
-      'disabledAccess',
-      'billPayment',
-      'cashWithdrawal',
-      'cashDeposit',
-      'chequeDeposit',
-    ];
+    const serviceIndexes = SERVICES;
+    const services = SERVICE_NAMES;
 
-    const services = [
-      'Coin Sort',
-      'Foreign Currency',
-      'Disabled Access',
-      'Bill Payment',
-      'Cash Withdrawal',
-      'Cash Deposit',
-      'Cheque Deposit'
-    ];
     return (
       <FormControl component="fieldset">
         <FormLabel component="legend">Services</FormLabel>
@@ -152,7 +141,7 @@ class ATMFilterPanel extends Component {
                   control={
                     <Switch
                       checked={this.state[serviceIndex]}
-                      onChange={this.handleCheckboxChange(serviceIndex)}
+                      onChange={this.handleCheckboxChange(serviceIndex).bind(this)}
                       value={services[index]}
                     />
                   }
@@ -168,8 +157,8 @@ class ATMFilterPanel extends Component {
 
   renderOpeningDayCheckbox() {
     const days = [
-      'Monday', 
-      'Tuesday', 
+      'Monday',
+      'Tuesday',
       'Wednesday',
       'Thursday',
       'Friday',
@@ -188,7 +177,7 @@ class ATMFilterPanel extends Component {
                   control={
                     <Switch
                       checked={this.state[day]}
-                      onChange={this.handleCheckboxChange(day)}
+                      onChange={this.handleCheckboxChange(day).bind(this)}
                       value={day}
                     />
                   }
@@ -224,7 +213,7 @@ class ATMFilterPanel extends Component {
                 control={
                   <Switch
                     checked={this.state[option]}
-                    onChange={this.handleCheckboxChange(option)}
+                    onChange={this.handleCheckboxChange(option).bind(this)}
                     value={option}
                   />
                 }
@@ -282,4 +271,19 @@ ATMFilterPanel.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ATMFilterPanel);
+const
+mapStateToProps = (state, ownProps) => {
+    return {
+      filters: state.atm.filters
+    };
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        toggleFilterOption: (key, value) => {
+            dispatch(toggleFilterOption(key, value));
+        }
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(ATMFilterPanel));

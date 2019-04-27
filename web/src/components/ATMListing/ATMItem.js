@@ -26,39 +26,18 @@ class ATMItem extends React.Component {
         }
     }
 
-    renderOpeningClosingTag(openingHours) {
-        if(openingHours == undefined || openingHours.length === 0) {
-            return (null);
+    renderOpeningClosingTag(atm) {
+        const isOpenNow = atm.isOpenNow();
+        if (isOpenNow === null) {
+          return (null);
         }
-
-        let weekday = new Date().getDay();
-        // Sunday   - weekday: 0
-        // Monday   - weekday: 1
-        // Tuesday  - weekday: 2
-        // ...
-        // Saturday - weekday: 6
-
-        if(weekday == 0) {
-            weekday = 7;
-        }
-
-        // openingHours
-        // [0]  - Monday
-        // [0]  - Tuesday
-        // ...
-        // [6]] - Sunday
-        const openTimeInHHMMFormat = openingHours[weekday - 1].OpenTime;
-        const closeTimeInHHMMFormat = openingHours[weekday - 1].CloseTime;
-        const openTime = moment(openTimeInHHMMFormat, 'HH:mm');
-        const closeTime = moment(closeTimeInHHMMFormat, 'HH:mm');
-        const isOpen = moment().isBetween(openTime, closeTime);
         const { classes } = this.props;
         return (
             <React.Fragment>
                 <br/>
                 <Chip
-                    label={ isOpen ? 'Opening' : 'Closed' }
-                    color={ isOpen ? 'primary' : 'secondary' }
+                    label={ isOpenNow ? 'Opening' : 'Closed' }
+                    color={ isOpenNow ? 'primary' : 'secondary' }
                     className={classes.chip}
                 />
             </React.Fragment>
@@ -103,7 +82,7 @@ class ATMItem extends React.Component {
                                 { ATMAddress.AddressLine }
                                 <br/>
                                 { this.renderDistance(distance) }
-                                { this.renderOpeningClosingTag(atm.OpeningHours) }
+                                { this.renderOpeningClosingTag(atm) }
                             </React.Fragment>
                         }
                     />

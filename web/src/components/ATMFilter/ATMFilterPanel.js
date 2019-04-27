@@ -20,7 +20,7 @@ import Switch from '@material-ui/core/Switch';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
 import { connect } from 'react-redux';
-
+import { SERVICES, SERVICE_NAMES } from '../../constants/services';
 
 import {
   toggleFilterOption
@@ -66,7 +66,7 @@ class ATMFilterPanel extends Component {
   };
 
   renderNetworkSelect() {
-    const { classes, options: { network }} = this.props;
+    const { classes, filters: { network }} = this.props;
     return (
       <FormControl className={classes.formControl}>
           <InputLabel htmlFor="network-select">Network</InputLabel>
@@ -98,7 +98,7 @@ class ATMFilterPanel extends Component {
     /*
       TODO: the value s restricted based on Network
     */
-    const { classes, options: { bank } } = this.props;
+    const { classes, filters: { bank } } = this.props;
     return (
       <FormControl className={classes.formControl}>
           <InputLabel htmlFor="bank-select">Bank</InputLabel>
@@ -127,28 +127,9 @@ class ATMFilterPanel extends Component {
   }
 
   renderServicesCheckbox() {
-    /*
-      TODO: put services to constants
-    */
-    const serviceIndexes = [
-      'coinSort',
-      'foreignCurrency',
-      'disabledAccess',
-      'billPayment',
-      'cashWithdrawal',
-      'cashDeposit',
-      'chequeDeposit',
-    ];
+    const serviceIndexes = SERVICES;
+    const services = SERVICE_NAMES;
 
-    const services = [
-      'Coin Sort',
-      'Foreign Currency',
-      'Disabled Access',
-      'Bill Payment',
-      'Cash Withdrawal',
-      'Cash Deposit',
-      'Cheque Deposit'
-    ];
     return (
       <FormControl component="fieldset">
         <FormLabel component="legend">Services</FormLabel>
@@ -293,7 +274,7 @@ ATMFilterPanel.propTypes = {
 const
 mapStateToProps = (state, ownProps) => {
     return {
-        options: state.filter.options
+      filters: state.atm.filters
     };
 }
 

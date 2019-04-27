@@ -23,7 +23,7 @@ const dispatchToggleATMDetailDialog = (open) => {
 }
 
 const dispatchToggleFilterOption = (key, value) => {
-  return {type: TOGGLE_FILTER_OPTION, [key]: value}
+  return {type: TOGGLE_FILTER_OPTION, key, value}
 }
 
 export const setATMData = (data) => {

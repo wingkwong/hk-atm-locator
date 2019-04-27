@@ -7,7 +7,7 @@ const pageReducer = (state = {
 }, action) => {
   switch (action.type) {
     case TOGGLE_FILTER_OPTION:
-      state.options = Object.assign({ [action.key]: action.value }, state.options);
+      state.options = Object.assign({}, state.options, { [action.key]: action.value });
       return { ...state, options: state.options };
     default:
       return state;

@@ -115,7 +115,7 @@ export class HsbcATM extends ATM {
   constructor(record) {
     super(record);
     this.Bank = banks.hsbc.idx;
-    this.Network = networks.HSBC.idx;
+    this.Network = networks.hsbc.idx;
   }
 }
 

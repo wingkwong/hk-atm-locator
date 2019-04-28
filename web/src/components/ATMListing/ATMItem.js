@@ -59,7 +59,6 @@ class ATMItem extends React.Component {
 
     atmListItemOnClick(atm, idx) {
         const { ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
-        console.log(atm)
         if(LatitudeDescription && LongitudeDescription){
             this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription, idx);
         }
@@ -75,17 +74,20 @@ class ATMItem extends React.Component {
         return (
             <React.Fragment>
                 <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
-                    <ListItemText
-                        primary={ ATMName }
-                        secondary={
-                            <React.Fragment>
-                                { ATMAddress.AddressLine }
-                                <br/>
-                                { this.renderDistance(distance) }
-                                { this.renderOpeningClosingTag(atm) }
-                            </React.Fragment>
-                        }
-                    />
+                    <div>
+                      <ListItemText
+                          primary={ ATMName }
+                          secondary={
+                              <React.Fragment>
+                                  { ATMAddress.AddressLine }
+                                  <br/>
+                                  { this.renderDistance(distance) }
+
+                              </React.Fragment>
+                          }
+                      />
+                      { this.renderOpeningClosingTag(atm) }
+                    </div>
                 </ListItem>
             </React.Fragment>
         );

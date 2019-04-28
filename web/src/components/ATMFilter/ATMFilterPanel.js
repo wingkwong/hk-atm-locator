@@ -146,6 +146,7 @@ class ATMFilterPanel extends Component {
                     />
                   }
                   label={services[index]}
+                  key={index}
                 />
                );
              })
@@ -182,6 +183,7 @@ class ATMFilterPanel extends Component {
                     />
                   }
                   label={day}
+                  key={index}
                 />
                );
              })
@@ -218,6 +220,7 @@ class ATMFilterPanel extends Component {
                   />
                 }
                 label={option}
+                key={index}
               />
              );
            })

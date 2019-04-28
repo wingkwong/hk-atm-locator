@@ -17,7 +17,9 @@ class ATM {
     CountryCode: "HK",
     TerritoryName: "",
     DistrictName: "",
-    AddressLine: []
+    AddressLine: [],
+    LatitudeDescription: 0,
+    LongitudeDescription: 0,
   };
   ATMServices = {
     CoinSortIndicator: false,

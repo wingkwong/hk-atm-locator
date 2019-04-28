@@ -12,6 +12,8 @@ declare interface ATMAddress {
   TerritoryName: string;
   DistrictName: string;
   AddressLine: string[];
+  LatitudeDescription: number;
+  LongitudeDescription: number;
 }
 
 declare interface ATMServices {

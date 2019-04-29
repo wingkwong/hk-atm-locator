@@ -149,6 +149,11 @@ class ATMDetailContent extends React.Component {
 
     renderListItem = (subheader, value) => {
         const { classes } = this.props;
+
+        if(!subheader && !value) {
+            return (null);
+        }
+
         return (
             <List  
                 component="nav"

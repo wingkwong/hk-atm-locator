@@ -10,6 +10,11 @@ const distanceBetweenTwoGeoPoints = (lat1, lng1, lat2, lng2) => {
 	return d;
 }
 
+const distanceConverter = (distance) => {
+	return distance > 1 ? Math.round(distance) + 'km' : Math.round(distance * 1000) + 'm';
+}
+
 export {
-    distanceBetweenTwoGeoPoints
+    distanceBetweenTwoGeoPoints,
+	distanceConverter
 }

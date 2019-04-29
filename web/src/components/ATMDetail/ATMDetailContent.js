@@ -16,6 +16,7 @@ import deepOrange from '@material-ui/core/colors/deepOrange';
 import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 import { jetco, hangseng, hsbc } from '../../constants/networks';
+import { distanceConverter } from '../../utils/geoUtils';
 import {
     toggleATMDetailDialog,
     setCurrentLocation,
@@ -186,7 +187,7 @@ class ATMDetailContent extends React.Component {
                 {/* TODO: Services */}
                 {/* TODO: Opening Hours */}
                 { this.renderListItem('Hotline Number', HotlineNumber) }
-                { this.renderListItem('Distance', distance) }
+                { this.renderListItem('Distance', distanceConverter(distance)) }
             </React.Fragment>
         );
     }

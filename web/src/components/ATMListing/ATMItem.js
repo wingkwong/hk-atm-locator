@@ -6,6 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
 import * as moment from 'moment';
+import { distanceConverter } from '../../utils/geoUtils';
 
 import {
     setSelectedLocation,
@@ -49,7 +50,7 @@ class ATMItem extends React.Component {
             return (null);
         }
 
-        distance = distance > 1 ? Math.round(distance) + ' km' : Math.round(distance * 1000) + ' m';
+        distance = distanceConverter(distance);
         return (
             <React.Fragment>
                 { `${distance} from your current location` }

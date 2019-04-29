@@ -17,6 +17,7 @@ import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 import { jetco, hangseng, hsbc } from '../../constants/networks';
 import { distanceConverter } from '../../utils/geoUtils';
+import { SERVICES } from '../../constants/services';
 import {
     toggleATMDetailDialog,
     setCurrentLocation,
@@ -147,6 +148,18 @@ class ATMDetailContent extends React.Component {
         );
     }
 
+    // TODO: revise UI
+    renderServiceList = (services) => {
+        // const { BillPaymentIndicator, CashDepositIndicator, CashWithdrawalIndicator, ChequeDepositIndicator, CoinSortIndicator, DisabledAccessIndicator, ForeignCurrencyIndicator } = services;
+        return SERVICES.map((service, idx) => {
+            return (
+                <React.Fragment>
+                    { service.en }: { services[service.api_idx] ? 'Y' : 'N' } <br/>
+                </React.Fragment>
+            );
+        });
+    }
+
     renderListItem = (subheader, value) => {
         const { classes } = this.props;
 
@@ -168,7 +181,7 @@ class ATMDetailContent extends React.Component {
     }
 
     renderDrawerContent = () => {
-        const { atm: { ATMName, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, BranchName, HotlineNumber, distance, Network}, classes } = this.props;
+        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, BranchName, HotlineNumber, distance, Network}, classes } = this.props;
         return (
             <React.Fragment>
                 <List className={classes.listRoot}>
@@ -189,7 +202,7 @@ class ATMDetailContent extends React.Component {
 
                 { this.renderListItem('District', CountryCode + ' > ' + TerritoryName + ' > ' + DistrictName) }
                 { this.renderListItem('Address', AddressLine) }
-                {/* TODO: Services */}
+                { this.renderListItem('Services', this.renderServiceList(ATMServices)) }
                 {/* TODO: Opening Hours */}
                 { this.renderListItem('Hotline Number', HotlineNumber) }
                 { this.renderListItem('Distance', distanceConverter(distance)) }

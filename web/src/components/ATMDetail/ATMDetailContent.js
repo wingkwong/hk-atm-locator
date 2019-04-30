@@ -5,21 +5,32 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
+import deepOrange from '@material-ui/core/colors/deepOrange';
 import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
+import { jetco, hangseng, hsbc } from '../../constants/networks';
+import { distanceConverter } from '../../utils/geoUtils';
+import { SERVICES } from '../../constants/services';
 import {
     toggleATMDetailDialog,
     setCurrentLocation,
     setSelectedLocation
 } from '../../actions';
 
-const drawerWidth = 240;
+const drawerWidth = 420
 
 const styles = theme => ({
     mapContainer: {
         position: 'absolute',
         top: '64px',
-        width: 'calc(100% - 240px)',
+        width: 'calc(100% - 420px)',
         height: '100%',
     },
     drawer: {
@@ -28,10 +39,26 @@ const styles = theme => ({
     },
     drawerPaper: {
         width: drawerWidth,
+        paddingTop: '64px'
     },
     content: {
         flexGrow: 1,
     },
+    toolbar: theme.mixins.toolbar,
+    listRoot: {
+        width: '100%',
+        maxWidth: 360,
+        backgroundColor: theme.palette.background.paper,
+     },
+     subHeader: {
+        height: '28px'
+     },
+     networkAvatar: {
+        width: '60px',
+        height: '60px',
+        color: '#fff',
+        backgroundColor: deepOrange[500],
+     }
 });
 
 class ATMDetailContent extends React.Component {
@@ -71,15 +98,6 @@ class ATMDetailContent extends React.Component {
         this.props.toggleATMDetailDialog(false);
     };
 
-    handleMoveEnd = (evt) => {
-       /*
-           TODO: better add a new function called setZoomLevel as selectedLocation should not be evt.target.getCenter()
-       */
-       let latlng = this.props.selectedLocation;
-       let zoomLvl = evt.target.getZoom();
-       this.props.setSelectedLocation(latlng.lat, latlng.lng, zoomLvl);
-   }
-
     saveMap = (map) => {
         this.map = map;
         this.setState({
@@ -90,15 +108,105 @@ class ATMDetailContent extends React.Component {
     renderDrawer = () => {
         const { classes } = this.props;
         return (
-            <Drawer
-                className={classes.drawer}
-                variant="permanent"
-                classes={{
-                paper: classes.drawerPaper,
-                }}
-            >
-                    Drawer Goes Here
-            </Drawer>
+            <React.Fragment>
+                <div className={classes.toolbar} />
+                <Drawer
+                    className={classes.drawer}
+                    variant="permanent"
+                    classes={{
+                    paper: classes.drawerPaper,
+                    }}
+                >
+                    { this.renderDrawerContent() }
+                </Drawer>
+            </React.Fragment>
+        );
+    }
+
+    renderNetworkAvatar = (Network) => {
+        // TODO: Change to network icons instead of letter avatars
+        const { classes } = this.props;
+        let network = ''
+        switch (Network) {
+            case jetco.idx:
+                network = 'J';
+                break;
+            case hangseng.idx:
+                network = 'HS';
+                break;
+            case hsbc.idx:
+                network = 'HSBC';
+                break;
+            default:
+                break;
+        }
+
+        return (
+            <ListItemAvatar>
+                <Avatar className={classes.networkAvatar}>{ network }</Avatar>
+            </ListItemAvatar>
+        );
+    }
+
+    // TODO: revise UI
+    renderServiceList = (services) => {
+        // const { BillPaymentIndicator, CashDepositIndicator, CashWithdrawalIndicator, ChequeDepositIndicator, CoinSortIndicator, DisabledAccessIndicator, ForeignCurrencyIndicator } = services;
+        return SERVICES.map((service, idx) => {
+            return (
+                <React.Fragment>
+                    { service.en }: { services[service.api_idx] ? 'Y' : 'N' } <br/>
+                </React.Fragment>
+            );
+        });
+    }
+
+    renderListItem = (subheader, value) => {
+        const { classes } = this.props;
+
+        if(!subheader && !value) {
+            return (null);
+        }
+
+        return (
+            <List  
+                component="nav"
+                subheader={<ListSubheader component="div" className={classes.subHeader}>{subheader}</ListSubheader>}
+                className={classes.listRoot}
+                >
+                <ListItem>
+                    {value}
+                </ListItem>
+            </List>
+        );
+    }
+
+    renderDrawerContent = () => {
+        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, BranchName, HotlineNumber, distance, Network}, classes } = this.props;
+        return (
+            <React.Fragment>
+                <List className={classes.listRoot}>
+                    <ListItem alignItems="flex-start">
+                        { this.renderNetworkAvatar(Network) }
+                        <ListItemText
+                        primary={ ATMName }
+                        secondary={
+                            <React.Fragment>
+                            <Typography component="span" className={classes.inline} color="textPrimary">
+                                ({ LatitudeDescription },{ LongitudeDescription })
+                            </Typography>
+                            </React.Fragment>
+                        }
+                        />
+                    </ListItem>
+                </List>
+
+                { this.renderListItem('District', CountryCode + ' > ' + TerritoryName + ' > ' + DistrictName) }
+                { this.renderListItem('Address', AddressLine) }
+                { this.renderListItem('Services', this.renderServiceList(ATMServices)) }
+                {/* TODO: Opening Hours */}
+                { this.renderListItem('Hotline Number', HotlineNumber) }
+                { this.renderListItem('Distance', distanceConverter(distance)) }
+            </React.Fragment>
         );
     }
 
@@ -122,7 +230,6 @@ class ATMDetailContent extends React.Component {
                         center={selectedLocation} 
                         zoom= {zoomLvlToUse}
                         maxZoom={18}
-                        //  onmoveend={this.handleMoveEnd}
                         // dragging={false}
                         ref={this.saveMap}>
 
@@ -146,7 +253,6 @@ ATMDetailContent.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => {
-    console.log(state)
     return {
         selectedLocation: state.location.selectedLocation,
         selectedZoomLvl: state.location.selectedZoomLvl,

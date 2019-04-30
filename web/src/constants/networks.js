@@ -10,7 +10,7 @@ export const hangseng = {
     zh: ''
 };
 
-export const HSBC = {
+export const hsbc = {
     idx: 'hsbc',
     en: 'HSBC',
     zh: ''
@@ -19,5 +19,5 @@ export const HSBC = {
 export const networks = [
     jetco,
     hangseng,
-    HSBC
+    hsbc
 ]

@@ -20,7 +20,8 @@ import Switch from '@material-ui/core/Switch';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
 import { connect } from 'react-redux';
-import { SERVICES, SERVICE_NAMES, WEEK_DAYS } from '../../constants/services';
+import { SERVICES, WEEK_DAYS } from '../../constants/services';
+
 
 import {
   toggleFilterOption
@@ -127,25 +128,24 @@ class ATMFilterPanel extends Component {
   }
 
   renderServicesCheckbox() {
-    const serviceIndexes = SERVICES;
-    const services = SERVICE_NAMES;
+    const services = SERVICES;
 
     return (
       <FormControl component="fieldset">
         <FormLabel component="legend">Services</FormLabel>
         <FormGroup>
            {
-             serviceIndexes.map((serviceIndex, index) => {
+             services.map((service, index) => {
                return (
                   <FormControlLabel
                   control={
                     <Switch
-                      checked={this.state[serviceIndex]}
-                      onChange={this.handleCheckboxChange(serviceIndex).bind(this)}
-                      value={services[index]}
+                      checked={this.state[service]}
+                      onChange={this.handleCheckboxChange(service).bind(this)}
+                      value={service.en}
                     />
                   }
-                  label={services[index]}
+                  label={service.en}
                   key={index}
                 />
                );

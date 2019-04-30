@@ -3,13 +3,8 @@ import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Marker, Popup } from 'react-leaflet';
-import MarkerClusterGroup from 'react-leaflet-markercluster';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
-import {
-    setSelectedLocation
-} from '../../actions'
 
 const styles = theme => ({
     popUpContent: {
@@ -50,8 +45,8 @@ class ATMMarker extends React.Component {
         const latitude = atm.ATMAddress.LatitudeDescription;
         const longitude = atm.ATMAddress.LongitudeDescription;
         return (
-            <Marker 
-                position= { [latitude, longitude] } 
+            <Marker
+                position= { [latitude, longitude] }
                 // onMouseOver= { (e) => {
                 //     e.target.openPopup();
                 // }}
@@ -82,9 +77,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        
+
     };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles, { withTheme: true })(ATMMarker));
-  

@@ -66,7 +66,7 @@ class LandingListView extends Component{
         const { currentLocation } = this.state;
         let location = currentLocation;
         if(atm) {
-            if(this.props.currentLocation != undefined) {
+            if(this.props.currentLocation !== undefined) {
                 location = this.props.currentLocation
             }
 

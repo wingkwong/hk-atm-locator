@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import L from 'leaflet';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, TileLayer, Marker } from 'react-leaflet';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -83,12 +83,12 @@ class ATMDetailContent extends React.Component {
         let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
         let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
 
-        if(selectedLocation != null && Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
+        if(selectedLocation != null && Object.keys(selectedLocation).length === 2 && selectedLocation.lat && selectedLocation.lng) {
             selectedPosition = [selectedLocation.lat, selectedLocation.lng];
             this.setState({selectedLocation: selectedPosition})
         }
 
-        if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
+        if(currentLocation != null && Object.keys(currentLocation).length === 2 && currentLocation.lat && currentLocation.lng) {
             currentPosition = [currentLocation.lat, currentLocation.lng];
             this.setState({currentLocation: currentPosition})
         }
@@ -168,7 +168,7 @@ class ATMDetailContent extends React.Component {
         }
 
         return (
-            <List  
+            <List
                 component="nav"
                 subheader={<ListSubheader component="div" className={classes.subHeader}>{subheader}</ListSubheader>}
                 className={classes.listRoot}
@@ -181,7 +181,7 @@ class ATMDetailContent extends React.Component {
     }
 
     renderDrawerContent = () => {
-        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, BranchName, HotlineNumber, distance, Network}, classes } = this.props;
+        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, HotlineNumber, distance, Network}, classes } = this.props;
         return (
             <React.Fragment>
                 <List className={classes.listRoot}>
@@ -220,14 +220,14 @@ class ATMDetailContent extends React.Component {
 
        let zoomLvlToUse = selectedZoomLvl;
         if (!zoomLvlToUse || zoomLvlToUse<0) zoomLvlToUse=this.state.zoom;
-        
+
         return (
             <React.Fragment>
                 { this.renderDrawer() }
-                <div className={classes.content}> 
-                    <Map 
+                <div className={classes.content}>
+                    <Map
                         className={classes.mapContainer}
-                        center={selectedLocation} 
+                        center={selectedLocation}
                         zoom= {zoomLvlToUse}
                         maxZoom={18}
                         // dragging={false}
@@ -275,4 +275,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles, { withTheme: true })(ATMDetailContent));
-  

@@ -20,7 +20,7 @@ import Switch from '@material-ui/core/Switch';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
 import { connect } from 'react-redux';
-import { SERVICES, SERVICE_NAMES } from '../../constants/services';
+import { SERVICES, SERVICE_NAMES, WEEK_DAYS } from '../../constants/services';
 
 import {
   toggleFilterOption
@@ -157,15 +157,7 @@ class ATMFilterPanel extends Component {
   }
 
   renderOpeningDayCheckbox() {
-    const days = [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-      'Sunday'
-    ]
+    const days = WEEK_DAYS;
 
     return (
       <FormControl component="fieldset">

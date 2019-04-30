@@ -1,0 +1,467 @@
+swagger: '2.0'
+info:
+  title: ATMs
+  description: 'Information about our ATMs, including locations, currencies available, functions offered and more.'
+  version: 1.0.0
+basePath: /sandbox
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /open-banking/v1.0/atms:
+    get:
+      tags:
+        - ATMs - Sandbox
+      description: 'Information about our ATMs, including locations, currencies available, functions offered and more.'
+      parameters:
+        - name: ClientID
+          in: header
+          required: true
+          type: string
+          description: 'Client ID for the Third Party Provider, available after logon to the developer portal.'
+        - name: ClientSecret
+          in: header
+          required: true
+          type: string
+          description: 'Client Secret for the Third Party Provider, available after logon to the developer portal.'
+      responses:
+        '200':
+          description: Success
+          schema:
+            $ref: '#/definitions/ATMDefinitionMeta'
+        '400':
+          description: Bad request
+          schema:
+            $ref: '#/definitions/ErrorDefinition400'
+        '401':
+          description: Bad request
+          schema:
+            $ref: '#/definitions/ErrorDefinition401'
+        '403':
+          description: Bad request
+          schema:
+            $ref: '#/definitions/ErrorDefinition403'
+        '408':
+          description: Bad request
+          schema:
+            $ref: '#/definitions/ErrorDefinition408'
+        '429':
+          description: Bad request
+          schema:
+            $ref: '#/definitions/ErrorDefinition429'
+        '500':
+          description: System error
+          schema:
+            $ref: '#/definitions/ErrorDefinition500'
+        '503':
+          description: System error
+          schema:
+            $ref: '#/definitions/ErrorDefinition503'
+definitions:
+  Address:
+    description: Address Information
+    type: object
+    properties:
+      CountryCode:
+        description: Country Code
+        title: CountryCode
+        type: string
+        pattern: '[A-Z]{2}'
+      TerritoryName:
+        description: Territory
+        title: TerritoryName
+        type: string
+        minLength: 1
+        maxLength: 100
+      DistrictName:
+        description: District
+        title: DistrictName
+        type: string
+        minLength: 1
+        maxLength: 200
+      StreetName:
+        description: Name of a street or thoroughfare
+        title: StreetName
+        type: string
+        minLength: 1
+        maxLength: 200
+      PostCode:
+        description: Identifier consisting of a group of letters and/or numbers that is added to a postal address to assist the sorting of mail
+        title: PostCode
+        type: string
+        minLength: 1
+        maxLength: 30
+      LatitudeDescription:
+        description: Latitude measured in decimal degrees
+        title: LatitudeDescription
+        type: string
+        pattern: '^-?\d{1,3}\.\d{1,8}$'
+      LongitudeDescription:
+        description: Longitude measured in decimal degrees
+        title: LongitudeDescription
+        type: string
+        pattern: '^-?\d{1,3}\.\d{1,8}$'
+      AddressLine:
+        description: Address Details
+        title: AddressLine
+        type: array
+        items:
+          description: Address Details
+          type: string
+          minLength: 1
+          maxLength: 500
+        maxItems: 7
+  ATMServices:
+    description: ATM Services Details
+    type: object
+    properties:
+      CoinSortIndicator:
+        description: Indicate whether the ATM has coin sorting services
+        title: CoinSortIndicator
+        type: boolean
+      ForeignCurrencyIndicator:
+        description: Indicate whether the ATM has foreign currency services
+        title: ForeignCurrencyIndicator
+        type: boolean
+      ExpressBankIndicator:
+        description: Indicate whether the ATM has express services
+        title: ExpressBankIndicator
+        type: boolean
+      TalkATMIndicator:
+        description: Indicate whether the ATM has talk ATM services
+        title: TalkATMIndicator
+        type: boolean
+      MachinePayIndicator:
+        description: Indicate whether the ATM has machine pay services
+        title: MachinePayIndicator
+        type: boolean
+      24HourAccessibleIndicator:
+        description: Indicate whether the ATM 24Hour accessible services
+        title: 24HourAccessibleIndicator
+        type: boolean
+      DisabledAccessIndicator:
+        description: Indicate whether the ATM has disabled access services
+        title: DisabledAccessIndicator
+        type: boolean
+      BusinessPayIndicator:
+        description: Indicate whether the ATM has business pay services
+        title: BusinessPayIndicator
+        type: boolean
+      ATMwithRMBIndicator:
+        description: Indicate whether the ATM has RMB services
+        title: ATMwithRMBIndicator
+        type: boolean
+      BillPaymentIndicator:
+        description: Indicate whether the ATM has bill payment services
+        title: BillPaymentIndicator
+        type: boolean
+      IndoorFacilityIndicator:
+        description: Indicate whether the ATM has indoor facility services
+        title: IndoorFacilityIndicator
+        type: boolean
+      MTRStationATMIndicator:
+        description: Indicate whether the ATM is MTR Station ATM
+        title: MTRStationATMIndicator
+        type: boolean
+      CashWithdrawalIndicator:
+        description: Indicate whether the ATM has Cash Withdrawal services
+        title: CashWithdrawalIndicator
+        type: boolean
+      CashDepositIndicator:
+        description: Indicate whether the ATM has Cash Deposit services
+        title: CashDepositIndicator
+        type: boolean
+      ChequeDepositIndicator:
+        description: Indicate whether the ATM has Cheque Deposit services
+        title: ChequeDepositIndicator
+        type: boolean
+  OpeningHours:
+    description: Opening & closing times of ATM of an organisation
+    type: object
+    properties:
+      OpenDayDescription:
+        description: Opening day description
+        title: OpenDayDescription
+        type: string
+        enum:
+          - Monday
+          - Tuesday
+          - Wednesday
+          - Thursday
+          - Friday
+          - Saturday
+          - Sunday
+      OpenTime:
+        description: ATM open time
+        title: OpenTime
+        type: string
+      CloseTime:
+        description: ATM close time
+        title: CloseTime
+        type: string
+    required:
+      - OpenDayDescription
+      - OpenTime
+      - CloseTime
+  ATM:
+    description: ATM information
+    type: object
+    properties:
+      ATMID:
+        description: ATM Definition Information
+        title: ATMID
+        type: string
+        minLength: 1
+        maxLength: 35
+      ATMName:
+        description: ATM Definition Name Information
+        title: ATMName
+        type: string
+        minLength: 1
+        maxLength: 500
+      BranchName:
+        description: Branch Name of the ATM
+        title: BranchName
+        type: string
+        minLength: 1
+        maxLength: 500
+      BranchCode:
+        description: Branch Code of the ATM
+        title: BranchCode
+        type: string
+        minLength: 1
+        maxLength: 35
+      SupportLanguagesCode:
+        description: ATM supported languages code
+        title: SupportLanguagesCode
+        type: array
+        items:
+          description: ATM supported languages code
+          type: string
+          minLength: 1
+          maxLength: 10
+      HotlineNumber:
+        description: Hotline Number
+        title: HotlineNumber
+        type: string
+        minLength: 1
+        maxLength: 100
+      ATMAddress:
+        $ref: '#/definitions/Address'
+      ATMServices:
+        $ref: '#/definitions/ATMServices'
+      OpeningHours:
+        type: array
+        items:
+          $ref: '#/definitions/OpeningHours'
+        maxItems: 7
+    required:
+      - ATMID
+      - ATMAddress
+      - ATMServices
+      - OpeningHours
+  Brand:
+    description: Brand owned by an organisation
+    type: object
+    properties:
+      BrandName:
+        description: Brand Name that an organisation uses to market its products or services to a consumer
+        title: BrandName
+        type: string
+        minLength: 1
+        maxLength: 140
+      ATM:
+        type: array
+        items:
+          $ref: '#/definitions/ATM'
+    additionalProperties: false
+    required:
+      - BrandName
+      - ATM
+  ErrorDefinition400:
+    title: 400 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '400'
+      title:
+        type: string
+        enum:
+          - Bad request
+      description:
+        type: string
+        enum:
+          - You have sent a request which could not be understood.
+    required:
+      - status
+      - title
+      - description
+    additionalProperties: false
+  ErrorDefinition401:
+    title: 401 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '401'
+      title:
+        type: string
+        enum:
+          - Unauthorized Error
+      description:
+        type: string
+        enum:
+          - Your request could not be authenticated.
+    required:
+      - title
+      - description
+    additionalProperties: false
+  ErrorDefinition403:
+    title: 403 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '403'
+      title:
+        type: string
+        enum:
+          - Forbidden Error
+      description:
+        type: string
+        enum:
+          - You do not have proper authorization to access to the requested content.
+    required:
+      - title
+      - description
+    additionalProperties: false
+  ErrorDefinition408:
+    title: 408 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '408'
+      title:
+        type: string
+        enum:
+          - Client timeout
+      description:
+        type: string
+        enum:
+          - 'Your client has failed to submit a request, and a timeout has occurred.'
+    required:
+      - status
+      - title
+      - description
+    additionalProperties: false
+  ErrorDefinition429:
+    title: 429 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '429'
+      title:
+        type: string
+        enum:
+          - Too many requests
+      description:
+        type: string
+        enum:
+          - You have requested this resource too often. Slow down.
+    required:
+      - status
+      - title
+      - description
+    additionalProperties: false
+  ErrorDefinition500:
+    title: 500 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '500'
+      title:
+        type: string
+        enum:
+          - Internal server error
+      description:
+        type: string
+        enum:
+          - An error occurred on the server. No further information is available.
+    required:
+      - status
+      - title
+      - description
+    additionalProperties: false
+  ErrorDefinition503:
+    title: 503 Error object
+    type: object
+    properties:
+      status:
+        type: string
+        enum:
+          - '503'
+      title:
+        type: string
+        enum:
+          - Service temporarily unavailable
+      description:
+        type: string
+        enum:
+          - The service is temporarily unavailable.
+    required:
+      - status
+      - title
+      - description
+    additionalProperties: false
+  MetaDefinition:
+    title: Meta data
+    type: object
+    properties:
+      LastUpdated:
+        type: string
+        format: date-time
+        example: '2019-02-19T08:39:15.537+08:00'
+      TotalResults:
+        type: integer
+      Agreement:
+        type: string
+        enum:
+          - Use of the APIs and any related data will be subject to terms and conditions.
+    required:
+      - LastUpdated
+      - TotalResults
+      - Agreement
+    additionalProperties: false
+  ATMDefinition:
+    type: object
+    properties:
+      Brand:
+        type: array
+        items:
+          $ref: '#/definitions/Brand'
+    required:
+      - Brand
+  ATMDefinitionMeta:
+    type: object
+    properties:
+      meta:
+        $ref: '#/definitions/MetaDefinition'
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/ATMDefinition'
+    required:
+      - data

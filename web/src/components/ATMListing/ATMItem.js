@@ -15,7 +15,13 @@ import {
 
 const styles = theme => ({
     chip: {
-        borderRadius: 0
+        borderRadius: 0,
+        width: '100px',
+    },
+    bankIcon: {
+      width: '50px',
+      height: '50px',
+      marginRight: '20px',
     }
 });
 
@@ -27,6 +33,13 @@ class ATMItem extends React.Component {
         }
     }
 
+    renderBankIcon(atm) {
+      const { classes } = this.props;
+      return (
+        <img alt={atm.Bank} src={atm.Bank + ".png"} className={classes.bankIcon}></img>
+      )
+    }
+
     renderOpeningClosingTag(atm) {
         const isOpenNow = atm.isOpenNow();
         if (isOpenNow === null) {
@@ -35,7 +48,6 @@ class ATMItem extends React.Component {
         const { classes } = this.props;
         return (
             <React.Fragment>
-                <br/>
                 <Chip
                     label={ isOpenNow ? 'Opening' : 'Closed' }
                     color={ isOpenNow ? 'primary' : 'secondary' }
@@ -75,6 +87,7 @@ class ATMItem extends React.Component {
         return (
             <React.Fragment>
                 <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
+                    { this.renderBankIcon(atm) }
                     <div>
                       <ListItemText
                           primary={ ATMName }
@@ -87,7 +100,11 @@ class ATMItem extends React.Component {
                               </React.Fragment>
                           }
                       />
+                      <div style={{display: 'flex'}}>
                       { this.renderOpeningClosingTag(atm) }
+                      </div>
+
+
                     </div>
                 </ListItem>
             </React.Fragment>

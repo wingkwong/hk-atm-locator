@@ -58,7 +58,11 @@ const styles = theme => ({
         height: '60px',
         color: '#fff',
         backgroundColor: deepOrange[500],
-     }
+     },
+     bankIcon: {
+      width: '50px',
+      height: '50px',
+    }
 });
 
 class ATMDetailContent extends React.Component {
@@ -123,28 +127,10 @@ class ATMDetailContent extends React.Component {
         );
     }
 
-    renderNetworkAvatar = (Network) => {
-        // TODO: Change to network icons instead of letter avatars
+    renderNetworkIcon = (bank) => {
         const { classes } = this.props;
-        let network = ''
-        switch (Network) {
-            case jetco.idx:
-                network = 'J';
-                break;
-            case hangseng.idx:
-                network = 'HS';
-                break;
-            case hsbc.idx:
-                network = 'HSBC';
-                break;
-            default:
-                break;
-        }
-
         return (
-            <ListItemAvatar>
-                <Avatar className={classes.networkAvatar}>{ network }</Avatar>
-            </ListItemAvatar>
+            <img alt={bank} src={bank + ".png"} className={classes.bankIcon}></img>
         );
     }
 
@@ -181,12 +167,13 @@ class ATMDetailContent extends React.Component {
     }
 
     renderDrawerContent = () => {
-        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, HotlineNumber, distance, Network}, classes } = this.props;
+        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, Bank, HotlineNumber, distance, Network}, classes } = this.props;
+
         return (
             <React.Fragment>
                 <List className={classes.listRoot}>
                     <ListItem alignItems="flex-start">
-                        { this.renderNetworkAvatar(Network) }
+                        { this.renderNetworkIcon(Bank) }
                         <ListItemText
                         primary={ ATMName }
                         secondary={

@@ -249,13 +249,6 @@ class ATMFilterPanel extends Component {
                 { this.renderOpeningOrClosingCheckbox() }
                 <Divider variant="middle" />
             </ExpansionPanelDetails>
-            <Divider />
-            <ExpansionPanelActions>
-                <Button size="small">Cancel</Button>
-                <Button size="small" color="primary">
-                Submit
-                </Button>
-            </ExpansionPanelActions>
             </ExpansionPanel>
         </div>
       );

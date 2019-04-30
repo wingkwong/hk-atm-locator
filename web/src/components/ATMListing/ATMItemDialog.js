@@ -15,13 +15,10 @@ function Transition(props) {
 }
 
 class ATMItemDialog extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
-    const { classes, atm } = this.props;
-    
+    const { atm } = this.props;
+
     if(!this.props.selectedLocation || !atm) {
       return (null);
     }
@@ -57,7 +54,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    
+
   };
 }
 

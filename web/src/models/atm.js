@@ -1,7 +1,8 @@
 import { isArray } from "util";
 import {
   SERVICE_BILL_PAYMENT, SERVICE_CASH_DEPOSIT, SERVICE_CASH_WITHDRAWAL, SERVICE_CHEQUE_DEPOSIT, SERVICE_COIN_SORT,
-  SERVICE_DISABLED_ACCESS, SERVICE_FOREIGN_CURRENCY
+  SERVICE_DISABLED_ACCESS, SERVICE_FOREIGN_CURRENCY,
+  WEEK_DAYS
 } from '../constants/services';
 
 import * as banks from '../constants/banks';
@@ -119,7 +120,7 @@ export class HsbcATM extends ATM {
   }
 }
 
-const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday' ,'Thursday' ,'Friday' ,'Saturday' ,'Sunday']
+
 function createGenericOpeningHours(openTime, closeTime) {
   return WEEK_DAYS.map(weekday => ({
     OpenDayDescription: weekday,

@@ -2,7 +2,7 @@ import {
     SET_ATM_DATA, TOGGLE_FILTER_OPTION
 } from '../actions/types';
 import {
-  SERVICES
+  SERVICES, WEEK_DAYS
 } from '../constants/services';
 
 const atmDataReducer = (state={
@@ -30,6 +30,7 @@ const filterData = (atms, filter) => {
         (SERVICES.includes(key) && value === true && !atm.isServiceAvaliable(key))
         || (key === 'bank' && value !== 'all' && value !== atm.Bank)
         || (key === 'network' && value !== 'all' && value !== atm.Network)
+        || (WEEK_DAYS.includes(key) && value === true && atm.OpeningHours.map( oh => oh.OpenDayDescription ).includes(key))
         || (key === 'Opening' && value === true && atm.isOpenNow() === false) // DISCUSSION: this will show also the unknown atm as well
         || (key === 'Closed' && value === true && atm.isOpenNow() === true)) {
           return false

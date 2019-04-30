@@ -56,3 +56,13 @@ export const SERVICES = [
   SERVICE_CASH_DEPOSIT,
   SERVICE_CHEQUE_DEPOSIT
 ];
+
+export const WEEK_DAYS = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday'
+];

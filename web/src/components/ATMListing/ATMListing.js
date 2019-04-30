@@ -39,7 +39,7 @@ class ATMListing extends React.Component {
 
   renderATMItems = () => {
     const allATMs = this.props.atm;
-    if(allATMs == undefined) {
+    if(allATMs === undefined) {
       return <div>Loading</div>
     }
 
@@ -58,7 +58,7 @@ class ATMListing extends React.Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
     const drawer = (
       <React.Fragment>
         <List>

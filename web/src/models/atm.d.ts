@@ -24,6 +24,10 @@ declare interface ATMServices {
   CashWithdrawalIndicator: boolean;
   CashDepositIndicator: boolean;
   ChequeDepositIndicator: boolean;
+  RMBandForeignCurrencyATMIndicator: boolean;
+  TalkATMIndicator: boolean;
+  MTRStationOfficeIndicator: boolean;
+  ChequeDepositMachineCutOffTime: string;
 }
 
 declare interface ATM {

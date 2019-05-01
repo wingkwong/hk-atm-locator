@@ -29,7 +29,11 @@ class ATM {
     BillPaymentIndicator: false,
     CashWithdrawalIndicator: false,
     CashDepositIndicator: false,
-    ChequeDepositIndicator: false
+    ChequeDepositIndicator: false,
+    RMBandForeignCurrencyATMIndicator: false,
+    TalkATMIndicator: false,
+    MTRStationOfficeIndicator: false,
+    ChequeDepositMachineCutOffTime: "",
   };
   OpeningHours = [];
 

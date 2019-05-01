@@ -4,7 +4,7 @@ import {
   SERVICE_DISABLED_ACCESS, SERVICE_FOREIGN_CURRENCY,
   WEEK_DAYS
 } from '../constants/services';
-
+import { getOperatingHoursByStation } from '../utils/mtrOperatingHoursUtils';
 import * as banks from '../constants/banks';
 import * as networks from '../constants/networks';
 import * as moment from 'moment';
@@ -100,8 +100,11 @@ export class HangSengATM extends ATM {
     if (record.ATMServices.AutomatedTellerMachineOperatingHour === '24-hours') {
       this.OpeningHours = createGenericOpeningHours("00:00", "23:59");
     } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Around 06:00 - midnight 01:00 (Follows Station First/Last Trains Service Hours)') {
-      // TODO: fix this
-      this.OpeningHours = createGenericOpeningHours("06:00", "23:59");
+      const operatingHoursFromMTRLookup = getOperatingHoursByStation(record.ATMName); 
+      if(operatingHoursFromMTRLookup != null) {
+        const { open_time, close_time } = operatingHoursFromMTRLookup;
+        this.OpeningHours = createGenericOpeningHours(open_time, close_time);
+      } 
     } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Subject to Mall Opening Hours') {
       // Just give a generic mall open/close time
       this.OpeningHours = createGenericOpeningHours("10:00", "20:00");

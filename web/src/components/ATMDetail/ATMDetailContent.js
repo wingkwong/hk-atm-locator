@@ -24,13 +24,13 @@ import {
     setSelectedLocation
 } from '../../actions';
 
-const drawerWidth = 420
+const drawerWidth = 400
 
 const styles = theme => ({
     mapContainer: {
         position: 'absolute',
         top: '64px',
-        width: 'calc(100% - 420px)',
+        width: 'calc(100% - 400px)',
         height: '100%',
     },
     drawer: {
@@ -62,6 +62,10 @@ const styles = theme => ({
      bankIcon: {
       width: '50px',
       height: '50px',
+    },
+    denseList: {
+        paddingTop: '4px',
+        paddingBottom: '4px'
     }
 });
 
@@ -136,14 +140,28 @@ class ATMDetailContent extends React.Component {
 
     // TODO: revise UI
     renderServiceList = (services) => {
+        const { classes } = this.props;
         // const { BillPaymentIndicator, CashDepositIndicator, CashWithdrawalIndicator, ChequeDepositIndicator, CoinSortIndicator, DisabledAccessIndicator, ForeignCurrencyIndicator } = services;
-        return SERVICES.map((service, idx) => {
-            return (
-                <React.Fragment>
-                    { service.en }: { services[service.api_idx] ? 'Y' : 'N' } <br/>
-                </React.Fragment>
-            );
-        });
+        return (
+            <List 
+                dense={true}
+            >
+                {
+                    SERVICES.map((service, idx) => {
+                        if(services[service.api_idx]) {
+                            return (
+                                <ListItem className={classes.denseList}>
+                                    <ListItemText  primary={ service.en }></ListItemText>
+                                </ListItem>
+                            );
+                        }
+                        return (
+                            (null)
+                        );
+                    })
+                }
+            </List>
+        );
     }
 
     renderListItem = (subheader, value) => {
@@ -158,9 +176,10 @@ class ATMDetailContent extends React.Component {
                 component="nav"
                 subheader={<ListSubheader component="div" className={classes.subHeader}>{subheader}</ListSubheader>}
                 className={classes.listRoot}
+                dense={true}
                 >
                 <ListItem>
-                    {value}
+                    <ListItemText primary={value}/>
                 </ListItem>
             </List>
         );

@@ -19,21 +19,21 @@ class ATMItemDialog extends React.Component {
   render() {
     const { atm } = this.props;
 
-    if(!this.props.selectedLocation || !atm) {
+    {/* TODO: Investigate idx = -1. Prolly due to zoomLevel */}
+    if(!this.props.selectedLocation || !atm || this.props.selectedLocation.idx > -1) {
       return (null);
     }
-
+    
     const idx = this.props.selectedLocation.idx;
 
     return (
       <Dialog
         fullScreen
-        open={this.props.open}
+        open={this.props.open || false}
         onClose={this.handleDialogClose}
         TransitionComponent={Transition}
       >
-       {/* TODO: Investigate idx = -1. Prolly due to zoomLevel */}
-       { idx > -1 && atm &&  <ATMItemDetail atm={atm[idx]}/> }
+        <ATMItemDetail atm={atm[idx]}/>
       </Dialog>
     );
   }

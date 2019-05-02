@@ -32,19 +32,14 @@ const styles = {
         zIndex: '1200',
         display: 'inline-grid',
         marginTop: '48px',
-        // '&expanded': {
-        //   position: 'fixed'
-        // },
-        // '&collapsed': {
-        //   position: 'inherit'
-        // }
       },
-      expanded: {
-        position: 'inherit'
-      },
-      collapsed: {
-        position: 'fixed'
-      }
+      // TODO: fix
+      // expanded: {
+      //   position: 'inherit'
+      // },
+      // collapsed: {
+      //   position: 'fixed'
+      // }
 };
 
 const ITEM_HEIGHT = 48;

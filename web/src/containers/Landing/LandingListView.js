@@ -100,8 +100,7 @@ class LandingListView extends Component{
     }
 }
 
-const
-mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state, ownProps) => {
     return {
         atm: state.atm.data,
         selectedLocation: state.location.selectedLocation,

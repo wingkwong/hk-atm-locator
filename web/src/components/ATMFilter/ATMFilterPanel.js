@@ -29,7 +29,22 @@ import {
 const styles = {
     root: {
         width: '100%',
+        zIndex: '1200',
+        display: 'inline-grid',
+        marginTop: '48px',
+        // '&expanded': {
+        //   position: 'fixed'
+        // },
+        // '&collapsed': {
+        //   position: 'inherit'
+        // }
       },
+      expanded: {
+        position: 'inherit'
+      },
+      collapsed: {
+        position: 'fixed'
+      }
 };
 
 const ITEM_HEIGHT = 48;
@@ -48,7 +63,8 @@ class ATMFilterPanel extends Component {
     super(props);
     this.state = {
         network: 'all',
-        bank: 'all'
+        bank: 'all',
+        expanded: false
     }
   }
 
@@ -220,14 +236,25 @@ class ATMFilterPanel extends Component {
     );
   }
 
+  handleChange = panel => (event) => {
+    this.setState({
+      expanded: !this.state.expanded
+    });
+    window.scrollTo(0, 0);
+  };
+
   render() {
     const { classes } = this.props;
+     const { expanded } = this.state;
     /*
       TODO: Add Grid for responsive design
     */
     return (
-        <div className={classes.root}>
-            <ExpansionPanel>
+        <div className={ classes.root + ' ' + (expanded ? classes.expanded : classes.collapsed)}>
+            <ExpansionPanel
+              expanded={expanded || false}
+              onChange={this.handleChange()}
+            >
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <div className={classes.column}>
                 <Typography className={classes.heading}>Filter</Typography>

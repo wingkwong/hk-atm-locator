@@ -12,6 +12,7 @@ const styles = {
   root: {
     padding: '2px 4px',
     display: 'flex',
+    position: 'fixed',
     alignItems: 'center',
     width: '100%',
     zIndex: 1200,

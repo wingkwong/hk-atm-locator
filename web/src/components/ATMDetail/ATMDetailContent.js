@@ -8,14 +8,11 @@ import { Map, TileLayer, Marker } from 'react-leaflet';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import deepOrange from '@material-ui/core/colors/deepOrange';
 import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
-import { jetco, hangseng, hsbc } from '../../constants/networks';
 import { distanceConverter } from '../../utils/geoUtils';
 import { SERVICES } from '../../constants/services';
 import {
@@ -207,7 +204,7 @@ class ATMDetailContent extends React.Component {
     }
 
     renderDrawerContent = () => {
-        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, Bank, HotlineNumber, distance, Network, OpeningHours}, classes } = this.props;
+        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, Bank, HotlineNumber, distance, OpeningHours}, classes } = this.props;
 
         return (
             <React.Fragment>

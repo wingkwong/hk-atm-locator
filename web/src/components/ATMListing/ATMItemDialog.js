@@ -18,14 +18,13 @@ class ATMItemDialog extends React.Component {
 
   render() {
     const { atm } = this.props;
-
+    
     {/* TODO: Investigate idx = -1. Prolly due to zoomLevel */}
-    if(!this.props.selectedLocation || !atm || this.props.selectedLocation.idx > -1) {
+    if(!this.props.selectedLocation || !atm || this.props.selectedLocation.idx < 0) {
       return (null);
     }
     
     const idx = this.props.selectedLocation.idx;
-
     return (
       <Dialog
         fullScreen

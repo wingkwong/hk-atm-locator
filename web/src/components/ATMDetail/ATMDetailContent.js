@@ -150,7 +150,7 @@ class ATMDetailContent extends React.Component {
                     SERVICES.map((service, idx) => {
                         if(services[service.api_idx]) {
                             return (
-                                <ListItem className={classes.denseList}>
+                                <ListItem className={classes.denseList} key={idx}>
                                     <ListItemText  primary={ service.en }></ListItemText>
                                 </ListItem>
                             );

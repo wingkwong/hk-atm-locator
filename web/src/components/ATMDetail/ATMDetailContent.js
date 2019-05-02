@@ -151,7 +151,7 @@ class ATMDetailContent extends React.Component {
                         if(services[service.api_idx]) {
                             return (
                                 <ListItem className={classes.denseList} key={idx}>
-                                    <ListItemText  primary={ service.en }></ListItemText>
+                                    <ListItemText primary={service.en}></ListItemText>
                                 </ListItem>
                             );
                         }
@@ -162,6 +162,27 @@ class ATMDetailContent extends React.Component {
                 }
             </List>
         );
+    }
+
+    // TODO: revise UI
+    renderOpeningHours = (openingHours) => {
+        const { classes } = this.props;
+        return (
+             <List 
+                dense={true}
+            >
+                {
+                    openingHours.map((oh, idx) => {
+                       const ohStr = `${oh.OpenDayDescription } : ${oh.OpenTime} - ${oh.CloseTime}`;
+                       return (
+                           <ListItem className={classes.denseList} key={idx}>
+                                <ListItemText primary={ohStr}></ListItemText>
+                            </ListItem>
+                       );
+                    })
+                }
+            </List>
+        )
     }
 
     renderListItem = (subheader, value) => {
@@ -186,7 +207,7 @@ class ATMDetailContent extends React.Component {
     }
 
     renderDrawerContent = () => {
-        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, Bank, HotlineNumber, distance, Network}, classes } = this.props;
+        const { atm: { ATMName, ATMServices, ATMAddress: { CountryCode, TerritoryName, DistrictName, AddressLine, LatitudeDescription, LongitudeDescription }, Bank, HotlineNumber, distance, Network, OpeningHours}, classes } = this.props;
 
         return (
             <React.Fragment>
@@ -209,7 +230,7 @@ class ATMDetailContent extends React.Component {
                 { this.renderListItem('District', CountryCode + ' > ' + TerritoryName + ' > ' + DistrictName) }
                 { this.renderListItem('Address', AddressLine) }
                 { this.renderListItem('Services', this.renderServiceList(ATMServices)) }
-                {/* TODO: Opening Hours */}
+                { this.renderListItem('Opening Hours', this.renderOpeningHours(OpeningHours)) }
                 { this.renderListItem('Hotline Number', HotlineNumber) }
                 { this.renderListItem('Distance', distanceConverter(distance)) }
             </React.Fragment>

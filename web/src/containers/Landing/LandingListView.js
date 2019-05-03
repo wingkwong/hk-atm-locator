@@ -49,7 +49,7 @@ class LandingListView extends Component{
              }, (err) => {
                // cannot get location, sort data anyway
                 me.sortATMData();
-             },{ timeout:2000 });
+             },{ timeout:5000 });
         } else {
             me.sortATMData();
         }

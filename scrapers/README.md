@@ -1,6 +1,6 @@
 # Scraping ATM data from all banks in Hong Kong
 
-> This folder is deprecated. Data will be retrieved from HSBC, Hang Seng API Portals and APIX.
+> This folder has been deprecated. Data will be retrieved from HSBC, Hang Seng API Portals and APIX instead.
 
 ## Installing
 

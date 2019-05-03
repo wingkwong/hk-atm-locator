@@ -170,7 +170,9 @@ class ATMDetailContent extends React.Component {
             >
                 {
                     openingHours.map((oh, idx) => {
-                       const ohStr = `${oh.OpenDayDescription } : ${oh.OpenTime} - ${oh.CloseTime}`;
+                       const ohOpenTime = (oh.OpenTime.split(':')[0] < 10 ? '0' : '')+ oh.OpenTime;
+                       const ohCloseTime = (oh.CloseTime.split(':')[0] < 10 ? '0' : '')+ oh.CloseTime;
+                       const ohStr = `${oh.OpenDayDescription } : ${ohOpenTime} - ${ohCloseTime}`;
                        return (
                            <ListItem className={classes.denseList} key={idx}>
                                 <ListItemText primary={ohStr}></ListItemText>

@@ -3,10 +3,10 @@ Centralising Automated Teller Machine (ATM) Data in Hong Kong
 
 ### Project Synopsis
 
-HSBC, Hang Seng Bank and JETCO are networks of ATMs in Hong Kong. ATMs data can be retrieved via APIs provided by HSBC, Hang Seng Bank and APIX. However, gathering all ATM data is frustrating as the format is not aligned. This project aims to centralise Hong Kong ATM data in a well-defined yet standardised format and display in a web portal for public usage. 
+There are three ATM networks in Hong Kong, which are HSBC, Hang Seng Bank and JETCO respectively. ATM data will be retrieved via API Portal from HSBC, Hang Seng Bank and APIX. However, the interoperability is frustrating as the API is implemented at different standard levels. Hence, this project aims to centralise Hong Kong ATM data in a well-defined yet standardised format and display in a web portal for public use. 
 
 
-Hong Kong Monetary Authority (HKMA) will provide APIs for retrieving ATM information (The release date is still unknown). Based on [Open API Framework for the Hong Kong Banking Sector](https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2018/20180718e5a2.pdf), no standardised open API functions will be provided at the first release.
+Hong Kong Monetary Authority (HKMA) has published [Open API Framework for the Hong Kong Banking Sector](https://www.hkma.gov.hk/media/eng/doc/key-information/press-release/2018/20180718e5a2.pdf), mentioning that no standardised open API functions will be provided at the first release.
 
 Paragraph #20
 > Throughout the discussion and consultation period, the HKMA recognises the industry’s desire to see a common set of Open APIs for better interoperability. However, a number of international banks operating in Hong Kong have already implemented their group standard for implementing Open APIs at global or regional levels, and have demonstrated elsewhere that requiring banks to adhere to a prescribed set of standardised Open API functions is challenging.
@@ -22,12 +22,12 @@ Paragraph #21
 - [x] Retrieving ATM data from HSBC and Hang Seng Banks from API Portals
 
 ### Phase II (In Progress)
-- [ ] Data Transformation
+- [ ] Data Transformation & Enrichment
 - [ ] Developing a web portal
 
 ### Phase III
 - [ ] Retrieving ATM data from APIX
-- [ ] Data Transformation
+- [ ] Data Transformation & Enrichment
 - [ ] Web Portal Integration
 
 ---
@@ -35,18 +35,28 @@ Paragraph #21
 We are looking for technical & non-technical contributors:
 
 Technical Contributors:
-- Responsible for developing the whole solution
-- Preferably with experience with knowledge in Open APIs and Web Development
+- Responsible for implementing features and fixing reported bugs
+- Preferably with experience with knowledge in Open API and Web Development
 
 Non-technical Contributors:
 - Responsible for updating documentation
 - Good command of written in English and Chinese
 
-If you are interested, please join the telegram group for further discussion:
+If you are interested, please join the telegram group for further discussion.
+
+---
+### Links
+HK ATM Locator:
+https://wingkwong.github.io/hk-atm-locator/
+
+Telegram:
 https://t.me/joinchat/I_FIgxaIhCVeWKp1JKcMGQ
 
 Trello: 
 https://trello.com/b/FfBaG2b6/hk-atm-locator-web-portal
+
+Collaction:
+https://www.collaction.hk/s/hk-atm-locator
 
 ---
 

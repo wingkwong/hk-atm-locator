@@ -38,6 +38,7 @@ class LandingListView extends Component{
     }
 
     detectCurrentLocation() {
+        const { currentLocation, selectedLocation } = this.state;
         const me = this;
 
         if ("geolocation" in navigator) {
@@ -47,9 +48,11 @@ class LandingListView extends Component{
                 me.props.setSelectedLocation(position.coords.latitude, position.coords.longitude);
                 me.sortATMData();
              }, (err) => {
+                me.props.setCurrentLocation(currentLocation);
+                me.props.setSelectedLocation(selectedLocation);
                // cannot get location, sort data anyway
                 me.sortATMData();
-             },{ timeout:5000 });
+             },{ timeout:100 });
         } else {
             me.sortATMData();
         }

@@ -1,5 +1,4 @@
 # Hong Kong Automated Teller Machine (ATM) Locator
-Centralising Automated Teller Machine (ATM) Data in Hong Kong
 
 ### Project Synopsis
 

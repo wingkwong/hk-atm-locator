@@ -1,4 +1,4 @@
-import MTR_OPERATING_HOURS from '../data/ref_mtr_operating_hours.json';
+import MTR_OPERATING_HOURS from '../data/reference/mtr_operating_hours.json';
 
 const getOperatingHoursByStation = (station) => {
     // Expected Input: "MTR Tin Shui Wai Station"

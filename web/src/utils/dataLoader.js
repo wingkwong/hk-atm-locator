@@ -1,6 +1,6 @@
-import HANG_SENG_DATA from '../data/hang_seng.json';
-import HANG_SENG_LATLNG_DATA from '../data/hang_seng_latlng.json';
-import HSBC_DATA from '../data/hsbc.json';
+import HANG_SENG_DATA from '../data/processed/hang_seng.json';
+import HANG_SENG_LATLNG_DATA from '../data/processed/hang_seng_latlng.json';
+import HSBC_DATA from '../data/processed/hsbc.json';
 
 import { HangSengATM, HsbcATM } from './../models/atm';
 

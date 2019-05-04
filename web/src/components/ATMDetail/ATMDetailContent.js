@@ -62,7 +62,9 @@ const styles = theme => ({
     },
     denseList: {
         paddingTop: '4px',
-        paddingBottom: '4px'
+        paddingBottom: '4px',
+        paddingLeft: '0px',
+        paddingRight: '0px'
     }
 });
 

@@ -4,6 +4,7 @@ import {
     SET_CURRENT_LOCATION,
     TOGGLE_ATM_DETAIL_DIALOG,
     TOGGLE_FILTER_OPTION,
+    TOGGLE_ATM_FILTER_DIALOG
 } from './types';
 
 const dispatchSetATMData = (data) => {
@@ -24,6 +25,10 @@ const dispatchToggleATMDetailDialog = (open) => {
 
 const dispatchToggleFilterOption = (key, value) => {
   return {type: TOGGLE_FILTER_OPTION, key, value}
+}
+
+const dispatchToggleATMFilterDialog = (open) => {
+    return {type: TOGGLE_ATM_FILTER_DIALOG, open: open}
 }
 
 export const setATMData = (data) => {
@@ -54,4 +59,10 @@ export const toggleFilterOption = (key, value) => {
   return dispatch => {
     dispatch(dispatchToggleFilterOption(key, value));
   }
+}
+
+export const toggleATMFilterDialog = (open) => {
+    return dispatch => {
+        dispatch(dispatchToggleATMFilterDialog(open))
+    }
 }

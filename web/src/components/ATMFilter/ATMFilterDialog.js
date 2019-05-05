@@ -259,7 +259,7 @@ class ATMFilterDialog extends Component {
             <Divider variant="middle" />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
+            <Button onClick={this.handleClose} color="secondary">
               Close
             </Button>
           </DialogActions>

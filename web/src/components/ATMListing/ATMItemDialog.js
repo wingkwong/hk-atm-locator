@@ -46,7 +46,7 @@ ATMItemDialog.propTypes = {
 const mapStateToProps = (state, ownProps) => {
   return {
       atm: state.atm.data,
-      open: state.page.open,
+      open: state.page.detail_dialog_open,
       selectedLocation: state.location.selectedLocation
   };
 }

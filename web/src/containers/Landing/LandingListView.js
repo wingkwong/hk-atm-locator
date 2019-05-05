@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 import ATMSearch from '../../components/ATMFilter/ATMSearch';
-import ATMFilterPanel from '../../components/ATMFilter/ATMFilterPanel';
+import ATMFilterDialog from '../../components/ATMFilter/ATMFilterDialog';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import { loadAllData } from '../../utils/dataLoader';
 
@@ -96,7 +96,7 @@ class LandingListView extends Component{
         return (
             <React.Fragment>
                 <ATMSearch/>
-                <ATMFilterPanel/>
+                <ATMFilterDialog/>
                 <ATMListing/>
             </React.Fragment>
         )

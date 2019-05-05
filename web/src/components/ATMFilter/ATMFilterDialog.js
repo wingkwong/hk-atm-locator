@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 import Divider from '@material-ui/core/Divider';
+import withMobileDialog from '@material-ui/core/withMobileDialog';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -15,6 +17,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
+import Button from '@material-ui/core/Button';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
 import { connect } from 'react-redux';
@@ -22,24 +25,15 @@ import { SERVICES, WEEK_DAYS } from '../../constants/services';
 
 
 import {
-  toggleFilterOption
+  toggleFilterOption,
+  toggleATMFilterDialog
 } from '../../actions'
 
 
 const styles = {
-    root: {
-        width: '100%',
-        zIndex: '1200',
-        display: 'inline-grid',
-        marginTop: '48px',
-      },
-      // TODO: fix
-      // expanded: {
-      //   position: 'inherit'
-      // },
-      // collapsed: {
-      //   position: 'fixed'
-      // }
+  dialogCustomizedWidth: {
+    width: '80%'
+  }
 };
 
 const ITEM_HEIGHT = 48;
@@ -53,7 +47,7 @@ const MenuProps = {
   },
 };
 
-class ATMFilterPanel extends Component {
+class ATMFilterDialog extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -231,67 +225,70 @@ class ATMFilterPanel extends Component {
     );
   }
 
-  handleChange = panel => (event) => {
-    this.setState({
-      expanded: !this.state.expanded
-    });
-    window.scrollTo(0, 0);
-  };
+  handleClose = () => {
+    this.props.toggleATMFilterDialog(false);
+  }
 
   render() {
-    const { classes } = this.props;
-     const { expanded } = this.state;
+     const { classes, fullScreen } = this.props;
     /*
       TODO: Add Grid for responsive design
     */
     return (
-        <div className={ classes.root + ' ' + (expanded ? classes.expanded : classes.collapsed)}>
-            <ExpansionPanel
-              expanded={expanded || false}
-              onChange={this.handleChange()}
-            >
-            <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-                <div className={classes.column}>
-                <Typography className={classes.heading}>Filter</Typography>
-                </div>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails className={classes.details}>
-                { this.renderNetworkSelect() }
-                <Divider variant="middle" />
-                { this.renderBankSelect() }
-                <Divider variant="middle" />
-                { this.renderServicesCheckbox() }
-                <Divider variant="middle" />
-                { this.renderOpeningDayCheckbox() }
-                <Divider variant="middle" />
-                { this.renderOpeningHourCheckbox() }
-                <Divider variant="middle" />
-                { this.renderOpeningOrClosingCheckbox() }
-                <Divider variant="middle" />
-            </ExpansionPanelDetails>
-            </ExpansionPanel>
-        </div>
+      <Dialog
+          fullScreen={fullScreen}
+          open={this.props.open || false}
+          onClose={this.handleClose}
+          aria-labelledby="responsive-dialog-title"
+          fullWidth={true}
+          maxWidth = {'md'}
+        >
+          <DialogTitle id="responsive-dialog-title">{"Advaned Filter"}</DialogTitle>
+          <DialogContent>
+            { this.renderNetworkSelect() }
+            <Divider variant="middle" />
+            { this.renderBankSelect() }
+            <Divider variant="middle" />
+            { this.renderServicesCheckbox() }
+            <Divider variant="middle" />
+            { this.renderOpeningDayCheckbox() }
+            <Divider variant="middle" />
+            { this.renderOpeningHourCheckbox() }
+            <Divider variant="middle" />
+            { this.renderOpeningOrClosingCheckbox() }
+            <Divider variant="middle" />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={this.handleClose} color="primary">
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
       );
   }
 }
 
-ATMFilterPanel.propTypes = {
+ATMFilterDialog.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
 const
 mapStateToProps = (state, ownProps) => {
     return {
-      filters: state.atm.filters
+      filters: state.atm.filters,
+      open: state.page.filter_dialog_open,
     };
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        toggleFilterOption: (key, value) => {
-            dispatch(toggleFilterOption(key, value));
-        }
+      toggleFilterOption: (key, value) => {
+          dispatch(toggleFilterOption(key, value));
+      },
+      toggleATMFilterDialog: (open) => {
+        dispatch(toggleATMFilterDialog(open))
+      } 
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(ATMFilterPanel));
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(withMobileDialog()(ATMFilterDialog)));

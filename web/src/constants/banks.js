@@ -5,7 +5,7 @@ export const hsbc = {
 }
 
 export const hangSeng = {
-    idx: 'hangSeng',
+    idx: 'hang_seng',
     en: 'Hang Seng Bank',
     zh: ''
 }

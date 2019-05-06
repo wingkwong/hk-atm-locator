@@ -264,7 +264,7 @@ class ATMDetailContent extends React.Component {
 
                         <TileLayer
                         attribution='&amp;copy <a href="http:osm.org/copyright">OpenStreetMap</a> contributors'
-                        url="https:{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        url="//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         {/* <ATMMarkerClusterGroup/> */}
                         <Marker position={currentLocation} icon={icon}/>

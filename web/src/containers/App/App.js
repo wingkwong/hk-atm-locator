@@ -15,7 +15,7 @@ const App = (WrappedComponent) => {
       return (
         <MuiThemeProvider theme={theme}>
           <div>
-              <AppNavbar location={this.props.location}/>
+              <AppNavbar/>
               <div style={{marginTop: '64px', zIndex: '1200'}}>
                 <WrappedComponent/>
               </div>

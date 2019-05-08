@@ -11,12 +11,12 @@ export const loadAllData = () => {
 
 }
 
-function loadHSBCData() {
+export const loadHSBCData = () => {
   const hsbcATMs = HSBC_DATA.data[0].Brand[0].ATM;
   return hsbcATMs.map(atm => new HsbcATM(atm));
 }
 
-function loadHangSengData() {
+export const loadHangSengData = () => {
   const atms = [];
 
   const rawData = HANG_SENG_DATA.data[0].Brand[0].ATM;

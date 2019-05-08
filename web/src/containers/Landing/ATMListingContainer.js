@@ -18,7 +18,7 @@ const styles = {
 
   };
 
-class LandingListView extends Component{
+class ATMListingContainer extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -127,4 +127,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(LandingListView));
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(ATMListingContainer));

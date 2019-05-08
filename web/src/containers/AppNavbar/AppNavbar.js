@@ -11,6 +11,7 @@ const styles = {
   },
   appBar: {
     alignItems: 'center',
+    zIndex: 1300
   }
 };
 

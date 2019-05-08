@@ -15,7 +15,7 @@ import {
 
 const styles = theme => ({
     appBar: {
-        zIndex: theme.zIndex.drawer + 1,
+        zIndex: 3000,
     },
     root: {
         display: 'flex',

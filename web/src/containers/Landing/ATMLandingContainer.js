@@ -145,7 +145,7 @@ class ATMLandingContainer extends Component{
                     open={this.state.open}
                     TransitionComponent={Transition}
                 >
-                     <AppNavbar backToLandingPage={this.backToLandingPage}/>
+                     <AppNavbar backToLandingPage={this.backToLandingPage} isDialogAppNavBar={true}/>
                      <ATMListingContainer network={network}/>
                 </Dialog>}
             </React.Fragment>

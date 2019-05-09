@@ -14,7 +14,7 @@ const App = (WrappedComponent) => {
     render() {
       return (
         <MuiThemeProvider theme={theme}>
-            <AppNavbar/>
+            <AppNavbar isDialogAppNavBar={false}/>
             <WrappedComponent/>
         </MuiThemeProvider>
       );

@@ -7,8 +7,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import SearchIcon from '@material-ui/icons/Search';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
@@ -21,6 +19,7 @@ import {
 const styles = theme => ({
   root: {
     width: '100%',
+    marginBottom: '48px'
   },
   grow: {
     flexGrow: 1,
@@ -29,11 +28,15 @@ const styles = theme => ({
     marginLeft: -12,
     marginRight: 20,
   },
-  title: {
+  dialogTitle: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
+    whiteSpace: 'nowrap'
+  },
+  landingTitle: {
+    margin: 'auto'
   },
   search: {
     position: 'relative',
@@ -48,7 +51,7 @@ const styles = theme => ({
     width: '100%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing.unit * 3,
-      width: '40%',
+      width: '100%',
     },
   },
   searchIcon: {
@@ -115,41 +118,46 @@ class AppNavbar extends React.Component {
 
 
   render() {
-    const { classes } = this.props;
+    const { classes, isDialogAppNavBar } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar position="static" color="secondary">
+        <AppBar position="fixed" color="secondary">
           <Toolbar>
-            <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
+            { isDialogAppNavBar && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
               <ArrowBackIcon />
-            </IconButton>
-            <Typography className={classes.title} variant="h6" color="inherit" noWrap>
+            </IconButton>}
+            <Typography className={isDialogAppNavBar ? classes.dialogTitle : classes.landingTitle} variant="h6" color="inherit">
               Hong Kong ATM Locator
             </Typography>
-            <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase
-                placeholder="Search…"
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                }}
-              />
-              <div className={classes.filterIcon}>
-                <FilterIcon/>
-              </div>
-            </div>
-            <div className={classes.grow} />
-            <div >
-              <IconButton
-                onClick={this.handleViewChange}
-                color="inherit"
-              >
-                <MapIcon />
-              </IconButton>
-            </div>
+
+            { isDialogAppNavBar && 
+              <React.Fragment>
+                <div className={classes.search}>
+                  <div className={classes.searchIcon}>
+                    <SearchIcon />
+                  </div>
+                  <InputBase
+                    placeholder="Search…"
+                    classes={{
+                      root: classes.inputRoot,
+                      input: classes.inputInput,
+                    }}
+                  />
+                  <div className={classes.filterIcon}>
+                    <FilterIcon/>
+                  </div>
+                </div>
+                <div className={classes.grow} />
+                <div >
+                  <IconButton
+                    onClick={this.handleViewChange}
+                    color="inherit"
+                  >
+                    <MapIcon />
+                  </IconButton>
+                </div>
+              </React.Fragment>
+            }
           </Toolbar>
         </AppBar>
       </div>
@@ -159,7 +167,8 @@ class AppNavbar extends React.Component {
 
 AppNavbar.propTypes = {
   classes: PropTypes.object.isRequired,
-  backToLandingPage: PropTypes.func.isRequired
+  isDialogAppNavBar: PropTypes.bool.isRequired,
+  backToLandingPage: PropTypes.func
 };
 
 const mapStateToProps = (state, ownProps) => {

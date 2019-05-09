@@ -56,7 +56,7 @@ Telegram:
 https://t.me/joinchat/I_FIgxaIhCVeWKp1JKcMGQ
 
 Trello: 
-https://trello.com/b/FfBaG2b6/hk-atm-locator-web-portal
+https://trello.com/b/FfBaG2b6/hk-atm-locator
 
 Collaction:
 https://www.collaction.hk/s/hk-atm-locator

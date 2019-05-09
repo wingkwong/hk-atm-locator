@@ -81,6 +81,10 @@ class ATMLandingContainer extends Component{
         this.setState({ open: true, network });
     }
 
+    backToLandingPage = () => {
+        this.setState({ open: false });
+    }
+
     renderCard = (network) => {
         const { classes } = this.props;
         var data = null;
@@ -139,10 +143,9 @@ class ATMLandingContainer extends Component{
                 {<Dialog
                     fullScreen
                     open={this.state.open}
-                    onClose={this.handleClose}
                     TransitionComponent={Transition}
                 >
-                     <AppNavbar/>
+                     <AppNavbar backToLandingPage={this.backToLandingPage}/>
                      <ATMListingContainer network={network}/>
                 </Dialog>}
             </React.Fragment>

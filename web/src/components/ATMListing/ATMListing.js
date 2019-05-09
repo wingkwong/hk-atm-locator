@@ -14,7 +14,6 @@ const drawerWidth = '100%';
 const styles = theme => ({
   root: {
     display: 'flex',
-    paddingTop: '48px'
   },
   drawerPaper: {
     width: drawerWidth,

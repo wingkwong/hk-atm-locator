@@ -143,10 +143,7 @@ class ATMLandingContainer extends Component{
                     TransitionComponent={Transition}
                 >
                      <AppNavbar/>
-                     {/* TODO: to-be-revamped */}
-                    <div style={{marginTop: '64px', zIndex: '1200'}}>
-                        <ATMListingContainer network={network}/>
-                    </div>
+                     <ATMListingContainer network={network}/>
                 </Dialog>}
             </React.Fragment>
         );

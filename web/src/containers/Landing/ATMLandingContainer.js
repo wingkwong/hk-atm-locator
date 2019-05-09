@@ -39,7 +39,7 @@ const hsbc = {
         tc: ''
     },
     desc: {
-        en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+        en: 'HSBC, officially known as The Hongkong and Shanghai Banking Corporation Limited, is a wholly owned subsidiary of HSBC, the largest bank in Hong Kong, and operates branches and offices throughout the Asia Pacific region, and in other countries around the world.',
         tc: ''
     }
 };
@@ -51,7 +51,7 @@ const hangseng = {
         tc: ''
     },
     desc: {
-        en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+        en: 'Hang Seng Bank, Limited is a Hong Kong-based banking and financial services company with headquarters in Central, Hong Kong. It is one of Hong Kong\'s leading public companies in terms of market capitalisation and is part of the HSBC Group, which holds a majority equity interest in the bank. ',
         tc: ''
     }
 };
@@ -63,7 +63,7 @@ const jetco = {
         tc: ''
     },
     desc: {
-        en: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+        en: 'JETCO is the biggest network of automatic teller machines and it is a bank consortium chartered to develop innovative and secure financial technology services for its member banks',
         tc: ''
     }
 };

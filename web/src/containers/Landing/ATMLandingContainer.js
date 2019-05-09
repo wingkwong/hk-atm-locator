@@ -28,6 +28,7 @@ const styles = {
     },
     media: {
         objectFit: 'contain',
+        padding: '20px 0px'
     },
 };
 

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
-import ATMSearch from '../../components/ATMFilter/ATMSearch';
 import ATMFilterDialog from '../../components/ATMFilter/ATMFilterDialog';
 import ATMListing from '../../components/ATMListing/ATMListing';
 import { loadAllData, loadHSBCData, loadHangSengData } from '../../utils/dataLoader';
@@ -105,7 +104,6 @@ class ATMListingContainer extends Component{
     render() {
         return (
             <React.Fragment>
-                <ATMSearch/>
                 <ATMFilterDialog/>
                 <ATMListing/>
             </React.Fragment>

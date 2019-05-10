@@ -67,7 +67,7 @@ const styles = theme => ({
     width: theme.spacing.unit * 9,
     height: '100%',
     position: 'absolute',
-    pointerEvents: 'none',
+    cursor: 'pointer',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -116,6 +116,10 @@ class AppNavbar extends React.Component {
     //TODO: Switch Listing & Map View
   };
 
+  handleFilterOnclick = () => {
+    this.props.toggleATMFilterDialog(true);
+  }
+
 
   render() {
     const { classes, isDialogAppNavBar } = this.props;
@@ -143,7 +147,7 @@ class AppNavbar extends React.Component {
                       input: classes.inputInput,
                     }}
                   />
-                  <div className={classes.filterIcon}>
+                  <div className={classes.filterIcon} onClick={() => {this.handleFilterOnclick()}}>
                     <FilterIcon/>
                   </div>
                 </div>

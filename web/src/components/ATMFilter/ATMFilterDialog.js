@@ -18,6 +18,7 @@ import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
 import { connect } from 'react-redux';
@@ -190,10 +191,12 @@ class ATMFilterDialog extends Component {
 
   renderOpeningHourCheckbox() {
     return (
-      <div></div>
-      /*
-        TODO:
-      */
+      <FormControl component="fieldset">
+        <FormLabel component="legend">Opening Hours</FormLabel>
+        <FormGroup>
+           {/* TODO: */}
+        </FormGroup>
+      </FormControl>
     );
   }
 
@@ -243,20 +246,26 @@ class ATMFilterDialog extends Component {
           fullWidth={true}
           maxWidth = {'md'}
         >
-          <DialogTitle id="responsive-dialog-title">{"Advaned Filter"}</DialogTitle>
+          <DialogTitle id="responsive-dialog-title">{"Advanced Filter"}</DialogTitle>
           <DialogContent>
-            { this.renderNetworkSelect() }
-            <Divider variant="middle" />
-            { this.renderBankSelect() }
-            <Divider variant="middle" />
-            { this.renderServicesCheckbox() }
-            <Divider variant="middle" />
-            { this.renderOpeningDayCheckbox() }
-            <Divider variant="middle" />
-            { this.renderOpeningHourCheckbox() }
-            <Divider variant="middle" />
-            { this.renderOpeningOrClosingCheckbox() }
-            <Divider variant="middle" />
+            <Grid container spacing={24}>
+              {/* { this.renderNetworkSelect() }
+              <Divider variant="middle" />
+              { this.renderBankSelect() }
+              <Divider variant="middle" /> */}
+              <Grid item xs={6} md={3}>
+                { this.renderServicesCheckbox() }
+              </Grid>
+              <Grid item xs={6} md={3}>
+                { this.renderOpeningDayCheckbox() }
+              </Grid>
+              <Grid item xs={6} md={3}>
+                { this.renderOpeningHourCheckbox() }
+              </Grid>
+              <Grid item xs={6} md={3}>
+                { this.renderOpeningOrClosingCheckbox() }
+              </Grid>
+            </Grid>
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="secondary">

@@ -52,7 +52,7 @@ class ATMListingContainer extends Component{
                 me.props.setSelectedLocation(selectedLocation);
                // cannot get location, sort data anyway
                 me.sortATMData();
-             },{ timeout:100 });
+             },{ timeout: 10000 });
         } else {
             me.sortATMData();
         }

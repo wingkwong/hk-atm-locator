@@ -1,4 +1,5 @@
 const fs = require('fs');
+const moment = require('moment');
 const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
 const HANG_SENG_DATA = require('../unprocessed/hang_seng');
 const HSBC_DATA = require('../unprocessed/hsbc');
@@ -28,14 +29,13 @@ const enrichOpeningHours = (record) => {
       // Just give a generic mall open/close time
       OpeningHours = createGenericOpeningHours("10:00", "20:00");
     }
-
     return { OpeningHours };
 }
 
 const convertOpeningHourToHHmmFormat = (openingHours) => {
     const OpeningHours =  openingHours.map((oh, idx) => {
-       const ohOpenTime = (oh.OpenTime.split(':')[0] < 10 ? ( oh.OpenTime.split(':')[0][0] == '0' && oh.OpenTime.split(':')[0][1] != undefined ? '': '0' ) : '' ) + oh.OpenTime;
-       const ohCloseTime = (oh.CloseTime.split(':')[0] < 10 ? ( oh.CloseTime.split(':')[0][0] == '0' && oh.CloseTime.split(':')[0][1] != undefined ? '' : '0' ) : '' ) + oh.CloseTime;
+       const ohOpenTime = moment(oh.OpenTime,"h:mm").format("HH:mm");
+       const ohCloseTime = moment(oh.CloseTime,"h:mm").format("HH:mm");
        return {
            ...oh,
            OpenTime: ohOpenTime,

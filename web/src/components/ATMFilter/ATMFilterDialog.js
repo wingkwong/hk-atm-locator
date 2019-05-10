@@ -5,9 +5,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Divider from '@material-ui/core/Divider';
+import Checkbox from '@material-ui/core/Checkbox';
 import withMobileDialog from '@material-ui/core/withMobileDialog';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -143,10 +142,11 @@ class ATMFilterDialog extends Component {
                return (
                   <FormControlLabel
                   control={
-                    <Switch
+                    <Checkbox
                       checked={this.state[service]}
                       onChange={this.handleCheckboxChange(service).bind(this)}
                       value={service.en}
+                      color="secondary"
                     />
                   }
                   label={service.en}
@@ -172,10 +172,11 @@ class ATMFilterDialog extends Component {
                return (
                   <FormControlLabel
                   control={
-                    <Switch
+                    <Checkbox
                       checked={this.state[day]}
                       onChange={this.handleCheckboxChange(day).bind(this)}
                       value={day}
+                      color="secondary"
                     />
                   }
                   label={day}
@@ -211,10 +212,11 @@ class ATMFilterDialog extends Component {
              return (
                 <FormControlLabel
                 control={
-                  <Switch
+                  <Checkbox
                     checked={this.state[option]}
                     onChange={this.handleCheckboxChange(option).bind(this)}
                     value={option}
+                    color="secondary"
                   />
                 }
                 label={option}
@@ -281,8 +283,7 @@ ATMFilterDialog.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-const
-mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state, ownProps) => {
     return {
       filters: state.atm.filters,
       open: state.page.filter_dialog_open,

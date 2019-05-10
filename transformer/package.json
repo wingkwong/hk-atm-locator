@@ -1,0 +1,24 @@
+{
+  "name": "hk-atm-locator-transformer",
+  "version": "0.1.0",
+  "description": "Transformer for hk-atm-locator",
+  "main": "src/prepare_data.js",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingkwong/hk-atm-locator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wingkwong/hk-atm-locator/issues"
+  },
+  "homepage": "https://github.com/wingkwong/hk-atm-locator#readme"
+}

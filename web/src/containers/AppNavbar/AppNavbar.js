@@ -13,7 +13,8 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MapIcon from '@material-ui/icons/Map';
 import FilterIcon from '@material-ui/icons/Tune';
 import {
-  toggleATMFilterDialog
+  toggleATMFilterDialog,
+  toggleMapView
 } from '../../actions';
 
 const styles = theme => ({
@@ -104,16 +105,23 @@ const styles = theme => ({
 });
 
 class AppNavbar extends React.Component {
-  state = {
-    
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggleMapview: true
+    };
+  }
 
   backToLandingPage = () => {
     this.props.backToLandingPage();
   }
 
   handleViewChange = () => {
-    //TODO: Switch Listing & Map View
+    const { toggleMapview } = this.state;
+    this.props.toggleMapView(toggleMapview);
+    this.setState({
+      toggleMapview: !toggleMapview
+    })
   };
 
   handleFilterOnclick = () => {
@@ -185,6 +193,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
       toggleATMFilterDialog: (open) => {
           dispatch(toggleATMFilterDialog(open))
+      },
+      toggleMapView: (flag) => {
+          dispatch(toggleMapView(flag))
       }
   };
 }

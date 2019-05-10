@@ -11,6 +11,7 @@ import Dialog from '@material-ui/core/Dialog';
 import Slide from '@material-ui/core/Slide';
 import AppNavbar from '../AppNavbar/AppNavbar';
 import ATMListingContainer from './ATMListingContainer';
+import ATMMapContainer from './ATMMapContainer';
 
 function Transition(props) {
     return <Slide direction="up" {...props} />;
@@ -130,7 +131,7 @@ class ATMLandingContainer extends Component{
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, toggleMapView } = this.props;
         const { network } = this.state;
         
         return (
@@ -146,7 +147,9 @@ class ATMLandingContainer extends Component{
                     TransitionComponent={Transition}
                 >
                      <AppNavbar backToLandingPage={this.backToLandingPage} isDialogAppNavBar={true}/>
-                     <ATMListingContainer network={network}/>
+
+                    { !toggleMapView && <ATMListingContainer network={network}/>}
+                    { toggleMapView && <ATMMapContainer network={network}/>}
                 </Dialog>}
             </React.Fragment>
         );
@@ -158,8 +161,9 @@ ATMLandingContainer.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => {
+    console.log(state)
     return {
-       
+       toggleMapView: state.page.toggle_map_view
     };
 }
 

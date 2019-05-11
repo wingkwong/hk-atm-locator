@@ -37,7 +37,11 @@ const styles = theme => ({
     whiteSpace: 'nowrap'
   },
   landingTitle: {
-    margin: 'auto'
+    margin: 'auto',
+    fontFamily: 'Roboto Condensed, sans-serif',
+    fontWeight: 700,
+    lineHeight: 1.6,
+    fontSize: 24
   },
   search: {
     position: 'relative',

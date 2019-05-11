@@ -4,6 +4,7 @@
   "description": "Transformer for hk-atm-locator",
   "main": "src/prepare_data.js",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "moment": "^2.24.0",
     "request": "^2.88.0"
   },

@@ -20,7 +20,7 @@ import {
 const styles = theme => ({
   root: {
     width: '100%',
-    marginBottom: '48px'
+    marginBottom: '64px'
   },
   grow: {
     flexGrow: 1,

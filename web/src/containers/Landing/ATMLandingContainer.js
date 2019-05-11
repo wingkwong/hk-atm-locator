@@ -161,7 +161,6 @@ ATMLandingContainer.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => {
-    console.log(state)
     return {
        toggleMapView: state.page.toggle_map_view
     };

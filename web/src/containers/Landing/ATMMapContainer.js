@@ -51,7 +51,6 @@ class ATMMapContainer extends Component{
     render() {
         const { classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
         let zoomLvlToUse = selectedZoomLvl;
-        console.log(currentLocation)
         let icon = L.icon({
             iconUrl: currentLocationIcon,
             shadowUrl: require('leaflet/dist/images/marker-shadow.png'),

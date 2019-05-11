@@ -2,3 +2,4 @@
 env
 node_modules/*
 certs
+address-parser/node_modules/*

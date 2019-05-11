@@ -1,12 +1,10 @@
-const request = require('request')
+const request = require('request');
 const fs = require('fs');
-
-const HSBC_API_ENDPOINT = '<HSBC_API_ENDPOINT>';
-const HANG_SENG_API_ENDPOINT = '<HANG_SENG_API_ENDPOINT>';
-const HSBC_CLIENT_ID = '<HSBC_CLIENT_ID>';
-const HSBC_CLIIENT_SECRET = '<HSBC_CLIIENT_SECRET>';
-const HANG_SENG_CLIENT_ID = '<HANG_SENG_CLIENT_ID>';
-const HANG_SENG_CLIENT_SECRET = '<HANG_SENG_CLIENT_SECRET>';
+const configs = require('./config');
+const header = {
+    'Content-Type': 'application/json', 
+    'Accept': 'application/json, text/plain',
+};
 
 /*
     Process Hang Seng Data
@@ -14,12 +12,11 @@ const HANG_SENG_CLIENT_SECRET = '<HANG_SENG_CLIENT_SECRET>';
 
 const prepare_hang_seng_data = () => {
     request.get({
-        url: HSBC_API_ENDPOINT,
+        url: configs.HANG_SENG_API_ENDPOINT,
         headers: { 
-            'Content-Type': 'application/json', 
-            'Accept': 'application/json, text/plain', 
-            'ClientID': HSBC_CLIENT_ID, 
-            'ClientSecret': HSBC_CLIIENT_SECRET
+            ...header,
+            'ClientID': configs.HANG_SENG_CLIENT_ID, 
+            'ClientSecret': configs.HANG_SENG_CLIENT_SECRET
         }
     }, (err, req, body) => {
         if(err) {
@@ -33,7 +30,19 @@ const prepare_hang_seng_data = () => {
     Prepare HSBC Data
 */
 const prepare_hsbc_data = () => {
-    //TODO:
+    request.get({
+        url: configs.HSBC_API_ENDPOINT,
+        headers: { 
+            ...header,
+            'ClientID': configs.HSBC_CLIENT_ID, 
+            'ClientSecret': configs.HSBC_CLIIENT_SECRET
+        }
+    }, (err, req, body) => {
+        if(err) {
+            throw err;
+        }
+        fs.writeFileSync('../unprocessed/hsbc.json', body, 'utf8');
+    }); 
 }
 
 

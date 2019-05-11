@@ -1,0 +1,47 @@
+language: node_js
+node_js:
+    - "8"
+stages:
+  - name: build
+  # Build the docker image only on master branch
+  - name: deploy
+
+branches:
+  only:
+  - master
+
+cache: npm
+
+before_install:
+  - cd transformer
+  - npm install
+
+jobs:
+  include:
+    - stage: build
+      script:
+        - cd $TRAVIS_BUILD_DIR
+        - bash scripts/run.sh
+      after_success:
+        - bash scripts/git_update.sh
+    # - stage: deploy
+    #   script:
+    #     - cd $TRAVIS_BUILD_DIR/
+
+      #   # if this is build from tag, just update the tag name, otherise use the previous tag name
+      #   - export TRAVIS_TAG=`git describe --tags --exact-match`
+      #   - echo $TRAVIS_TAG
+      #   - if [[ -z "$TRAVIS_TAG" ]]; then echo "VUE_APP_REV_NAME=$(git describe --abbrev=0 --tags `git rev-list --tags  --max-count=1`)" >> .env; fi
+      #   - if [[ ! -z "$TRAVIS_TAG" ]]; then echo "VUE_APP_REV_NAME=$TRAVIS_TAG" >> .env; fi
+      #   - npm run build
+      #   - if [[ ! -z "$DOMAIN" ]]; then echo $DOMAIN >> dist/CNAME; fi
+
+      # deploy:
+      #   provider: pages
+      #   skip-cleanup: true
+      #   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+      #   keep-history: true
+      #   local-dir: web/dist # the local dir is relative to root and ignoring the one set with before_install
+      #   on:
+      #     tags: true
+      #     all_branches: true

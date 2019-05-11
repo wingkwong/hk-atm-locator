@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hk-atm-locator/precache-manifest.965a4cf75bdc29292a46a501b505d50b.js"
+  "/hk-atm-locator/precache-manifest.6987607f095d7e7f39d17815de394a64.js"
 );
 
 workbox.clientsClaim();

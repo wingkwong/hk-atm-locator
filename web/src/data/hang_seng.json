@@ -1634,8 +1634,9 @@
                                 "AddressLine": [
                                     "Level 1, One Sky Mall, 8 Tin Sau Road, Tin Shui Wai"
                                 ],
-                                "LatitudeDescription": "22.4645",
-                                "LongitudeDescription": "114.0036"                            },
+                                "LatitudeDescription": "22.4646",
+                                "LongitudeDescription": "114.0034"
+                            },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
                                 "TalkATMIndicator": false,
@@ -2093,7 +2094,6 @@
                                 ],
                                 "LatitudeDescription": "22.3929",
                                 "LongitudeDescription": "113.9771"
-
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -3058,7 +3058,6 @@
                                 "AddressLine": [
                                     "Wonderland Villas, 9 Wah King Hill Road, next to Estate Office G/F"
                                 ],
-
                                 "LatitudeDescription": "22.3517",
                                 "LongitudeDescription": "114.1369"
                             },
@@ -3191,7 +3190,6 @@
                                 "AddressLine": [
                                     "MTR Kennedy Town Station (Near Escalator to Exit A) (With Voice Navigation ATM)"
                                 ],
-
                                 "LatitudeDescription": "22.2818",
                                 "LongitudeDescription": "114.129"
                             },
@@ -3261,7 +3259,6 @@
                                 ],
                                 "LatitudeDescription": "22.3377",
                                 "LongitudeDescription": "114.1381"
-
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3881,7 +3878,6 @@
                                 ],
                                 "LatitudeDescription": "22.4154",
                                 "LongitudeDescription": "114.2287"
-
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,

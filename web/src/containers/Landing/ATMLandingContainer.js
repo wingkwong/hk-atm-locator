@@ -12,6 +12,7 @@ import Slide from '@material-ui/core/Slide';
 import AppNavbar from '../AppNavbar/AppNavbar';
 import ATMListingContainer from './ATMListingContainer';
 import ATMMapContainer from './ATMMapContainer';
+import { Divider } from '@material-ui/core';
 
 function Transition(props) {
     return <Slide direction="up" {...props} />;
@@ -20,7 +21,8 @@ function Transition(props) {
 const styles = {
     landingContainer: {
         textAlign: 'center',
-        paddingTop: '25px'
+        background: 'linear-gradient(24deg, #ffed4b  60%, #ff3366 60%)',
+        height: '100%'
     },
     card: {
         maxWidth: 345,
@@ -28,9 +30,24 @@ const styles = {
         margin: 20
     },
     media: {
-        objectFit: 'contain',
+        objectFit: 'scale-down',
         padding: '20px 0px'
     },
+    subheader: {
+        fontFamily: 'Roboto Condensed, sans-serif',
+        fontWeight: 700,
+        lineHeight: 1.6,
+        fontSize: 24,
+        color: '#ffffff',
+        paddingTop: '25px',
+    },
+    divider: {
+        width: '300px',
+        height: '4px',
+        margin: '8px auto 0',
+        display: '#000000',
+        backgroundColor: '#ffffff'
+    }
 };
 
 const hsbc = {
@@ -135,11 +152,18 @@ class ATMLandingContainer extends Component{
         const { network } = this.state;
         
         return (
-            <React.Fragment>
+            <React.Fragment className={classes.root}>
                 <div className={classes.landingContainer}>
+                    <Typography className={classes.subheader} variant="h6" color="inherit">
+                    Hong Kong ATM Locator
+                        <Divider className={classes.divider}/>
+                    </Typography>
+
+                   <div>
                     { this.renderCard('hsbc') }
                     { this.renderCard('hangseng') }
                     { this.renderCard('jetco') }
+                   </div>
                 </div>
                 {<Dialog
                     fullScreen

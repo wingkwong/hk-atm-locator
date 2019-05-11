@@ -4,12 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
-import ATMRouting from '../../components/Leaflet/ATMRouting';
-import ATMListing from '../../components/ATMListing/ATMListing';
-import HANG_SENG_DATA from '../../data/hang_seng.json';
-import HANG_SENG_LATLNG_DATA from '../../data/hang_seng_latlng.json';
-import HSBC_DATA from '../../data/hsbc.json';
-import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 
 import {
@@ -31,14 +25,6 @@ class ATMMapContainer extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            selectedLocation: {
-                lat: 22.308,
-                lng: 114.1716
-            },
-            currentLocation: {
-                lat: 22.308,
-                lng: 114.1716
-            },
             zoom: 14,
             isMapInit: false
         }
@@ -64,22 +50,13 @@ class ATMMapContainer extends Component{
 
     render() {
         const { classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
-        let selectedPosition = [this.state.selectedLocation.lat, this.state.selectedLocation.lng];
-        let currentPosition =  [this.state.currentLocation.lat, this.state.currentLocation.lng];
         let zoomLvlToUse = selectedZoomLvl;
+        console.log(currentLocation)
         let icon = L.icon({
             iconUrl: currentLocationIcon,
             shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
             iconSize: [70, 70]
        })
-
-        if(selectedLocation != null && Object.keys(selectedLocation).length == 2 && selectedLocation.lat && selectedLocation.lng) {
-            selectedPosition = [selectedLocation.lat, selectedLocation.lng];
-        }
-
-        if(currentLocation != null && Object.keys(currentLocation).length == 2 && currentLocation.lat && currentLocation.lng) {
-            currentPosition = [currentLocation.lat, currentLocation.lng];
-        }
 
         if (!zoomLvlToUse || zoomLvlToUse<0) zoomLvlToUse=this.state.zoom;
 
@@ -87,7 +64,7 @@ class ATMMapContainer extends Component{
             <React.Fragment>
                 <Map 
                     className={classes.mapContainer}
-                    center={selectedPosition} 
+                    center={selectedLocation} 
                     zoom= {zoomLvlToUse}
                     maxZoom={zoomLvlToUse + 2} 
                     onmoveend={this.handleMoveEnd}
@@ -98,10 +75,10 @@ class ATMMapContainer extends Component{
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <ATMMarkerClusterGroup/>
-                    <Marker position={currentPosition} icon={icon}/>
+                    <Marker position={currentLocation} icon={icon}/>
                     {/* {
                         this.state.isMapInit && 
-                            <ATMRouting map={this.map} from={currentPosition} to={selectedPosition}/>
+                            <ATMRouting map={this.map} from={currentLocation} to={selectedLocation}/>
                     } */}
                 </Map>
             </React.Fragment>

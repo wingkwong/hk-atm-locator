@@ -6,9 +6,7 @@ import ATMLandingContainer from './containers/Landing/ATMLandingContainer';
 export default class Routes extends Component{
     render() {
         return (
-            <div>
-                <Route path='/' component={App(ATMLandingContainer)}/>
-            </div>
+            <Route path='/' component={ATMLandingContainer}/>
         )
     }
 }

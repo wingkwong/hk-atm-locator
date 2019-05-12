@@ -6,7 +6,7 @@ setup_git() {
   git config --global user.name "Travis CI"
 }
 
-commit_country_json_files() {
+commit_atm_files() {
   git checkout master
 
   # Move the data files
@@ -24,18 +24,18 @@ commit_country_json_files() {
 }
 
 upload_files() {
-  git remote add upstream https://nandiheath:${GH_TOKEN}@github.com/nandiheath/hk-atm-locator.git > /dev/null 2>&1
+  git remote add upstream https://wingkwong:${GH_TOKEN}@github.com/wingkwong/hk-atm-locator.git > /dev/null 2>&1
   git push --quiet --set-upstream upstream master
 }
 
 setup_git
 
-commit_country_json_files
+commit_atm_files
 
 # Attempt to commit to git only if "git commit" succeeded
 if [ $? -eq 0 ]; then
-  echo "A new commit with changed country JSON files exists. Uploading to GitHub"
+  echo "A new commit with changed ATM JSON files exists. Uploading to GitHub"
   upload_files
 else
-  echo "No changes in country JSON files. Nothing to do"
+  echo "No changes in ATM JSON files. Nothing to do"
 fi

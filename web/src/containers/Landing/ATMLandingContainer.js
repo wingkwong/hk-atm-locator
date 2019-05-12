@@ -21,13 +21,21 @@ function Transition(props) {
 const styles = {
     landingContainer: {
         textAlign: 'center',
-        background: 'linear-gradient(24deg, #ffed4b  60%, #ff3366 60%)',
-        height: '100%'
+        height: '100%',
+        color: '#ffffff',
+        background: '-webkit-linear-gradient(110deg, #ff0000 0%, rgba(0, 0, 0, 0) 40%), -webkit-linear-gradient(110deg, #34a344 60%, #004966 80%)',
+        background: '-o-linear-gradient(110deg, #ff0000 0%, rgba(0, 0, 0, 0) 40%), -o-linear-gradient(110deg, #34a344 60%, #004966 80%)',
+        background: '-moz-linear-gradient(110deg, #ff0000 0%, rgba(0, 0, 0, 0) 40%), -moz-linear-gradient(110deg, #34a344 60%, #004966 80%)',
+        background: 'linear-gradient(110deg, #ff0000 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(110deg, #34a344 60%, #004966 80%)',
+        overflow: 'auto'
     },
     card: {
-        maxWidth: 345,
+        width: 345,
         display: 'inline-flex',
         margin: 20
+    },
+    cardContent: {
+        height: '180px'
     },
     media: {
         objectFit: 'scale-down',
@@ -134,7 +142,7 @@ class ATMLandingContainer extends Component{
                     image={ data.img }
                     title={ data.title.en }
                     />
-                    <CardContent>
+                    <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
                         { data.title.en }
                     </Typography>

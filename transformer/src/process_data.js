@@ -32,6 +32,9 @@ const convertOpeningHourToHHmmFormat = (openingHours) => {
   const OpeningHours = openingHours.map((oh, idx) => {
     const ohOpenTime = moment(oh.OpenTime, "h:mm").format("HH:mm");
     const ohCloseTime = moment(oh.CloseTime, "h:mm").format("HH:mm");
+    if(ohCloseTime == '00:00') {
+      ohCloseTime = '24:00';
+    }
     return {
       ...oh,
       OpenTime: ohOpenTime,

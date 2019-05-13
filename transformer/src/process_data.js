@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const moment = require('moment');
 const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
 const { remind, info } = require('./utils');
@@ -84,6 +85,26 @@ const getOperatingHoursByStation = (station) => {
   return null;
 }
 
+const transformJetcoData = (data) => {
+  return {
+    "ATMName": data.district + ' ATM',
+    "HotlineNumber": "",
+    "ATMAddress": {
+      "CountryCode": "HK",
+      "TerritoryName": data.area,
+      "DistrictName": data.district,
+      "LatitudeDescription": data.latitude,
+      "LongitudeDescription": data.longitude,
+      "AddressLine": [
+          data.addr
+      ]
+    },
+    "ATMServices": {}, //TODO
+    "OpeningHours": [], //TODO
+    "Bank": data.ob_name
+  }
+}
+
 /*
   Process Hang Seng Data
 */
@@ -114,6 +135,40 @@ const process_hsbc_data = (data) => {
   return JSON.stringify(data);
 }
 
+const process_jetco_data = (inputPath) => {
+  const jetco_atm_arr = [];
+  const files = fs.readdirSync(inputPath);
+    for (var i=0; i<files.length; i++) {
+      if(path.extname(files[i]).substr(1) == 'json') {
+          var data = fs.readFileSync(path.join(inputPath, files[i]));
+          data = JSON.parse(data);
+          var atms = data.xml_msg.atms.atm;
+          for(var j=0; j<atms.length; j++) {
+            const transformedData = transformJetcoData(atms[j]);
+            jetco_atm_arr.push(transformedData);
+          }
+      }
+    }
+
+    return JSON.stringify({
+      "meta": {
+        "LastUpdated": new Date(),
+        "TotalResults": atms.length,
+        "Agreement": "Use of the APIs and any related data will be subject to terms and conditions."
+      },
+      "data": [
+        {
+          "Brand": [
+            {
+              "BrandName": "Jetco",
+              "ATM": jetco_atm_arr
+            }
+          ]
+        }
+      ]
+    });
+}
+
 
 module.exports = {
   processHangSengData: async (inputPath, outputPath) => {
@@ -129,5 +184,11 @@ module.exports = {
     const processedData = process_hsbc_data(JSON.parse(data));
     fs.writeFileSync(outputPath, processedData);
     remind(`Finsihed processing hsbc file and saved at ${outputPath}`);
+  },
+  processJetcoData: async (inputPath, outputPath) => {
+    info(`Prepare to process jetco file from ${inputPath}`);
+    const processedData = process_jetco_data(inputPath);
+    fs.writeFileSync(outputPath, processedData);
+    remind(`Finsihed processing jetco file and saved at ${outputPath}`);
   },
 };

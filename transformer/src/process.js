@@ -13,7 +13,8 @@ const ProcessData = require('./process_data');
 
 const BANK_HANG_SENG = 'hang_seng';
 const BANK_HSBC = 'hsbc';
-const BANKS = [BANK_HANG_SENG, BANK_HSBC];
+const BANK_JETCO = 'jetco';
+const BANKS = [BANK_HANG_SENG, BANK_HSBC, BANK_JETCO];
 
 /**
  * Termination process
@@ -63,6 +64,9 @@ async function processData(bank, inputFile, outputFile) {
     end();
   } else if (bank === BANK_HSBC) {
     await ProcessData.processHsbcData(inputFile, outputFile);
+    end();
+  } else if (bank === BANK_JETCO) {
+    await ProcessData.processJetcoData(inputFile, outputFile);
     end();
   }
   terminateWithError('Unknown bank');

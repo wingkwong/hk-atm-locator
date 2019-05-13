@@ -3,6 +3,7 @@ const path = require('path');
 const moment = require('moment');
 const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
 const { remind, info } = require('./utils');
+const jetcoIdx = [];
 
 const enrichBankAndNetwork = (bank, network) => {
   if (network === 'hang_seng' || network === 'hsbc' || network === 'jetco') {
@@ -143,19 +144,23 @@ const process_jetco_data = (inputPath) => {
           var data = fs.readFileSync(path.join(inputPath, files[i]));
           data = JSON.parse(data);
           if(data.xml_msg.atms != null) {
-            var atms = data.xml_msg.atms.atm;
-            for(var j=0; j<atms.length; j++) {
-              const transformedData = transformJetcoData(atms[j]);
-              jetco_atm_arr.push(transformedData);
-            }
+              var atms = data.xml_msg.atms.atm;
+              for(var j=0; j<atms.length; j++) {
+                var idx = atms[j]['@id'];
+                if(jetcoIdx.indexOf(idx) == -1) {
+                  const transformedData = transformJetcoData(atms[j]);
+                  jetco_atm_arr.push(transformedData);
+                  jetcoIdx.push(idx);
+                }
+              }
           }
       }
     }
-
+    
     return JSON.stringify({
       "meta": {
         "LastUpdated": new Date(),
-        "TotalResults": jetco_atm_arr.length,
+        "TotalResults": jetcoIdx.length,
         "Agreement": "Use of the APIs and any related data will be subject to terms and conditions."
       },
       "data": [

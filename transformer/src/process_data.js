@@ -155,7 +155,7 @@ const process_jetco_data = (inputPath) => {
     return JSON.stringify({
       "meta": {
         "LastUpdated": new Date(),
-        "TotalResults": atms.length,
+        "TotalResults": jetco_atm_arr.length,
         "Agreement": "Use of the APIs and any related data will be subject to terms and conditions."
       },
       "data": [

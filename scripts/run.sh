@@ -15,6 +15,7 @@
 ./transformer/src/process.js process hsbc ./transformer/unprocessed/hsbc.json ./transformer/processing/hsbc.json && \
 ./transformer/src/process.js process-address hsbc ./transformer/processing/hsbc.json ./transformer/processed/hsbc.json
 
+cp -r scrapers/output/jetco/ transformer/unprocessed/jetco/
 ./transformer/src/process.js process jetco ./transformer/unprocessed/jetco/en/ ./transformer/processed/jetco_en.json && \
 ./transformer/src/process.js process jetco ./transformer/unprocessed/jetco/tc/ ./transformer/processed/jetco_tc.json
 

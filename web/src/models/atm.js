@@ -42,7 +42,7 @@ class ATM {
 
   isServiceAvaliable(serviceKey) {
     if (serviceKey === SERVICE_COIN_SORT) {
-       return this.isServiceIndicatorReturnTrue('CoinSortIndicator');
+      return this.isServiceIndicatorReturnTrue('CoinSortIndicator');
     } else if (serviceKey === SERVICE_FOREIGN_CURRENCY) {
       return this.isServiceIndicatorReturnTrue('ForeignCurrencyIndicator');
     } else if (serviceKey === SERVICE_DISABLED_ACCESS) {
@@ -72,6 +72,11 @@ class ATM {
     }
     const openTime = moment(openingHour.OpenTime, 'HH:mm');
     const closeTime = moment(openingHour.CloseTime, 'HH:mm');
+    // For handling the case that the opening hour is 06:00 - 01:00 (usually means it is morning next day)
+    if (closeTime.isBefore(openTime)
+    ) {
+      closeTime.add(1, 'day');
+    }
     return moment().isBetween(openTime, closeTime);
   }
 }
@@ -98,8 +103,8 @@ export class HangSengATM extends ATM {
     this.ATMServices.CashDepositIndicator = record.ATMServices.CashDepositMachineIndicator;
     this.ATMServices.ChequeDepositIndicator = record.ATMServices.ChequeDepositMachineIndicator;
     this.ATMServices.ForeignCurrencyIndicator =
-        record.ATMServices.RMBandForeignCurrencyATMIndicator
-        && !record.ATMServices.RMBATMwithoutForeignCurrencyIndicator;
+      record.ATMServices.RMBandForeignCurrencyATMIndicator
+      && !record.ATMServices.RMBATMwithoutForeignCurrencyIndicator;
 
   }
 }

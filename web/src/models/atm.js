@@ -117,11 +117,10 @@ export class HsbcATM extends ATM {
   }
 }
 
-
-function createGenericOpeningHours(openTime, closeTime) {
-  return WEEK_DAYS.map(weekday => ({
-    OpenDayDescription: weekday,
-    OpenTime: openTime,
-    CloseTime: closeTime
-  }));
+export class JetcoATM extends ATM {
+  constructor(record) {
+    super(record);
+    this.Bank = record.Bank; //TODO: lookup bank idx
+    this.Network = networks.jetco.idx;
+  }
 }

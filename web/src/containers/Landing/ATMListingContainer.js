@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { distanceBetweenTwoGeoPoints } from '../../utils/geoUtils';
 import ATMFilterDialog from '../../components/ATMFilter/ATMFilterDialog';
 import ATMListing from '../../components/ATMListing/ATMListing';
-import { loadAllData, loadHSBCData, loadHangSengData } from '../../utils/dataLoader';
+import { loadAllData, loadHSBCData, loadHangSengData, loadJetcoData } from '../../utils/dataLoader';
 
 
 import {
@@ -66,7 +66,7 @@ class ATMListingContainer extends Component{
         } else if(network == 'hangseng') {
             ATMs = loadHangSengData();
         } else if(network == 'jetco') {
-            // ATMs = loadJetcoData();
+            ATMs = loadJetcoData();
         } else {
             ATMs = loadAllData();
         }

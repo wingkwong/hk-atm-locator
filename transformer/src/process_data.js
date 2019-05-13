@@ -140,12 +140,15 @@ const process_jetco_data = (inputPath) => {
   const files = fs.readdirSync(inputPath);
     for (var i=0; i<files.length; i++) {
       if(path.extname(files[i]).substr(1) == 'json') {
+        console.log("path.join(inputPath, files[i])=" + path.join(inputPath, files[i]));
           var data = fs.readFileSync(path.join(inputPath, files[i]));
           data = JSON.parse(data);
-          var atms = data.xml_msg.atms.atm;
-          for(var j=0; j<atms.length; j++) {
-            const transformedData = transformJetcoData(atms[j]);
-            jetco_atm_arr.push(transformedData);
+          if(data.xml_msg.atms != null) {
+            var atms = data.xml_msg.atms.atm;
+            for(var j=0; j<atms.length; j++) {
+              const transformedData = transformJetcoData(atms[j]);
+              jetco_atm_arr.push(transformedData);
+            }
           }
       }
     }

@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
 const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
+const { jetco } = require('../reference/jetco_banks');
 const { remind, info } = require('./utils');
 const jetcoIdx = [];
 
@@ -102,8 +103,16 @@ const transformJetcoData = (data) => {
     },
     "ATMServices": {}, //TODO
     "OpeningHours": [], //TODO
-    "Bank": data.ob_name
+    "Bank": convertBankName(data.ob_name)
   }
+}
+
+const convertBankName = (bank) => {
+  const o = jetco.filter(b => {
+    return b.en === bank
+  });
+  
+  return o[0] ? o[0].idx : '';
 }
 
 /*
@@ -156,7 +165,7 @@ const process_jetco_data = (inputPath) => {
           }
       }
     }
-    
+
     return JSON.stringify({
       "meta": {
         "LastUpdated": new Date(),

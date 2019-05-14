@@ -14,6 +14,7 @@ import deepOrange from '@material-ui/core/colors/deepOrange';
 import ATMMarker from '../../components/Leaflet/ATMMarker';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 import { distanceConverter } from '../../utils/geoUtils';
+import { findBankNameByIdx } from '../../utils/bankUtils';
 import { SERVICES } from '../../constants/services';
 import {
     toggleATMDetailDialog,
@@ -226,6 +227,7 @@ class ATMDetailContent extends React.Component {
                     </ListItem>
                 </List>
 
+                { this.renderListItem('Bank', findBankNameByIdx(Bank)) }
                 { this.renderListItem('District', CountryCode + ' > ' + TerritoryName + ' > ' + DistrictName) }
                 { this.renderListItem('Address', AddressLine) }
                 { this.renderListItem('Services', this.renderServiceList(ATMServices)) }

@@ -59,7 +59,7 @@ const styles = {
 };
 
 const hsbc = {
-    img: 'hsbc.png',
+    img: './images/hsbc.png',
     title: {
         en: 'HSBC',
         tc: ''
@@ -71,7 +71,7 @@ const hsbc = {
 };
 
 const hangseng = {
-    img: 'hang_seng.png',
+    img: './images/hang_seng.png',
     title: {
         en: 'Hang Seng',
         tc: ''
@@ -83,7 +83,7 @@ const hangseng = {
 };
 
 const jetco = {
-    img: 'jetco.png',
+    img: './images/jetco.png',
     title: {
         en: 'Jetco',
         tc: ''

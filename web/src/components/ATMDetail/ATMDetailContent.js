@@ -133,7 +133,7 @@ class ATMDetailContent extends React.Component {
     renderNetworkIcon = (bank) => {
         const { classes } = this.props;
         return (
-            <img alt={bank} src={bank + ".png"} className={classes.bankIcon}></img>
+            <img alt={bank} src={"./images/" + bank + ".png"} className={classes.bankIcon}></img>
         );
     }
 

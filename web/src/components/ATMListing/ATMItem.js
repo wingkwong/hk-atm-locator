@@ -35,7 +35,7 @@ class ATMItem extends React.Component {
     renderBankIcon(atm) {
       const { classes } = this.props;
       return (
-        <img alt={atm.Bank} src={atm.Bank + ".png"} className={classes.bankIcon}></img>
+        <img alt={atm.Bank} src={"./images/" + atm.Bank + ".png"} className={classes.bankIcon}></img>
       )
     }
 

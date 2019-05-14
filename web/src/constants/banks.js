@@ -12,13 +12,13 @@ export const hangSeng = {
 
 export const bochk = {
     idx: 'bochk',
-    en: 'Bank of China(Hong Kong) Limited',
+    en: 'Bank of China (Hong Kong) Limited',
     zh: ''
 }
 
 export const bankcomm = {
     idx: 'bankcomm',
-    en: 'Bank of Communications (Hong Kong) Limited',
+    en: 'Bank of Communications Co., Ltd.',
     zh: ''
 }
 
@@ -90,7 +90,7 @@ export const icbcasia = {
 
 export const ocbcwhhk = {
     idx: 'ocbcwhhk',
-    en: 'OCBC Wing Hang Bank',
+    en: 'OCBC Wing Hang Bank Limited',
     zh: ''
 }
 
@@ -120,7 +120,7 @@ export const standardchartered = {
 
 export const hkbea = {
     idx: 'hkbea',
-    en: 'The Bank of East Asia',
+    en: 'The Bank of East Asia, Limited',
     zh: ''
 }
 

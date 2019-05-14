@@ -145,3 +145,9 @@ export const jetco = [
     standardchartered,
     hkbea
 ]
+
+export const allBanks = [
+    hsbc,
+    hangSeng,
+    ...jetco
+];

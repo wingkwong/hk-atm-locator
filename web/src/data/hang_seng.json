@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-05-15T07:49:41+08:00",
+        "LastUpdated": "2019-05-16T07:50:01+08:00",
         "TotalResults": 282
     },
     "data": [
@@ -8526,72 +8526,6 @@
                             ]
                         },
                         {
-                            "ATMName": "Shatin Sales & Service Centre",
-                            "BranchName": "Shatin Sales & Service Centre",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "New Territories East",
-                                "DistrictName": "Shatin",
-                                "AddressLine": [
-                                    "Shop 72A-C and 73, Level 3, Lucky Plaza, 1-15 Wang Pok Street"
-                                ],
-                                "LatitudeDescription": "22.3831",
-                                "LongitudeDescription": "114.1902"
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": true,
-                                "RMBATMwithoutForeignCurrencyIndicator": true,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "24-hours",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": false,
-                                "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [
-                                {
-                                    "OpenDayDescription": "Monday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Tuesday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Wednesday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Thursday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Friday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Saturday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Sunday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                }
-                            ]
-                        },
-                        {
                             "ATMName": "MTR Shek Kip Mei Station",
                             "BranchName": "MTR Shek Kip Mei Station",
                             "HotlineNumber": "29972112",
@@ -10019,6 +9953,36 @@
                             ]
                         },
                         {
+                            "ATMName": "Kowloon Main Branch",
+                            "BranchName": "Kowloon Main Branch",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "Kowloon West",
+                                "DistrictName": "Yau Tsim Mong",
+                                "AddressLine": [
+                                    "618 Nathan Road (With Foreign Currency ATM)"
+                                ],
+                                "LatitudeDescription": "22.3173",
+                                "LongitudeDescription": "114.1701"
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": true,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": false,
+                                "RMBATMwithoutForeignCurrencyIndicator": false,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "Multi Function ATM : 24-hours  Foreign Currency ATM, Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "5:00pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": []
+                        },
+                        {
                             "ATMName": "Wah Ming Shopping Centre",
                             "BranchName": "Wah Ming Shopping Centre",
                             "HotlineNumber": "29972112",
@@ -10685,36 +10649,6 @@
                                 "CashDepositMachineIndicator": true,
                                 "ChequeDepositMachineIndicator": false,
                                 "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": []
-                        },
-                        {
-                            "ATMName": "Kowloon Main Branch",
-                            "BranchName": "Kowloon Main Branch",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "Kowloon West",
-                                "DistrictName": "Yau Tsim Mong",
-                                "AddressLine": [
-                                    "618 Nathan Road"
-                                ],
-                                "LatitudeDescription": "22.3173",
-                                "LongitudeDescription": "114.1701"
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": false,
-                                "RMBATMwithoutForeignCurrencyIndicator": false,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "Multi Function ATM : 24-hours Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": true,
-                                "ChequeDepositMachineCutOffTime": "5:00pm"
                             },
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
@@ -12879,6 +12813,72 @@
                                     "OpenDayDescription": "Sunday",
                                     "OpenTime": "05:36",
                                     "CloseTime": "01:25"
+                                }
+                            ]
+                        },
+                        {
+                            "ATMName": "Shatin Sales and Service Centre",
+                            "BranchName": "Shatin Sales and Service Centre",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "New Territories East",
+                                "DistrictName": "Shatin",
+                                "AddressLine": [
+                                    "Shop 72A-C and 73, Level 3, Lucky Plaza, 1-15 Wang Pok Street"
+                                ],
+                                "LatitudeDescription": "22.3831",
+                                "LongitudeDescription": "114.1902"
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": false,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": true,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "24-hours",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": false,
+                                "ChequeDepositMachineCutOffTime": "-"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [
+                                {
+                                    "OpenDayDescription": "Monday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Tuesday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Wednesday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Thursday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Friday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Saturday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Sunday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
                                 }
                             ]
                         },

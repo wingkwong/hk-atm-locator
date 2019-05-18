@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-05-14T07:50:09+08:00",
+        "LastUpdated": "2019-05-18T07:49:41+08:00",
         "TotalResults": 282
     },
     "data": [
@@ -182,8 +182,8 @@
                                 "AddressLine": [
                                     "Shop 217C, Level 2, East Point City (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3159",
-                                "LongitudeDescription": "114.2659"
+                                "LatitudeDescription": "22.3156",
+                                "LongitudeDescription": "114.2656"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -598,8 +598,8 @@
                                     "MTR Tai Koo Station (near Exit B) (With Voice Navigation ATM)",
                                     "MTR Tai Koo Station (near Exit C)"
                                 ],
-                                "LatitudeDescription": "22.2848",
-                                "LongitudeDescription": "114.2153"
+                                "LatitudeDescription": "22.2859",
+                                "LongitudeDescription": "114.2168"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -732,8 +732,8 @@
                                     "MTR Admiralty Station (near Exit C)",
                                     "MTR Admiralty Station (near Exit E) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.2792",
-                                "LongitudeDescription": "114.1644"
+                                "LatitudeDescription": "22.2787",
+                                "LongitudeDescription": "114.1656"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -859,7 +859,7 @@
                                     "G/F, Fu Heng Shopping Centre, Tai Po"
                                 ],
                                 "LatitudeDescription": "22.4586",
-                                "LongitudeDescription": "114.1714"
+                                "LongitudeDescription": "114.1712"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -1084,8 +1084,8 @@
                                     "MTR Kowloon Tong Station  (paid concourse near Exit C)",
                                     "MTR MTR Kowloon Tong Station (paid concourse) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.337",
-                                "LongitudeDescription": "114.1761"
+                                "LatitudeDescription": "22.3363",
+                                "LongitudeDescription": "114.1765"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -1285,8 +1285,8 @@
                                 "AddressLine": [
                                     "1/F, Tin Shing Shopping Centre, Tin Shing Court, Tin Shui Wai"
                                 ],
-                                "LatitudeDescription": "22.449",
-                                "LongitudeDescription": "114.0027"
+                                "LatitudeDescription": "22.4488",
+                                "LongitudeDescription": "114.0024"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -1960,8 +1960,8 @@
                                 "AddressLine": [
                                     "MTR Choi Hung Station (concourse)"
                                 ],
-                                "LatitudeDescription": "22.3348",
-                                "LongitudeDescription": "114.2092"
+                                "LatitudeDescription": "22.3343",
+                                "LongitudeDescription": "114.2093"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2569,8 +2569,8 @@
                                 "AddressLine": [
                                     "MTR Lok Fu Station (near Exit A)"
                                 ],
-                                "LatitudeDescription": "22.3378",
-                                "LongitudeDescription": "114.1877"
+                                "LatitudeDescription": "22.3381",
+                                "LongitudeDescription": "114.1876"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2801,7 +2801,7 @@
                                     "MTR Jordan Station (near Exit E) (With Voice Navigation ATM)"
                                 ],
                                 "LatitudeDescription": "22.3043",
-                                "LongitudeDescription": "114.1714"
+                                "LongitudeDescription": "114.1712"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2866,8 +2866,8 @@
                                 "AddressLine": [
                                     "UG/F, Island Resort Mall, Siu Sai Wan"
                                 ],
-                                "LatitudeDescription": "22.2666",
-                                "LongitudeDescription": "114.2511"
+                                "LatitudeDescription": "22.2662",
+                                "LongitudeDescription": "114.2508"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2926,8 +2926,8 @@
                                 "AddressLine": [
                                     "Shop 101, G/F., Lung Poon Court Commercial Centre, Lung Poon Court, Diamond Hill"
                                 ],
-                                "LatitudeDescription": "22.3417",
-                                "LongitudeDescription": "114.2002"
+                                "LatitudeDescription": "22.3418",
+                                "LongitudeDescription": "114.2005"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2993,7 +2993,7 @@
                                     "MTR Tiu Keng Leng Station (near Exit A1) (With Voice Navigation ATM)"
                                 ],
                                 "LatitudeDescription": "22.3045",
-                                "LongitudeDescription": "114.2521"
+                                "LongitudeDescription": "114.2528"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3125,7 +3125,7 @@
                                     "MTR Jordan Station (near Exit A/B)"
                                 ],
                                 "LatitudeDescription": "22.3043",
-                                "LongitudeDescription": "114.1714"
+                                "LongitudeDescription": "114.1712"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3456,8 +3456,8 @@
                                     "MTR Tsuen Wan Station  (near Exit A)",
                                     "MTR Tsuen Wan Station  (paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.3737",
-                                "LongitudeDescription": "114.1176"
+                                "LatitudeDescription": "22.3742",
+                                "LongitudeDescription": "114.1169"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3684,8 +3684,8 @@
                                 "AddressLine": [
                                     "MTR Tsuen Wan Station (near Exit C) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3737",
-                                "LongitudeDescription": "114.1176"
+                                "LatitudeDescription": "22.3742",
+                                "LongitudeDescription": "114.1169"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -5155,8 +5155,8 @@
                                     "MTR Tsing Yi Station (near Exit B)",
                                     "MTR Tsing Yi Station  (near Exit F)"
                                 ],
-                                "LatitudeDescription": "22.3585",
-                                "LongitudeDescription": "114.1069"
+                                "LatitudeDescription": "22.3584",
+                                "LongitudeDescription": "114.1068"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -5318,8 +5318,8 @@
                                 "AddressLine": [
                                     "MTR Lai King Station (paid concourse) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3485",
-                                "LongitudeDescription": "114.1265"
+                                "LatitudeDescription": "22.3484",
+                                "LongitudeDescription": "114.126"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -6035,8 +6035,8 @@
                                 "AddressLine": [
                                     "MTR South Horizons Station (paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.2427",
-                                "LongitudeDescription": "114.1482"
+                                "LatitudeDescription": "22.2424",
+                                "LongitudeDescription": "114.1494"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -6426,7 +6426,7 @@
                                     "MTR Sai Ying Pun Station  (concourse)"
                                 ],
                                 "LatitudeDescription": "22.2863",
-                                "LongitudeDescription": "114.1414"
+                                "LongitudeDescription": "114.1418"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -6881,8 +6881,8 @@
                                 "AddressLine": [
                                     "Tsuen Wan Line, Lai King Station"
                                 ],
-                                "LatitudeDescription": "22.3485",
-                                "LongitudeDescription": "114.1265"
+                                "LatitudeDescription": "22.3484",
+                                "LongitudeDescription": "114.126"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -6948,7 +6948,7 @@
                                     "Room VA207, The HK Polytechnic University"
                                 ],
                                 "LatitudeDescription": "22.3031",
-                                "LongitudeDescription": "114.1783"
+                                "LongitudeDescription": "114.1782"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -7043,8 +7043,8 @@
                                 "AddressLine": [
                                     "Shop Unit G11-G14, Maritime Square"
                                 ],
-                                "LatitudeDescription": "22.3587",
-                                "LongitudeDescription": "114.1057"
+                                "LatitudeDescription": "22.3585",
+                                "LongitudeDescription": "114.1077"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -7074,7 +7074,7 @@
                                     "Site opposite to Shop no. UG03, On Tat Shopping Centre"
                                 ],
                                 "LatitudeDescription": "22.3198",
-                                "LongitudeDescription": "114.2349"
+                                "LongitudeDescription": "114.2352"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -7229,8 +7229,8 @@
                                 "AddressLine": [
                                     "MTR Choi Hung Station (near Exit C) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3344",
-                                "LongitudeDescription": "114.2098"
+                                "LatitudeDescription": "22.3343",
+                                "LongitudeDescription": "114.2093"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -7656,8 +7656,8 @@
                                 "AddressLine": [
                                     "G/F Bus Terminus Waiting Lounge , Park Island"
                                 ],
-                                "LatitudeDescription": "22.3534",
-                                "LongitudeDescription": "114.0606"
+                                "LatitudeDescription": "22.3538",
+                                "LongitudeDescription": "114.0612"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8016,8 +8016,8 @@
                                 "AddressLine": [
                                     "MTR Po Lam Station (near Exit A1) (With Foreign Currency ATM)"
                                 ],
-                                "LatitudeDescription": "22.3225",
-                                "LongitudeDescription": "114.2578"
+                                "LatitudeDescription": "22.3233",
+                                "LongitudeDescription": "114.2572"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -8113,8 +8113,8 @@
                                     "MTR Yau Ma Tei Station (near Exit A)",
                                     "MTR Yau Ma Tei Station (near Exit D) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3129",
-                                "LongitudeDescription": "114.1709"
+                                "LatitudeDescription": "22.313",
+                                "LongitudeDescription": "114.1701"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8526,72 +8526,6 @@
                             ]
                         },
                         {
-                            "ATMName": "Shatin Sales & Service Centre",
-                            "BranchName": "Shatin Sales & Service Centre",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "New Territories East",
-                                "DistrictName": "Shatin",
-                                "AddressLine": [
-                                    "Shop 72A-C and 73, Level 3, Lucky Plaza, 1-15 Wang Pok Street"
-                                ],
-                                "LatitudeDescription": "22.3831",
-                                "LongitudeDescription": "114.1902"
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": true,
-                                "RMBATMwithoutForeignCurrencyIndicator": true,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "24-hours",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": false,
-                                "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [
-                                {
-                                    "OpenDayDescription": "Monday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Tuesday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Wednesday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Thursday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Friday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Saturday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Sunday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                }
-                            ]
-                        },
-                        {
                             "ATMName": "MTR Shek Kip Mei Station",
                             "BranchName": "MTR Shek Kip Mei Station",
                             "HotlineNumber": "29972112",
@@ -8603,8 +8537,8 @@
                                     "MTR Shek Kip Mei Station (near Exit B)",
                                     "MTR Shek Kip Mei Station (near Exit C) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3314",
-                                "LongitudeDescription": "114.1688"
+                                "LatitudeDescription": "22.3316",
+                                "LongitudeDescription": "114.1685"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -9253,8 +9187,8 @@
                                 "AddressLine": [
                                     "MTR Tin Hau Station (near Exit A)"
                                 ],
-                                "LatitudeDescription": "22.2827",
-                                "LongitudeDescription": "114.192"
+                                "LatitudeDescription": "22.2821",
+                                "LongitudeDescription": "114.1914"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -9607,8 +9541,8 @@
                                 "AddressLine": [
                                     "MTR Yau Tong Station (near Exit A1) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.2985",
-                                "LongitudeDescription": "114.2364"
+                                "LatitudeDescription": "22.2977",
+                                "LongitudeDescription": "114.2374"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -9740,8 +9674,8 @@
                                 "AddressLine": [
                                     "Open space near Shop No. 14, Hung Fuk Shopping Centre, Hung Fuk Estate, Yuen Long"
                                 ],
-                                "LatitudeDescription": "22.4363",
-                                "LongitudeDescription": "113.9978"
+                                "LatitudeDescription": "22.4372",
+                                "LongitudeDescription": "113.9972"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10017,6 +9951,36 @@
                                     "CloseTime": "23:59"
                                 }
                             ]
+                        },
+                        {
+                            "ATMName": "Kowloon Main Branch",
+                            "BranchName": "Kowloon Main Branch",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "Kowloon West",
+                                "DistrictName": "Yau Tsim Mong",
+                                "AddressLine": [
+                                    "618 Nathan Road (With Foreign Currency ATM)"
+                                ],
+                                "LatitudeDescription": "22.3173",
+                                "LongitudeDescription": "114.1701"
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": true,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": false,
+                                "RMBATMwithoutForeignCurrencyIndicator": false,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "Multi Function ATM : 24-hours  Foreign Currency ATM, Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "5:00pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": []
                         },
                         {
                             "ATMName": "Wah Ming Shopping Centre",
@@ -10318,7 +10282,7 @@
                                     "989 King's Road"
                                 ],
                                 "LatitudeDescription": "22.2857",
-                                "LongitudeDescription": "114.2118"
+                                "LongitudeDescription": "114.2115"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10384,7 +10348,7 @@
                                     "Shop 1040-1042, Level 1, Sheung Shui Centre"
                                 ],
                                 "LatitudeDescription": "22.501",
-                                "LongitudeDescription": "114.1299"
+                                "LongitudeDescription": "114.1307"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10605,8 +10569,8 @@
                                 "AddressLine": [
                                     "MTR Diamond Hill Station (near Exit C)"
                                 ],
-                                "LatitudeDescription": "22.3393",
-                                "LongitudeDescription": "114.202"
+                                "LatitudeDescription": "22.3395",
+                                "LongitudeDescription": "114.2024"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10685,36 +10649,6 @@
                                 "CashDepositMachineIndicator": true,
                                 "ChequeDepositMachineIndicator": false,
                                 "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": []
-                        },
-                        {
-                            "ATMName": "Kowloon Main Branch",
-                            "BranchName": "Kowloon Main Branch",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "Kowloon West",
-                                "DistrictName": "Yau Tsim Mong",
-                                "AddressLine": [
-                                    "618 Nathan Road"
-                                ],
-                                "LatitudeDescription": "22.3173",
-                                "LongitudeDescription": "114.1701"
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": false,
-                                "RMBATMwithoutForeignCurrencyIndicator": false,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "Multi Function ATM : 24-hours Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": true,
-                                "ChequeDepositMachineCutOffTime": "5:00pm"
                             },
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
@@ -10893,8 +10827,8 @@
                                 "AddressLine": [
                                     "MTR Shau Kei Wan Station (Exit D) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.2792",
-                                "LongitudeDescription": "114.2291"
+                                "LatitudeDescription": "22.2786",
+                                "LongitudeDescription": "114.2282"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -11477,7 +11411,7 @@
                                     "ATM 09-10, Level 1, Metro City, Phase II, Tsuen Kwan O (With Voice Navigation ATM)"
                                 ],
                                 "LatitudeDescription": "22.3207",
-                                "LongitudeDescription": "114.2571"
+                                "LongitudeDescription": "114.2566"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12155,8 +12089,8 @@
                                 "AddressLine": [
                                     "Shop No.1, G/F, Heya Aqua, 397 Un Chau Street, Cheung Sha Wan (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3388",
-                                "LongitudeDescription": "114.1545"
+                                "LatitudeDescription": "22.3387",
+                                "LongitudeDescription": "114.1542"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12797,8 +12731,8 @@
                                 "AddressLine": [
                                     "Shop G202, Lok Fu Plaza"
                                 ],
-                                "LatitudeDescription": "22.3384",
-                                "LongitudeDescription": "114.1873"
+                                "LatitudeDescription": "22.3382",
+                                "LongitudeDescription": "114.187"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12883,6 +12817,72 @@
                             ]
                         },
                         {
+                            "ATMName": "Shatin Sales and Service Centre",
+                            "BranchName": "Shatin Sales and Service Centre",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "New Territories East",
+                                "DistrictName": "Shatin",
+                                "AddressLine": [
+                                    "Shop 72A-C and 73, Level 3, Lucky Plaza, 1-15 Wang Pok Street"
+                                ],
+                                "LatitudeDescription": "22.3831",
+                                "LongitudeDescription": "114.1902"
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": false,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": true,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "24-hours",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": false,
+                                "ChequeDepositMachineCutOffTime": "-"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [
+                                {
+                                    "OpenDayDescription": "Monday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Tuesday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Wednesday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Thursday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Friday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Saturday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Sunday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                }
+                            ]
+                        },
+                        {
                             "ATMName": "Caribbean Square",
                             "BranchName": "Caribbean Square",
                             "HotlineNumber": "29972112",
@@ -12893,8 +12893,8 @@
                                 "AddressLine": [
                                     "No. 1 Kin Tung Road, Tung Chung, Lantau Island"
                                 ],
-                                "LatitudeDescription": "22.2914",
-                                "LongitudeDescription": "113.9481"
+                                "LatitudeDescription": "22.2921",
+                                "LongitudeDescription": "113.9498"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13055,8 +13055,8 @@
                                 "AddressLine": [
                                     "Shop No.9, G/F, Ying Tung Shopping Centre, Ying Tung Estate, Tung Chung"
                                 ],
-                                "LatitudeDescription": "22.2965",
-                                "LongitudeDescription": "113.9532"
+                                "LatitudeDescription": "22.2962",
+                                "LongitudeDescription": "113.9533"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13121,8 +13121,8 @@
                                 "AddressLine": [
                                     "MTR Tsuen Wan West Station (near Exit E) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3676",
-                                "LongitudeDescription": "114.1104"
+                                "LatitudeDescription": "22.3686",
+                                "LongitudeDescription": "114.1091"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13253,8 +13253,8 @@
                                 "AddressLine": [
                                     "MTR Mong Kok Station (near Exit D) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3202",
-                                "LongitudeDescription": "114.1689"
+                                "LatitudeDescription": "22.3194",
+                                "LongitudeDescription": "114.1697"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14009,8 +14009,8 @@
                                 "AddressLine": [
                                     "MTR Siu Hong Station (near Exit B)"
                                 ],
-                                "LatitudeDescription": "22.4131",
-                                "LongitudeDescription": "113.9793"
+                                "LatitudeDescription": "22.4126",
+                                "LongitudeDescription": "113.9791"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14363,8 +14363,8 @@
                                 "AddressLine": [
                                     "MTR Kowloon Station (near Exit C)"
                                 ],
-                                "LatitudeDescription": "22.3049",
-                                "LongitudeDescription": "114.1616"
+                                "LatitudeDescription": "22.3048",
+                                "LongitudeDescription": "114.1618"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14489,8 +14489,8 @@
                                 "AddressLine": [
                                     "Shops No.105, 1/F, Mei Foo Plaza, Mei Foo Sun Chuen (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3358",
-                                "LongitudeDescription": "114.142"
+                                "LatitudeDescription": "22.3355",
+                                "LongitudeDescription": "114.1414"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,

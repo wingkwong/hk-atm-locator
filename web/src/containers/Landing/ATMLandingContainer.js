@@ -55,6 +55,9 @@ const styles = {
         margin: '8px auto 0',
         display: '#000000',
         backgroundColor: '#ffffff'
+    },
+    paper: {
+        overflow: 'hidden'
     }
 };
 
@@ -177,6 +180,12 @@ class ATMLandingContainer extends Component{
                     fullScreen
                     open={this.state.open}
                     TransitionComponent={Transition}
+                    className={classes.dialog}
+                    PaperProps ={{
+                        classes: {
+                            root: classes.paper
+                        }
+                    }}
                 >
                      <AppNavbar backToLandingPage={this.backToLandingPage} isDialogAppNavBar={true}/>
 

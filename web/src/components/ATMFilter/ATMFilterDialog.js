@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-
+import { connect } from 'react-redux';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -15,13 +15,12 @@ import Select from '@material-ui/core/Select';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Switch from '@material-ui/core/Switch';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { jetco } from '../../constants/banks';
 import { networks } from '../../constants/networks';
-import { connect } from 'react-redux';
 import { SERVICES, WEEK_DAYS } from '../../constants/services';
+import ATMTimePicker from './ATMTimePicker';
 
 
 import {
@@ -195,7 +194,8 @@ class ATMFilterDialog extends Component {
       <FormControl component="fieldset">
         <FormLabel component="legend">Opening Hours</FormLabel>
         <FormGroup>
-           {/* TODO: */}
+           <ATMTimePicker label="Start Time" defaultValue="00:00"/>
+           <ATMTimePicker label="Close Time" defaultValue="23:59"/>
         </FormGroup>
       </FormControl>
     );
@@ -235,10 +235,7 @@ class ATMFilterDialog extends Component {
   }
 
   render() {
-     const { classes, fullScreen } = this.props;
-    /*
-      TODO: Add Grid for responsive design
-    */
+     const { fullScreen } = this.props;
     return (
       <Dialog
           fullScreen={fullScreen}

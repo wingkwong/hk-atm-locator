@@ -7,6 +7,7 @@ import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@material-ui/icons/Search';
 import FilterIcon from '@material-ui/icons/Tune';
 import {
+    setATMData,
     toggleATMFilterDialog
   } from '../../actions';
 
@@ -65,30 +66,40 @@ const styles = theme => ({
 });
 
 class ATNSearchbar extends React.Component {
+    constructor(props){
+        super(props)
+        this.handleChange = this.handleChange.bind(this);
+    }
+
     handleFilterOnclick = () => {
         this.props.toggleATMFilterDialog(true);
     }
 
-  render() {
-    const { classes } = this.props;
-    return (
-        <div className={classes.search}>
-            <div className={classes.searchIcon}>
-            <SearchIcon />
+    handleChange = (e) => {
+        // TODO:
+    }
+
+    render() {
+        const { classes } = this.props;
+        return (
+            <div className={classes.search}>
+                <div className={classes.searchIcon}>
+                    <SearchIcon />
+                </div>
+                <InputBase
+                placeholder="Search…"
+                classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput,
+                }}
+                onChange={this.handleChange}
+                />
+                <div className={classes.filterIcon} onClick={() => {this.handleFilterOnclick()}}>
+                <FilterIcon/>
+                </div>
             </div>
-            <InputBase
-            placeholder="Search…"
-            classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-            }}
-            />
-            <div className={classes.filterIcon} onClick={() => {this.handleFilterOnclick()}}>
-            <FilterIcon/>
-            </div>
-        </div>
-    );
-  }
+        );
+    }
 }
 
 ATNSearchbar.propTypes = {
@@ -97,7 +108,7 @@ ATNSearchbar.propTypes = {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-  
+        atm: state.atm.data
     };
   }
   
@@ -105,6 +116,9 @@ const mapStateToProps = (state, ownProps) => {
     return {
         toggleATMFilterDialog: (open) => {
             dispatch(toggleATMFilterDialog(open))
+        },
+        setATMData: (atmData) => {
+            dispatch(setATMData(atmData));
         },
     };
   }

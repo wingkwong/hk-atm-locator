@@ -34,7 +34,9 @@ class ATMTimePicker extends React.Component {
 }
 
 ATMTimePicker.propTypes = {
-  classes: PropTypes.object.isRequired,
+    classes: PropTypes.object.isRequired,
+    label: PropTypes.string.isRequired,
+    defaultValue: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles)(ATMTimePicker);

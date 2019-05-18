@@ -118,15 +118,15 @@ class ATMLandingContainer extends Component{
         const { classes } = this.props;
         var data = null;
 
-        if(network == 'hsbc') {
+        if(network === 'hsbc') {
             data = hsbc;
         }
 
-        if(network == 'hangseng') {
+        if(network === 'hangseng') {
             data = hangseng;
         }
 
-        if(network == 'jetco') {
+        if(network === 'jetco') {
             data = jetco;
         }
 
@@ -163,7 +163,7 @@ class ATMLandingContainer extends Component{
         const { network } = this.state;
         
         return (
-            <React.Fragment className={classes.root}>
+            <React.Fragment>
                 <div className={classes.landingContainer}>
                     <Typography className={classes.subheader} variant="h6" color="inherit">
                     Hong Kong ATM Locator

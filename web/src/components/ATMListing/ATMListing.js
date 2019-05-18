@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import { withStyles } from '@material-ui/core/styles';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import InfiniteScroll from 'react-infinite-scroller';
 import ATMItem from './ATMItem';
 import ATMItemDialog from './ATMItemDialog';
@@ -59,13 +57,16 @@ class ATMListing extends React.Component {
               useWindow={false}
               >
                 <List>
-              {
-                this.state.atmItems.map((atm, idx) => {
-                  return (
-                    <ATMItem atm={atm} key={idx} idx={idx}/>
-                  )
-                })
-              }
+                {
+                  this.state.atmItems.map((atm, idx) => {
+                    return (
+                      <div key={idx}>
+                        <ATMItem atm={atm} idx={idx}/>
+                       <Divider/>
+                      </div>
+                    )
+                  })
+                }
               </List>
           </InfiniteScroll>
           <ATMItemDialog/>

@@ -61,11 +61,11 @@ class ATMListingContainer extends Component{
     initATMData() {
         const { network } = this.props;
         var ATMs = null;
-        if(network == 'hsbc') {
+        if(network === 'hsbc') {
             ATMs = loadHSBCData();
-        } else if(network == 'hangseng') {
+        } else if(network === 'hangseng') {
             ATMs = loadHangSengData();
-        } else if(network == 'jetco') {
+        } else if(network === 'jetco') {
             ATMs = loadJetcoData();
         } else {
             ATMs = loadAllData();

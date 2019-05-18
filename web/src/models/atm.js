@@ -1,12 +1,11 @@
 import { isArray } from "util";
+import * as moment from 'moment';
 import {
   SERVICE_BILL_PAYMENT, SERVICE_CASH_DEPOSIT, SERVICE_CASH_WITHDRAWAL, SERVICE_CHEQUE_DEPOSIT, SERVICE_COIN_SORT,
-  SERVICE_DISABLED_ACCESS, SERVICE_FOREIGN_CURRENCY,
-  WEEK_DAYS
+  SERVICE_DISABLED_ACCESS, SERVICE_FOREIGN_CURRENCY
 } from '../constants/services';
 import * as banks from '../constants/banks';
 import * as networks from '../constants/networks';
-import * as moment from 'moment';
 
 class ATM {
   Bank = "";
@@ -120,7 +119,7 @@ export class HsbcATM extends ATM {
 export class JetcoATM extends ATM {
   constructor(record) {
     super(record);
-    this.Bank = record.Bank; //TODO: lookup bank idx
+    this.Bank = record.Bank;
     this.Network = networks.jetco.idx;
   }
 }

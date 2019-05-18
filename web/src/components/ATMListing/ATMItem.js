@@ -101,8 +101,6 @@ class ATMItem extends React.Component {
                     <div style={{display: 'flex'}}>
                     { this.renderOpeningClosingTag(atm) }
                     </div>
-
-
                 </div>
             </ListItem>
         );

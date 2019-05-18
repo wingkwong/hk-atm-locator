@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 import L from 'leaflet';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, TileLayer, Marker } from 'react-leaflet';
 import ATMMarkerClusterGroup from '../../components/Leaflet/ATMMarkerClusterGroup';
 import currentLocationIcon from '../../static/images/you_are_here.png';
 

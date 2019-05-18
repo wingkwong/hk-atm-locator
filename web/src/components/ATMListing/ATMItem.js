@@ -84,29 +84,27 @@ class ATMItem extends React.Component {
         const { ATMName, ATMAddress, distance } = atm;
 
         return (
-            <React.Fragment>
-                <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
-                    { this.renderBankIcon(atm) }
-                    <div>
-                      <ListItemText
-                          primary={ ATMName }
-                          secondary={
-                              <React.Fragment>
-                                  { ATMAddress.AddressLine }
-                                  <br/>
-                                  { this.renderDistance(distance) }
+            <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
+                { this.renderBankIcon(atm) }
+                <div>
+                    <ListItemText
+                        primary={ ATMName }
+                        secondary={
+                            <React.Fragment>
+                                { ATMAddress.AddressLine }
+                                <br/>
+                                { this.renderDistance(distance) }
 
-                              </React.Fragment>
-                          }
-                      />
-                      <div style={{display: 'flex'}}>
-                      { this.renderOpeningClosingTag(atm) }
-                      </div>
-
-
+                            </React.Fragment>
+                        }
+                    />
+                    <div style={{display: 'flex'}}>
+                    { this.renderOpeningClosingTag(atm) }
                     </div>
-                </ListItem>
-            </React.Fragment>
+
+
+                </div>
+            </ListItem>
         );
     }
 }

@@ -19,15 +19,31 @@ Paragraph #21
 
 ### Phase I
 - [x] Retrieving ATM data from HSBC and Hang Seng Banks from API Portals
-
-### Phase II (In Progress)
-- [ ] Data Transformation & Enrichment
-- [ ] Developing a web portal
-
-### Phase III
 - [ ] Retrieving ATM data from APIX
+    - [ ] Bank of China (Hong Kong) Limited
+    - [ ] Bank of Communications (Hong Kong) Limited
+    - [ ] Bank of Communications Co., Ltd.
+    - [ ] China CITIC Bank International Limited
+    - [ ] China Construction Bank (Asia) Corporation Limited
+    - [ ] China Merchants Bank Hong Kong Branch
+    - [ ] Chiyu Banking Corporation Limited
+    - [ ] Chong Hing Bank Limited
+    - [ ] Citibank (Hong Kong) Limited
+    - [x] CMB Wing Lung Bank Limited
+    - [ ] Dah Sing Bank, Limited
+    - [ ] DBS Bank (Hong Kong) Limited
+    - [x] Fubon Bank (Hong Kong) Limited
+    - [x] Industrial and Commercial Bank of China (Asia) Limited
+    - [ ] Nanyang Commercial Bank Limited
+    - [ ] OCBC Wing Hang Bank Limited
+    - [ ] Public Bank (Hong Kong) Limited
+    - [ ] Shanghai Commercial Bank Limited
+    - [ ] Standard Chartered Bank (Hong Kong) Limited
+    - [x] The Bank of East Asia, Limited
+
+### Phase II 
 - [ ] Data Transformation & Enrichment
-- [ ] Web Portal Integration
+- [ ] Web Portal Development
 
 ---
 ## Contributions

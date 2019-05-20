@@ -189,6 +189,8 @@ const processChecksum = (data, md5Path) => {
   if(shouldWriteChecksum(md5Path, checksum)) {
     fs.writeFileSync(md5Path, checksum);
     remind(`Finished generating checksum file at ${md5Path}`);
+  } else {
+    fs.unlinkSync(md5Path);
   }
 }
 

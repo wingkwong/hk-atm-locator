@@ -17,29 +17,47 @@ const BANK_JETCO = 'jetco';
 const BANKS = [BANK_HANG_SENG, BANK_HSBC, BANK_JETCO];
 
 /**
- * Termination process
+ * Terminate process
  */
 function end() {
   process.exit(0);
 }
 
+/**
+ * Terminate process with the specific error message
+ * @param {*} err
+ */
 function terminateWithError(err) {
   alert(err);
   process.exit(1);
 }
 
+/**
+ * Validate if the specific bank exists
+ * @param {*} bank
+ */
 function validateBank(bank) {
   if (BANKS.indexOf(bank) === -1) {
     terminateWithError(`Invalid bank. Allowed options: ${bank.join(',')}`);
   }
 }
 
+/**
+ * Validate if the specific file exists
+ * @param {*} file
+ */
 function validateFile(file) {
   if(!fs.existsSync(file)) {
     terminateWithError(`${file} not exists`);
   }
 }
 
+/**
+ * Enrich latitude and longitude based on Address Line 
+ * using Address Parser Lib
+ * @param {*} bank
+ * @param {*} outputFile
+ */
 async function parseAddress(atm) {
   const addressLine = atm.ATMAddress.AddressLine.join(' ');
   const records = await AddressParser.parse(addressLine);
@@ -51,6 +69,11 @@ async function parseAddress(atm) {
   }
 }
 
+/**
+ * Get the raw data from API Portal
+ * @param {*} bank
+ * @param {*} outputFile
+ */
 async function prepareData(bank, outputFile) {
   validateBank(bank);
   if (bank === BANK_HANG_SENG) {
@@ -63,6 +86,12 @@ async function prepareData(bank, outputFile) {
   terminateWithError('Unknown bank');
 }
 
+/**
+ * Process data for the specific bank
+ * @param {*} bank
+ * @param {*} inputFile
+ * @param {*} outputFile
+ */
 async function processData(bank, inputFile, outputFile) {
   validateBank(bank);
   if (bank === BANK_HANG_SENG) {
@@ -81,6 +110,7 @@ async function processData(bank, inputFile, outputFile) {
 /**
  * Use address-parser to append the addresses to the data
  * Only applicable for hang seng now
+ * @param {*} bank
  * @param {*} inputFile
  * @param {*} outputFile
  */
@@ -111,6 +141,13 @@ async function processAddress(bank, inputFile, outputFile) {
   }
 }
 
+/**
+ * Generate checksum for each processed data 
+ * Abort copying data to web/src/data if checksum does not change 
+ * @param {*} bank
+ * @param {*} inputFile
+ * @param {*} outputFile
+ */
 async function processChecksum(bank, inputFile, outputFile) {
   validateBank(bank);
   validateFile(inputFile);
@@ -131,17 +168,25 @@ program
   .description('fetch and get the address and save to file')
   .action(processAddress);
 
-
+/**
+ * Get the data from the API Portal
+ */
 program
   .command('prepare <bank> <outputFile>')
   .description('Get the data from the bank')
   .action(prepareData);
 
+/**
+ * Process the raw data
+ */
 program
   .command('process <bank> <inputFile> <outputFile>')
   .description('Process the prepared data and output it')
   .action(processData);
 
+/**
+ * Process the checksum 
+ */
 program
   .command('process-checksum <bank> <inputFile> <outputFile>')
   .description('Check and write checksum of the processed data')

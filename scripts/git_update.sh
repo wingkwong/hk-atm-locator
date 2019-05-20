@@ -10,7 +10,21 @@ commit_atm_files() {
   git checkout master
 
   # Move the data files
-  cp -f transformer/processed/* web/src/data
+  if [ -f transformer/checksum/hang_seng.json ]; then
+    cp -f transformer/processed/hang_seng.json web/src/data
+  fi
+
+  if [ -f transformer/checksum/hsbc.json ]; then
+    cp -f transformer/processed/hsbc.json web/src/data
+  fi
+
+  if [ -f transformer/checksum/jetco_en.json ]; then
+    cp -f transformer/processed/jetco_en.json web/src/data
+  fi
+
+  if [ -f transformer/checksum/jetco_tc.json ]; then
+    cp -f transformer/processed/jetco_tc.json web/src/data
+  fi
 
   git status
   # Current month and year, e.g: Apr 2018

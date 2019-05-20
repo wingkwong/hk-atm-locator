@@ -221,7 +221,6 @@ module.exports = {
     const processedData = process_hsbc_data(JSON.parse(data));
     fs.writeFileSync(outputPath, processedData);
     remind(`Finished processing hsbc file and saved at ${outputPath}`);
-    
   },
   processJetcoData: async (inputPath, outputPath) => {
     info(`Preparing to process jetco files from ${inputPath}`);

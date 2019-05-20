@@ -26,10 +26,15 @@ class ATMListing extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps){
+    if(nextProps.atm !== this.props.atm) {
+      this.loadItems();
+    }
+  }
+
   loadItems = () => {
     const { atm } = this.props;
     const { size } = this.state;
-
     if(atm.length > 0) {
       if(size > atm.length) {
         this.setState({

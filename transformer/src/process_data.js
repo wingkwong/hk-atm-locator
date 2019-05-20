@@ -188,23 +188,23 @@ const process_jetco_data = (inputPath) => {
 
 module.exports = {
   processHangSengData: async (inputPath, outputPath) => {
-    info(`Prepare to process hang seng file from ${inputPath}`);
+    info(`Preparing to process hang seng file from ${inputPath}`);
     const data = fs.readFileSync(inputPath);
     const processedData = process_hang_seng_data(JSON.parse(data));
     fs.writeFileSync(outputPath, processedData);
-    remind(`Finsihed processing hang seng file and saved at ${outputPath}`);
+    remind(`Finished processing hang seng file and saved at ${outputPath}`);
   },
   processHsbcData: async (inputPath, outputPath) => {
-    info(`Prepare to process hsbc file from ${inputPath}`);
+    info(`Preparing to process hsbc file from ${inputPath}`);
     const data = fs.readFileSync(inputPath);
     const processedData = process_hsbc_data(JSON.parse(data));
     fs.writeFileSync(outputPath, processedData);
-    remind(`Finsihed processing hsbc file and saved at ${outputPath}`);
+    remind(`Finished processing hsbc file and saved at ${outputPath}`);
   },
   processJetcoData: async (inputPath, outputPath) => {
-    info(`Prepare to process jetco file from ${inputPath}`);
+    info(`Preparing to process jetco file from ${inputPath}`);
     const processedData = process_jetco_data(inputPath);
     fs.writeFileSync(outputPath, processedData);
-    remind(`Finsihed processing jetco file and saved at ${outputPath}`);
+    remind(`Finished processing jetco file and saved at ${outputPath}`);
   },
 };

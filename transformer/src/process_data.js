@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
+const crypto = require('crypto');
 const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
 const { jetco } = require('../reference/jetco_banks');
 const { remind, info } = require('./utils');
@@ -111,7 +112,6 @@ const convertBankName = (bank) => {
   const o = jetco.filter(b => {
     return b.en === bank
   });
-  
   return o[0] ? o[0].idx : '';
 }
 
@@ -133,7 +133,6 @@ const process_hang_seng_data = (data) => {
 /*
   Process HSBC Data
 */
-
 const process_hsbc_data = (data) => {
   atm = data.data[0].Brand[0].ATM;
   atm = atm.map(record => ({
@@ -185,6 +184,28 @@ const process_jetco_data = (inputPath) => {
     });
 }
 
+const processChecksum = (data, md5Path) => {
+  const checksum = generateChecksum(data);
+  if(shouldWriteChecksum(md5Path, checksum)) {
+    fs.writeFileSync(md5Path, checksum);
+    remind(`Finished generating checksum file at ${md5Path}`);
+  }
+}
+
+const generateChecksum = (data) => {
+  return crypto
+  .createHash('md5')
+  .update(data, 'utf8')
+  .digest('hex');
+}
+
+const shouldWriteChecksum = (md5Path, checksum) => {
+  if(!fs.existsSync(md5Path)) {
+    return true;
+  }
+  const checksumInmd5 = fs.readFileSync(md5Path);
+  return checksum === checksumInmd5 ? false : true;
+}
 
 module.exports = {
   processHangSengData: async (inputPath, outputPath) => {
@@ -195,16 +216,22 @@ module.exports = {
     remind(`Finished processing hang seng file and saved at ${outputPath}`);
   },
   processHsbcData: async (inputPath, outputPath) => {
-    info(`Preparing to process hsbc file from ${inputPath}`);
+    info(`Preparing to process hsbc files from ${inputPath}`);
     const data = fs.readFileSync(inputPath);
     const processedData = process_hsbc_data(JSON.parse(data));
     fs.writeFileSync(outputPath, processedData);
     remind(`Finished processing hsbc file and saved at ${outputPath}`);
+    
   },
   processJetcoData: async (inputPath, outputPath) => {
-    info(`Preparing to process jetco file from ${inputPath}`);
+    info(`Preparing to process jetco files from ${inputPath}`);
     const processedData = process_jetco_data(inputPath);
     fs.writeFileSync(outputPath, processedData);
     remind(`Finished processing jetco file and saved at ${outputPath}`);
   },
+  processDataChecksum: async (data, md5Path) => {
+    info(`Processing checksum at ${md5Path}`);
+    processChecksum(data, md5Path);
+    remind(`Finished processing checksum file and saved at ${md5Path}`);
+  }
 };

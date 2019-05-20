@@ -34,6 +34,12 @@ function validateBank(bank) {
   }
 }
 
+function validateFile(file) {
+  if(!fs.existsSync(file)) {
+    terminateWithError(`${file} not exists`);
+  }
+}
+
 async function parseAddress(atm) {
   const addressLine = atm.ATMAddress.AddressLine.join(' ');
   const records = await AddressParser.parse(addressLine);
@@ -103,7 +109,15 @@ async function processAddress(bank, inputFile, outputFile) {
     remind(`File sucessfully saved at ${outputFile}`);
     end();
   }
+}
 
+async function processChecksum(bank, inputFile, outputFile) {
+  validateBank(bank);
+  validateFile(inputFile);
+  var data = await fs.readFileAsync(inputFile);
+  data = JSON.stringify(JSON.parse(data).data);
+  ProcessData.processDataChecksum(data, outputFile);
+  end();
 }
 
 program
@@ -127,6 +141,11 @@ program
   .command('process <bank> <inputFile> <outputFile>')
   .description('Process the prepared data and output it')
   .action(processData);
+
+program
+  .command('process-checksum <bank> <inputFile> <outputFile>')
+  .description('Check and write checksum of the processed data')
+  .action(processChecksum);
 
 program.parse(process.argv);
 

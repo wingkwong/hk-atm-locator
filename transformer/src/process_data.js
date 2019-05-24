@@ -27,6 +27,10 @@ const enrichOpeningHours = (record) => {
       const { open_time, close_time } = operatingHoursFromMTRLookup;
       OpeningHours = createGenericOpeningHours(open_time, close_time);
     }
+  } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Subject to Mall Opening Hours') {
+    // TODO
+  } else {
+    throw new Error('Invalid Operating Hours');
   }
   return { OpeningHours };
 }

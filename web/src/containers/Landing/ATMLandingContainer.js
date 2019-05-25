@@ -12,6 +12,7 @@ import Slide from '@material-ui/core/Slide';
 import AppNavbar from '../AppNavbar/AppNavbar';
 import ATMListingContainer from './ATMListingContainer';
 import ATMMapContainer from './ATMMapContainer';
+import ATMAboutDialog from '../../components/ATMAbout/ATMAboutDialog';
 import { Divider } from '@material-ui/core';
 
 function Transition(props) {
@@ -192,6 +193,7 @@ class ATMLandingContainer extends Component{
                     { !toggleMapView && <ATMListingContainer network={network}/>}
                     { toggleMapView && <ATMMapContainer network={network}/>}
                 </Dialog>}
+                <ATMAboutDialog/>
             </React.Fragment>
         );
     }

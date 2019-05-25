@@ -26,7 +26,6 @@ function Transition(props) {
 }
 
 class ATMAboutDialog extends React.Component {
- //TODO: set isDialogAppNavBar to true and fix return issue
   render() {
     const { classes } = this.props;
     
@@ -37,7 +36,7 @@ class ATMAboutDialog extends React.Component {
         onClose={this.handleDialogClose}
         TransitionComponent={Transition}
       >
-        <AppNavbar isDialogAppNavBar={false} />
+        <AppNavbar isDialogAppNavBar={true} dialogAppNavBarType="about"/>
         <div className={classes.root}>
             <div className={classes.section}>
                 <Typography variant="h5" gutterBottom>

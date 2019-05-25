@@ -188,7 +188,7 @@ class ATMLandingContainer extends Component{
                         }
                     }}
                 >
-                     <AppNavbar backToLandingPage={this.backToLandingPage} isDialogAppNavBar={true}/>
+                     <AppNavbar backToLandingPage={this.backToLandingPage} isDialogAppNavBar={true} dialogAppNavBarType="landing"/>
 
                     { !toggleMapView && <ATMListingContainer network={network}/>}
                     { toggleMapView && <ATMMapContainer network={network}/>}

@@ -50,6 +50,10 @@ class AppNavbar extends React.Component {
     this.props.backToLandingPage();
   }
 
+  backToPreviewPage =() => {
+    this.props.toggleAboutDialog(false)
+  }
+
   handleViewChange = () => {
     const { toggleMapview } = this.state;
     this.props.toggleMapView(toggleMapview);
@@ -63,14 +67,21 @@ class AppNavbar extends React.Component {
   }
 
   render() {
-    const { classes, isDialogAppNavBar } = this.props;
+    const { classes, isDialogAppNavBar, dialogAppNavBarType } = this.props;
     return (
       <div className={classes.root}>
         <AppBar position="fixed" color="secondary">
           <Toolbar>
-            { isDialogAppNavBar && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
+            { isDialogAppNavBar && dialogAppNavBarType == "landing" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
               <ArrowBackIcon />
-            </IconButton>}
+              </IconButton>
+          }
+
+          { isDialogAppNavBar && dialogAppNavBarType == "about" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to previous page" onClick={() => {this.backToPreviewPage()}}>
+            <ArrowBackIcon />
+            </IconButton>
+          }
+          
             <Typography className={isDialogAppNavBar ? classes.dialogTitle : classes.landingTitle} variant="h6" color="inherit">
               Hong Kong ATM Locator
             </Typography>
@@ -105,7 +116,8 @@ class AppNavbar extends React.Component {
 AppNavbar.propTypes = {
   classes: PropTypes.object.isRequired,
   isDialogAppNavBar: PropTypes.bool.isRequired,
-  backToLandingPage: PropTypes.func
+  backToLandingPage: PropTypes.func,
+  dialogAppNavBarType: PropTypes.string
 };
 
 const mapStateToProps = (state, ownProps) => {

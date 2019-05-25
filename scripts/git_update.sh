@@ -10,19 +10,19 @@ commit_atm_files() {
   git checkout master
 
   # Move the data files
-  if [ -f transformer/checksum/hang_seng.json ]; then
+  if [ -f transformer/checksum/hang_seng.md5 ]; then
     cp -f transformer/processed/hang_seng.json web/src/data
   fi
 
-  if [ -f transformer/checksum/hsbc.json ]; then
+  if [ -f transformer/checksum/hsbc.md5 ]; then
     cp -f transformer/processed/hsbc.json web/src/data
   fi
 
-  if [ -f transformer/checksum/jetco_en.json ]; then
+  if [ -f transformer/checksum/jetco_en.md5 ]; then
     cp -f transformer/processed/jetco_en.json web/src/data
   fi
 
-  if [ -f transformer/checksum/jetco_tc.json ]; then
+  if [ -f transformer/checksum/jetco_tc.md5 ]; then
     cp -f transformer/processed/jetco_tc.json web/src/data
   fi
 
@@ -35,6 +35,9 @@ commit_atm_files() {
   # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
   git commit -m "Travis update processed json: $dateAndMonth (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
+  # Update Checksum files
+  git add -f transformer/checksum/
+  git commit -m "Travis update checksum files: $dateAndMonth (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
 upload_files() {

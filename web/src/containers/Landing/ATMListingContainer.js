@@ -40,20 +40,23 @@ class ATMListingContainer extends Component{
     detectCurrentLocation() {
         const { currentLocation, selectedLocation } = this.state;
         const me = this;
-
+        
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(
              function success(position) {
-                me.props.setCurrentLocation(position.coords.latitude, position.coords.longitude);
-                me.props.setSelectedLocation(position.coords.latitude, position.coords.longitude);
+                const { coords: { latitude, longitude } } = position;
+                me.props.setCurrentLocation(latitude, longitude);
+                me.props.setSelectedLocation(latitude, longitude);
                 me.sortATMData();
              }, (err) => {
-                me.props.setCurrentLocation(currentLocation);
-                me.props.setSelectedLocation(selectedLocation);
+                me.props.setCurrentLocation(currentLocation.lat, currentLocation.lng);
+                me.props.setSelectedLocation(selectedLocation.lat, selectedLocation.lng);
                // cannot get location, sort data anyway
                 me.sortATMData();
              },{ timeout: 10000 });
         } else {
+            me.props.setCurrentLocation(currentLocation.lat, currentLocation.lng);
+            me.props.setSelectedLocation(selectedLocation.lat, selectedLocation.lng);
             me.sortATMData();
         }
     }
@@ -81,22 +84,15 @@ class ATMListingContainer extends Component{
             if(this.props.currentLocation !== undefined) {
                 location = this.props.currentLocation
             }
-
+            var t0 = performance.now();
             const sortedAllATMs = [].concat(atm)
-             .sort( (x, y) => {
-                if(x.ATMAddress.LatitudeDescription != null && x.ATMAddress.LongitudeDescription != null &&
-                    y.ATMAddress.LatitudeDescription != null && y.ATMAddress.LongitudeDescription != null ) {
-                        const distanceX = distanceBetweenTwoGeoPoints(location.lat, location.lng, x.ATMAddress.LatitudeDescription, x.ATMAddress.LongitudeDescription);
-                        const distanceY = distanceBetweenTwoGeoPoints(location.lat, location.lng, y.ATMAddress.LatitudeDescription, y.ATMAddress.LongitudeDescription);
-                        return distanceX > distanceY ? 1 : -1;
-                    }
-                return -1;
-            })
-            .map( (atm) => {
+            .map((atm) => {
                 atm.distance = distanceBetweenTwoGeoPoints(location.lat, location.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription);
                 return atm;
+            }).sort ((x, y) => {
+               return x.distance - y.distance
             });
-
+            
             this.props.setATMData(sortedAllATMs);
         }
     }

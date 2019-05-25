@@ -26,11 +26,11 @@ class ATMListing extends React.Component {
     };
   }
 
-  componentWillReceiveProps(nextProps){
-    if(nextProps.atm !== this.props.atm) {
+  componentDidUpdate(prevProps) {
+    if(this.props.atm !== prevProps.atm) {
       this.loadItems();
     }
-  }
+  } 
 
   loadItems = () => {
     const { atm } = this.props;
@@ -51,7 +51,7 @@ class ATMListing extends React.Component {
 
   render() {
     const { classes } = this.props;
-  
+    
     return (
       <div className={classes.root}>
             <InfiniteScroll

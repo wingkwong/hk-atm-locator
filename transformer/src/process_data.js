@@ -31,7 +31,6 @@ const enrichOpeningHours = (record) => {
   return { OpeningHours };
 }
 
-
 const convertOpeningHourToHHmmFormat = (openingHours) => {
   const OpeningHours = openingHours.map((oh, idx) => {
     const ohOpenTime = moment(oh.OpenTime, "h:mm").format("HH:mm");
@@ -84,27 +83,80 @@ const getOperatingHoursByStation = (station) => {
       'close_time': d.close_time
     };
   }
-
   return null;
 }
 
 const transformJetcoData = (data) => {
+  const { 
+    region,
+    area,
+    district,
+    ob_name,
+    addr,
+    supp_tran: {
+      tran_name
+    },
+    currencies: {
+      currency
+    },
+    latitude,
+    longitude
+  } = data;
   return {
-    "ATMName": data.district + ' ATM',
+    "ATMName": district + ' ATM',
     "HotlineNumber": "",
     "ATMAddress": {
       "CountryCode": "HK",
-      "TerritoryName": data.area,
-      "DistrictName": data.district,
-      "LatitudeDescription": data.latitude,
-      "LongitudeDescription": data.longitude,
+      "TerritoryName": area,
+      "DistrictName": district,
+      "LatitudeDescription": latitude,
+      "LongitudeDescription": longitude,
       "AddressLine": [
-          data.addr
+          addr
       ]
     },
     "ATMServices": {}, //TODO
     "OpeningHours": [], //TODO
-    "Bank": convertBankName(data.ob_name)
+    "Bank": convertBankName(ob_name)
+  }
+}
+
+const transformJetcoDataFromAPIX = (data) => {
+  const { 
+    name,
+    address,
+    countryCode,
+    city,
+    hkDistrict,
+    openingHours,
+    accessibilities,
+    phoneNo,
+    latitude,
+    longitude,
+    services: {
+      withCnyWithdrawal, withFcyWithdrawal, withCashDesposit, withChequeDesposit, others
+    },
+    atmProvidernetwork,
+    others,
+    remark,
+    lastUpdateDate
+   } = data;
+  return {
+    "ATMName": name,
+    "HotlineNumber": phoneNo,
+    "ATMAddress": {
+      "CountryCode": countryCode,
+      "TerritoryName": "", //TODO
+      "DistrictName": hkDistrict,
+      "LatitudeDescription": latitude,
+      "LongitudeDescription": longitude,
+      "AddressLine": [
+        address
+      ]
+    },
+    "ATMServices": services,  //TODO: standardise format
+    "OpeningHours": openingHours, //TODO: standardise format
+    "Bank": "" //TODO: Enrich
   }
 }
 
@@ -119,7 +171,7 @@ const convertBankName = (bank) => {
   Process Hang Seng Data
 */
 const process_hang_seng_data = (data) => {
-  atm = data.data[0].Brand[0].ATM;
+  var atm = data.data[0].Brand[0].ATM;
   atm = atm.map(record => ({
     ...record,
     ...enrichBankAndNetwork('hang_seng', 'hang_seng'),
@@ -134,7 +186,7 @@ const process_hang_seng_data = (data) => {
   Process HSBC Data
 */
 const process_hsbc_data = (data) => {
-  atm = data.data[0].Brand[0].ATM;
+  var atm = data.data[0].Brand[0].ATM;
   atm = atm.map(record => ({
     ...record,
     ...convertOpeningHourToHHmmFormat(record.OpeningHours)
@@ -144,6 +196,9 @@ const process_hsbc_data = (data) => {
   return JSON.stringify(data);
 }
 
+/*
+  Process JETCO Data (Scraped from JETCO site)
+*/
 const process_jetco_data = (inputPath) => {
   const jetco_atm_arr = [];
   const files = fs.readdirSync(inputPath);
@@ -182,6 +237,15 @@ const process_jetco_data = (inputPath) => {
         }
       ]
     });
+}
+
+/*
+  Process JETCO Data (From APIX Portal)
+*/
+const process_jecto_data_from_apix = (data) => {
+  data = data.atms;
+  data = transformJetcoDataFromAPIX(data);
+  return JSON.stringify(data);
 }
 
 const processChecksum = (data, md5Path) => {
@@ -229,6 +293,12 @@ module.exports = {
     const processedData = process_jetco_data(inputPath);
     fs.writeFileSync(outputPath, processedData);
     remind(`Finished processing jetco file and saved at ${outputPath}`);
+  },
+  processJetcoDataFromAPIX: async (inputPath, outputPath) => {
+    info(`Preparing to process jetco files (APIX) from ${inputPath}`);
+    const processedData = process_jecto_data_from_apix(inputPath);
+    fs.writeFileSync(outputPath, processedData);
+    remind(`Finished processing jetco file (APIX) and saved at ${outputPath}`);
   },
   processDataChecksum: async (data, md5Path) => {
     info(`Processing checksum at ${md5Path}`);

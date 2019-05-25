@@ -38,4 +38,5 @@ declare interface ATM {
   ATMAddress: ATMAddress;
   ATMServices: ATMServices;
   OpeningHours: ATMOpeningHour[];
+  ATMId: string;
 }

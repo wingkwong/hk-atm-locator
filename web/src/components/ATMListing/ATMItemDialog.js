@@ -17,14 +17,17 @@ function Transition(props) {
 class ATMItemDialog extends React.Component {
 
   render() {
-    const { atm } = this.props;
+    const { atm, selectedLocation } = this.props;
     
-    // TODO: Investigate idx = -1. Prolly due to zoomLevel 
-    if(!this.props.selectedLocation || !atm || this.props.selectedLocation.idx < 0) {
+    if(!selectedLocation || !selectedLocation.idx || !atm) {
       return (null);
     }
     
     const idx = this.props.selectedLocation.idx;
+    let filteredATMs = atm.filter(o => {
+      return o.ATMId == idx
+    });
+
     return (
       <Dialog
         fullScreen
@@ -32,7 +35,7 @@ class ATMItemDialog extends React.Component {
         onClose={this.handleDialogClose}
         TransitionComponent={Transition}
       >
-        <ATMItemDetail atm={atm[idx]}/>
+        <ATMItemDetail atm={filteredATMs[0]}/>
       </Dialog>
     );
   }

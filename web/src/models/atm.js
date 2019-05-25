@@ -8,6 +8,7 @@ import * as banks from '../constants/banks';
 import * as networks from '../constants/networks';
 
 class ATM {
+  ATMId = "";
   Bank = "";
   Network = "";
   ATMName = "";

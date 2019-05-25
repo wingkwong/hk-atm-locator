@@ -69,14 +69,13 @@ class ATMItem extends React.Component {
         )
     }
 
-    atmListItemOnClick(atm, idx) {
-        const { ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
-        if(LatitudeDescription && LongitudeDescription){
-            this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription, idx);
+    atmListItemOnClick(atm) {
+        const { ATMId, ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
+        if(LatitudeDescription && LongitudeDescription && ATMId){
+            this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription, ATMId);
+            // toggle detail page
+            this.props.toggleATMDetailDialog(true);
         }
-
-        // toggle detail page
-        this.props.toggleATMDetailDialog(true);
     }
 
     render() {
@@ -84,7 +83,7 @@ class ATMItem extends React.Component {
         const { ATMName, ATMAddress, distance } = atm;
 
         return (
-            <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm, idx)}>
+            <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm)}>
                 { this.renderBankIcon(atm) }
                 <div>
                     <ListItemText

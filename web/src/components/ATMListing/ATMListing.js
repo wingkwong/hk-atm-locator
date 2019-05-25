@@ -66,7 +66,7 @@ class ATMListing extends React.Component {
                   this.state.atmItems.map((atm, idx) => {
                     return (
                       <div key={idx}>
-                        <ATMItem atm={atm} idx={idx}/>
+                        <ATMItem atm={atm} idx={atm.ATMId}/>
                        <Divider/>
                       </div>
                     )

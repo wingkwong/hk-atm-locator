@@ -6,6 +6,13 @@ const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
 const { jetco } = require('../reference/jetco_banks');
 const { remind, info } = require('./utils');
 const jetcoIdx = [];
+const baseIdx = {
+  hangSeng: 1000,
+  hsbc: 2000,
+  jetco: 3000
+}
+
+
 
 const enrichBankAndNetwork = (bank, network) => {
   if (network === 'hang_seng' || network === 'hsbc' || network === 'jetco') {
@@ -30,9 +37,16 @@ const enrichOpeningHours = (record) => {
   } else if (record.ATMServices.AutomatedTellerMachineOperatingHour === 'Subject to Mall Opening Hours') {
     // TODO
   } else {
-    throw new Error('Invalid Operating Hours');
+    // TODO
   }
   return { OpeningHours };
+}
+
+
+const enrichATMId = (base, id) => {
+  return {
+    ATMId: base + id
+  }
 }
 
 const convertOpeningHourToHHmmFormat = (openingHours) => {
@@ -90,7 +104,7 @@ const getOperatingHoursByStation = (station) => {
   return null;
 }
 
-const transformJetcoData = (data) => {
+const transformJetcoData = (data, idx) => {
   const { 
     region,
     area,
@@ -121,7 +135,8 @@ const transformJetcoData = (data) => {
     },
     "ATMServices": {}, //TODO
     "OpeningHours": [], //TODO
-    "Bank": convertBankName(ob_name)
+    "Bank": convertBankName(ob_name),
+    ...enrichATMId(baseIdx.jetco, idx)
   }
 }
 
@@ -141,7 +156,7 @@ const transformJetcoDataFromAPIX = (data) => {
       withCnyWithdrawal, withFcyWithdrawal, withCashDesposit, withChequeDesposit, others
     },
     atmProvidernetwork,
-    others,
+    // others,
     remark,
     lastUpdateDate
    } = data;
@@ -176,10 +191,11 @@ const convertBankName = (bank) => {
 */
 const process_hang_seng_data = (data) => {
   var atm = data.data[0].Brand[0].ATM;
-  atm = atm.map(record => ({
+  atm = atm.map((record, idx) => ({
     ...record,
     ...enrichBankAndNetwork('hang_seng', 'hang_seng'),
-    ...enrichOpeningHours(record)
+    ...enrichOpeningHours(record),
+    ...enrichATMId(baseIdx.hangSeng, idx)
   }));
 
   data.data[0].Brand[0].ATM = atm;
@@ -191,9 +207,10 @@ const process_hang_seng_data = (data) => {
 */
 const process_hsbc_data = (data) => {
   var atm = data.data[0].Brand[0].ATM;
-  atm = atm.map(record => ({
+  atm = atm.map((record, idx) => ({
     ...record,
-    ...convertOpeningHourToHHmmFormat(record.OpeningHours)
+    ...convertOpeningHourToHHmmFormat(record.OpeningHours),
+    ...enrichATMId(baseIdx.hsbc, idx)
   }));
 
   data.data[0].Brand[0].ATM = atm;
@@ -215,7 +232,7 @@ const process_jetco_data = (inputPath) => {
               for(var j=0; j<atms.length; j++) {
                 var idx = atms[j]['@id'];
                 if(jetcoIdx.indexOf(idx) == -1) {
-                  const transformedData = transformJetcoData(atms[j]);
+                  const transformedData = transformJetcoData(atms[j], j);
                   jetco_atm_arr.push(transformedData);
                   jetcoIdx.push(idx);
                 }

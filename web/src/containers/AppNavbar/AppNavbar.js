@@ -8,10 +8,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MapIcon from '@material-ui/icons/Map';
+import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import {
-  toggleMapView
+  toggleMapView,
+  toggleAboutDialog
 } from '../../actions';
-import ATMSearchbar from '../../components/ATMFilter/ATMSearchbar';
+// import ATMSearchbar from '../../components/ATMFilter/ATMSearchbar';
 
 const styles = theme => ({
   root: {
@@ -23,13 +25,8 @@ const styles = theme => ({
   },
   backButton: {
     marginLeft: -12,
-    marginRight: 20,
   },
   dialogTitle: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
     whiteSpace: 'nowrap'
   },
   landingTitle: {
@@ -61,6 +58,10 @@ class AppNavbar extends React.Component {
     })
   };
 
+  handleAboutToggle = () => {
+    this.props.toggleAboutDialog(true);
+  }
+
   render() {
     const { classes, isDialogAppNavBar } = this.props;
     return (
@@ -76,7 +77,7 @@ class AppNavbar extends React.Component {
 
             { isDialogAppNavBar && 
               <React.Fragment>
-                <ATMSearchbar/>
+                {/* <ATMSearchbar/> */}
                 <div className={classes.grow} />
                 <div >
                   <IconButton
@@ -85,6 +86,12 @@ class AppNavbar extends React.Component {
                   >
                     <MapIcon />
                   </IconButton>
+                  <IconButton
+                    onClick={this.handleAboutToggle}
+                    color="inherit"
+                >
+                  <LiveHelpIcon/>
+                </IconButton>
                 </div>
               </React.Fragment>
             }
@@ -111,6 +118,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
       toggleMapView: (flag) => {
           dispatch(toggleMapView(flag))
+      },
+      toggleAboutDialog: (flag) => {
+        dispatch(toggleAboutDialog(flag))
       }
   };
 }

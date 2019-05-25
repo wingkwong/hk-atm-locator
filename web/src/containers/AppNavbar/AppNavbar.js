@@ -72,12 +72,12 @@ class AppNavbar extends React.Component {
       <div className={classes.root}>
         <AppBar position="fixed" color="secondary">
           <Toolbar>
-            { isDialogAppNavBar && dialogAppNavBarType == "landing" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
+            { isDialogAppNavBar && dialogAppNavBarType === "landing" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
               <ArrowBackIcon />
               </IconButton>
           }
 
-          { isDialogAppNavBar && dialogAppNavBarType == "about" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to previous page" onClick={() => {this.backToPreviewPage()}}>
+          { isDialogAppNavBar && dialogAppNavBarType === "about" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to previous page" onClick={() => {this.backToPreviewPage()}}>
             <ArrowBackIcon />
             </IconButton>
           }
@@ -86,7 +86,7 @@ class AppNavbar extends React.Component {
               Hong Kong ATM Locator
             </Typography>
 
-            { isDialogAppNavBar && 
+            { isDialogAppNavBar && dialogAppNavBarType !== "about" &&
               <React.Fragment>
                 {/* <ATMSearchbar/> */}
                 <div className={classes.grow} />

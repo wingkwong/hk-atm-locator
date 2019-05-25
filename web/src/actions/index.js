@@ -5,7 +5,8 @@ import {
     TOGGLE_ATM_DETAIL_DIALOG,
     TOGGLE_FILTER_OPTION,
     TOGGLE_ATM_FILTER_DIALOG,
-    TOGGLE_MAP_VIEW
+    TOGGLE_MAP_VIEW,
+    TOGGLE_ABOUT_DIALOG
 } from './types';
 
 const dispatchSetATMData = (data) => {
@@ -34,6 +35,10 @@ const dispatchToggleATMFilterDialog = (open) => {
 
 const dispatchToggleMapView = (open) => {
     return {type: TOGGLE_MAP_VIEW, open: open}
+}
+
+const dispatchToggleAboutDialog = (open) => {
+    return {type: TOGGLE_ABOUT_DIALOG, open: open}
 }
 
 export const setATMData = (data) => {
@@ -75,5 +80,11 @@ export const toggleATMFilterDialog = (open) => {
 export const toggleMapView = (open) => {
     return dispatch => {
         dispatch(dispatchToggleMapView(open))
+    }
+}
+
+export const toggleAboutDialog = (open) => {
+    return dispatch => {
+        dispatch(dispatchToggleAboutDialog(open))
     }
 }

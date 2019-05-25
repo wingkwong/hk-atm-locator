@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-05-20T05:52:14+08:00",
+        "LastUpdated": "2019-05-25T05:52:14+08:00",
         "TotalResults": 403,
         "Agreement": "Use of the APIs and any related data will be subject to terms and conditions."
     },
@@ -68,7 +68,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2000
                         },
                         {
                             "ATMName": "Lei Tung Estate Express Banking",
@@ -128,7 +129,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2001
                         },
                         {
                             "ATMName": "Stanley Plaza ATM",
@@ -188,7 +190,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2002
                         },
                         {
                             "ATMName": "South Horizons Express Banking",
@@ -248,7 +251,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2003
                         },
                         {
                             "ATMName": "Cheung Wah Estate ATM",
@@ -308,7 +312,8 @@
                                     "OpenTime": "06:30",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2004
                         },
                         {
                             "ATMName": "Wah Ming Estate ATM",
@@ -368,7 +373,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2005
                         },
                         {
                             "ATMName": "Kingswood Richly Plaza (7-Eleven) ATM",
@@ -428,7 +434,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2006
                         },
                         {
                             "ATMName": "Chung Fu Plaza Express Banking",
@@ -488,7 +495,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2007
                         },
                         {
                             "ATMName": "Tin Shui Wai Express Banking",
@@ -548,7 +556,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2008
                         },
                         {
                             "ATMName": "MTR Tin Shui Wai Station Express Banking",
@@ -608,7 +617,8 @@
                                     "OpenTime": "05:51",
                                     "CloseTime": "00:36"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2009
                         },
                         {
                             "ATMName": "Tin Yan Estate ATM",
@@ -668,7 +678,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2010
                         },
                         {
                             "ATMName": "Tin Tsz Estate ATM",
@@ -728,7 +739,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2011
                         },
                         {
                             "ATMName": "Tin Chak Estate ATM",
@@ -788,7 +800,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2012
                         },
                         {
                             "ATMName": "Tin Ching Estate (7-Eleven) ATM",
@@ -848,7 +861,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2013
                         },
                         {
                             "ATMName": "Tin Yiu Estate Express Banking",
@@ -908,7 +922,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2014
                         },
                         {
                             "ATMName": "MTR Long Ping Station Express Banking",
@@ -968,7 +983,8 @@
                                     "OpenTime": "05:54",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2015
                         },
                         {
                             "ATMName": "Fairview Park Express Banking",
@@ -1028,7 +1044,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2016
                         },
                         {
                             "ATMName": "Yuen Long Express Banking",
@@ -1088,7 +1105,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2017
                         },
                         {
                             "ATMName": "Hop Yick Plaza (7-Eleven) ATM",
@@ -1148,7 +1166,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2018
                         },
                         {
                             "ATMName": "Fu Hing Building (Circle-K) ATM",
@@ -1208,7 +1227,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2019
                         },
                         {
                             "ATMName": "Long Ping Estate Express Banking",
@@ -1268,7 +1288,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2020
                         },
                         {
                             "ATMName": "Shui Pin Wai Estate ATM",
@@ -1328,7 +1349,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2021
                         },
                         {
                             "ATMName": "MTR Yuen Long Station Express Banking",
@@ -1388,7 +1410,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2022
                         },
                         {
                             "ATMName": "On Ning Road (7-Eleven) ATM",
@@ -1448,7 +1471,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2023
                         },
                         {
                             "ATMName": "Yau San Street Express Banking",
@@ -1508,7 +1532,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2024
                         },
                         {
                             "ATMName": "MTR Lo Wu Station ATM",
@@ -1568,7 +1593,8 @@
                                     "OpenTime": "05:55",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2025
                         },
                         {
                             "ATMName": "MTR Sheung Shui Station Express Banking",
@@ -1628,7 +1654,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2026
                         },
                         {
                             "ATMName": "Sheung Shui Express Banking",
@@ -1688,7 +1715,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2027
                         },
                         {
                             "ATMName": "Choi Yuen Estate ATM",
@@ -1748,7 +1776,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2028
                         },
                         {
                             "ATMName": "Sheung Shui Centre Express Banking",
@@ -1808,7 +1837,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2029
                         },
                         {
                             "ATMName": "Tin Ping Estate ATM",
@@ -1868,7 +1898,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2030
                         },
                         {
                             "ATMName": "MTR Fanling Station Express Banking",
@@ -1928,7 +1959,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2031
                         },
                         {
                             "ATMName": "Yung Shing Court Express Banking",
@@ -1988,7 +2020,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2032
                         },
                         {
                             "ATMName": "Fanling Town Centre Express Banking",
@@ -2048,7 +2081,8 @@
                                     "OpenTime": "05:10",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2033
                         },
                         {
                             "ATMName": "Ka Fuk Estate ATM ",
@@ -2108,7 +2142,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2034
                         },
                         {
                             "ATMName": "Chung On Estate ATM",
@@ -2168,7 +2203,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2035
                         },
                         {
                             "ATMName": "Lee On Estate ATM",
@@ -2228,7 +2264,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2036
                         },
                         {
                             "ATMName": "Hong Kong Science Park Express Banking",
@@ -2288,7 +2325,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2037
                         },
                         {
                             "ATMName": "Heng On Estate Express Banking",
@@ -2348,7 +2386,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2038
                         },
                         {
                             "ATMName": "Kam Ying Court Express Banking",
@@ -2408,7 +2447,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2039
                         },
                         {
                             "ATMName": "Ma On Shan Express Banking",
@@ -2468,7 +2508,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2040
                         },
                         {
                             "ATMName": "Yiu On Estate Express Banking",
@@ -2528,7 +2569,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2041
                         },
                         {
                             "ATMName": "Ma On Shan Express Banking",
@@ -2588,7 +2630,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2042
                         },
                         {
                             "ATMName": "MTR Wu Kai Sha Station ATM",
@@ -2648,7 +2691,8 @@
                                     "OpenTime": "05:30",
                                     "CloseTime": "01:31"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2043
                         },
                         {
                             "ATMName": "Yan On Estate ATM",
@@ -2708,7 +2752,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2044
                         },
                         {
                             "ATMName": "Chung On Estate (L1) ATM",
@@ -2768,7 +2813,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2045
                         },
                         {
                             "ATMName": "Citygate Outlets Express Banking",
@@ -2828,7 +2874,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2046
                         },
                         {
                             "ATMName": "Cathay Dragon House & CNAC (Group) Building Express Banking",
@@ -2888,7 +2935,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2047
                         },
                         {
                             "ATMName": "Hong Kong International Airport Departures Check-in Hall Express Banking - This Express Banking was closed on 10 September 2018 at 11pm",
@@ -2948,7 +2996,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2048
                         },
                         {
                             "ATMName": "HAECO Express Banking",
@@ -3008,7 +3057,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2049
                         },
                         {
                             "ATMName": "SuperTerminal 1 Express Banking",
@@ -3068,7 +3118,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2050
                         },
                         {
                             "ATMName": "AsiaWorld-Expo Express Banking",
@@ -3128,7 +3179,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2051
                         },
                         {
                             "ATMName": "Yat Tung Estate Express Banking",
@@ -3188,7 +3240,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2052
                         },
                         {
                             "ATMName": "Regal Airport Hotel Express Banking",
@@ -3248,7 +3301,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2053
                         },
                         {
                             "ATMName": "SkyPlaza Express Banking",
@@ -3308,7 +3362,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2054
                         },
                         {
                             "ATMName": "Fu Tung Estate Express Banking",
@@ -3368,7 +3423,8 @@
                                     "OpenTime": "08:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2055
                         },
                         {
                             "ATMName": "Hong Kong SkyCity Marriott Hotel ATM",
@@ -3428,7 +3484,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2056
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Ground Transportation Centre ATM - 5G086A",
@@ -3488,7 +3545,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2057
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures West Hall (Restricted Area) ATM - 6W570B",
@@ -3548,7 +3606,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2058
                         },
                         {
                             "ATMName": "Cathay Pacific Cargo Terminal ATM",
@@ -3608,7 +3667,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2059
                         },
                         {
                             "ATMName": "Hong Kong International Airport Express Banking (5T002) - was relocated to Shop No. 215, Regal Airport Hotel on 30 June 2018.",
@@ -3668,7 +3728,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2060
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures East Hall (Restricted Area) ATM - 7E003  - The service at this location was discontinued on Sunday, 6  January 2019 at 11.59pm",
@@ -3728,7 +3789,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2061
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures East Hall (Restricted Area) ATM - 7E001 - The service at this location was discontinued on Sunday, 6  January 2019 at 11.59pm",
@@ -3788,7 +3850,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2062
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures West Hall (Restricted Area) ATM - 6W001",
@@ -3848,7 +3911,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2063
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Arrivals Baggage Reclaim Hall (Restricted Area) ATM - 5T001",
@@ -3908,7 +3972,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2064
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures Midfield Concourse (Restricted Area) ATM - 6MC013 ",
@@ -3968,7 +4033,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2065
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Arrivals Pre-Immigration Hall (Restricted Area) ATM - 5E001",
@@ -4028,7 +4094,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2066
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Terminal 2 ATM - 3P001",
@@ -4088,7 +4155,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2067
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures Check-in Hall ATM - 7T001  - The service at this location will be discontinued with effect from Sunday, 17 February 2019 at 11.59pm",
@@ -4148,7 +4216,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2068
                         },
                         {
                             "ATMName": "Cathay Pacific City Express Banking",
@@ -4208,7 +4277,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2069
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures East Hall (Restricted Area) ATM - 6E192A",
@@ -4268,7 +4338,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2070
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures East Hall (Restricted Area) ATM - 7E112B",
@@ -4328,7 +4399,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2071
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Departures East Hall (Restricted Area) ATM - 7E137B",
@@ -4388,7 +4460,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2072
                         },
                         {
                             "ATMName": "Hong Kong International Airport - Arrival Hall (Non-restricted Area) Express Banking - 5T200",
@@ -4448,7 +4521,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2073
                         },
                         {
                             "ATMName": "Po Tin Estate ATM",
@@ -4508,7 +4582,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2074
                         },
                         {
                             "ATMName": "Citywalk Express Banking",
@@ -4568,7 +4643,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2075
                         },
                         {
                             "ATMName": "Lei Muk Shue Estate Express Banking",
@@ -4628,7 +4704,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2076
                         },
                         {
                             "ATMName": "Shek Yam Express Banking",
@@ -4688,7 +4765,8 @@
                                     "OpenTime": "06:30",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2077
                         },
                         {
                             "ATMName": "Kwai Shing West Express Banking",
@@ -4748,7 +4826,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2078
                         },
                         {
                             "ATMName": "Kwai Fong Express Banking",
@@ -4808,7 +4887,8 @@
                                     "OpenTime": "08:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2079
                         },
                         {
                             "ATMName": "Kwai Chung Estate ATM",
@@ -4868,7 +4948,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2080
                         },
                         {
                             "ATMName": "On Yam Estate ATM",
@@ -4928,7 +5009,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2081
                         },
                         {
                             "ATMName": "Kwai Fong Estate ATM",
@@ -4988,7 +5070,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2082
                         },
                         {
                             "ATMName": "Kerry Cargo Centre ATM ",
@@ -5048,7 +5131,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2083
                         },
                         {
                             "ATMName": "Cheung Fat Estate EasiService Banking Centre",
@@ -5108,7 +5192,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2084
                         },
                         {
                             "ATMName": "Greenfield Garden EasiService Banking Centre",
@@ -5168,7 +5253,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2085
                         },
                         {
                             "ATMName": "Maritime Square Express Banking",
@@ -5228,7 +5314,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2086
                         },
                         {
                             "ATMName": "Cheung Hong Estate ATM",
@@ -5288,7 +5375,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2087
                         },
                         {
                             "ATMName": "Cheung Wang Estate ATM",
@@ -5348,7 +5436,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2088
                         },
                         {
                             "ATMName": "Cheung Hang Estate ATM",
@@ -5408,7 +5497,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2089
                         },
                         {
                             "ATMName": "Lai Yiu Estate Express Banking",
@@ -5468,7 +5558,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2090
                         },
                         {
                             "ATMName": "Princess Margaret Hospital Express Banking",
@@ -5528,7 +5619,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2091
                         },
                         {
                             "ATMName": "MTR Mei Foo Station ATM - The service at this location was discontinued on Saturday, 1 December 2018 at 10pm",
@@ -5588,7 +5680,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2092
                         },
                         {
                             "ATMName": "Household Centre ATM",
@@ -5648,7 +5741,8 @@
                                     "OpenTime": "10:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2093
                         },
                         {
                             "ATMName": "MTR Mei Foo Station Express Banking",
@@ -5708,7 +5802,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2094
                         },
                         {
                             "ATMName": "Hung Fuk Estate Express Banking",
@@ -5768,7 +5863,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2095
                         },
                         {
                             "ATMName": "Modern Terminals Express Banking",
@@ -5828,7 +5924,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2096
                         },
                         {
                             "ATMName": "Wo Yi Hop Road Express Banking",
@@ -5888,7 +5985,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2097
                         },
                         {
                             "ATMName": "Shek Lei Estate Express Banking",
@@ -5948,7 +6046,8 @@
                                     "OpenTime": "06:30",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2098
                         },
                         {
                             "ATMName": "Kwai Hing Express Banking",
@@ -6008,7 +6107,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2099
                         },
                         {
                             "ATMName": "Chi Lok Fa Yuen Express Banking",
@@ -6068,7 +6168,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2100
                         },
                         {
                             "ATMName": "Hanford Plaza Express Banking",
@@ -6128,7 +6229,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2101
                         },
                         {
                             "ATMName": "HK Gold Coast (7-Eleven) ATM",
@@ -6188,7 +6290,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2102
                         },
                         {
                             "ATMName": "Leung King Estate Express Banking",
@@ -6248,7 +6351,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2103
                         },
                         {
                             "ATMName": "Shan King Estate Express Banking",
@@ -6308,7 +6412,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2104
                         },
                         {
                             "ATMName": "Tuen Mun Town Plaza Express Banking",
@@ -6368,7 +6473,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2105
                         },
                         {
                             "ATMName": "MTR Tuen Mun Station Express Banking",
@@ -6428,7 +6534,8 @@
                                     "OpenTime": "05:45",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2106
                         },
                         {
                             "ATMName": "On Ting Estate Express Banking",
@@ -6488,7 +6595,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2107
                         },
                         {
                             "ATMName": "Butterfly Estate ATM",
@@ -6548,7 +6656,8 @@
                                     "OpenTime": "05:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2108
                         },
                         {
                             "ATMName": "Sun Tuen Mun Centre ATM",
@@ -6608,7 +6717,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2109
                         },
                         {
                             "ATMName": "Kin Sang Estate ATM ",
@@ -6668,7 +6778,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2110
                         },
                         {
                             "ATMName": "Lung Mun Oasis (7-Eleven) ATM",
@@ -6728,7 +6839,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2111
                         },
                         {
                             "ATMName": "Kam Fat Building Express Banking",
@@ -6788,7 +6900,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2112
                         },
                         {
                             "ATMName": "Tuen Mun Hospital ATM",
@@ -6848,7 +6961,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2113
                         },
                         {
                             "ATMName": "Fu Tai Estate Express Banking",
@@ -6908,7 +7022,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2114
                         },
                         {
                             "ATMName": "Chelsea Heights Express Banking ",
@@ -6968,7 +7083,8 @@
                                     "OpenTime": "06:30",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2115
                         },
                         {
                             "ATMName": "Tsui Ning Garden (Circle-K) ATM",
@@ -7028,7 +7144,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2116
                         },
                         {
                             "ATMName": "MTR Siu Hong Station Express Banking - In order to proceed with the service improvement works, the service at this location will be temporarily suspended from 25 February 2019 at 11pm to 22 March 2019 at 6pm",
@@ -7088,7 +7205,8 @@
                                     "OpenTime": "05:45",
                                     "CloseTime": "00:40"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2117
                         },
                         {
                             "ATMName": "Tuen Mun Trend Plaza Express Banking",
@@ -7148,7 +7266,8 @@
                                     "OpenTime": "05:30",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2118
                         },
                         {
                             "ATMName": "Tuen Mun Express Banking",
@@ -7208,7 +7327,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2119
                         },
                         {
                             "ATMName": "Discovery Bay Express Banking",
@@ -7268,7 +7388,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2120
                         },
                         {
                             "ATMName": "Ocean Walk Express Banking",
@@ -7328,7 +7449,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2121
                         },
                         {
                             "ATMName": "MTR Tsuen Wan West Station Express Banking",
@@ -7388,7 +7510,8 @@
                                     "OpenTime": "06:05",
                                     "CloseTime": "23:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2122
                         },
                         {
                             "ATMName": "Yan Tin Estate Express Banking",
@@ -7448,7 +7571,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2123
                         },
                         {
                             "ATMName": "Kwai Shing East Estate ATM",
@@ -7508,7 +7632,8 @@
                                     "OpenTime": "09:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2124
                         },
                         {
                             "ATMName": "Cheung Ching Estate ATM",
@@ -7568,7 +7693,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2125
                         },
                         {
                             "ATMName": "Chung On Street Express Banking",
@@ -7628,7 +7754,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2126
                         },
                         {
                             "ATMName": "Lai King Estate ATM",
@@ -7688,7 +7815,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2127
                         },
                         {
                             "ATMName": "Riviera Gardens (7-Eleven) ATM",
@@ -7748,7 +7876,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2128
                         },
                         {
                             "ATMName": "Tsuen Wan Centre Express Banking",
@@ -7808,7 +7937,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2129
                         },
                         {
                             "ATMName": "Tai Ha Street (7-Eleven) ATM",
@@ -7868,7 +7998,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2130
                         },
                         {
                             "ATMName": "Tsuen Wan Express Banking",
@@ -7928,7 +8059,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2131
                         },
                         {
                             "ATMName": "Shek Wai Kok Estate ATM",
@@ -7988,7 +8120,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2132
                         },
                         {
                             "ATMName": "Cheung Shan Estate ATM",
@@ -8048,7 +8181,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2133
                         },
                         {
                             "ATMName": "D-PARK Express Banking",
@@ -8108,7 +8242,8 @@
                                     "OpenTime": "06:30",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2134
                         },
                         {
                             "ATMName": "Sham Tseng Express Banking",
@@ -8168,7 +8303,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2135
                         },
                         {
                             "ATMName": "Tai Wo Hau Estate ATM",
@@ -8228,7 +8364,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2136
                         },
                         {
                             "ATMName": "MTR Kam Sheung Road Station Express Banking",
@@ -8288,7 +8425,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2137
                         },
                         {
                             "ATMName": "Hung Shui Kiu Express Banking",
@@ -8348,7 +8486,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2138
                         },
                         {
                             "ATMName": "Kam Tin Express Banking",
@@ -8408,7 +8547,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2139
                         },
                         {
                             "ATMName": "Palm Spring Express Banking",
@@ -8468,7 +8608,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2140
                         },
                         {
                             "ATMName": "MTR Lok Ma Chau Station (Departures Concourse) Express Banking - The service at this Express Banking was discontinued on 15 October 2018 at 10pm",
@@ -8528,7 +8669,8 @@
                                     "OpenTime": "06:28",
                                     "CloseTime": "23:05"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2141
                         },
                         {
                             "ATMName": "Ching Ho Estate ATM",
@@ -8588,7 +8730,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2142
                         },
                         {
                             "ATMName": "Un Chau Estate Express Banking",
@@ -8648,7 +8791,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2143
                         },
                         {
                             "ATMName": "Wong Nei Chung Road (7-Eleven) ATM",
@@ -8708,7 +8852,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2144
                         },
                         {
                             "ATMName": "Parkview Express Banking",
@@ -8768,7 +8913,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2145
                         },
                         {
                             "ATMName": "Happy Valley Express Banking",
@@ -8828,7 +8974,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2146
                         },
                         {
                             "ATMName": "27 Caine Road (7-Eleven) ATM",
@@ -8888,7 +9035,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2147
                         },
                         {
                             "ATMName": "Lyndhurst Terrace Express Banking",
@@ -8948,7 +9096,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2148
                         },
                         {
                             "ATMName": "Happy Valley Racecourse Express Banking",
@@ -9008,7 +9157,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2149
                         },
                         {
                             "ATMName": "HK Stadium - Box Office Express Banking",
@@ -9068,7 +9218,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2150
                         },
                         {
                             "ATMName": "World Trade Centre Express Banking",
@@ -9128,7 +9279,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2151
                         },
                         {
                             "ATMName": "Perkins Road Express Banking",
@@ -9188,7 +9340,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2152
                         },
                         {
                             "ATMName": "Times Square Express Banking",
@@ -9248,7 +9401,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2153
                         },
                         {
                             "ATMName": "Times Square (L3) ATM",
@@ -9308,7 +9462,8 @@
                                     "OpenTime": "10:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2154
                         },
                         {
                             "ATMName": "Causeway Bay Express Banking",
@@ -9368,7 +9523,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2155
                         },
                         {
                             "ATMName": "Hysan Place Express Banking",
@@ -9428,7 +9584,8 @@
                                     "OpenTime": "10:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2156
                         },
                         {
                             "ATMName": "Leighton Road Express Banking",
@@ -9488,7 +9645,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2157
                         },
                         {
                             "ATMName": "Hopewell Centre Express Banking ",
@@ -9548,7 +9706,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2158
                         },
                         {
                             "ATMName": "Grand Waterfront Plaza ATM - was temporarily suspended on 2 October 2018 at 9am",
@@ -9608,7 +9767,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2159
                         },
                         {
                             "ATMName": "To Kwa Wan Express Banking",
@@ -9668,7 +9828,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2160
                         },
                         {
                             "ATMName": "Pak Tai Street (7-Eleven) ATM",
@@ -9728,7 +9889,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2161
                         },
                         {
                             "ATMName": "Ma Tau Wai Estate (Circle-K) ATM",
@@ -9788,7 +9950,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2162
                         },
                         {
                             "ATMName": "Tai Po Tsai Village Express Banking",
@@ -9848,7 +10011,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2163
                         },
                         {
                             "ATMName": "Sai Kung Express Banking",
@@ -9908,7 +10072,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2164
                         },
                         {
                             "ATMName": "Westlands Gardens Express Banking",
@@ -9968,7 +10133,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2165
                         },
                         {
                             "ATMName": "Cyberport Express Banking",
@@ -10028,7 +10194,8 @@
                                     "OpenTime": "09:00",
                                     "CloseTime": "21:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2166
                         },
                         {
                             "ATMName": "Ocean Park Express Banking",
@@ -10088,7 +10255,8 @@
                                     "OpenTime": "10:00",
                                     "CloseTime": "18:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2167
                         },
                         {
                             "ATMName": "Police Training School ATM",
@@ -10148,7 +10316,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2168
                         },
                         {
                             "ATMName": "Queen Mary Hospital Express Banking",
@@ -10208,7 +10377,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2169
                         },
                         {
                             "ATMName": "Repulse Bay ATM",
@@ -10268,7 +10438,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2170
                         },
                         {
                             "ATMName": "Tin Wan Estate Express Banking",
@@ -10328,7 +10499,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2171
                         },
                         {
                             "ATMName": "Wah Fu Estate Express Banking",
@@ -10388,7 +10560,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2172
                         },
                         {
                             "ATMName": "Chi Fu Fa Yuen Express Banking",
@@ -10448,7 +10621,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2173
                         },
                         {
                             "ATMName": "Shek Pai Wan Estate ATM",
@@ -10508,7 +10682,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2174
                         },
                         {
                             "ATMName": "Aberdeen Express Banking",
@@ -10568,7 +10743,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2175
                         },
                         {
                             "ATMName": "One Island South ATM",
@@ -10628,7 +10804,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2176
                         },
                         {
                             "ATMName": "Aberdeen Centre Express Banking",
@@ -10688,7 +10865,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2177
                         },
                         {
                             "ATMName": "Gleneagles Hong Kong Hospital ATM",
@@ -10748,7 +10926,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2178
                         },
                         {
                             "ATMName": "Choi Ming Court Express Banking",
@@ -10808,7 +10987,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2179
                         },
                         {
                             "ATMName": "Lok Fu Express Banking",
@@ -10868,7 +11048,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2180
                         },
                         {
                             "ATMName": "Tin Ma Court ATM",
@@ -10928,7 +11109,8 @@
                                     "OpenTime": "09:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2181
                         },
                         {
                             "ATMName": "Bonham Road Express Banking ",
@@ -10988,7 +11170,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2182
                         },
                         {
                             "ATMName": "Exchange Square Express Banking",
@@ -11048,7 +11231,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2183
                         },
                         {
                             "ATMName": "ifc Mall ATM",
@@ -11108,7 +11292,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2184
                         },
                         {
                             "ATMName": "Star Ferry Pier - Central ATM",
@@ -11168,7 +11353,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2185
                         },
                         {
                             "ATMName": "MTR Tai Wai Station Express Banking",
@@ -11228,7 +11414,8 @@
                                     "OpenTime": "05:45",
                                     "CloseTime": "00:55"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2186
                         },
                         {
                             "ATMName": "Mei Lam Estate ATM",
@@ -11288,7 +11475,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2187
                         },
                         {
                             "ATMName": "Tai Wai Express Banking",
@@ -11348,7 +11536,8 @@
                                     "OpenTime": "05:45",
                                     "CloseTime": "00:55"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2188
                         },
                         {
                             "ATMName": "Sun Chui Estate ATM",
@@ -11408,7 +11597,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2189
                         },
                         {
                             "ATMName": "Mei Tin Estate ATM",
@@ -11468,7 +11658,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2190
                         },
                         {
                             "ATMName": "Lung Hang Estate ATM",
@@ -11528,7 +11719,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2191
                         },
                         {
                             "ATMName": "126A Tung Choi Street (7-Eleven) ATM",
@@ -11588,7 +11780,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2192
                         },
                         {
                             "ATMName": "Hin Keng Estate Express Banking",
@@ -11648,7 +11841,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2193
                         },
                         {
                             "ATMName": "Police Headquarters ATM",
@@ -11708,7 +11902,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2194
                         },
                         {
                             "ATMName": "Hay Wah Building Express Banking",
@@ -11768,7 +11963,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2195
                         },
                         {
                             "ATMName": "9 Tin Lok Lane (7-Eleven) ATM",
@@ -11828,7 +12024,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2196
                         },
                         {
                             "ATMName": "Mong Kok Express Banking",
@@ -11888,7 +12085,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2197
                         },
                         {
                             "ATMName": "382 Lockhart Road (7-Eleven) ATM",
@@ -11948,7 +12146,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2198
                         },
                         {
                             "ATMName": "256 Hennessy Road Express Banking",
@@ -12008,7 +12207,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2199
                         },
                         {
                             "ATMName": "Lei Yue Mun Plaza ATM",
@@ -12068,7 +12268,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2200
                         },
                         {
                             "ATMName": "Millennium City ATM",
@@ -12128,7 +12329,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2201
                         },
                         {
                             "ATMName": "Kwun Tong Express Banking",
@@ -12188,7 +12390,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2202
                         },
                         {
                             "ATMName": "Yau Lai Estate ATM",
@@ -12248,7 +12451,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2203
                         },
                         {
                             "ATMName": "Domain ATM",
@@ -12308,7 +12512,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2204
                         },
                         {
                             "ATMName": "Sau Mau Ping ATM",
@@ -12368,7 +12573,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2205
                         },
                         {
                             "ATMName": "Tsui Ping Estate Express Banking",
@@ -12428,7 +12634,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2206
                         },
                         {
                             "ATMName": "Lam Tin Express Banking",
@@ -12488,7 +12695,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2207
                         },
                         {
                             "ATMName": "Metro Harbour Plaza ATM",
@@ -12548,7 +12756,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2208
                         },
                         {
                             "ATMName": "Po Tat Estate ATM",
@@ -12608,7 +12817,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2209
                         },
                         {
                             "ATMName": "Kai Tin Estate ATM",
@@ -12668,7 +12878,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2210
                         },
                         {
                             "ATMName": "Kwong Tin Estate ATM",
@@ -12728,7 +12939,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2211
                         },
                         {
                             "ATMName": "Tak Tin Estate ATM",
@@ -12788,7 +13000,8 @@
                                     "OpenTime": "05:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2212
                         },
                         {
                             "ATMName": "Hing Tin Estate ATM",
@@ -12848,7 +13061,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2213
                         },
                         {
                             "ATMName": "Mut Wah Street Express Banking",
@@ -12908,7 +13122,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2214
                         },
                         {
                             "ATMName": "Ping Tin Estate ATM",
@@ -12968,7 +13183,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2215
                         },
                         {
                             "ATMName": "MTR Yau Tong Station Express Banking",
@@ -13028,7 +13244,8 @@
                                     "OpenTime": "05:59",
                                     "CloseTime": "01:28"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2216
                         },
                         {
                             "ATMName": "On Tat Estate Express Banking",
@@ -13088,7 +13305,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2217
                         },
                         {
                             "ATMName": "Hoi Fu Shopping Centre ATM",
@@ -13148,7 +13366,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2218
                         },
                         {
                             "ATMName": "Manhattan Mid-Town Express Banking",
@@ -13208,7 +13427,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2219
                         },
                         {
                             "ATMName": "Cheung Sha Wan Plaza Express Banking",
@@ -13268,7 +13488,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2220
                         },
                         {
                             "ATMName": "Hoi Lai Estate Express Banking",
@@ -13328,7 +13549,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2221
                         },
                         {
                             "ATMName": "Liberte EasiService Banking Centre",
@@ -13388,7 +13610,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2222
                         },
                         {
                             "ATMName": "Cheung Sha Wan Express Banking",
@@ -13448,7 +13671,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2223
                         },
                         {
                             "ATMName": "Telford Gardens Express Banking",
@@ -13508,7 +13732,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2224
                         },
                         {
                             "ATMName": "Hing Tung Estate ATM",
@@ -13568,7 +13793,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2225
                         },
                         {
                             "ATMName": "Yau Ma Tei Express Banking",
@@ -13628,7 +13854,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2226
                         },
                         {
                             "ATMName": "Richland Gardens Express Banking",
@@ -13688,7 +13915,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2227
                         },
                         {
                             "ATMName": "Trade Centre EasiService Banking Centre",
@@ -13748,7 +13976,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "02:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2228
                         },
                         {
                             "ATMName": "Kai Yip Estate ATM",
@@ -13808,7 +14037,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2229
                         },
                         {
                             "ATMName": "8 Clear Water Bay Road Express Banking",
@@ -13868,7 +14098,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2230
                         },
                         {
                             "ATMName": "Choi Tak Estate ATM",
@@ -13928,7 +14159,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2231
                         },
                         {
                             "ATMName": "Choi Ying Estate ATM",
@@ -13988,7 +14220,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2232
                         },
                         {
                             "ATMName": "Ching Long Shopping Centre Express Banking",
@@ -14048,7 +14281,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2233
                         },
                         {
                             "ATMName": "Ping Shek Estate ATM",
@@ -14108,7 +14342,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2234
                         },
                         {
                             "ATMName": "On Kay Commercial Centre Express Banking",
@@ -14168,7 +14403,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2235
                         },
                         {
                             "ATMName": "Amoy Plaza Express Banking",
@@ -14228,7 +14464,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2236
                         },
                         {
                             "ATMName": "Soy Street Express Banking",
@@ -14288,7 +14525,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2237
                         },
                         {
                             "ATMName": "Lok Wah Estate Express Banking",
@@ -14348,7 +14586,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2238
                         },
                         {
                             "ATMName": "Shun Lee Estate Express Banking",
@@ -14408,7 +14647,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2239
                         },
                         {
                             "ATMName": "Shun Tin Estate Express Banking",
@@ -14468,7 +14708,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2240
                         },
                         {
                             "ATMName": "Upper Ngau Tau Kok Estate ATM",
@@ -14528,7 +14769,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2241
                         },
                         {
                             "ATMName": "Bowring Street (7-Eleven) ATM",
@@ -14588,7 +14830,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2242
                         },
                         {
                             "ATMName": "Queen Elizabeth Hospital Express Banking",
@@ -14648,7 +14891,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2243
                         },
                         {
                             "ATMName": "238 Nathan Road Express Banking",
@@ -14708,7 +14952,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2244
                         },
                         {
                             "ATMName": "Morgan Stanley Asia Limited ATM",
@@ -14768,7 +15013,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2245
                         },
                         {
                             "ATMName": "Deutsche Bank AG (HK Branch) ATM",
@@ -14828,7 +15074,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2246
                         },
                         {
                             "ATMName": "MTR Austin Station Express Banking",
@@ -14888,7 +15135,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2247
                         },
                         {
                             "ATMName": "Kowloon City Express Banking",
@@ -14948,7 +15196,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2248
                         },
                         {
                             "ATMName": "Sheung Wan Express Banking",
@@ -15008,7 +15257,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2249
                         },
                         {
                             "ATMName": "Shun Tak Centre Express Banking",
@@ -15068,7 +15318,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2250
                         },
                         {
                             "ATMName": "Tsim Sha Tsui Express Banking",
@@ -15128,7 +15379,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2251
                         },
                         {
                             "ATMName": "MTR Tsim Sha Tsui Station ATM",
@@ -15188,7 +15440,8 @@
                                     "OpenTime": "05:54",
                                     "CloseTime": "01:08"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2252
                         },
                         {
                             "ATMName": "Hankow Road Express Banking",
@@ -15248,7 +15501,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2253
                         },
                         {
                             "ATMName": "San Po Kong Express Banking",
@@ -15308,7 +15562,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2254
                         },
                         {
                             "ATMName": "Choi Hung Estate Express Banking",
@@ -15368,7 +15623,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2255
                         },
                         {
                             "ATMName": "Choi Wan Estate ATM",
@@ -15428,7 +15684,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2256
                         },
                         {
                             "ATMName": "Mikiki ATM",
@@ -15488,7 +15745,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2257
                         },
                         {
                             "ATMName": "Tai Yau Street Express Banking",
@@ -15548,7 +15806,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2258
                         },
                         {
                             "ATMName": "Kowloon Police Headquarters ATM",
@@ -15608,7 +15867,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2259
                         },
                         {
                             "ATMName": "Chuk Yuen South Estate ATM",
@@ -15668,7 +15928,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2260
                         },
                         {
                             "ATMName": "Fu Shan Estate Express Banking",
@@ -15728,7 +15989,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2261
                         },
                         {
                             "ATMName": "Fung Tak Estate Express Banking",
@@ -15788,7 +16050,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2262
                         },
                         {
                             "ATMName": "Tsz Wan Shan Shopping Centre Express Banking",
@@ -15848,7 +16111,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2263
                         },
                         {
                             "ATMName": "Wong Tai Sin South Express Banking",
@@ -15908,7 +16172,8 @@
                                     "OpenTime": "05:30",
                                     "CloseTime": "23:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2264
                         },
                         {
                             "ATMName": "Tsz Ching Estate ATM",
@@ -15968,7 +16233,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2265
                         },
                         {
                             "ATMName": "Wong Tai Sin North Express Banking",
@@ -16028,7 +16294,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2266
                         },
                         {
                             "ATMName": "MTR East Tsim Sha Tsui Station (S14) Express Banking",
@@ -16088,7 +16355,8 @@
                                     "OpenTime": "05:15",
                                     "CloseTime": "01:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2267
                         },
                         {
                             "ATMName": "Peninsula Centre Express Banking",
@@ -16148,7 +16416,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2268
                         },
                         {
                             "ATMName": "Cityplaza Express Banking",
@@ -16208,7 +16477,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2269
                         },
                         {
                             "ATMName": "HSBC Main Building Express Banking",
@@ -16268,7 +16538,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2270
                         },
                         {
                             "ATMName": "Heng Fa Chuen Express Banking",
@@ -16328,7 +16599,8 @@
                                     "OpenTime": "08:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2271
                         },
                         {
                             "ATMName": "Festival Walk MTR Integrated Entrance Express Banking",
@@ -16388,7 +16660,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2272
                         },
                         {
                             "ATMName": "MTR Kowloon Tong Station Express Banking",
@@ -16448,7 +16721,8 @@
                                     "OpenTime": "05:36",
                                     "CloseTime": "01:02"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2273
                         },
                         {
                             "ATMName": "Festival Walk Express Banking",
@@ -16508,7 +16782,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2274
                         },
                         {
                             "ATMName": "Pak Tin Estate ATM",
@@ -16568,7 +16843,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2275
                         },
                         {
                             "ATMName": "Nam Shan Estate ATM",
@@ -16628,7 +16904,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2276
                         },
                         {
                             "ATMName": "Nam Shan Estate ATM",
@@ -16688,7 +16965,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2277
                         },
                         {
                             "ATMName": "MTR Mong Kok East Station Express Banking",
@@ -16748,7 +17026,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2278
                         },
                         {
                             "ATMName": "Pioneer Centre Express Banking",
@@ -16808,7 +17087,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2279
                         },
                         {
                             "ATMName": "Nullah Road (7-Eleven) ATM",
@@ -16868,7 +17148,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2280
                         },
                         {
                             "ATMName": "Cloudview Road Express Banking",
@@ -16928,7 +17209,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2281
                         },
                         {
                             "ATMName": "MOKO ATM",
@@ -16988,7 +17270,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2282
                         },
                         {
                             "ATMName": "Seymour Road (7-Eleven) ATM ",
@@ -17048,7 +17331,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2283
                         },
                         {
                             "ATMName": "Fu Shin Estate Express Banking",
@@ -17108,7 +17392,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2284
                         },
                         {
                             "ATMName": "Hong Lok Yuen Express Banking",
@@ -17168,7 +17453,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2285
                         },
                         {
                             "ATMName": "Kwong Fuk Estate EasiService Banking Centre",
@@ -17228,7 +17514,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2286
                         },
                         {
                             "ATMName": "New Territories North Police Headquarters ATM",
@@ -17288,7 +17575,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2287
                         },
                         {
                             "ATMName": "Tai Yuen Estate ATM",
@@ -17348,7 +17636,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2288
                         },
                         {
                             "ATMName": "YATA Department Store (Tai Po) ATM",
@@ -17408,7 +17697,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2289
                         },
                         {
                             "ATMName": "Jade Plaza Express Banking",
@@ -17468,7 +17758,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2290
                         },
                         {
                             "ATMName": "Tai Po Mega Mall ATM",
@@ -17528,7 +17819,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2291
                         },
                         {
                             "ATMName": "North Point Express Banking ",
@@ -17588,7 +17880,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2292
                         },
                         {
                             "ATMName": "Star Ferry Pier - Kowloon Express Banking",
@@ -17648,7 +17941,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2293
                         },
                         {
                             "ATMName": "The Gateway Express Banking",
@@ -17708,7 +18002,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2294
                         },
                         {
                             "ATMName": "Ocean Centre Express Banking",
@@ -17768,7 +18063,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2295
                         },
                         {
                             "ATMName": "Elements EasiService Banking Centre",
@@ -17828,7 +18124,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2296
                         },
                         {
                             "ATMName": "Convention Plaza Express Banking ",
@@ -17888,7 +18185,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2297
                         },
                         {
                             "ATMName": "Sun Hung Kai Centre Express Banking",
@@ -17948,7 +18246,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2298
                         },
                         {
                             "ATMName": "Kweilin Street (7-Eleven) ATM",
@@ -18008,7 +18307,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2299
                         },
                         {
                             "ATMName": "MTR University Station Express Banking",
@@ -18068,7 +18368,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2300
                         },
                         {
                             "ATMName": "Lai Kok Estate Express Banking",
@@ -18128,7 +18429,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2301
                         },
                         {
                             "ATMName": "MTR Tai Shui Hang Station ATM",
@@ -18188,7 +18490,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2302
                         },
                         {
                             "ATMName": "MTR Nam Cheong Station Express Banking",
@@ -18248,7 +18551,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "00:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2303
                         },
                         {
                             "ATMName": "Chai Wan Express Banking",
@@ -18308,7 +18612,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2304
                         },
                         {
                             "ATMName": "Siu Sai Wan Estate Express Banking",
@@ -18368,7 +18673,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2305
                         },
                         {
                             "ATMName": "Eastern Hospital Express Banking",
@@ -18428,7 +18734,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2306
                         },
                         {
                             "ATMName": "Hing Wah (I) Estate ATM",
@@ -18488,7 +18795,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2307
                         },
                         {
                             "ATMName": "Tsui Wan Estate ATM",
@@ -18548,7 +18856,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2308
                         },
                         {
                             "ATMName": "New Jade Shopping Centre ATM",
@@ -18608,7 +18917,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2309
                         },
                         {
                             "ATMName": "Hing Man Estate ATM",
@@ -18668,7 +18978,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2310
                         },
                         {
                             "ATMName": "Tai Wo Plaza Express Banking",
@@ -18728,7 +19039,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2311
                         },
                         {
                             "ATMName": "Sham Shui Po Express Banking",
@@ -18788,7 +19100,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2312
                         },
                         {
                             "ATMName": "Fu Cheong Estate Express Banking",
@@ -18848,7 +19161,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2313
                         },
                         {
                             "ATMName": "MTR Fo Tan Station ATM",
@@ -18908,7 +19222,8 @@
                                     "OpenTime": "05:27",
                                     "CloseTime": "01:04"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2314
                         },
                         {
                             "ATMName": "Shek Kip Mei Estate (7-Eleven) ATM",
@@ -18968,7 +19283,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2315
                         },
                         {
                             "ATMName": "MTR Sha Tin Station Express Banking",
@@ -19028,7 +19344,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2316
                         },
                         {
                             "ATMName": "Sha Kok Estate Express Banking",
@@ -19088,7 +19405,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2317
                         },
                         {
                             "ATMName": "Wo Che Estate Express Banking",
@@ -19148,7 +19466,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2318
                         },
                         {
                             "ATMName": "Sui Wo Court Express Banking",
@@ -19208,7 +19527,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2319
                         },
                         {
                             "ATMName": "Sun Tin Wai Estate Express Banking",
@@ -19268,7 +19588,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2320
                         },
                         {
                             "ATMName": "Shatin Plaza Express Banking",
@@ -19328,7 +19649,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2321
                         },
                         {
                             "ATMName": "Shatin City One Express Banking",
@@ -19388,7 +19710,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2322
                         },
                         {
                             "ATMName": "Chun Shek Estate Express Banking",
@@ -19448,7 +19771,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2323
                         },
                         {
                             "ATMName": "East Ocean Centre Express Banking",
@@ -19508,7 +19832,8 @@
                                     "OpenTime": "07:30",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2324
                         },
                         {
                             "ATMName": "Lei Cheng Uk Estate ATM",
@@ -19568,7 +19893,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2325
                         },
                         {
                             "ATMName": "King Lam Estate Express Banking",
@@ -19628,7 +19954,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2326
                         },
                         {
                             "ATMName": "Tsui Lam Estate EasiService Banking Centre",
@@ -19688,7 +20015,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2327
                         },
                         {
                             "ATMName": "Po Lam Estate ATM",
@@ -19748,7 +20076,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2328
                         },
                         {
                             "ATMName": "Metro City Plaza Express Banking",
@@ -19808,7 +20137,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2329
                         },
                         {
                             "ATMName": "Bulkeley Street Express Banking",
@@ -19868,7 +20198,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2330
                         },
                         {
                             "ATMName": "Whampoa Estate (7-Eleven) ATM",
@@ -19928,7 +20259,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2331
                         },
                         {
                             "ATMName": "Whampoa Garden Express Banking",
@@ -19988,7 +20320,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2332
                         },
                         {
                             "ATMName": "Peak Galleria ATM - This ATM was relocated to G/F, Block A, Peak Road Dairy Farm Shopping Centre, 100 Peak Road on 27 August 2018",
@@ -20048,7 +20381,8 @@
                                     "OpenTime": "10:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2333
                         },
                         {
                             "ATMName": "Pacific Place Express Banking - the service at this Express Banking was discontinued on 17 Sep 2018",
@@ -20108,7 +20442,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2334
                         },
                         {
                             "ATMName": "Pacific Place L4 Express Banking",
@@ -20168,7 +20503,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2335
                         },
                         {
                             "ATMName": "Dragon Centre (L1) Express Banking",
@@ -20228,7 +20564,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2336
                         },
                         {
                             "ATMName": "Apleichau Main Street Express Banking",
@@ -20288,7 +20625,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2337
                         },
                         {
                             "ATMName": "China Hong Kong City Express Banking",
@@ -20348,7 +20686,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2338
                         },
                         {
                             "ATMName": "Central Express Banking",
@@ -20408,7 +20747,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2339
                         },
                         {
                             "ATMName": "Kowloon Bay Express Banking",
@@ -20468,7 +20808,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2340
                         },
                         {
                             "ATMName": "332 Castle Peak Road (7-Eleven) ATM",
@@ -20528,7 +20869,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2341
                         },
                         {
                             "ATMName": "Dragon Centre (L6) Express Banking",
@@ -20588,7 +20930,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2342
                         },
                         {
                             "ATMName": "Lucky Plaza Express Banking",
@@ -20648,7 +20991,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2343
                         },
                         {
                             "ATMName": "Lai Chi Kok Road Express Banking",
@@ -20708,7 +21052,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2344
                         },
                         {
                             "ATMName": "Pok Hong Estate (7-Eleven) ATM",
@@ -20768,7 +21113,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2345
                         },
                         {
                             "ATMName": "Lek Yuen Estate ATM",
@@ -20828,7 +21174,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2346
                         },
                         {
                             "ATMName": "Shui Chuen O Estate Express Banking",
@@ -20888,7 +21235,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2347
                         },
                         {
                             "ATMName": "Garden Rivera (7-Eleven) ATM",
@@ -20948,7 +21296,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2348
                         },
                         {
                             "ATMName": "Kwong Yuen Estate Express Banking",
@@ -21008,7 +21357,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2349
                         },
                         {
                             "ATMName": "MTR City One Station ATM",
@@ -21068,7 +21418,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2350
                         },
                         {
                             "ATMName": "MTR Sha Tin Wai Station ATM",
@@ -21128,7 +21479,8 @@
                                     "OpenTime": "05:30",
                                     "CloseTime": "01:08"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2351
                         },
                         {
                             "ATMName": "MTR Shek Mun Station ATM",
@@ -21188,7 +21540,8 @@
                                     "OpenTime": "05:30",
                                     "CloseTime": "01:15"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2352
                         },
                         {
                             "ATMName": "Prince of Wales Hospital ATM",
@@ -21248,7 +21601,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2353
                         },
                         {
                             "ATMName": "Shek Mun Estate ATM",
@@ -21308,7 +21662,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2354
                         },
                         {
                             "ATMName": "Kennedy Town Express Banking",
@@ -21368,7 +21723,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2355
                         },
                         {
                             "ATMName": "Harcourt Road Express Banking - The service at this location was discontinued on Saturday, 29 December 2018 at 2pm",
@@ -21428,7 +21784,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2356
                         },
                         {
                             "ATMName": "East Point City Express Banking",
@@ -21488,7 +21845,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2357
                         },
                         {
                             "ATMName": "Hau Tak Estate ATM  ",
@@ -21548,7 +21906,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2358
                         },
                         {
                             "ATMName": "Ming Tak Estate ATM",
@@ -21608,7 +21967,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2359
                         },
                         {
                             "ATMName": "Park Central Express Banking",
@@ -21668,7 +22028,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2360
                         },
                         {
                             "ATMName": "Sheung Tak Shopping Centre Express Banking - Due to renovation of Sheung Tak Shopping Centre, the service at this Express Banking will be suspended effective from Tuesday, 26 February 2019 at 9am.",
@@ -21728,7 +22089,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2361
                         },
                         {
                             "ATMName": "East Point City (L2) Express Banking",
@@ -21788,7 +22150,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2362
                         },
                         {
                             "ATMName": "Yee Ming Estate (7-Eleven) ATM",
@@ -21848,7 +22211,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2363
                         },
                         {
                             "ATMName": "The Westwood Express Banking                    ",
@@ -21908,7 +22272,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2364
                         },
                         {
                             "ATMName": "HSBC Centre Express Banking",
@@ -21968,7 +22333,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2365
                         },
                         {
                             "ATMName": "Park Lane Express Banking",
@@ -22028,7 +22394,8 @@
                                     "OpenTime": "06:30",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2366
                         },
                         {
                             "ATMName": "Quarry Bay Express Banking",
@@ -22088,7 +22455,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2367
                         },
                         {
                             "ATMName": "Un Chau Street (7-Eleven) ATM",
@@ -22148,7 +22516,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2368
                         },
                         {
                             "ATMName": "Hong Kong Office Express Banking ",
@@ -22208,7 +22577,8 @@
                                     "OpenTime": "Invalid date",
                                     "CloseTime": "Invalid date"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2369
                         },
                         {
                             "ATMName": "128 Queen's Road Central Express Banking",
@@ -22268,7 +22638,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2370
                         },
                         {
                             "ATMName": "Peak Road Dairy Farm Shopping Centre ATM",
@@ -22328,7 +22699,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2371
                         },
                         {
                             "ATMName": "Waterloo Road Express Banking",
@@ -22388,7 +22760,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2372
                         },
                         {
                             "ATMName": "Pacific Place (L203) Express Banking",
@@ -22448,7 +22821,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2373
                         },
                         {
                             "ATMName": "MTR HKU Station Express Banking",
@@ -22508,7 +22882,8 @@
                                     "OpenTime": "05:51",
                                     "CloseTime": "01:20"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2374
                         },
                         {
                             "ATMName": "MTR Kennedy Town Station Express Banking",
@@ -22568,7 +22943,8 @@
                                     "OpenTime": "05:50",
                                     "CloseTime": "01:21"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2375
                         },
                         {
                             "ATMName": "272 Ma Tau Wai Road Express Banking",
@@ -22628,7 +23004,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2376
                         },
                         {
                             "ATMName": "Hung Hom Express Banking",
@@ -22688,7 +23065,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2377
                         },
                         {
                             "ATMName": "CLP Holdings Ltd ATM",
@@ -22748,7 +23126,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "19:03"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2378
                         },
                         {
                             "ATMName": "MTR Ho Man Tin Station Express Banking",
@@ -22808,7 +23187,8 @@
                                     "OpenTime": "05:51",
                                     "CloseTime": "01:12"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2379
                         },
                         {
                             "ATMName": "HK Housing Authority Headquarters Express Banking",
@@ -22868,7 +23248,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2380
                         },
                         {
                             "ATMName": "Kowloon Hospital Express Banking",
@@ -22928,7 +23309,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2381
                         },
                         {
                             "ATMName": "Oi Man Express Banking",
@@ -22988,7 +23370,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2382
                         },
                         {
                             "ATMName": "Ho Man Tin Express Banking",
@@ -23048,7 +23431,8 @@
                                     "OpenTime": "06:00",
                                     "CloseTime": "24:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2383
                         },
                         {
                             "ATMName": "Yiu Tung Estate Express Banking",
@@ -23108,7 +23492,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2384
                         },
                         {
                             "ATMName": "Aldrich Garden Express Banking",
@@ -23168,7 +23553,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2385
                         },
                         {
                             "ATMName": "Shau Kei Wan Express Banking",
@@ -23228,7 +23614,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2386
                         },
                         {
                             "ATMName": "Oi Tung Estate ATM",
@@ -23288,7 +23675,8 @@
                                     "OpenTime": "07:00",
                                     "CloseTime": "23:30"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2387
                         },
                         {
                             "ATMName": "Sai Wan Ho Express Banking",
@@ -23348,7 +23736,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2388
                         },
                         {
                             "ATMName": "2 Queen's Road West Express Banking",
@@ -23408,7 +23797,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2389
                         },
                         {
                             "ATMName": "288 Queen's Road West EasiService Banking Centre",
@@ -23468,7 +23858,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2390
                         },
                         {
                             "ATMName": "MTR Sai Ying Pun Station ATM",
@@ -23528,7 +23919,8 @@
                                     "OpenTime": "05:53",
                                     "CloseTime": "01:18"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2391
                         },
                         {
                             "ATMName": "Electric Road Express Banking",
@@ -23588,7 +23980,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2392
                         },
                         {
                             "ATMName": "Fortune Estate ATM",
@@ -23648,7 +24041,8 @@
                                     "OpenTime": "09:00",
                                     "CloseTime": "22:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2393
                         },
                         {
                             "ATMName": "Island Place Express Banking",
@@ -23708,7 +24102,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2394
                         },
                         {
                             "ATMName": "Fu Heng Estate ATM",
@@ -23768,7 +24163,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2395
                         },
                         {
                             "ATMName": "MTR Tai Po Market Station Express Banking",
@@ -23828,7 +24224,8 @@
                                     "OpenTime": "05:47",
                                     "CloseTime": "00:51"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2396
                         },
                         {
                             "ATMName": "MTR Tai Wo Station ATM",
@@ -23888,7 +24285,8 @@
                                     "OpenTime": "05:30",
                                     "CloseTime": "01:00"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2397
                         },
                         {
                             "ATMName": "Tai Wo Estate Express Banking",
@@ -23948,7 +24346,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2398
                         },
                         {
                             "ATMName": "Wan Tau Tong Estate Express Banking",
@@ -24008,7 +24407,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2399
                         },
                         {
                             "ATMName": "Tai Po Express Banking",
@@ -24068,7 +24468,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2400
                         },
                         {
                             "ATMName": "Cheung Chau Express Banking",
@@ -24128,7 +24529,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2401
                         },
                         {
                             "ATMName": "Tai O Express Banking",
@@ -24188,7 +24590,8 @@
                                     "OpenTime": "00:00",
                                     "CloseTime": "23:59"
                                 }
-                            ]
+                            ],
+                            "ATMId": 2402
                         }
                     ]
                 }

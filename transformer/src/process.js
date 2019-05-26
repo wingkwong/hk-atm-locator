@@ -170,14 +170,6 @@ async function generateChecksum(bank, inputFile, outputFile) {
   end();
 }
 
-/**
- * Generate stats for each processed data 
- * @param {*} outputFile
- */
-async function generateStats(outputFile) {
-  // TODO:
-}
-
 program
   .version('0.1.0');
 
@@ -212,14 +204,6 @@ program
   .command('process-checksum <bank> <inputFile> <outputFile>')
   .description('Check and write checksum of the processed data')
   .action(generateChecksum);
-
-/**
- * Generate the stats
- */
-program
-.command('generate-stats <bank> <outputFile>')
-.description('Check and write checksum of the processed data')
-.action(generateStats);
 
 program.parse(process.argv);
 

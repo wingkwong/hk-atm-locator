@@ -14,7 +14,14 @@ const ProcessData = require('./process_data');
 const BANK_HANG_SENG = 'hang_seng';
 const BANK_HSBC = 'hsbc';
 const BANK_JETCO = 'jetco';
-const BANKS = [BANK_HANG_SENG, BANK_HSBC, BANK_JETCO];
+const BANK_FUBON = 'fubon';
+const BANK_BCH = 'bch';
+const BANK_WING_LUNK = 'wing_lunk';
+const BANK_ICBC = 'icbc';
+const BANK_BEA = 'bea';
+const BANKS = [BANK_HANG_SENG, BANK_HSBC, BANK_FUBON, BANK_BCH,
+  BANK_BEA, BANK_WING_LUNK,
+  BANK_ICBC];
 
 /**
  * Terminate process
@@ -47,13 +54,13 @@ function validateBank(bank) {
  * @param {*} file
  */
 function validateFile(file) {
-  if(!fs.existsSync(file)) {
+  if (!fs.existsSync(file)) {
     terminateWithError(`${file} not exists`);
   }
 }
 
 /**
- * Enrich latitude and longitude based on Address Line 
+ * Enrich latitude and longitude based on Address Line
  * using Address Parser Lib
  * @param {*} bank
  * @param {*} outputFile
@@ -76,14 +83,19 @@ async function parseAddress(atm) {
  */
 async function prepareData(bank, outputFile) {
   validateBank(bank);
-  if (bank === BANK_HANG_SENG) {
-    await PrepareData.prepareHangSengData(outputFile);
-    end();
-  } else if (bank === BANK_HSBC) {
-    await PrepareData.prepareHsbcData(outputFile);
-    end();
+  switch (bank) {
+    case BANK_HANG_SENG: await PrepareData.prepareHangSengData(outputFile); break;
+    case BANK_HSBC: await PrepareData.prepareHsbcData(outputFile); break;
+    case BANK_FUBON: await PrepareData.prepareFubonData(outputFile); break;
+    case BANK_BCH: await PrepareData.prepareBchData(outputFile); break;
+    case BANK_WING_LUNK: await PrepareData.prepareWingLunkData(outputFile); break;
+    case BANK_BEA: await PrepareData.prepareBEAData(outputFile); break;
+    case BANK_ICBC: await PrepareData.prepareICBCData(outputFile); break;
+    default:
+      terminateWithError('Unknown bank');
+      break;
   }
-  terminateWithError('Unknown bank');
+  end();
 }
 
 /**
@@ -142,8 +154,8 @@ async function processAddress(bank, inputFile, outputFile) {
 }
 
 /**
- * Generate checksum for each processed data 
- * Abort copying data to web/src/data if checksum does not change 
+ * Generate checksum for each processed data
+ * Abort copying data to web/src/data if checksum does not change
  * @param {*} bank
  * @param {*} inputFile
  * @param {*} outputFile
@@ -185,7 +197,7 @@ program
   .action(processData);
 
 /**
- * Process the checksum 
+ * Process the checksum
  */
 program
   .command('process-checksum <bank> <inputFile> <outputFile>')

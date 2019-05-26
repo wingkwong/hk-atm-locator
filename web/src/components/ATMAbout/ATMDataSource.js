@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import { loadHSBCDataStat, loadHangSengDataStat, loadJetcoDataStat } from '../../utils/dataLoader';
 
 const styles = {
     root: {
@@ -26,12 +27,15 @@ class ATMDataSource extends React.Component {
 
   render() {
     const { classes } = this.props;
-    // TODO: fetch dynamically
-    // TODO: show each bank instead of network
+    const hsbcDataStat = loadHSBCDataStat();
+    const hangSengDataStat = loadHangSengDataStat();
+    const jetcoDataStat = loadJetcoDataStat();
+
     const rows = [
-        this.createData('HSBC API Portal', '2019-05-20T05:52:14+08:00', 403),
-        this.createData('Hang Seng API Portal', '2019-05-20T07:50:06+08:00', 282),
-        this.createData('Jetco Website', '2019-05-20T03:48:17.586Z', 1851),
+        this.createData('HSBC API Portal', hsbcDataStat.LastUpdated, hsbcDataStat.TotalResults),
+        this.createData('Hang Seng API Portal', hangSengDataStat.LastUpdated, hangSengDataStat.TotalResults),
+        this.createData('Jetco Website', jetcoDataStat.LastUpdated, jetcoDataStat.TotalResults),
+        //TODO: List all bank stats under Jetco network
       ];
     
     return (
@@ -63,12 +67,11 @@ class ATMDataSource extends React.Component {
 
 ATMDataSource.propTypes = {
   classes: PropTypes.object.isRequired,
-  atm: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => {
   return {
-      atm: state.atm.data,
+    
   };
 }
 

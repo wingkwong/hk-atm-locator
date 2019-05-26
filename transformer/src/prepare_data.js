@@ -65,9 +65,6 @@ const prepareHsbcData = async (outputFile) => {
 };
 
 const prepareJetcoData = async (outputFile, endpoint, clientId, secret) => {
-  console.log(endpoint)
-  console.log(clientId)
-  console.log(secret)
   const res = await request.getAsync({
     url: endpoint,
     headers: {

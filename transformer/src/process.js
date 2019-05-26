@@ -10,6 +10,7 @@ const { remind, alert, info } = require('./utils');
 
 const PrepareData = require('./prepare_data');
 const ProcessData = require('./process_data');
+const DataChecksum = require('./generate_checksum');
 
 const BANK_HANG_SENG = 'hang_seng';
 const BANK_HSBC = 'hsbc';
@@ -160,13 +161,21 @@ async function processAddress(bank, inputFile, outputFile) {
  * @param {*} inputFile
  * @param {*} outputFile
  */
-async function processChecksum(bank, inputFile, outputFile) {
+async function generateChecksum(bank, inputFile, outputFile) {
   validateBank(bank);
   validateFile(inputFile);
   var data = await fs.readFileAsync(inputFile);
   data = JSON.stringify(JSON.parse(data).data);
-  ProcessData.processDataChecksum(data, outputFile);
+  DataChecksum.generate(data, outputFile);
   end();
+}
+
+/**
+ * Generate stats for each processed data 
+ * @param {*} outputFile
+ */
+async function generateStats(outputFile) {
+  // TODO:
 }
 
 program
@@ -197,12 +206,20 @@ program
   .action(processData);
 
 /**
- * Process the checksum
+ * Generate the checksum 
  */
 program
   .command('process-checksum <bank> <inputFile> <outputFile>')
   .description('Check and write checksum of the processed data')
-  .action(processChecksum);
+  .action(generateChecksum);
+
+/**
+ * Generate the stats
+ */
+program
+.command('generate-stats <bank> <outputFile>')
+.description('Check and write checksum of the processed data')
+.action(generateStats);
 
 program.parse(process.argv);
 

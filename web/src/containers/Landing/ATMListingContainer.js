@@ -84,7 +84,7 @@ class ATMListingContainer extends Component{
             if(this.props.currentLocation !== undefined) {
                 location = this.props.currentLocation
             }
-            var t0 = performance.now();
+            
             const sortedAllATMs = [].concat(atm)
             .map((atm) => {
                 atm.distance = distanceBetweenTwoGeoPoints(location.lat, location.lng, atm.ATMAddress.LatitudeDescription, atm.ATMAddress.LongitudeDescription);

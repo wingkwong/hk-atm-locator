@@ -49,7 +49,7 @@ class ATMMapContainer extends Component{
     }
 
     render() {
-        const { classes, selectedLocation, selectedZoomLvl, currentLocation } = this.props;
+        const { classes, selectedLocation, selectedZoomLvl, currentLocation, network } = this.props;
         let zoomLvlToUse = selectedZoomLvl;
         let icon = L.icon({
             iconUrl: currentLocationIcon,
@@ -73,7 +73,7 @@ class ATMMapContainer extends Component{
                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                    <ATMMarkerClusterGroup/>
+                    <ATMMarkerClusterGroup network={network}/>
                     <Marker position={currentLocation} icon={icon}/>
                     {/* {
                         this.state.isMapInit && 
@@ -90,7 +90,7 @@ const mapStateToProps = (state, ownProps) => {
         atm: state.atm.data,
         selectedLocation: state.location.selectedLocation,
         selectedZoomLvl: state.location.selectedZoomLvl,
-        currentLocation: state.location.currentLocation
+        currentLocation: state.location.currentLocation,
     };
 }
 

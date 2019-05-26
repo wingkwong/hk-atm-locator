@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
-const crypto = require('crypto');
 const MTR_OPERATING_HOURS = require('../reference/mtr_operating_hours');
 const { jetco } = require('../reference/jetco_banks');
 const { remind, info } = require('./utils');
@@ -11,8 +10,6 @@ const baseIdx = {
   hsbc: 2000,
   jetco: 3000
 }
-
-
 
 const enrichBankAndNetwork = (bank, network) => {
   if (network === 'hang_seng' || network === 'hsbc' || network === 'jetco') {
@@ -269,31 +266,6 @@ const process_jecto_data_from_apix = (data) => {
   return JSON.stringify(data);
 }
 
-const processChecksum = (data, md5Path) => {
-  const checksum = generateChecksum(data);
-  if(shouldWriteChecksum(md5Path, checksum)) {
-    fs.writeFileSync(md5Path, checksum);
-    remind(`Finished generating checksum file at ${md5Path}`);
-  } else {
-    fs.unlinkSync(md5Path);
-  }
-}
-
-const generateChecksum = (data) => {
-  return crypto
-  .createHash('md5')
-  .update(data, 'utf8')
-  .digest('hex');
-}
-
-const shouldWriteChecksum = (md5Path, checksum) => {
-  if(!fs.existsSync(md5Path)) {
-    return true;
-  }
-  const checksumInmd5 = fs.readFileSync(md5Path);
-  return checksum === checksumInmd5 ? false : true;
-}
-
 module.exports = {
   processHangSengData: async (inputPath, outputPath) => {
     info(`Preparing to process hang seng file from ${inputPath}`);
@@ -320,10 +292,5 @@ module.exports = {
     const processedData = process_jecto_data_from_apix(inputPath);
     fs.writeFileSync(outputPath, processedData);
     remind(`Finished processing jetco file (APIX) and saved at ${outputPath}`);
-  },
-  processDataChecksum: async (data, md5Path) => {
-    info(`Processing checksum at ${md5Path}`);
-    processChecksum(data, md5Path);
-    remind(`Finished processing checksum file and saved at ${md5Path}`);
   }
 };

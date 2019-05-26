@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b2badc79aa096b89eefc",
+    "revision": "5609d55f9d9f39bdb9d0",
     "url": "/hk-atm-locator/static/css/main.2811a35a.chunk.css"
   },
   {
-    "revision": "b2badc79aa096b89eefc",
-    "url": "/hk-atm-locator/static/js/main.c5319f09.chunk.js"
+    "revision": "5609d55f9d9f39bdb9d0",
+    "url": "/hk-atm-locator/static/js/main.63651c7d.chunk.js"
   },
   {
     "revision": "e7078f4e8747d91daba4",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/hk-atm-locator/static/media/you_are_here.e985b822.png"
   },
   {
-    "revision": "485a564d09156049adc08a032c5467c4",
+    "revision": "c6984bf5915ac0859bf8811f05f39fa2",
     "url": "/hk-atm-locator/index.html"
   }
 ];

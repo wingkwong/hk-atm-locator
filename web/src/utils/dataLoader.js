@@ -1,6 +1,7 @@
 import HANG_SENG_DATA from '../data/hang_seng.json';
 import HSBC_DATA from '../data/hsbc.json';
 import JETCO_DATA from '../data/jetco_en.json';
+import { hsbc, hangseng, jetco } from '../constants/networks';
 
 import { HangSengATM, HsbcATM, JetcoATM } from './../models/atm';
 
@@ -23,4 +24,33 @@ export const loadJetcoData = () => {
   return JetcoATMs.map(atm => new JetcoATM(atm));
 }
 
+export const loadAllDataStats = () => {
+  return [...loadHSBCDataStat(), ...loadHangSengDataStat(), ...loadJetcoDataStat()] 
+}
 
+export const loadHSBCDataStat = () => {
+  const { meta: { LastUpdated, TotalResults} } = HSBC_DATA;
+  return {
+    idx: hsbc.idx,
+    LastUpdated,
+    TotalResults
+  }
+}
+
+export const loadHangSengDataStat = () => {
+  const { meta: { LastUpdated, TotalResults} } = HANG_SENG_DATA;
+  return {
+    idx: hangseng.idx,
+    LastUpdated,
+    TotalResults
+  }
+}
+
+export const loadJetcoDataStat = () => {
+  const { meta: { LastUpdated, TotalResults} } = JETCO_DATA;
+  return {
+    idx: jetco.idx,
+    LastUpdated,
+    TotalResults
+  }
+}

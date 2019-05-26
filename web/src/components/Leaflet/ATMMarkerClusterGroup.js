@@ -6,8 +6,9 @@ import { Marker, Popup } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
+import { loadAllData, loadHSBCData, loadHangSengData, loadJetcoData } from '../../utils/dataLoader';
 import {
+    setATMData,
     setSelectedLocation
 } from '../../actions'
 
@@ -21,7 +22,24 @@ const styles = theme => ({
 });
 
 class ATMMarkerClusterGroup extends React.Component {
-    componentDidMount() {    
+    constructor(props) {
+        super(props);
+        this.initATMData();
+    }
+
+    initATMData() {
+        const { network } = this.props;
+        var ATMs = null;
+        if(network === 'hsbc') {
+            ATMs = loadHSBCData();
+        } else if(network === 'hangseng') {
+            ATMs = loadHangSengData();
+        } else if(network === 'jetco') {
+            ATMs = loadJetcoData();
+        } else {
+            ATMs = loadAllData();
+        }
+        this.props.setATMData(ATMs);
     }
 
     markerOnClick(data) {
@@ -90,7 +108,8 @@ class ATMMarkerClusterGroup extends React.Component {
 }
 
 ATMMarkerClusterGroup.propTypes = {
-    classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired,
+    network: PropTypes.string.isRequired
 };
 
 const mapStateToProps = (state, ownProps) => {
@@ -101,6 +120,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
+        setATMData: (atmData) => {
+            dispatch(setATMData(atmData));
+        },
         setSelectedLocation: (lat, lng) => {
             dispatch(setSelectedLocation(lat, lng))
         }

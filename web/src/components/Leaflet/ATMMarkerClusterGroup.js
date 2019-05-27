@@ -4,20 +4,16 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { Marker, Popup } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 import { loadAllData, loadHSBCData, loadHangSengData, loadJetcoData } from '../../utils/dataLoader';
+import ATMPopup from './ATMPopup';
 import {
     setATMData,
     setSelectedLocation
 } from '../../actions'
 
 const styles = theme => ({
-    popUpContent: {
-        padding: 0,
-        '&:last-child': {
-            paddingBottom: 0
-        }
+    popUp: {
+       margin: 0
     },
 });
 
@@ -51,21 +47,8 @@ class ATMMarkerClusterGroup extends React.Component {
     renderPopUp(data) {
         const { classes } = this.props;
         return (
-            <Popup>
-                <CardContent className={classes.popUpContent}>
-                    <Typography variant="h5" component="h2">
-                        { data.ATMName }
-                    </Typography>
-                    <Typography className={classes.title} color="textSecondary" gutterBottom>
-                        { data.ATMAddress.AddressLine }
-                    </Typography>
-                    <Typography className={classes.pos} color="textSecondary">
-                        { data.BranchName }
-                    </Typography>
-                    <Typography component="p">
-                        { data.HotlineNumber }
-                    </Typography>
-                </CardContent>
+            <Popup className={classes.popUp}>
+                <ATMPopup atm={data}/>
             </Popup>
         );
     }

@@ -16,3 +16,8 @@ body {
     background-color: #ffffff;
     padding: 5px 10px;
 }
+
+/* Override Leaflet */
+.leaflet-popup-content {
+    margin: 0
+}

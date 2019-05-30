@@ -20,6 +20,10 @@ const styles = theme => ({
     width: '100%',
     marginBottom: '64px'
   },
+  appbar: {
+    backgroundColor: '#B13515',
+    color: '#ffffff'
+  },
   grow: {
     flexGrow: 1,
   },
@@ -70,7 +74,7 @@ class AppNavbar extends React.Component {
     const { classes, isDialogAppNavBar, dialogAppNavBarType } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar position="fixed" color="secondary">
+        <AppBar position="fixed" className={classes.appbar}>
           <Toolbar>
             { isDialogAppNavBar && dialogAppNavBarType === "landing" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
               <ArrowBackIcon />

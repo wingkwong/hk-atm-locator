@@ -45,11 +45,14 @@ const styles = theme => ({
     toolbar: theme.mixins.toolbar,
     listRoot: {
         width: '100%',
-        maxWidth: 360,
+        maxWidth: 400,
         backgroundColor: theme.palette.background.paper,
      },
      subHeader: {
-        height: '28px'
+        height: '28px',
+        lineHeight: '28px',
+        backgroundColor: "#B13515",
+        color: "#ffffff"
      },
      networkAvatar: {
         width: '60px',

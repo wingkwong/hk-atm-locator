@@ -16,6 +16,11 @@ import {
 const styles = theme => ({
     appBar: {
         zIndex: 3000,
+        backgroundColor: '#B13515',
+        color: '#ffffff'
+    },
+    closeIcon: {
+        color: '#ffffff'
     },
     root: {
         display: 'flex',
@@ -36,14 +41,18 @@ class ATMItemDetail extends React.Component {
 
     render() {
         const { atm, classes } = this.props;
+
+        if(!atm) {
+            return (null);
+        }
         
         return (
             <React.Fragment>
                 <div className={classes.root}>
-                    <AppBar className={classes.appBar} position="fixed" color="secondary">
+                    <AppBar className={classes.appBar} position="fixed">
                     <Toolbar>
                         <IconButton  onClick={this.handleDialogClose} aria-label="Close">
-                        <CloseIcon />
+                        <CloseIcon className={classes.closeIcon}/>
                         </IconButton>
                         <Typography variant="h6" color="inherit" className={classes.flex}>
                             {atm.ATMName}

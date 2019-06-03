@@ -8,9 +8,8 @@ The folder contains programs to transform, enrich, and manipulate data from API 
 cd transformer
 npm i
 
-#
+# Setup .env 
 mv .env.default .env
-
 # Edit the .env file with the proper settings
 ```
 
@@ -45,7 +44,7 @@ Checksum files will be generated after pipe processing each network
 ./src/process.js process-checksum hang_seng processed/hang_seng.json checksum/hang_seng.md5 && \
 ./src/process.js process-checksum hsbc processed/hsbc.json checksum/hsbc.md5 && \
 ./src/process.js process-checksum jetco processed/jetco_en.json checksum/jetco_en.md5 && \
-./src/process.js process-checksum jetco processed/jetco_tc.json checksum/jetco_tc.md5 && \
+./src/process.js process-checksum jetco processed/jetco_tc.json checksum/jetco_tc.md5 
 ```
 
 if there is no change in checksum file, the data file will not be copied and committed.

@@ -1,115 +1,115 @@
 const bochk = {
     idx: 'bochk',
     en: 'Bank of China (Hong Kong) Limited',
-    zh: ''
+    zh: '中國銀行(香港)有限公司'
 }
 
 const bankcomm = {
     idx: 'bankcomm',
     en: 'Bank of Communications Co., Ltd.',
-    zh: ''
+    zh: '交通銀行(香港)有限公司'
 }
 
 const cncbinternational = {
     idx: 'cncbinternational',
     en: 'China CITIC Bank International Limited',
-    zh: ''
+    zh: '中信銀行(國際)有限公司'
 }
 
 const asiaccb = {
     idx: 'asiaccb',
     en: 'China Construction Bank (Asia) Corporation Limited',
-    zh: ''
+    zh: '中國建設銀行(亞洲)股份有限公司'
 }
 
 const cmbchina = {
     idx: 'cmbchina',
     en: 'China Merchants Bank Hong Kong Branch',
-    zh: ''
+    zh: '招商銀行香港分行'
 }
 
 const chiyubank = {
     idx: 'chiyubank',
     en: 'Chiyu Banking Corporation Limited',
-    zh: ''
+    zh: '集友銀行有限公司'
 }
 
 const chonghingbank = {
     idx: 'chonghingbank',
     en: 'Chong Hing Bank Limited',
-    zh: ''
+    zh: '創興銀行有限公司'
 }
 
 const citibank = {
     idx: 'citibank',
     en: 'Citibank (Hong Kong) Limited',
-    zh: ''
+    zh: '花旗銀行(香港)有限公司'
 }
 
 const cmbwinglungbank = {
     idx: 'cmbwinglungbank',
     en: 'CMB Wing Lung Bank Limited',
-    zh: ''
+    zh: '招商永隆銀行有限公司'
 }
 
 const dahsing = {
     idx: 'dahsing',
     en: 'Dah Sing Bank, Limited',
-    zh: ''
+    zh: '大新銀行有限公司'
 }
 
 const dbs = {
     idx: 'dbs',
     en: 'DBS Bank (Hong Kong) Limited',
-    zh: ''
+    zh: '星展銀行(香港)有限公司'
 }
 
 const fubonbank = {
     idx: 'fubonbank',
     en: 'Fubon Bank (Hong Kong) Limited',
-    zh: ''
+    zh: '富邦銀行(香港)有限公司'
 }
 
 const icbcasia = {
     idx: 'icbcasia',
     en: 'Industrial and Commercial Bank of China (Asia) Limited',
-    zh: ''
+    zh: '中國工商銀行(亞洲)有限公司'
 }
 
 const ocbcwhhk = {
     idx: 'ocbcwhhk',
     en: 'OCBC Wing Hang Bank Limited',
-    zh: ''
+    zh: '南洋商業銀行有限公司'
 }
 
 const publicbank = {
     idx: 'publicbank',
     en: 'Public Bank (Hong Kong) Limited',
-    zh: ''
+    zh: '華僑永亨銀行有限公司'
 }
 
 const shacombank = {
     idx: 'shacombank',
     en: 'Shanghai Commercial Bank Limited',
-    zh: ''
+    zh: '大眾銀行(香港)有限公司'
 }
 
 const nanyang = {
     idx: 'shacombank',
     en: 'Nanyang Commercial Bank Limited',
-    zh: ''
+    zh: '上海商業銀行'
 }
 
 const standardchartered = {
     idx: 'standardchartered',
     en: 'Standard Chartered Bank (Hong Kong) Limited',
-    zh: ''
+    zh: '渣打銀行(香港)有限公司'
 }
 
 const hkbea = {
     idx: 'hkbea',
     en: 'The Bank of East Asia, Limited',
-    zh: ''
+    zh: '東亞銀行有限公司'
 }
 
 module.exports = {

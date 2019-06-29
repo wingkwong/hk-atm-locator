@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -8,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MapIcon from '@material-ui/icons/Map';
-import LiveHelpIcon from '@material-ui/icons/LiveHelp';
+// import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import {
   toggleMapView,
   toggleAboutDialog
@@ -50,14 +51,6 @@ class AppNavbar extends React.Component {
     };
   }
 
-  backToLandingPage = () => {
-    this.props.backToLandingPage();
-  }
-
-  backToPreviewPage =() => {
-    this.props.toggleAboutDialog(false)
-  }
-
   handleViewChange = () => {
     const { toggleMapview } = this.state;
     this.props.toggleMapView(toggleMapview);
@@ -71,45 +64,45 @@ class AppNavbar extends React.Component {
   }
 
   render() {
-    const { classes, isDialogAppNavBar, dialogAppNavBarType } = this.props;
+    const { classes } = this.props;
     return (
       <div className={classes.root}>
         <AppBar position="fixed" className={classes.appbar}>
           <Toolbar>
-            { isDialogAppNavBar && dialogAppNavBarType === "landing" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to Home page" onClick={() => {this.backToLandingPage()}}>
-              <ArrowBackIcon />
+            <Link
+              to={{
+                  pathname: `/`,
+              }}
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <IconButton className={classes.backButton} color="inherit" aria-label="Back to previous page">
+                <ArrowBackIcon />
               </IconButton>
-          }
-
-          { isDialogAppNavBar && dialogAppNavBarType === "about" && <IconButton className={classes.backButton} color="inherit" aria-label="Back to previous page" onClick={() => {this.backToPreviewPage()}}>
-            <ArrowBackIcon />
-            </IconButton>
-          }
+            </Link>
           
-            <Typography className={isDialogAppNavBar ? classes.dialogTitle : classes.landingTitle} variant="h6" color="inherit">
+            <Typography variant="h6" color="inherit">
               Hong Kong ATM Locator
             </Typography>
 
-            { isDialogAppNavBar && dialogAppNavBarType !== "about" &&
-              <React.Fragment>
-                {/* <ATMSearchbar/> */}
-                <div className={classes.grow} />
-                <div >
-                  <IconButton
-                    onClick={this.handleViewChange}
-                    color="inherit"
-                  >
-                    <MapIcon />
-                  </IconButton>
-                  <IconButton
-                    onClick={this.handleAboutToggle}
-                    color="inherit"
+            <React.Fragment>
+              {/* <ATMSearchbar/> */}
+              <div className={classes.grow} />
+              <div >
+                <IconButton
+                  onClick={this.handleViewChange}
+                  color="inherit"
                 >
-                  <LiveHelpIcon/>
+                  <MapIcon />
                 </IconButton>
-                </div>
-              </React.Fragment>
-            }
+                {/* TODO:  */}
+                {/* <IconButton
+                  onClick={this.handleAboutToggle}
+                  color="inherit"
+              >
+                <LiveHelpIcon/>
+              </IconButton> */}
+              </div>
+            </React.Fragment>
           </Toolbar>
         </AppBar>
       </div>
@@ -119,9 +112,6 @@ class AppNavbar extends React.Component {
 
 AppNavbar.propTypes = {
   classes: PropTypes.object.isRequired,
-  isDialogAppNavBar: PropTypes.bool.isRequired,
-  backToLandingPage: PropTypes.func,
-  dialogAppNavBarType: PropTypes.string
 };
 
 const mapStateToProps = (state, ownProps) => {

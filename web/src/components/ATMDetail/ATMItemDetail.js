@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import { withStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom'
 import ATMDetailContent from './ATMDetailContent';
 import {
     // toggleATMDetailDialog
@@ -42,7 +42,7 @@ class ATMItemDetail extends React.Component {
     // };
 
     render() {
-        const { atm, classes } = this.props;
+        const { atm, classes, network } = this.props;
 
         if(!atm) {
             return (null);
@@ -55,7 +55,7 @@ class ATMItemDetail extends React.Component {
                     <Toolbar>
                     <Link
                     to={{
-                        pathname: '/',
+                        pathname: `/atm/${network}/`,
                     }}
                     style={{ textDecoration: 'none' }}
                     >
@@ -81,7 +81,8 @@ class ATMItemDetail extends React.Component {
 
 ATMItemDetail.propTypes = {
     atm: PropTypes.object.isRequired,
-    classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired,
+    network: PropTypes.string
 };
 
 const mapStateToProps = (state, ownProps) => {

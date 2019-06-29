@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import ATMItemDetail from '../../components/ATMDetail/ATMItemDetail';
 import ATM404Container from '../ATM404Container/ATM404Container';
 import { loadAllData } from '../../utils/dataLoader';
+import { jetco, hangseng, hsbc } from '../../constants/networks';
 
 const styles = {
     
@@ -15,50 +16,58 @@ class ATMDetailContainer extends Component{
         super(props);
         this.state = {
             atm: null,
+            network: null,
             pageFound: false
         }
     }
 
     componentDidMount() {
-        const { params: { id }, location } = this.props.match;
+        const { params: { network, id }, location } = this.props.match;
         const atm = null;
 
-        if(location && location.state && location.state.atm) {
-            atm = location.state.atm
-        }
-
-        if(atm) {
-            // from ATM Listing
+        if(network != jetco.idx && network != hangseng.idx && network != hsbc.idx ) {
             this.setState({
-                pageFound: true,
-                atm
+                pageFound: false,
             })
         } else {
-            // from URL direct access
-
-            // TODO: optimize loading data using ID range
-            const ATMs = loadAllData();
-
-            let filteredATMs = ATMs.filter(o => {
-                return o.ATMId == id
-            });
-
-            if(filteredATMs && filteredATMs[0]) {
+            if(location && location.state && location.state.atm) {
+                atm = location.state.atm
+            }
+    
+            if(atm) {
+                // from ATM Listing
                 this.setState({
-                    atm: filteredATMs[0],
-                    pageFound: true
-                });
+                    pageFound: true,
+                    atm,
+                    network
+                })
             } else {
-                this.setState({
-                    pageFound: false
+                // from URL direct access
+    
+                // TODO: optimize loading data using ID range
+                const ATMs = loadAllData();
+    
+                let filteredATMs = ATMs.filter(o => {
+                    return o.ATMId == id
                 });
+    
+                if(filteredATMs && filteredATMs[0]) {
+                    this.setState({
+                        atm: filteredATMs[0],
+                        pageFound: true,
+                        network
+                    });
+                } else {
+                    this.setState({
+                        pageFound: false
+                    });
+                }
             }
         }
     }
 
     render() {
-        const { classes } = this.props;
-        const { atm, pageFound } = this.state;
+        const { atm, network, pageFound } = this.state;
 
         if(!pageFound) {
             return (
@@ -68,7 +77,7 @@ class ATMDetailContainer extends Component{
         
         return (
             <React.Fragment>
-               <ATMItemDetail atm={atm}/>
+               <ATMItemDetail atm={atm} network={network}/>
             </React.Fragment>
         );
     }

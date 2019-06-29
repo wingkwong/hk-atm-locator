@@ -36,7 +36,7 @@ class ATMItem extends React.Component {
     renderBankIcon(atm) {
       const { classes } = this.props;
       return (
-        <img alt={atm.Bank} src={"./images/" + atm.Bank + ".png"} className={classes.bankIcon}></img>
+        <img alt={atm.Bank} src={"../../images/" + atm.Bank + ".png"} className={classes.bankIcon}></img>
       )
     }
 
@@ -82,7 +82,7 @@ class ATMItem extends React.Component {
     render() {
         const { idx, atm } = this.props;
         const { ATMName, ATMId, ATMAddress: { AddressLine, LatitudeDescription, LongitudeDescription }, distance, Network } = atm;
-        console.log(atm)
+        
         return (
             <Link
             to={{

@@ -63,6 +63,7 @@ class ATMListingContainer extends Component{
 
     initATMData() {
         const { network } = this.props;
+        
         var ATMs = null;
         if(network === 'hsbc') {
             ATMs = loadHSBCData();

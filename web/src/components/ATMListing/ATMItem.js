@@ -5,11 +5,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Chip from '@material-ui/core/Chip';
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom'
 import { distanceConverter } from '../../utils/geoUtils';
 
 import {
     setSelectedLocation,
-    toggleATMDetailDialog
+    // toggleATMDetailDialog
 } from '../../actions'
 
 const styles = theme => ({
@@ -68,40 +69,53 @@ class ATMItem extends React.Component {
             </React.Fragment>
         )
     }
-
-    atmListItemOnClick(atm) {
-        const { ATMId, ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
-        if(LatitudeDescription && LongitudeDescription && ATMId){
-            this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription, ATMId);
-            // toggle detail page
-            this.props.toggleATMDetailDialog(true);
-        }
-    }
+    // @deprecated 
+    // atmListItemOnClick(atm) {
+    //     const { ATMId, ATMAddress: { LatitudeDescription, LongitudeDescription} } = atm;
+    //     if(LatitudeDescription && LongitudeDescription && ATMId){
+    //         this.props.setSelectedLocation(LatitudeDescription, LongitudeDescription, ATMId);
+    //         // toggle detail page
+    //         this.props.toggleATMDetailDialog(true);
+    //     }
+    // }
 
     render() {
         const { idx, atm } = this.props;
-        const { ATMName, ATMAddress, distance } = atm;
-
+        const { ATMName, ATMId, ATMAddress: { AddressLine, LatitudeDescription, LongitudeDescription }, distance } = atm;
+        console.log(atm)
         return (
-            <ListItem button key={ idx } onClick={() => this.atmListItemOnClick(atm)}>
-                { this.renderBankIcon(atm) }
-                <div>
-                    <ListItemText
-                        primary={ ATMName }
-                        secondary={
-                            <React.Fragment>
-                                { ATMAddress.AddressLine }
-                                <br/>
-                                { this.renderDistance(distance) }
+            <Link
+            to={{
+                pathname: `/atm/${ATMId}`,
+                state: { atm }
+            }}
+            style={{ textDecoration: 'none' }}
+            >
+                <ListItem 
+                    button 
+                    key={ idx } 
+                    // @deprecated
+                    // onClick={() => this.atmListItemOnClick(atm)}
+                >
+                    { this.renderBankIcon(atm) }
+                    <div>
+                        <ListItemText
+                            primary={ ATMName }
+                            secondary={
+                                <React.Fragment>
+                                    { AddressLine }
+                                    <br/>
+                                    { this.renderDistance(distance) }
 
-                            </React.Fragment>
-                        }
-                    />
-                    <div style={{display: 'flex'}}>
-                    { this.renderOpeningClosingTag(atm) }
+                                </React.Fragment>
+                            }
+                        />
+                        <div style={{display: 'flex'}}>
+                        { this.renderOpeningClosingTag(atm) }
+                        </div>
                     </div>
-                </div>
-            </ListItem>
+                </ListItem>
+            </Link>
         );
     }
 }
@@ -123,9 +137,10 @@ const mapDispatchToProps = (dispatch) => {
         setSelectedLocation: (lat, lng, idx) => {
             dispatch(setSelectedLocation(lat, lng, idx))
         },
-        toggleATMDetailDialog: (open) => {
-            dispatch(toggleATMDetailDialog(open))
-        }
+        // @deprecated 
+        // toggleATMDetailDialog: (open) => {
+        //     dispatch(toggleATMDetailDialog(open))
+        // }
     };
 }
 

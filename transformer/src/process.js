@@ -46,7 +46,7 @@ function terminateWithError(err) {
  */
 function validateBank(bank) {
   if (BANKS.indexOf(bank) === -1) {
-    terminateWithError(`Invalid bank. Allowed options: ${bank.join(',')}`);
+    terminateWithError(`Invalid bank. Allowed options: ${BANKS.join(',')}`);
   }
 }
 

@@ -229,7 +229,7 @@ const process_jetco_data = (inputPath) => {
               for(var j=0; j<atms.length; j++) {
                 var idx = atms[j]['@id'];
                 if(jetcoIdx.indexOf(idx) == -1) {
-                  const transformedData = transformJetcoData(atms[j], i+j);
+                  const transformedData = transformJetcoData(atms[j], idx);
                   jetco_atm_arr.push(transformedData);
                   jetcoIdx.push(idx);
                 }

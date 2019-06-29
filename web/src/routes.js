@@ -9,7 +9,9 @@ export default class Routes extends Component{
         return (
             <Switch>
                 <Route exact path='/' component={ATMLandingContainer}/>
-                <Route path='/atm/:id' component={ATMDetailContainer}/>
+                <Route path='/atm/hsbc/:id' component={ATMDetailContainer}/>
+                <Route path='/atm/hangseng/:id' component={ATMDetailContainer}/>
+                <Route path='/atm/jetco/:id' component={ATMDetailContainer}/>
                 <Route component={ATM404Container} />
             </Switch>
         )

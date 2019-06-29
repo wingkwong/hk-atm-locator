@@ -5,7 +5,7 @@ export const jetco = {
 };
 
 export const hangseng = {
-    idx: 'hang_seng',
+    idx: 'hangseng',
     en: 'Hang Seng',
     zh: ''
 };

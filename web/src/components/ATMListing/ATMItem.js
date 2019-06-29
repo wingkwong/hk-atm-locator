@@ -81,12 +81,12 @@ class ATMItem extends React.Component {
 
     render() {
         const { idx, atm } = this.props;
-        const { ATMName, ATMId, ATMAddress: { AddressLine, LatitudeDescription, LongitudeDescription }, distance } = atm;
+        const { ATMName, ATMId, ATMAddress: { AddressLine, LatitudeDescription, LongitudeDescription }, distance, Network } = atm;
         console.log(atm)
         return (
             <Link
             to={{
-                pathname: `/atm/${ATMId}`,
+                pathname: `/atm/${Network}/${ATMId}`,
                 state: { atm }
             }}
             style={{ textDecoration: 'none' }}

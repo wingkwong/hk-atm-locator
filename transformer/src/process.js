@@ -14,7 +14,7 @@ const DataChecksum = require('./generate_checksum');
 
 const BANK_HANG_SENG = 'hang_seng';
 const BANK_HSBC = 'hsbc';
-const BANK_JETCO = 'jetco';
+const BANK_JETCO = 'jetco'; // TODO: remove this once the Jetco integration is ready
 const BANK_FUBON = 'fubon';
 const BANK_BCH = 'bch';
 const BANK_WING_LUNK = 'wing_lunk';
@@ -22,7 +22,9 @@ const BANK_ICBC = 'icbc';
 const BANK_BEA = 'bea';
 const BANKS = [BANK_HANG_SENG, BANK_HSBC, BANK_FUBON, BANK_BCH,
   BANK_BEA, BANK_WING_LUNK,
-  BANK_ICBC];
+  BANK_ICBC,
+  BANK_JETCO
+];
 
 /**
  * Terminate process

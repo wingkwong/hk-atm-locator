@@ -7,9 +7,10 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom'
 import ATMDetailContent from './ATMDetailContent';
 import {
-    toggleATMDetailDialog
+    // toggleATMDetailDialog
 } from '../../actions';
 
 
@@ -35,9 +36,10 @@ class ATMItemDetail extends React.Component {
         }
     }
 
-    handleDialogClose = () => {
-        this.props.toggleATMDetailDialog(false);
-    };
+    // @deprecated
+    // handleDialogClose = () => {
+    //     this.props.toggleATMDetailDialog(false);
+    // };
 
     render() {
         const { atm, classes } = this.props;
@@ -51,9 +53,20 @@ class ATMItemDetail extends React.Component {
                 <div className={classes.root}>
                     <AppBar className={classes.appBar} position="fixed">
                     <Toolbar>
-                        <IconButton  onClick={this.handleDialogClose} aria-label="Close">
+                    <Link
+                    to={{
+                        pathname: '/',
+                    }}
+                    style={{ textDecoration: 'none' }}
+                    >
+                        <IconButton  
+                            // @deprecated
+                            // onClick={this.handleDialogClose} 
+                            aria-label="Close"
+                        >
                         <CloseIcon className={classes.closeIcon}/>
                         </IconButton>
+                    </Link>
                         <Typography variant="h6" color="inherit" className={classes.flex}>
                             {atm.ATMName}
                         </Typography>
@@ -79,9 +92,10 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        toggleATMDetailDialog: (open) => {
-            dispatch(toggleATMDetailDialog(open))
-        }
+        // @deprecated
+        // toggleATMDetailDialog: (open) => {
+        //     dispatch(toggleATMDetailDialog(open))
+        // }
     };
 }
 

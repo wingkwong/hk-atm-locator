@@ -21,13 +21,13 @@ Paragraph #21
 - [x] Retrieving ATM data from HSBC and Hang Seng Banks from API Portals
 - [ ] Retrieving ATM data from APIX
     - [ ] Bank of China (Hong Kong) Limited
-    - [ ] Bank of Communications (Hong Kong) Limited
-    - [ ] Bank of Communications Co., Ltd.
-    - [ ] China CITIC Bank International Limited
-    - [ ] China Construction Bank (Asia) Corporation Limited
-    - [ ] China Merchants Bank Hong Kong Branch
+    - [x] Bank of Communications (Hong Kong) Limited
+    - [x] Bank of Communications Co., Ltd.
+    - [x] China CITIC Bank International Limited
+    - [x] China Construction Bank (Asia) Corporation Limited
+    - [x] China Merchants Bank Hong Kong Branch
     - [ ] Chiyu Banking Corporation Limited
-    - [ ] Chong Hing Bank Limited
+    - [x] Chong Hing Bank Limited
     - [ ] Citibank (Hong Kong) Limited
     - [x] CMB Wing Lung Bank Limited
     - [ ] Dah Sing Bank, Limited

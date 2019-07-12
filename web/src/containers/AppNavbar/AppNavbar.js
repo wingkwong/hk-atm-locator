@@ -71,7 +71,7 @@ class AppNavbar extends React.Component {
           <Toolbar>
             <Link
               to={{
-                  pathname: `/`,
+                  pathname: `/hk-atm-locator/`,
               }}
               style={{ textDecoration: 'none', color: 'white' }}
             >

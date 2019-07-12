@@ -55,7 +55,7 @@ class ATMItemDetail extends React.Component {
                     <Toolbar>
                     <Link
                     to={{
-                        pathname: `/atm/${network}/`,
+                        pathname: `/hk-atm-locator/atm/${network}/`,
                     }}
                     style={{ textDecoration: 'none' }}
                     >

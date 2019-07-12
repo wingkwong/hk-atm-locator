@@ -36,7 +36,7 @@ class ATMItem extends React.Component {
     renderBankIcon(atm) {
       const { classes } = this.props;
       return (
-        <img alt={atm.Bank} src={"../../images/" + atm.Bank + ".png"} className={classes.bankIcon}></img>
+        <img alt={atm.Bank} src={"/hk-atm-locator/images/" + atm.Bank + ".png"} className={classes.bankIcon}></img>
       )
     }
 
@@ -86,7 +86,7 @@ class ATMItem extends React.Component {
         return (
             <Link
             to={{
-                pathname: `/atm/${Network}/${ATMId}`,
+                pathname: `/hk-atm-locator/atm/${Network}/${ATMId}`,
                 state: { atm }
             }}
             style={{ textDecoration: 'none' }}

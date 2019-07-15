@@ -35,7 +35,7 @@ Paragraph #21
     - [x] Fubon Bank (Hong Kong) Limited
     - [x] Industrial and Commercial Bank of China (Asia) Limited
     - [ ] Nanyang Commercial Bank Limited
-    - [ ] OCBC Wing Hang Bank Limited
+    - [x] OCBC Wing Hang Bank Limited
     - [ ] Public Bank (Hong Kong) Limited
     - [ ] Shanghai Commercial Bank Limited
     - [ ] Standard Chartered Bank (Hong Kong) Limited

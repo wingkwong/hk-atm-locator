@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-07-16T07:49:40+08:00",
+        "LastUpdated": "2019-07-17T07:49:39+08:00",
         "TotalResults": 288
     },
     "data": [
@@ -646,7 +646,7 @@
                                     "MTR Tai Koo Station (near Exit B) (With Voice Navigation ATM)",
                                     "MTR Tai Koo Station (near Exit C)"
                                 ],
-                                "LatitudeDescription": "22.2859",
+                                "LatitudeDescription": "22.2844",
                                 "LongitudeDescription": "114.2168"
                             },
                             "ATMServices": {
@@ -1636,8 +1636,8 @@
                                     "G/F, Lobby, Academic Concourse, The University of Science & Technology",
                                     "Atrium, LSK Business Building, The University of Science & Technology"
                                 ],
-                                "LatitudeDescription": "22.2832",
-                                "LongitudeDescription": "114.1357"
+                                "LatitudeDescription": "22.3348",
+                                "LongitudeDescription": "114.2664"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3724,8 +3724,8 @@
                                 "AddressLine": [
                                     "MTR Tuen Mun Station (near Exit F1) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.395",
-                                "LongitudeDescription": "113.973"
+                                "LatitudeDescription": "22.3964",
+                                "LongitudeDescription": "113.9733"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -4982,8 +4982,8 @@
                                 "AddressLine": [
                                     "G/F, YOHO Mall 1, 9 Yuen Long Street, Yuen Long"
                                 ],
-                                "LatitudeDescription": "22.4454",
-                                "LongitudeDescription": "114.0357"
+                                "LatitudeDescription": "22.4436",
+                                "LongitudeDescription": "114.0366"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -5080,8 +5080,8 @@
                                 "AddressLine": [
                                     "MTR Hang Hau Station (near Exit B2) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3161",
-                                "LongitudeDescription": "114.2641"
+                                "LatitudeDescription": "22.3156",
+                                "LongitudeDescription": "114.2646"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -5516,8 +5516,8 @@
                                     "MTR Nam Cheong Station (near Exit D)",
                                     "MTR Nam Cheong Station (paid concourse) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3268",
-                                "LongitudeDescription": "114.1536"
+                                "LatitudeDescription": "22.3277",
+                                "LongitudeDescription": "114.1527"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -6710,8 +6710,8 @@
                                 "AddressLine": [
                                     "MTR Sai Ying Pun Station  (concourse)"
                                 ],
-                                "LatitudeDescription": "22.2863",
-                                "LongitudeDescription": "114.1418"
+                                "LatitudeDescription": "22.2878",
+                                "LongitudeDescription": "114.1441"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8659,8 +8659,8 @@
                                     "MTR Hong Kong Station (L3 Paid Concourse) (With Voice Navigation ATM)",
                                     "MTR Hong Kong Station (L3, Near Escalator to EXIT A/B)"
                                 ],
-                                "LatitudeDescription": "22.3218",
-                                "LongitudeDescription": "113.9412"
+                                "LatitudeDescription": "22.3158",
+                                "LongitudeDescription": "113.9363"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -9719,8 +9719,8 @@
                                 "AddressLine": [
                                     "2/F, We Go Mall, 16 Po Tai Street, Ma On Shan, N.T."
                                 ],
-                                "LatitudeDescription": "22.4148",
-                                "LongitudeDescription": "114.2239"
+                                "LatitudeDescription": "22.4143",
+                                "LongitudeDescription": "114.224"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10701,8 +10701,8 @@
                                 "AddressLine": [
                                     "Level1, Zone D, Tai Po Mega Mall"
                                 ],
-                                "LatitudeDescription": "22.4522",
-                                "LongitudeDescription": "114.1695"
+                                "LatitudeDescription": "22.4525",
+                                "LongitudeDescription": "114.1718"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -11227,8 +11227,8 @@
                                 "AddressLine": [
                                     "G/F, Noble Square, 3 Wah Kwai Road, Aberdeen"
                                 ],
-                                "LatitudeDescription": "22.2499",
-                                "LongitudeDescription": "114.1396"
+                                "LatitudeDescription": "22.2506",
+                                "LongitudeDescription": "114.1397"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12869,8 +12869,8 @@
                                 "AddressLine": [
                                     "MTR Lei Tung Station (concourse)"
                                 ],
-                                "LatitudeDescription": "22.3348",
-                                "LongitudeDescription": "114.2092"
+                                "LatitudeDescription": "22.3484",
+                                "LongitudeDescription": "114.126"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14179,8 +14179,8 @@
                                 "AddressLine": [
                                     "MTR AsiaWorld-Expo Station (Paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.3218",
-                                "LongitudeDescription": "113.9412"
+                                "LatitudeDescription": "22.3371",
+                                "LongitudeDescription": "114.176"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14246,8 +14246,8 @@
                                 "AddressLine": [
                                     "Shop A007, G/F, Ching Long Shopping Centre"
                                 ],
-                                "LatitudeDescription": "22.3315",
-                                "LongitudeDescription": "114.2029"
+                                "LatitudeDescription": "22.3309",
+                                "LongitudeDescription": "114.2044"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14793,8 +14793,8 @@
                                 "AddressLine": [
                                     "Shop 122, 1/F, Fortune Kingswood, Phase II (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.4567",
-                                "LongitudeDescription": "114.0048"
+                                "LatitudeDescription": "22.4583",
+                                "LongitudeDescription": "114.0028"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-08-28T07:49:54+08:00",
+        "LastUpdated": "2019-09-11T07:49:57+08:00",
         "TotalResults": 286
     },
     "data": [
@@ -9120,8 +9120,8 @@
                                 "AddressLine": [
                                     "Shop No. 103, Level 1, Plaza Hollywood (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.378",
-                                "LongitudeDescription": "114.0046"
+                                "LatitudeDescription": "22.4455",
+                                "LongitudeDescription": "114.0614"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12281,7 +12281,7 @@
                                 "AddressLine": [
                                     "Site adjacent to Lift No. C6, UG/F, On Tai Shopping Centre, On Tai Estate, Kwun Tong"
                                 ],
-                                "LatitudeDescription": "22.327",
+                                "LatitudeDescription": "22.3273",
                                 "LongitudeDescription": "114.2297"
                             },
                             "ATMServices": {

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-09-19T07:50:10+08:00",
+        "LastUpdated": "2019-09-24T07:49:38+08:00",
         "TotalResults": 286
     },
     "data": [
@@ -20,8 +20,8 @@
                                 "AddressLine": [
                                     "3/F, Lift Lobby, Teaching Block, The Hang Seng University of Hong Kong, Hang Shin Link, Shatin"
                                 ],
-                                "LatitudeDescription": "22.3804",
-                                "LongitudeDescription": "114.2123"
+                                "LatitudeDescription": "22.3803",
+                                "LongitudeDescription": "114.2118"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -253,7 +253,7 @@
                                     "MTR Tai Wai Station  (near Exit A)",
                                     "MTR  Tai Wai Station  (paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.3728",
+                                "LatitudeDescription": "22.3732",
                                 "LongitudeDescription": "114.1786"
                             },
                             "ATMServices": {
@@ -714,7 +714,7 @@
                                     "1/F, Discovery Bay North Plaza , Discovery Bay"
                                 ],
                                 "LatitudeDescription": "22.3081",
-                                "LongitudeDescription": "114.017"
+                                "LongitudeDescription": "114.0163"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -5281,8 +5281,8 @@
                                     "MTR Nam Cheong Station (near Exit D)",
                                     "MTR Nam Cheong Station (paid concourse) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3277",
-                                "LongitudeDescription": "114.1527"
+                                "LatitudeDescription": "22.3268",
+                                "LongitudeDescription": "114.1536"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -7163,8 +7163,8 @@
                                 "AddressLine": [
                                     "Shop D & E, G/F & 1/F, Eton Tower, No.8 Hysan Avenue (With Foreign Currency ATM with 8 notes available)"
                                 ],
-                                "LatitudeDescription": "22.2436",
-                                "LongitudeDescription": "114.1534"
+                                "LatitudeDescription": "22.3181",
+                                "LongitudeDescription": "114.1925"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -8197,8 +8197,8 @@
                                 "AddressLine": [
                                     "MTR Sai Wan Ho Station (Concourse)"
                                 ],
-                                "LatitudeDescription": "22.282",
-                                "LongitudeDescription": "114.2226"
+                                "LatitudeDescription": "22.2878",
+                                "LongitudeDescription": "114.1441"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10274,7 +10274,7 @@
                                     "Shop 1040-1042, Level 1, Sheung Shui Centre"
                                 ],
                                 "LatitudeDescription": "22.501",
-                                "LongitudeDescription": "114.1307"
+                                "LongitudeDescription": "114.1299"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12668,8 +12668,8 @@
                                 "AddressLine": [
                                     "MTR Lei Tung Station (concourse)"
                                 ],
-                                "LatitudeDescription": "22.3484",
-                                "LongitudeDescription": "114.126"
+                                "LatitudeDescription": "22.3348",
+                                "LongitudeDescription": "114.2092"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12998,8 +12998,8 @@
                                 "AddressLine": [
                                     "MTR Sunny Bay Station (Paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.4082",
-                                "LongitudeDescription": "114.2226"
+                                "LatitudeDescription": "22.4482",
+                                "LongitudeDescription": "114.0049"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14014,8 +14014,8 @@
                                 "AddressLine": [
                                     "MTR AsiaWorld-Expo Station (Paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.3368",
-                                "LongitudeDescription": "114.176"
+                                "LatitudeDescription": "22.4508",
+                                "LongitudeDescription": "114.1614"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14824,8 +14824,8 @@
                                 "AddressLine": [
                                     "Shop No. 1008, 1/F, KOLOUR Tsuen Wan I, 68 Chung On Street (With Foreign Currency ATM)"
                                 ],
-                                "LatitudeDescription": "22.3792",
-                                "LongitudeDescription": "114.1076"
+                                "LatitudeDescription": "22.3713",
+                                "LongitudeDescription": "114.1186"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -14855,8 +14855,8 @@
                                 "AddressLine": [
                                     "Shops No.105, 1/F, Mei Foo Plaza, Mei Foo Sun Chuen (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.3355",
-                                "LongitudeDescription": "114.1414"
+                                "LatitudeDescription": "22.3363",
+                                "LongitudeDescription": "114.1421"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,

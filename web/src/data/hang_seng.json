@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-09-27T07:49:38+08:00",
+        "LastUpdated": "2019-09-28T07:49:38+08:00",
         "TotalResults": 286
     },
     "data": [
@@ -2319,8 +2319,8 @@
                                 "AddressLine": [
                                     "MTR Austin Station (near Exit B3)"
                                 ],
-                                "LatitudeDescription": "22.2878",
-                                "LongitudeDescription": "114.1441"
+                                "LatitudeDescription": "22.30356",
+                                "LongitudeDescription": "114.16692"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,

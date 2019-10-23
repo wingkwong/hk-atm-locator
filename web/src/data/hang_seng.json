@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-10-15T07:49:40+08:00",
+        "LastUpdated": "2019-10-23T07:50:03+08:00",
         "TotalResults": 287
     },
     "data": [
@@ -1869,8 +1869,8 @@
                                     "MTR Tsim Sha Tsui Station (Exit H)",
                                     "MTR Tsim Sha Tsui Station (Paid Concourse)"
                                 ],
-                                "LatitudeDescription": "22.2962",
-                                "LongitudeDescription": "114.1721"
+                                "LatitudeDescription": "22.2983",
+                                "LongitudeDescription": "114.1719"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -3152,8 +3152,8 @@
                                 "AddressLine": [
                                     "MTR Kennedy Town Station (Near Escalator to Exit A) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.2813",
-                                "LongitudeDescription": "114.128"
+                                "LatitudeDescription": "22.28184",
+                                "LongitudeDescription": "114.12908"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3557,7 +3557,7 @@
                                     "MTR Tuen Mun Station (near Exit F1) (With Voice Navigation ATM)"
                                 ],
                                 "LatitudeDescription": "22.3964",
-                                "LongitudeDescription": "113.9733"
+                                "LongitudeDescription": "113.9735"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -5816,7 +5816,7 @@
                                     "Shatin Communications and Technology Centre"
                                 ],
                                 "LatitudeDescription": "22.3969",
-                                "LongitudeDescription": "114.2014"
+                                "LongitudeDescription": "114.2015"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -7163,8 +7163,8 @@
                                 "AddressLine": [
                                     "Shop D & E, G/F & 1/F, Eton Tower, No.8 Hysan Avenue (With Foreign Currency ATM with 8 notes available)"
                                 ],
-                                "LatitudeDescription": "22.31779",
-                                "LongitudeDescription": "114.19226"
+                                "LatitudeDescription": "22.27862",
+                                "LongitudeDescription": "114.22991"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -7433,8 +7433,8 @@
                                     "G/F, Lobby, Academic Concourse, The University of Science & Technology (With Voice Navigation ATM)",
                                     "Atrium, LSK Business Building, The University of Science & Technology"
                                 ],
-                                "LatitudeDescription": "22.2832",
-                                "LongitudeDescription": "114.1357"
+                                "LatitudeDescription": "22.3327",
+                                "LongitudeDescription": "114.2663"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8068,7 +8068,7 @@
                                 "AddressLine": [
                                     "Tin Shui Shopping Centre (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.4563",
+                                "LatitudeDescription": "22.4558",
                                 "LongitudeDescription": "113.9984"
                             },
                             "ATMServices": {
@@ -9255,8 +9255,8 @@
                                 "AddressLine": [
                                     "Shop 8, G/F, Site 2, Aberdeen Centre"
                                 ],
-                                "LatitudeDescription": "22.2485",
-                                "LongitudeDescription": "114.15322"
+                                "LatitudeDescription": "22.24881",
+                                "LongitudeDescription": "114.15433"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -9452,8 +9452,8 @@
                                 "AddressLine": [
                                     "Unit No. 505C on 1/F of the Passenger Clearance Building (Departure Hall)"
                                 ],
-                                "LatitudeDescription": "22.42506",
-                                "LongitudeDescription": "114.2311"
+                                "LatitudeDescription": "22.29849",
+                                "LongitudeDescription": "114.17495"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -9685,8 +9685,8 @@
                                     "Happy Valley Racecourse - Members Entrance",
                                     "Happy Valley Racecourse - Public Halls"
                                 ],
-                                "LatitudeDescription": "22.4011",
-                                "LongitudeDescription": "114.2034"
+                                "LatitudeDescription": "22.3995",
+                                "LongitudeDescription": "114.2023"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -9907,8 +9907,8 @@
                                 "AddressLine": [
                                     "Shop No. 7 & 9, G/F, Ming Yiu Lau, Jat Min Chuen, Shatin"
                                 ],
-                                "LatitudeDescription": "22.33768",
-                                "LongitudeDescription": "114.13906"
+                                "LatitudeDescription": "22.38008",
+                                "LongitudeDescription": "114.18652"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10242,8 +10242,8 @@
                                 "AddressLine": [
                                     "Shop 1040-1042, Level 1, Sheung Shui Centre"
                                 ],
-                                "LatitudeDescription": "22.50083",
-                                "LongitudeDescription": "114.12991"
+                                "LatitudeDescription": "22.50108",
+                                "LongitudeDescription": "114.1307"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10273,8 +10273,8 @@
                                 "AddressLine": [
                                     "Level1, Zone D, Tai Po Mega Mall"
                                 ],
-                                "LatitudeDescription": "22.4525",
-                                "LongitudeDescription": "114.1718"
+                                "LatitudeDescription": "22.4522",
+                                "LongitudeDescription": "114.1695"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10732,8 +10732,8 @@
                                 "AddressLine": [
                                     "G/F, Noble Square, 3 Wah Kwai Road, Aberdeen"
                                 ],
-                                "LatitudeDescription": "22.25094",
-                                "LongitudeDescription": "114.13956"
+                                "LatitudeDescription": "22.2499",
+                                "LongitudeDescription": "114.1396"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -11559,8 +11559,8 @@
                                 "AddressLine": [
                                     "Unit K4B San Tin Shopping Centre, 300 San Tin Tsuen Road Yuen Long"
                                 ],
-                                "LatitudeDescription": "22.45033",
-                                "LongitudeDescription": "114.02326"
+                                "LatitudeDescription": "22.44223",
+                                "LongitudeDescription": "114.04494"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13065,8 +13065,8 @@
                                 "AddressLine": [
                                     "Shop No.9, G/F, Ying Tung Shopping Centre, Ying Tung Estate, Tung Chung"
                                 ],
-                                "LatitudeDescription": "22.29625",
-                                "LongitudeDescription": "113.95332"
+                                "LatitudeDescription": "22.2967",
+                                "LongitudeDescription": "113.9531"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13266,8 +13266,8 @@
                                 "AddressLine": [
                                     "33 To Kwa Wan Road (With Foreign Currency ATM & Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.31811",
-                                "LongitudeDescription": "114.19097"
+                                "LatitudeDescription": "22.31671",
+                                "LongitudeDescription": "114.19029"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -14112,8 +14112,8 @@
                                 "AddressLine": [
                                     "Shop A007, G/F, Ching Long Shopping Centre"
                                 ],
-                                "LatitudeDescription": "22.3309",
-                                "LongitudeDescription": "114.2044"
+                                "LatitudeDescription": "22.3315",
+                                "LongitudeDescription": "114.2029"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,

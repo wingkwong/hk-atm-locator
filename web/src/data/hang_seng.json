@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-10-23T07:50:03+08:00",
+        "LastUpdated": "2019-10-25T07:50:05+08:00",
         "TotalResults": 287
     },
     "data": [
@@ -782,8 +782,8 @@
                                     "MTR Admiralty Station (near Exit C)",
                                     "MTR Admiralty Station (near Exit E) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.27871",
-                                "LongitudeDescription": "114.16563"
+                                "LatitudeDescription": "22.27938",
+                                "LongitudeDescription": "114.16402"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -1143,7 +1143,7 @@
                                     "MTR MTR Kowloon Tong Station (paid concourse) (With Voice Navigation ATM)"
                                 ],
                                 "LatitudeDescription": "22.33637",
-                                "LongitudeDescription": "114.17628"
+                                "LongitudeDescription": "114.17656"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -1936,8 +1936,8 @@
                                 "AddressLine": [
                                     "MTR Choi Hung Station (concourse)"
                                 ],
-                                "LatitudeDescription": "22.33405",
-                                "LongitudeDescription": "114.20959"
+                                "LatitudeDescription": "22.3348",
+                                "LongitudeDescription": "114.2092"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2656,8 +2656,8 @@
                                 "AddressLine": [
                                     "2 Po Ning Lane, Tseung Kwan O"
                                 ],
-                                "LatitudeDescription": "22.31723",
-                                "LongitudeDescription": "114.26967"
+                                "LatitudeDescription": "22.31873",
+                                "LongitudeDescription": "114.26994"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -2884,8 +2884,8 @@
                                 "AddressLine": [
                                     "Shop 101, G/F., Lung Poon Court Commercial Centre, Lung Poon Court, Diamond Hill"
                                 ],
-                                "LatitudeDescription": "22.34188",
-                                "LongitudeDescription": "114.20056"
+                                "LatitudeDescription": "22.3417",
+                                "LongitudeDescription": "114.20026"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -3917,8 +3917,8 @@
                                 "AddressLine": [
                                     "Level 3, Shaw Campus, The HK Baptist University, Renfrew Road"
                                 ],
-                                "LatitudeDescription": "22.3351",
-                                "LongitudeDescription": "114.182"
+                                "LatitudeDescription": "22.33521",
+                                "LongitudeDescription": "114.18246"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -4182,8 +4182,8 @@
                                     " MTR Kowloon Bay Station Exit A ",
                                     " MTR Kowloon Bay Station Exit B (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.32259",
-                                "LongitudeDescription": "114.21416"
+                                "LatitudeDescription": "22.32439",
+                                "LongitudeDescription": "114.21397"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -4384,8 +4384,8 @@
                                 "AddressLine": [
                                     "50 Shek Yam Road"
                                 ],
-                                "LatitudeDescription": "22.36911",
-                                "LongitudeDescription": "114.13996"
+                                "LatitudeDescription": "22.36866",
+                                "LongitudeDescription": "114.13997"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -5182,8 +5182,8 @@
                                     "MTR Tsing Yi Station (near Exit B)",
                                     "MTR Tsing Yi Station  (near Exit F)"
                                 ],
-                                "LatitudeDescription": "22.3473",
-                                "LongitudeDescription": "114.1117"
+                                "LatitudeDescription": "22.35842",
+                                "LongitudeDescription": "114.107"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -6580,8 +6580,8 @@
                                     "MTR Kwai Fong Station (near Exit B) (With Foreign Currency ATM with 8 notes available)",
                                     "MTR Kwai Fong Station (paid concourse)"
                                 ],
-                                "LatitudeDescription": "22.35774",
-                                "LongitudeDescription": "114.12848"
+                                "LatitudeDescription": "22.35684",
+                                "LongitudeDescription": "114.1278"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": true,
@@ -7230,8 +7230,8 @@
                                 "AddressLine": [
                                     "MTR Choi Hung Station (near Exit C) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.33405",
-                                "LongitudeDescription": "114.20959"
+                                "LatitudeDescription": "22.33449",
+                                "LongitudeDescription": "114.20983"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8401,8 +8401,8 @@
                                 "AddressLine": [
                                     "Shop G202, Lok Fu Plaza (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.33845",
-                                "LongitudeDescription": "114.18738"
+                                "LatitudeDescription": "22.3374",
+                                "LongitudeDescription": "114.1875"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8433,8 +8433,8 @@
                                     "MTR Shek Kip Mei Station (near Exit B)",
                                     "MTR Shek Kip Mei Station (near Exit C) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.33167",
-                                "LongitudeDescription": "114.16858"
+                                "LatitudeDescription": "22.33141",
+                                "LongitudeDescription": "114.16883"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -8992,8 +8992,8 @@
                                 "AddressLine": [
                                     "MTR Tin Hau Station (near Exit A)"
                                 ],
-                                "LatitudeDescription": "22.28218",
-                                "LongitudeDescription": "114.19148"
+                                "LatitudeDescription": "22.28275",
+                                "LongitudeDescription": "114.19203"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -10469,8 +10469,8 @@
                                 "AddressLine": [
                                     "MTR Diamond Hill Station (near Exit C)"
                                 ],
-                                "LatitudeDescription": "22.3406",
-                                "LongitudeDescription": "114.20068"
+                                "LatitudeDescription": "22.33937",
+                                "LongitudeDescription": "114.20201"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -11326,8 +11326,8 @@
                                 "AddressLine": [
                                     "Shops UG18, UG19, UG20 & UG21, UG/F, Olympian City 1"
                                 ],
-                                "LatitudeDescription": "22.36457",
-                                "LongitudeDescription": "114.11349"
+                                "LatitudeDescription": "22.36452",
+                                "LongitudeDescription": "114.11358"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -12637,8 +12637,8 @@
                                 "AddressLine": [
                                     "Level 3, Academic Building, City University of HK"
                                 ],
-                                "LatitudeDescription": "22.42251",
-                                "LongitudeDescription": "114.21343"
+                                "LatitudeDescription": "22.42285",
+                                "LongitudeDescription": "114.21365"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13297,8 +13297,8 @@
                                 "AddressLine": [
                                     "MTR Mong Kok Station (near Exit D) (With Voice Navigation ATM)"
                                 ],
-                                "LatitudeDescription": "22.31945",
-                                "LongitudeDescription": "114.16978"
+                                "LatitudeDescription": "22.31841",
+                                "LongitudeDescription": "114.16975"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -13818,8 +13818,8 @@
                                 "AddressLine": [
                                     "MTR Tai Wo Hau Station (near Exit A)"
                                 ],
-                                "LatitudeDescription": "22.37098",
-                                "LongitudeDescription": "114.1259"
+                                "LatitudeDescription": "22.37073",
+                                "LongitudeDescription": "114.12374"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,
@@ -14334,8 +14334,8 @@
                                 "AddressLine": [
                                     "MTR Siu Hong Station (near Exit B)"
                                 ],
-                                "LatitudeDescription": "22.4126",
-                                "LongitudeDescription": "113.9791"
+                                "LatitudeDescription": "22.41189",
+                                "LongitudeDescription": "113.97837"
                             },
                             "ATMServices": {
                                 "RMBandForeignCurrencyATMIndicator": false,

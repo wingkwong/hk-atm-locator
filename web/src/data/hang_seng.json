@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-11-06T07:50:01+08:00",
+        "LastUpdated": "2019-11-19T07:49:58+08:00",
         "TotalResults": 286
     },
     "data": [
@@ -2811,8 +2811,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tuen Mun",
-                                "LatitudeDescription": "22.38666",
-                                "LongitudeDescription": "113.97279",
+                                "LatitudeDescription": "22.38776",
+                                "LongitudeDescription": "113.97467",
                                 "AddressLine": [
                                     "G/F Zone S, H.A.N.D.S Yau Oi Estate, Yau Oi Road, Tuen Mun"
                                 ]
@@ -10763,8 +10763,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4579",
-                                "LongitudeDescription": "114.0029",
+                                "LatitudeDescription": "22.4567",
+                                "LongitudeDescription": "114.0048",
                                 "AddressLine": [
                                     "Shop 122, 1/F, Fortune Kingswood, Phase II (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ]
@@ -14652,8 +14652,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Tai Po",
-                                "LatitudeDescription": "22.4443",
-                                "LongitudeDescription": "114.1709",
+                                "LatitudeDescription": "22.4442",
+                                "LongitudeDescription": "114.1703",
                                 "AddressLine": [
                                     "MTR Tai Po Market Station (near Exit B)"
                                 ]

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2019-11-26T07:49:38+08:00",
+        "LastUpdated": "2019-12-03T07:50:00+08:00",
         "TotalResults": 286
     },
     "data": [
@@ -3144,8 +3144,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Eastern",
-                                "LatitudeDescription": "22.29115",
-                                "LongitudeDescription": "114.19432",
+                                "LatitudeDescription": "22.29072",
+                                "LongitudeDescription": "114.19311",
                                 "AddressLine": [
                                     "233 Electric Road (With Voice Navigation ATM)"
                                 ]
@@ -7851,8 +7851,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.22282",
-                                "LongitudeDescription": "114.21337",
+                                "LatitudeDescription": "22.2729",
+                                "LongitudeDescription": "114.1638",
                                 "AddressLine": [
                                     "Ground Floor, Cheung Hong Shopping Centre No.1"
                                 ]

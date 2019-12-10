@@ -1,7 +1,7 @@
 {
     "meta": {
-        "LastUpdated": "2019-12-03T07:50:00+08:00",
-        "TotalResults": 286
+        "LastUpdated": "2019-12-10T07:49:37+08:00",
+        "TotalResults": 287
     },
     "data": [
         {
@@ -3303,6 +3303,37 @@
                             "ATMId": 1063
                         },
                         {
+                            "ATMName": "To Kwa Wan Branch",
+                            "BranchName": "To Kwa Wan Branch",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "Kowloon West",
+                                "DistrictName": "Kowloon City",
+                                "LatitudeDescription": "22.31816",
+                                "LongitudeDescription": "114.19184",
+                                "AddressLine": [
+                                    "33 To Kwa Wan Road (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
+                                ]
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": true,
+                                "TalkATMIndicator": true,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": false,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "ATM : 24-hours  Foreign Currency ATM, Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "5:00pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [],
+                            "ATMId": 1064
+                        },
+                        {
                             "ATMName": "PARK YOHO",
                             "BranchName": "PARK YOHO",
                             "HotlineNumber": "29972112",
@@ -3367,7 +3398,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1064
+                            "ATMId": 1065
                         },
                         {
                             "ATMName": "MTR Tsuen Wan Station",
@@ -3435,7 +3466,7 @@
                                     "CloseTime": "01:34"
                                 }
                             ],
-                            "ATMId": 1065
+                            "ATMId": 1066
                         },
                         {
                             "ATMName": "Yuen Long Prestige & Preferred Banking Centre",
@@ -3466,7 +3497,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1066
+                            "ATMId": 1067
                         },
                         {
                             "ATMName": "Tai Po (On Chee Road) Branch",
@@ -3533,7 +3564,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1067
+                            "ATMId": 1068
                         },
                         {
                             "ATMName": "Kowloon Bay Prestige & Preferred Banking Centre",
@@ -3560,37 +3591,6 @@
                                 "CashDepositMachineIndicator": true,
                                 "ChequeDepositMachineIndicator": true,
                                 "ChequeDepositMachineCutOffTime": "5:30pm"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [],
-                            "ATMId": 1068
-                        },
-                        {
-                            "ATMName": "Yaumati Branch",
-                            "BranchName": "Yaumati Branch",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "Kowloon West",
-                                "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.30797",
-                                "LongitudeDescription": "114.17105",
-                                "AddressLine": [
-                                    "363 Nathan Road"
-                                ]
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": false,
-                                "RMBATMwithoutForeignCurrencyIndicator": false,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "ATM : 24-hours  Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": true,
-                                "ChequeDepositMachineCutOffTime": "5:00pm"
                             },
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
@@ -11449,6 +11449,37 @@
                             "ATMId": 1217
                         },
                         {
+                            "ATMName": "Yau Tong Domain Automated Banking Centre",
+                            "BranchName": "Yau Tong Domain Automated Banking Centre",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "Kowloon East",
+                                "DistrictName": "Kwun Tong",
+                                "LatitudeDescription": "22.29622",
+                                "LongitudeDescription": "114.23861",
+                                "AddressLine": [
+                                    "Shop 103, First Floor, Domain, Yau Tong (With Foreign Currency ATM with 8 notes available)"
+                                ]
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": true,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": false,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "Subject to Mall Opening Hours",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "5:30pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [],
+                            "ATMId": 1218
+                        },
+                        {
                             "ATMName": "Tam Kung Road Branch",
                             "BranchName": "Tam Kung Road Branch",
                             "HotlineNumber": "29972112",
@@ -11477,7 +11508,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1218
+                            "ATMId": 1219
                         },
                         {
                             "ATMName": "Tsuen Wan Hong Kong Adventist Hospital",
@@ -11544,7 +11575,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1219
+                            "ATMId": 1220
                         },
                         {
                             "ATMName": "MTR Jordan Station",
@@ -11612,7 +11643,7 @@
                                     "CloseTime": "01:11"
                                 }
                             ],
-                            "ATMId": 1220
+                            "ATMId": 1221
                         },
                         {
                             "ATMName": "Belvedere Garden Automated Banking Centre",
@@ -11643,7 +11674,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1221
+                            "ATMId": 1222
                         },
                         {
                             "ATMName": "MTR Admiralty Station",
@@ -11712,7 +11743,7 @@
                                     "CloseTime": "01:15"
                                 }
                             ],
-                            "ATMId": 1222
+                            "ATMId": 1223
                         },
                         {
                             "ATMName": "Taikoo Place Devon House Automated Banking Centre",
@@ -11743,7 +11774,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1223
+                            "ATMId": 1224
                         },
                         {
                             "ATMName": "Wong Tai Sin Branch",
@@ -11774,7 +11805,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1224
+                            "ATMId": 1225
                         },
                         {
                             "ATMName": "Ivy Street Automated Banking Centre",
@@ -11801,37 +11832,6 @@
                                 "CashDepositMachineIndicator": true,
                                 "ChequeDepositMachineIndicator": true,
                                 "ChequeDepositMachineCutOffTime": "5:30pm"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [],
-                            "ATMId": 1225
-                        },
-                        {
-                            "ATMName": "To Kwa Wan Branch",
-                            "BranchName": "To Kwa Wan Branch",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "Kowloon West",
-                                "DistrictName": "Kowloon City",
-                                "LatitudeDescription": "22.31811",
-                                "LongitudeDescription": "114.19097",
-                                "AddressLine": [
-                                    "33 To Kwa Wan Road (With Foreign Currency ATM & Voice Navigation ATM)"
-                                ]
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": true,
-                                "TalkATMIndicator": true,
-                                "DisabledAccessIndicator": true,
-                                "RMBATMwithoutForeignCurrencyIndicator": false,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "ATM : 24-hours  Foreign Currency ATM, Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": true,
-                                "ChequeDepositMachineCutOffTime": "5:00pm"
                             },
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
@@ -14976,6 +14976,37 @@
                             "ATMId": 1284
                         },
                         {
+                            "ATMName": "Yaumati Branch",
+                            "BranchName": "Yaumati Branch",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "Kowloon West",
+                                "DistrictName": "Yau Tsim Mong",
+                                "LatitudeDescription": "22.30797",
+                                "LongitudeDescription": "114.17105",
+                                "AddressLine": [
+                                    "363 Nathan Road (With Foreign Currency ATM with 8 notes available)"
+                                ]
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": true,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": false,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "ATM : 24-hours  Cash & Cheque Deposit Machine : 09:00 - 17:00 (Mon. - Fri.) , 09:00 - 13:00 (Sat.)",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "5:00pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [],
+                            "ATMId": 1285
+                        },
+                        {
                             "ATMName": "Island Resort Mall",
                             "BranchName": "Island Resort Mall",
                             "HotlineNumber": "29972112",
@@ -15004,7 +15035,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1285
+                            "ATMId": 1286
                         }
                     ]
                 }

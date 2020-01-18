@@ -187,6 +187,10 @@ const convertBankName = (bank) => {
   Process Hang Seng Data
 */
 const process_hang_seng_data = (data) => {
+  if(!data || !data.data) {
+    return ""
+  }
+  
   var atm = data.data[0].Brand[0].ATM;
   atm = atm.map((record, idx) => ({
     ...record,
@@ -203,6 +207,10 @@ const process_hang_seng_data = (data) => {
   Process HSBC Data
 */
 const process_hsbc_data = (data) => {
+  if(!data || !data.data) {
+    return ""
+  }
+  
   var atm = data.data[0].Brand[0].ATM;
   atm = atm.map((record, idx) => ({
     ...record,
@@ -271,15 +279,23 @@ module.exports = {
     info(`Preparing to process hang seng file from ${inputPath}`);
     const data = fs.readFileSync(inputPath);
     const processedData = process_hang_seng_data(JSON.parse(data));
-    fs.writeFileSync(outputPath, processedData);
-    remind(`Finished processing hang seng file and saved at ${outputPath}`);
+    if(processedData == "") {
+      remind(`Empty data. No action will be performed`);
+    } else {
+      fs.writeFileSync(outputPath, processedData);
+      remind(`Finished processing hang seng file and saved at ${outputPath}`);
+    }
   },
   processHsbcData: async (inputPath, outputPath) => {
     info(`Preparing to process hsbc files from ${inputPath}`);
     const data = fs.readFileSync(inputPath);
     const processedData = process_hsbc_data(JSON.parse(data));
-    fs.writeFileSync(outputPath, processedData);
-    remind(`Finished processing hsbc file and saved at ${outputPath}`);
+    if(processedData == "") {
+      remind(`Empty data. No action will be performed`);
+    } else {
+      fs.writeFileSync(outputPath, processedData);
+      remind(`Finished processing hsbc file and saved at ${outputPath}`);
+    }
   },
   processJetcoData: async (inputPath, outputPath) => {
     info(`Preparing to process jetco files from ${inputPath}`);

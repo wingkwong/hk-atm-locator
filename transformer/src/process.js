@@ -130,7 +130,7 @@ async function processData(bank, inputFile, outputFile) {
  * @param {*} outputFile
  */
 async function processAddress(bank, inputFile, outputFile) {
-  if(inputFile) {
+  if(fs.existsSync(inputFile)) {
     validateBank(bank);
     const input = await fs.readFileAsync(inputFile);
     if (bank === BANK_HANG_SENG) {
@@ -169,7 +169,7 @@ async function processAddress(bank, inputFile, outputFile) {
  * @param {*} outputFile
  */
 async function generateChecksum(bank, inputFile, outputFile) {
-  if(inputFile) {
+  if(fs.existsSync(inputFile)) {
     validateBank(bank);
     validateFile(inputFile);
     var data = await fs.readFileAsync(inputFile);

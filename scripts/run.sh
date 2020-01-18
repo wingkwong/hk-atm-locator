@@ -49,6 +49,5 @@ cp -r $JETCO_RAW_DATA $JETCO_UNPROCESSED && \
 
 if [ ! -f $HANG_SENG_PROCESSED_JSON ] || [ ! -f $HSBC_PROCESSED_JSON ] || [ ! -f $JETCO_PROCESSED_EN_JSON ] || [ ! -f $JETCO_PROCESSED_TC_JSON ] ;
 then 
-    echo "Failed to gernerate files. Aborting..."
-    exit 1
+    echo "Failed to generate files."
 fi

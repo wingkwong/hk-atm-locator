@@ -130,28 +130,33 @@ async function processData(bank, inputFile, outputFile) {
  * @param {*} outputFile
  */
 async function processAddress(bank, inputFile, outputFile) {
-  validateBank(bank);
-  const input = await fs.readFileAsync(inputFile);
-  if (bank === BANK_HANG_SENG) {
-    const data = JSON.parse(input.toString());
-    const atms = data.data[0].Brand[0].ATM;
+  if(inputFile) {
+    validateBank(bank);
+    const input = await fs.readFileAsync(inputFile);
+    if (bank === BANK_HANG_SENG) {
+      const data = JSON.parse(input.toString());
+      const atms = data.data[0].Brand[0].ATM;
 
-    info(`Start to append the address to the data. Total: ${atms.length}`);
+      info(`Start to append the address to the data. Total: ${atms.length}`);
 
-    async.eachOfLimit(atms, 50, async.asyncify(parseAddress), async (err) => {
-      if (err) {
-        terminateWithError(err);
-      }
-      remind('Process finished');
+      async.eachOfLimit(atms, 50, async.asyncify(parseAddress), async (err) => {
+        if (err) {
+          terminateWithError(err);
+        }
+        remind('Process finished');
+        await fs.writeFileAsync(outputFile, JSON.stringify(data, null, 4));
+        remind(`File sucessfully saved at ${outputFile}`);
+        end();
+      });
+    } else {
+      info('Start to output the hsbc data');
+      const data = JSON.parse(input.toString());
       await fs.writeFileAsync(outputFile, JSON.stringify(data, null, 4));
       remind(`File sucessfully saved at ${outputFile}`);
       end();
-    });
+    }
   } else {
-    info('Start to output the hsbc data');
-    const data = JSON.parse(input.toString());
-    await fs.writeFileAsync(outputFile, JSON.stringify(data, null, 4));
-    remind(`File sucessfully saved at ${outputFile}`);
+    remind(`Input File not found. No action will be performed`);
     end();
   }
 }
@@ -164,12 +169,17 @@ async function processAddress(bank, inputFile, outputFile) {
  * @param {*} outputFile
  */
 async function generateChecksum(bank, inputFile, outputFile) {
-  validateBank(bank);
-  validateFile(inputFile);
-  var data = await fs.readFileAsync(inputFile);
-  data = JSON.stringify(JSON.parse(data).data);
-  DataChecksum.generate(data, outputFile);
-  end();
+  if(inputFile) {
+    validateBank(bank);
+    validateFile(inputFile);
+    var data = await fs.readFileAsync(inputFile);
+    data = JSON.stringify(JSON.parse(data).data);
+    DataChecksum.generate(data, outputFile);
+    end();
+  } else {
+    remind(`Input File not found. No action will be performed`);
+    end();
+  }
 }
 
 program

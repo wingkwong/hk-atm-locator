@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2020-01-15T07:49:37+08:00",
+        "LastUpdated": "2020-01-23T07:49:40+08:00",
         "TotalResults": 287
     },
     "data": [
@@ -665,38 +665,6 @@
                             "ATMId": 1012
                         },
                         {
-                            "ATMName": "MTR Wanchai Station",
-                            "BranchName": "MTR Wanchai Station",
-                            "HotlineNumber": "29972112",
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "Hong Kong Island",
-                                "DistrictName": "Wanchai",
-                                "LatitudeDescription": "22.2774",
-                                "LongitudeDescription": "114.1727",
-                                "AddressLine": [
-                                    "MTR Wan Chai Station (Concourse) (With Voice Navigation ATM)",
-                                    "MTR Wan Chai Station (near Exit A1)"
-                                ]
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": true,
-                                "DisabledAccessIndicator": true,
-                                "RMBATMwithoutForeignCurrencyIndicator": true,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "Around 06:00 - midnight 01:00 (Follows Station First/Last Trains Service Hours)",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": false,
-                                "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [],
-                            "ATMId": 1013
-                        },
-                        {
                             "ATMName": "Baptist University",
                             "BranchName": "Baptist University",
                             "HotlineNumber": "29972112",
@@ -761,7 +729,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1014
+                            "ATMId": 1013
                         },
                         {
                             "ATMName": "MTR Tai Koo Station",
@@ -829,7 +797,7 @@
                                     "CloseTime": "01:23"
                                 }
                             ],
-                            "ATMId": 1015
+                            "ATMId": 1014
                         },
                         {
                             "ATMName": "Fanling Branch",
@@ -860,7 +828,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1016
+                            "ATMId": 1015
                         },
                         {
                             "ATMName": "MTR Sai Ying Pun Station",
@@ -927,7 +895,7 @@
                                     "CloseTime": "01:18"
                                 }
                             ],
-                            "ATMId": 1017
+                            "ATMId": 1016
                         },
                         {
                             "ATMName": "Tsz Wan Shan Shopping Centre Automated Banking Centre",
@@ -958,7 +926,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1018
+                            "ATMId": 1017
                         },
                         {
                             "ATMName": "The Maxim's Centre",
@@ -989,7 +957,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1019
+                            "ATMId": 1018
                         },
                         {
                             "ATMName": "Kwun Tong Plaza Automated Banking Centre",
@@ -1020,7 +988,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1020
+                            "ATMId": 1019
                         },
                         {
                             "ATMName": "MTR Sunny Bay Station",
@@ -1087,7 +1055,7 @@
                                     "CloseTime": "01:19"
                                 }
                             ],
-                            "ATMId": 1021
+                            "ATMId": 1020
                         },
                         {
                             "ATMName": "MTR Tiu Keng Leng Station",
@@ -1154,7 +1122,7 @@
                                     "CloseTime": "01:31"
                                 }
                             ],
-                            "ATMId": 1022
+                            "ATMId": 1021
                         },
                         {
                             "ATMName": "Kornhill Plaza",
@@ -1185,7 +1153,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1023
+                            "ATMId": 1022
                         },
                         {
                             "ATMName": "MTR Olympic Station",
@@ -1253,7 +1221,7 @@
                                     "CloseTime": "01:15"
                                 }
                             ],
-                            "ATMId": 1024
+                            "ATMId": 1023
                         },
                         {
                             "ATMName": "MTR Lo Wu Station",
@@ -1320,7 +1288,7 @@
                                     "CloseTime": "00:40"
                                 }
                             ],
-                            "ATMId": 1025
+                            "ATMId": 1024
                         },
                         {
                             "ATMName": "Hong Kong West Kowloon Station",
@@ -1351,7 +1319,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1026
+                            "ATMId": 1025
                         },
                         {
                             "ATMName": "MTR Chai Wan Station",
@@ -1419,7 +1387,7 @@
                                     "CloseTime": "01:32"
                                 }
                             ],
-                            "ATMId": 1027
+                            "ATMId": 1026
                         },
                         {
                             "ATMName": "South China Athletic Association",
@@ -1486,7 +1454,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1028
+                            "ATMId": 1027
                         },
                         {
                             "ATMName": "MTR Cheung Sha Wan Station",
@@ -1554,7 +1522,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1029
+                            "ATMId": 1028
                         },
                         {
                             "ATMName": "Hospital Authority Building",
@@ -1621,7 +1589,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1030
+                            "ATMId": 1029
                         },
                         {
                             "ATMName": "Kwun Tong Sales & Service Centre",
@@ -1652,7 +1620,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1031
+                            "ATMId": 1030
                         },
                         {
                             "ATMName": "On Tat Shopping Centre",
@@ -1683,7 +1651,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1032
+                            "ATMId": 1031
                         },
                         {
                             "ATMName": "Cheung Hang Estate",
@@ -1750,7 +1718,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1033
+                            "ATMId": 1032
                         },
                         {
                             "ATMName": "Empire Centre Automated Banking Centre",
@@ -1781,7 +1749,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1034
+                            "ATMId": 1033
                         },
                         {
                             "ATMName": "MTR Po Lam Station",
@@ -1848,7 +1816,7 @@
                                     "CloseTime": "01:37"
                                 }
                             ],
-                            "ATMId": 1035
+                            "ATMId": 1034
                         },
                         {
                             "ATMName": "MTR Choi Hung Station",
@@ -1915,7 +1883,7 @@
                                     "CloseTime": "01:28"
                                 }
                             ],
-                            "ATMId": 1036
+                            "ATMId": 1035
                         },
                         {
                             "ATMName": "Laguna Plaza Automated Banking Centre",
@@ -1946,7 +1914,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1037
+                            "ATMId": 1036
                         },
                         {
                             "ATMName": "MTR Sheung Shui Station",
@@ -2013,7 +1981,7 @@
                                     "CloseTime": "01:12"
                                 }
                             ],
-                            "ATMId": 1038
+                            "ATMId": 1037
                         },
                         {
                             "ATMName": "MTR Hang Hau Station",
@@ -2080,7 +2048,7 @@
                                     "CloseTime": "01:35"
                                 }
                             ],
-                            "ATMId": 1039
+                            "ATMId": 1038
                         },
                         {
                             "ATMName": "MTR Yau Tong Station",
@@ -2147,7 +2115,7 @@
                                     "CloseTime": "01:28"
                                 }
                             ],
-                            "ATMId": 1040
+                            "ATMId": 1039
                         },
                         {
                             "ATMName": "San Po Kong Branch",
@@ -2178,7 +2146,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1041
+                            "ATMId": 1040
                         },
                         {
                             "ATMName": "Happy Valley Prestige & Preferred Banking Centre",
@@ -2245,7 +2213,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1042
+                            "ATMId": 1041
                         },
                         {
                             "ATMName": "Citylink Plaza Automated Banking Centres",
@@ -2276,7 +2244,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1043
+                            "ATMId": 1042
                         },
                         {
                             "ATMName": "Des Voeux Road West Branch",
@@ -2307,7 +2275,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1044
+                            "ATMId": 1043
                         },
                         {
                             "ATMName": "Hung Fuk Estate",
@@ -2338,7 +2306,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1045
+                            "ATMId": 1044
                         },
                         {
                             "ATMName": "Kowloon City Branch",
@@ -2369,7 +2337,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1046
+                            "ATMId": 1045
                         },
                         {
                             "ATMName": "MOKO",
@@ -2400,7 +2368,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1047
+                            "ATMId": 1046
                         },
                         {
                             "ATMName": "MTR Kwai Fong Station",
@@ -2469,7 +2437,7 @@
                                     "CloseTime": "01:28"
                                 }
                             ],
-                            "ATMId": 1048
+                            "ATMId": 1047
                         },
                         {
                             "ATMName": "Hiu Lai Shopping Centre",
@@ -2500,7 +2468,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1049
+                            "ATMId": 1048
                         },
                         {
                             "ATMName": "MTR Lai King Station (MTR Station Office)",
@@ -2567,7 +2535,7 @@
                                     "CloseTime": "01:26"
                                 }
                             ],
-                            "ATMId": 1050
+                            "ATMId": 1049
                         },
                         {
                             "ATMName": "MTR Central Station",
@@ -2637,7 +2605,7 @@
                                     "CloseTime": "01:14"
                                 }
                             ],
-                            "ATMId": 1051
+                            "ATMId": 1050
                         },
                         {
                             "ATMName": "MTR Fortress Hill Station",
@@ -2704,7 +2672,7 @@
                                     "CloseTime": "01:17"
                                 }
                             ],
-                            "ATMId": 1052
+                            "ATMId": 1051
                         },
                         {
                             "ATMName": "Temple Mall North Automated Banking Centre",
@@ -2735,7 +2703,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1053
+                            "ATMId": 1052
                         },
                         {
                             "ATMName": "H.A.N.D.S",
@@ -2766,7 +2734,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1054
+                            "ATMId": 1053
                         },
                         {
                             "ATMName": "MTR Shau Kei Wan Station",
@@ -2833,7 +2801,7 @@
                                     "CloseTime": "01:27"
                                 }
                             ],
-                            "ATMId": 1055
+                            "ATMId": 1054
                         },
                         {
                             "ATMName": "MTR Tin Hau Station (MTR Station Office)",
@@ -2900,7 +2868,7 @@
                                     "CloseTime": "01:16"
                                 }
                             ],
-                            "ATMId": 1056
+                            "ATMId": 1055
                         },
                         {
                             "ATMName": "MTR Tsing Yi Station",
@@ -2969,7 +2937,7 @@
                                     "CloseTime": "01:13"
                                 }
                             ],
-                            "ATMId": 1057
+                            "ATMId": 1056
                         },
                         {
                             "ATMName": "MTR Austin Station",
@@ -3036,7 +3004,7 @@
                                     "CloseTime": "00:56"
                                 }
                             ],
-                            "ATMId": 1058
+                            "ATMId": 1057
                         },
                         {
                             "ATMName": "The Octagon",
@@ -3067,7 +3035,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1059
+                            "ATMId": 1058
                         },
                         {
                             "ATMName": "City Garden Prestige & Preferred Banking Centre",
@@ -3134,7 +3102,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1060
+                            "ATMId": 1059
                         },
                         {
                             "ATMName": "Union Hospital",
@@ -3201,7 +3169,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1061
+                            "ATMId": 1060
                         },
                         {
                             "ATMName": "Happy Valley Racecourse",
@@ -3233,7 +3201,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1062
+                            "ATMId": 1061
                         },
                         {
                             "ATMName": "To Kwa Wan Branch",
@@ -3264,7 +3232,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1063
+                            "ATMId": 1062
                         },
                         {
                             "ATMName": "PARK YOHO",
@@ -3331,7 +3299,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1064
+                            "ATMId": 1063
                         },
                         {
                             "ATMName": "MTR Tsuen Wan Station",
@@ -3399,7 +3367,7 @@
                                     "CloseTime": "01:34"
                                 }
                             ],
-                            "ATMId": 1065
+                            "ATMId": 1064
                         },
                         {
                             "ATMName": "Tai Po (On Chee Road) Branch",
@@ -3466,7 +3434,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1066
+                            "ATMId": 1065
                         },
                         {
                             "ATMName": "Kowloon Bay Prestige & Preferred Banking Centre",
@@ -3497,7 +3465,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1067
+                            "ATMId": 1066
                         },
                         {
                             "ATMName": "Kowloon Bay (Sheung Yuet Road) Branch",
@@ -3564,7 +3532,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1068
+                            "ATMId": 1067
                         },
                         {
                             "ATMName": "Jat Min Chuen (Circle-K)",
@@ -3631,7 +3599,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1069
+                            "ATMId": 1068
                         },
                         {
                             "ATMName": "Sun Kwai Hing Plaza Branch",
@@ -3662,7 +3630,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1070
+                            "ATMId": 1069
                         },
                         {
                             "ATMName": "Hung Hom Branch",
@@ -3693,7 +3661,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1071
+                            "ATMId": 1070
                         },
                         {
                             "ATMName": "Shatin Hospital",
@@ -3760,7 +3728,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1072
+                            "ATMId": 1071
                         },
                         {
                             "ATMName": "Tai Wai Branch",
@@ -3827,7 +3795,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1073
+                            "ATMId": 1072
                         },
                         {
                             "ATMName": "Fitfort",
@@ -3858,7 +3826,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1074
+                            "ATMId": 1073
                         },
                         {
                             "ATMName": "Megabox Automated Banking Centre",
@@ -3889,7 +3857,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1075
+                            "ATMId": 1074
                         },
                         {
                             "ATMName": "Metro City Branch",
@@ -3920,7 +3888,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1076
+                            "ATMId": 1075
                         },
                         {
                             "ATMName": "MTR Long Ping Station",
@@ -3987,7 +3955,7 @@
                                     "CloseTime": "01:01"
                                 }
                             ],
-                            "ATMId": 1077
+                            "ATMId": 1076
                         },
                         {
                             "ATMName": "Noble Square",
@@ -4018,7 +3986,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1078
+                            "ATMId": 1077
                         },
                         {
                             "ATMName": "MTR Shek Mun Station",
@@ -4085,7 +4053,7 @@
                                     "CloseTime": "01:22"
                                 }
                             ],
-                            "ATMId": 1079
+                            "ATMId": 1078
                         },
                         {
                             "ATMName": "North Point Branch",
@@ -4152,7 +4120,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1080
+                            "ATMId": 1079
                         },
                         {
                             "ATMName": "Tai Hang Jolly House",
@@ -4219,7 +4187,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1081
+                            "ATMId": 1080
                         },
                         {
                             "ATMName": "MTR Yau Ma Tei Station",
@@ -4287,7 +4255,7 @@
                                     "CloseTime": "01:14"
                                 }
                             ],
-                            "ATMId": 1082
+                            "ATMId": 1081
                         },
                         {
                             "ATMName": "MTR Lai Chi Kok Station",
@@ -4354,7 +4322,7 @@
                                     "CloseTime": "01:21"
                                 }
                             ],
-                            "ATMId": 1083
+                            "ATMId": 1082
                         },
                         {
                             "ATMName": "Mei Foo Plaza Automated Banking Centre",
@@ -4385,7 +4353,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1084
+                            "ATMId": 1083
                         },
                         {
                             "ATMName": "MTR Fanling Station",
@@ -4452,7 +4420,7 @@
                                     "CloseTime": "01:09"
                                 }
                             ],
-                            "ATMId": 1085
+                            "ATMId": 1084
                         },
                         {
                             "ATMName": "Lung Poon Court (Circle-K)",
@@ -4519,7 +4487,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1086
+                            "ATMId": 1085
                         },
                         {
                             "ATMName": "Grand Waterfront Plaza",
@@ -4550,7 +4518,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1087
+                            "ATMId": 1086
                         },
                         {
                             "ATMName": "MTR Nam Cheong Station",
@@ -4618,7 +4586,7 @@
                                     "CloseTime": "01:13"
                                 }
                             ],
-                            "ATMId": 1088
+                            "ATMId": 1087
                         },
                         {
                             "ATMName": "Hankow Road Branch",
@@ -4649,7 +4617,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1089
+                            "ATMId": 1088
                         },
                         {
                             "ATMName": "Ching Long Shopping Centre Automated Banking Centre",
@@ -4680,7 +4648,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1090
+                            "ATMId": 1089
                         },
                         {
                             "ATMName": "North Lantau Hospital",
@@ -4747,7 +4715,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1091
+                            "ATMId": 1090
                         },
                         {
                             "ATMName": "Hong Kong Shue Yan University",
@@ -4814,7 +4782,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1092
+                            "ATMId": 1091
                         },
                         {
                             "ATMName": "Laguna Mall",
@@ -4881,7 +4849,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1093
+                            "ATMId": 1092
                         },
                         {
                             "ATMName": "MTR Lei Tung Station",
@@ -4948,7 +4916,7 @@
                                     "CloseTime": "01:24"
                                 }
                             ],
-                            "ATMId": 1094
+                            "ATMId": 1093
                         },
                         {
                             "ATMName": "Sheung Shui Sales & Service Centre",
@@ -4979,7 +4947,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1095
+                            "ATMId": 1094
                         },
                         {
                             "ATMName": "MTR Sai Wan Ho Station",
@@ -5046,7 +5014,7 @@
                                     "CloseTime": "01:25"
                                 }
                             ],
-                            "ATMId": 1096
+                            "ATMId": 1095
                         },
                         {
                             "ATMName": "Tuen Mun Town Plaza Automated Banking Centre",
@@ -5077,7 +5045,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1097
+                            "ATMId": 1096
                         },
                         {
                             "ATMName": "Chevalier Garden",
@@ -5108,7 +5076,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1098
+                            "ATMId": 1097
                         },
                         {
                             "ATMName": "MTR Tai Wo Hau Station",
@@ -5175,7 +5143,7 @@
                                     "CloseTime": "01:32"
                                 }
                             ],
-                            "ATMId": 1099
+                            "ATMId": 1098
                         },
                         {
                             "ATMName": "Panda Place Automated Banking Centre",
@@ -5206,7 +5174,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1100
+                            "ATMId": 1099
                         },
                         {
                             "ATMName": "Shatin Racecourse",
@@ -5276,7 +5244,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1101
+                            "ATMId": 1100
                         },
                         {
                             "ATMName": "Tseung Kwan O Plaza",
@@ -5307,7 +5275,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1102
+                            "ATMId": 1101
                         },
                         {
                             "ATMName": "Kennedy Town Branch",
@@ -5374,7 +5342,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1103
+                            "ATMId": 1102
                         },
                         {
                             "ATMName": "Tai Hing Estate",
@@ -5441,7 +5409,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1104
+                            "ATMId": 1103
                         },
                         {
                             "ATMName": "Stanley Officers' Club CSD",
@@ -5508,7 +5476,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1105
+                            "ATMId": 1104
                         },
                         {
                             "ATMName": "Regentville Shopping Mall Automated Banking Centre",
@@ -5539,7 +5507,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1106
+                            "ATMId": 1105
                         },
                         {
                             "ATMName": "Kerry Centre",
@@ -5570,7 +5538,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1107
+                            "ATMId": 1106
                         },
                         {
                             "ATMName": "Education University of Hong Kong",
@@ -5637,7 +5605,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1108
+                            "ATMId": 1107
                         },
                         {
                             "ATMName": "MTR Hung Hom Station",
@@ -5704,7 +5672,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1109
+                            "ATMId": 1108
                         },
                         {
                             "ATMName": "Cable TV Tower",
@@ -5771,7 +5739,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1110
+                            "ATMId": 1109
                         },
                         {
                             "ATMName": "Hennessy Road Automated Banking Centre",
@@ -5838,7 +5806,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1111
+                            "ATMId": 1110
                         },
                         {
                             "ATMName": "HKSH Eastern District Advanced Medical Centre",
@@ -5869,7 +5837,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1112
+                            "ATMId": 1111
                         },
                         {
                             "ATMName": "City University Branch",
@@ -5900,7 +5868,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1113
+                            "ATMId": 1112
                         },
                         {
                             "ATMName": "Mei Foo Sun Chuen (Nassau Street) Branch",
@@ -5967,7 +5935,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1114
+                            "ATMId": 1113
                         },
                         {
                             "ATMName": "Chinese University of Hong Kong",
@@ -6035,7 +6003,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1115
+                            "ATMId": 1114
                         },
                         {
                             "ATMName": "Ying Tung Estate",
@@ -6102,7 +6070,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1116
+                            "ATMId": 1115
                         },
                         {
                             "ATMName": "MTR Tsuen Wan West Station",
@@ -6169,7 +6137,7 @@
                                     "CloseTime": "00:49"
                                 }
                             ],
-                            "ATMId": 1117
+                            "ATMId": 1116
                         },
                         {
                             "ATMName": "MTR University Station",
@@ -6236,7 +6204,7 @@
                                     "CloseTime": "01:01"
                                 }
                             ],
-                            "ATMId": 1118
+                            "ATMId": 1117
                         },
                         {
                             "ATMName": "Leung King Plaza",
@@ -6267,7 +6235,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1119
+                            "ATMId": 1118
                         },
                         {
                             "ATMName": "Polytechnic University Branch",
@@ -6334,7 +6302,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1120
+                            "ATMId": 1119
                         },
                         {
                             "ATMName": "MTR City One Station",
@@ -6401,7 +6369,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1121
+                            "ATMId": 1120
                         },
                         {
                             "ATMName": "Quarry Bay Branch",
@@ -6468,7 +6436,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1122
+                            "ATMId": 1121
                         },
                         {
                             "ATMName": "Hoi Yuen Road Branch",
@@ -6535,7 +6503,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1123
+                            "ATMId": 1122
                         },
                         {
                             "ATMName": "MTR Heng Fa Chuen Station",
@@ -6602,7 +6570,7 @@
                                     "CloseTime": "01:29"
                                 }
                             ],
-                            "ATMId": 1124
+                            "ATMId": 1123
                         },
                         {
                             "ATMName": "MTR Mong Kok East Station",
@@ -6669,7 +6637,7 @@
                                     "CloseTime": "01:17"
                                 }
                             ],
-                            "ATMId": 1125
+                            "ATMId": 1124
                         },
                         {
                             "ATMName": "Yuen Long KOLOUR Automated Banking Centre",
@@ -6700,7 +6668,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1126
+                            "ATMId": 1125
                         },
                         {
                             "ATMName": "Tai Kok Tsui Automated Banking Centre",
@@ -6731,7 +6699,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1127
+                            "ATMId": 1126
                         },
                         {
                             "ATMName": "Maritime Square Branch",
@@ -6762,7 +6730,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1128
+                            "ATMId": 1127
                         },
                         {
                             "ATMName": "Immigration Tower",
@@ -6793,7 +6761,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1129
+                            "ATMId": 1128
                         },
                         {
                             "ATMName": "Baptist University Branch",
@@ -6824,7 +6792,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1130
+                            "ATMId": 1129
                         },
                         {
                             "ATMName": "Park Central Branch",
@@ -6855,7 +6823,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1131
+                            "ATMId": 1130
                         },
                         {
                             "ATMName": "MTR Ma On Shan Station",
@@ -6922,7 +6890,7 @@
                                     "CloseTime": "01:29"
                                 }
                             ],
-                            "ATMId": 1132
+                            "ATMId": 1131
                         },
                         {
                             "ATMName": "MTR Prince Edward Station",
@@ -6990,7 +6958,7 @@
                                     "CloseTime": "01:17"
                                 }
                             ],
-                            "ATMId": 1133
+                            "ATMId": 1132
                         },
                         {
                             "ATMName": "MTR LOHAS Park Station",
@@ -7057,7 +7025,7 @@
                                     "CloseTime": "01:40"
                                 }
                             ],
-                            "ATMId": 1134
+                            "ATMId": 1133
                         },
                         {
                             "ATMName": "Popcorn Automated Banking Centre",
@@ -7088,7 +7056,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1135
+                            "ATMId": 1134
                         },
                         {
                             "ATMName": "MTR Fo Tan Station",
@@ -7155,7 +7123,7 @@
                                     "CloseTime": "01:04"
                                 }
                             ],
-                            "ATMId": 1136
+                            "ATMId": 1135
                         },
                         {
                             "ATMName": "United Centre Automated Banking Cetnre",
@@ -7186,7 +7154,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1137
+                            "ATMId": 1136
                         },
                         {
                             "ATMName": "Aberdeen Marina Club",
@@ -7253,7 +7221,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1138
+                            "ATMId": 1137
                         },
                         {
                             "ATMName": "MTR Yuen Long Station",
@@ -7320,7 +7288,7 @@
                                     "CloseTime": "00:59"
                                 }
                             ],
-                            "ATMId": 1139
+                            "ATMId": 1138
                         },
                         {
                             "ATMName": "MTR Sheung Wan Station",
@@ -7387,7 +7355,7 @@
                                     "CloseTime": "01:16"
                                 }
                             ],
-                            "ATMId": 1140
+                            "ATMId": 1139
                         },
                         {
                             "ATMName": "Tin Chak Shopping Centre",
@@ -7418,7 +7386,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1141
+                            "ATMId": 1140
                         },
                         {
                             "ATMName": "Hang Seng 113 Automated Banking Centre",
@@ -7485,7 +7453,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1142
+                            "ATMId": 1141
                         },
                         {
                             "ATMName": "Sheung Kwai Chung Branch",
@@ -7552,7 +7520,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1143
+                            "ATMId": 1142
                         },
                         {
                             "ATMName": "Mongkok Prestige & Preferred Banking Centre",
@@ -7583,7 +7551,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1144
+                            "ATMId": 1143
                         },
                         {
                             "ATMName": "Double Cove Place Automated Banking Centre",
@@ -7614,7 +7582,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1145
+                            "ATMId": 1144
                         },
                         {
                             "ATMName": "MTR Tseung Kwan O Station",
@@ -7681,7 +7649,7 @@
                                     "CloseTime": "01:36"
                                 }
                             ],
-                            "ATMId": 1146
+                            "ATMId": 1145
                         },
                         {
                             "ATMName": "APM Automated Banking Centre",
@@ -7748,7 +7716,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1147
+                            "ATMId": 1146
                         },
                         {
                             "ATMName": "Cheung Hong Shopping Centre",
@@ -7815,7 +7783,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1148
+                            "ATMId": 1147
                         },
                         {
                             "ATMName": "Tai Ho Road Branch",
@@ -7846,7 +7814,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1149
+                            "ATMId": 1148
                         },
                         {
                             "ATMName": "St. Paul's Hospital",
@@ -7913,7 +7881,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1150
+                            "ATMId": 1149
                         },
                         {
                             "ATMName": "Fu Heng Shopping Centre",
@@ -7944,7 +7912,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1151
+                            "ATMId": 1150
                         },
                         {
                             "ATMName": "DCH Building",
@@ -7975,7 +7943,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1152
+                            "ATMId": 1151
                         },
                         {
                             "ATMName": "Tsing Yi Estate",
@@ -8042,7 +8010,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1153
+                            "ATMId": 1152
                         },
                         {
                             "ATMName": "Shek Kip Mei Estate",
@@ -8109,7 +8077,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1154
+                            "ATMId": 1153
                         },
                         {
                             "ATMName": "YOHO MALL Automated Banking Centre",
@@ -8140,7 +8108,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1155
+                            "ATMId": 1154
                         },
                         {
                             "ATMName": "Cheerful Garden Automated Banking Centre",
@@ -8207,7 +8175,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1156
+                            "ATMId": 1155
                         },
                         {
                             "ATMName": "Un Chau Street Automated Banking Centre",
@@ -8238,7 +8206,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1157
+                            "ATMId": 1156
                         },
                         {
                             "ATMName": "Lok Fu Plaza Branch",
@@ -8269,7 +8237,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1158
+                            "ATMId": 1157
                         },
                         {
                             "ATMName": "Plaza Hollywood Automated Banking Centre",
@@ -8300,7 +8268,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1159
+                            "ATMId": 1158
                         },
                         {
                             "ATMName": "Fo Tan Automated Banking Centre",
@@ -8331,7 +8299,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1160
+                            "ATMId": 1159
                         },
                         {
                             "ATMName": "MTR Diamond Hill Station",
@@ -8398,7 +8366,7 @@
                                     "CloseTime": "01:26"
                                 }
                             ],
-                            "ATMId": 1161
+                            "ATMId": 1160
                         },
                         {
                             "ATMName": "MTR Sha Tin Station",
@@ -8465,7 +8433,7 @@
                                     "CloseTime": "01:07"
                                 }
                             ],
-                            "ATMId": 1162
+                            "ATMId": 1161
                         },
                         {
                             "ATMName": "MTR Lai King Station",
@@ -8532,7 +8500,7 @@
                                     "CloseTime": "01:26"
                                 }
                             ],
-                            "ATMId": 1163
+                            "ATMId": 1162
                         },
                         {
                             "ATMName": "Pei Ho Street Branch",
@@ -8563,7 +8531,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1164
+                            "ATMId": 1163
                         },
                         {
                             "ATMName": "One Sky Mall",
@@ -8594,7 +8562,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1165
+                            "ATMId": 1164
                         },
                         {
                             "ATMName": "MTR Kam Sheung Road Station",
@@ -8661,7 +8629,7 @@
                                     "CloseTime": "00:56"
                                 }
                             ],
-                            "ATMId": 1166
+                            "ATMId": 1165
                         },
                         {
                             "ATMName": "Tai Po Mega Mall",
@@ -8692,7 +8660,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1167
+                            "ATMId": 1166
                         },
                         {
                             "ATMName": "MTR Wong Tai Sin Station",
@@ -8759,7 +8727,7 @@
                                     "CloseTime": "01:24"
                                 }
                             ],
-                            "ATMId": 1168
+                            "ATMId": 1167
                         },
                         {
                             "ATMName": "MTR Disneyland Resort Station",
@@ -8826,7 +8794,7 @@
                                     "CloseTime": "00:59"
                                 }
                             ],
-                            "ATMId": 1169
+                            "ATMId": 1168
                         },
                         {
                             "ATMName": "MTR Hong Kong Station",
@@ -8896,7 +8864,7 @@
                                     "CloseTime": "01:14"
                                 }
                             ],
-                            "ATMId": 1170
+                            "ATMId": 1169
                         },
                         {
                             "ATMName": "MTR Kowloon Tong Station",
@@ -8966,7 +8934,7 @@
                                     "CloseTime": "01:21"
                                 }
                             ],
-                            "ATMId": 1171
+                            "ATMId": 1170
                         },
                         {
                             "ATMName": "Metroplaza Branch",
@@ -8997,7 +8965,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1172
+                            "ATMId": 1171
                         },
                         {
                             "ATMName": "MCP Central",
@@ -9028,7 +8996,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1173
+                            "ATMId": 1172
                         },
                         {
                             "ATMName": "Kowloon Main Branch",
@@ -9059,7 +9027,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1174
+                            "ATMId": 1173
                         },
                         {
                             "ATMName": "Hysan Avenue Branch",
@@ -9126,7 +9094,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1175
+                            "ATMId": 1174
                         },
                         {
                             "ATMName": "Hong Kong Baptist Hospital",
@@ -9194,7 +9162,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1176
+                            "ATMId": 1175
                         },
                         {
                             "ATMName": "Tsz Wan Shan Branch",
@@ -9261,7 +9229,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1177
+                            "ATMId": 1176
                         },
                         {
                             "ATMName": "Tsimshatsui Branch",
@@ -9292,7 +9260,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1178
+                            "ATMId": 1177
                         },
                         {
                             "ATMName": "MTR Tsim Sha Tsui Station",
@@ -9361,7 +9329,7 @@
                                     "CloseTime": "01:09"
                                 }
                             ],
-                            "ATMId": 1179
+                            "ATMId": 1178
                         },
                         {
                             "ATMName": "United Christian Hospital",
@@ -9428,7 +9396,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1180
+                            "ATMId": 1179
                         },
                         {
                             "ATMName": "The Pulse",
@@ -9459,7 +9427,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1181
+                            "ATMId": 1180
                         },
                         {
                             "ATMName": "MTR Kwai Hing Station",
@@ -9527,7 +9495,7 @@
                                     "CloseTime": "01:30"
                                 }
                             ],
-                            "ATMId": 1182
+                            "ATMId": 1181
                         },
                         {
                             "ATMName": "Shatin City One Branch",
@@ -9558,7 +9526,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1183
+                            "ATMId": 1182
                         },
                         {
                             "ATMName": "Tin Shui Shopping Centre",
@@ -9589,7 +9557,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1184
+                            "ATMId": 1183
                         },
                         {
                             "ATMName": "On Tai Estate",
@@ -9656,7 +9624,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1185
+                            "ATMId": 1184
                         },
                         {
                             "ATMName": "We Go Mall",
@@ -9687,7 +9655,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1186
+                            "ATMId": 1185
                         },
                         {
                             "ATMName": "MTR Choi Hung Station (MTR Station Office)",
@@ -9754,7 +9722,7 @@
                                     "CloseTime": "01:28"
                                 }
                             ],
-                            "ATMId": 1187
+                            "ATMId": 1186
                         },
                         {
                             "ATMName": "MTR East Tsim Sha Tsui Station",
@@ -9822,7 +9790,7 @@
                                     "CloseTime": "00:59"
                                 }
                             ],
-                            "ATMId": 1188
+                            "ATMId": 1187
                         },
                         {
                             "ATMName": "Telford Plaza",
@@ -9854,7 +9822,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1189
+                            "ATMId": 1188
                         },
                         {
                             "ATMName": "MTR Kwun Tong Station",
@@ -9923,7 +9891,7 @@
                                     "CloseTime": "01:34"
                                 }
                             ],
-                            "ATMId": 1190
+                            "ATMId": 1189
                         },
                         {
                             "ATMName": "Chai Wan Branch",
@@ -9990,7 +9958,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1191
+                            "ATMId": 1190
                         },
                         {
                             "ATMName": "City University",
@@ -10057,7 +10025,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1192
+                            "ATMId": 1191
                         },
                         {
                             "ATMName": "Head Office",
@@ -10088,7 +10056,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1193
+                            "ATMId": 1192
                         },
                         {
                             "ATMName": "MTR Jordan Station (MTR Station Office)",
@@ -10155,7 +10123,7 @@
                                     "CloseTime": "01:11"
                                 }
                             ],
-                            "ATMId": 1194
+                            "ATMId": 1193
                         },
                         {
                             "ATMName": "Kwai Chung Shopping Centre",
@@ -10186,7 +10154,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1195
+                            "ATMId": 1194
                         },
                         {
                             "ATMName": "University of Science & Technology",
@@ -10254,7 +10222,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1196
+                            "ATMId": 1195
                         },
                         {
                             "ATMName": "Shau Kei Wan Branch",
@@ -10321,7 +10289,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1197
+                            "ATMId": 1196
                         },
                         {
                             "ATMName": "Johnston Road Branch",
@@ -10388,7 +10356,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1198
+                            "ATMId": 1197
                         },
                         {
                             "ATMName": "Pok Oi Hospital",
@@ -10455,7 +10423,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1199
+                            "ATMId": 1198
                         },
                         {
                             "ATMName": "MTR Sheung Wan Station (East) (MTR Station Office)",
@@ -10522,7 +10490,7 @@
                                     "CloseTime": "01:16"
                                 }
                             ],
-                            "ATMId": 1200
+                            "ATMId": 1199
                         },
                         {
                             "ATMName": "Discovery Bay North Plaza",
@@ -10589,7 +10557,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1201
+                            "ATMId": 1200
                         },
                         {
                             "ATMName": "MTR Sham Shui Po Station",
@@ -10656,7 +10624,7 @@
                                     "CloseTime": "01:18"
                                 }
                             ],
-                            "ATMId": 1202
+                            "ATMId": 1201
                         },
                         {
                             "ATMName": "MOSTown",
@@ -10687,7 +10655,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1203
+                            "ATMId": 1202
                         },
                         {
                             "ATMName": "Regal Airport Hotel",
@@ -10754,7 +10722,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1204
+                            "ATMId": 1203
                         },
                         {
                             "ATMName": "Shatin Sales and Service Centre",
@@ -10821,7 +10789,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1205
+                            "ATMId": 1204
                         },
                         {
                             "ATMName": "MTR Whampoa Station",
@@ -10853,7 +10821,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1206
+                            "ATMId": 1205
                         },
                         {
                             "ATMName": "MTR Kowloon Station (MTR Station Office)",
@@ -10920,7 +10888,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1207
+                            "ATMId": 1206
                         },
                         {
                             "ATMName": "MTR Lam Tin Station",
@@ -10987,7 +10955,7 @@
                                     "CloseTime": "01:30"
                                 }
                             ],
-                            "ATMId": 1208
+                            "ATMId": 1207
                         },
                         {
                             "ATMName": "Greenfield Garden Shopping Arcade",
@@ -11018,7 +10986,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1209
+                            "ATMId": 1208
                         },
                         {
                             "ATMName": "MTR Ho Man Tin Station",
@@ -11085,7 +11053,7 @@
                                     "CloseTime": "01:12"
                                 }
                             ],
-                            "ATMId": 1210
+                            "ATMId": 1209
                         },
                         {
                             "ATMName": "Ngau Tau Kok Branch",
@@ -11116,7 +11084,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1211
+                            "ATMId": 1210
                         },
                         {
                             "ATMName": "MTR Sheung Wan Station (Central) (MTR Station Office)",
@@ -11183,7 +11151,7 @@
                                     "CloseTime": "01:16"
                                 }
                             ],
-                            "ATMId": 1212
+                            "ATMId": 1211
                         },
                         {
                             "ATMName": "Ap Lei Chau Estate",
@@ -11250,7 +11218,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1213
+                            "ATMId": 1212
                         },
                         {
                             "ATMName": "Taikoo Shing Branch",
@@ -11317,7 +11285,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1214
+                            "ATMId": 1213
                         },
                         {
                             "ATMName": "Yau Tong Domain Automated Banking Centre",
@@ -11348,7 +11316,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1215
+                            "ATMId": 1214
                         },
                         {
                             "ATMName": "Tam Kung Road Branch",
@@ -11379,7 +11347,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1216
+                            "ATMId": 1215
                         },
                         {
                             "ATMName": "Tsuen Wan Hong Kong Adventist Hospital",
@@ -11446,7 +11414,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1217
+                            "ATMId": 1216
                         },
                         {
                             "ATMName": "MTR Jordan Station",
@@ -11514,7 +11482,7 @@
                                     "CloseTime": "01:11"
                                 }
                             ],
-                            "ATMId": 1218
+                            "ATMId": 1217
                         },
                         {
                             "ATMName": "Belvedere Garden Automated Banking Centre",
@@ -11545,7 +11513,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1219
+                            "ATMId": 1218
                         },
                         {
                             "ATMName": "MTR Admiralty Station",
@@ -11614,7 +11582,7 @@
                                     "CloseTime": "01:15"
                                 }
                             ],
-                            "ATMId": 1220
+                            "ATMId": 1219
                         },
                         {
                             "ATMName": "Taikoo Place Devon House Automated Banking Centre",
@@ -11645,7 +11613,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1221
+                            "ATMId": 1220
                         },
                         {
                             "ATMName": "Wong Tai Sin Branch",
@@ -11676,7 +11644,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1222
+                            "ATMId": 1221
                         },
                         {
                             "ATMName": "Ivy Street Automated Banking Centre",
@@ -11707,7 +11675,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1223
+                            "ATMId": 1222
                         },
                         {
                             "ATMName": "MTR Mei Foo Station",
@@ -11775,7 +11743,7 @@
                                     "CloseTime": "01:23"
                                 }
                             ],
-                            "ATMId": 1224
+                            "ATMId": 1223
                         },
                         {
                             "ATMName": "Chinese University Branch",
@@ -11842,7 +11810,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1225
+                            "ATMId": 1224
                         },
                         {
                             "ATMName": "MTR Shek Kip Mei Station",
@@ -11910,7 +11878,7 @@
                                     "CloseTime": "01:19"
                                 }
                             ],
-                            "ATMId": 1226
+                            "ATMId": 1225
                         },
                         {
                             "ATMName": "Sheung Wan Branch",
@@ -11977,7 +11945,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1227
+                            "ATMId": 1226
                         },
                         {
                             "ATMName": "MTR Kowloon Bay Station",
@@ -12046,7 +12014,7 @@
                                     "CloseTime": "01:30"
                                 }
                             ],
-                            "ATMId": 1228
+                            "ATMId": 1227
                         },
                         {
                             "ATMName": "MOSTown Automated Banking Centre",
@@ -12077,7 +12045,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1229
+                            "ATMId": 1228
                         },
                         {
                             "ATMName": "Tuen Mun Heung Sze Wui Road Branch",
@@ -12144,7 +12112,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1230
+                            "ATMId": 1229
                         },
                         {
                             "ATMName": "The Hang Seng University of Hong Kong",
@@ -12211,7 +12179,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1231
+                            "ATMId": 1230
                         },
                         {
                             "ATMName": "MTR Tuen Mun Station",
@@ -12242,7 +12210,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1232
+                            "ATMId": 1231
                         },
                         {
                             "ATMName": "Caribbean Square",
@@ -12273,7 +12241,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1233
+                            "ATMId": 1232
                         },
                         {
                             "ATMName": "Olympian City Branch",
@@ -12340,7 +12308,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1234
+                            "ATMId": 1233
                         },
                         {
                             "ATMName": "Wah Ming Shopping Centre",
@@ -12371,7 +12339,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1235
+                            "ATMId": 1234
                         },
                         {
                             "ATMName": "University of Science & Technology Branch",
@@ -12438,7 +12406,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1236
+                            "ATMId": 1235
                         },
                         {
                             "ATMName": "MTR AsiaWorld-Expo Station",
@@ -12505,7 +12473,7 @@
                                     "CloseTime": "01:22"
                                 }
                             ],
-                            "ATMId": 1237
+                            "ATMId": 1236
                         },
                         {
                             "ATMName": "MTR HKU Station",
@@ -12572,7 +12540,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1238
+                            "ATMId": 1237
                         },
                         {
                             "ATMName": "East Point City Branch",
@@ -12603,7 +12571,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1239
+                            "ATMId": 1238
                         },
                         {
                             "ATMName": "Tin Shui Wai Branch",
@@ -12634,7 +12602,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1240
+                            "ATMId": 1239
                         },
                         {
                             "ATMName": "MTR Ngau Tau Kok Station",
@@ -12701,7 +12669,7 @@
                                     "CloseTime": "01:32"
                                 }
                             ],
-                            "ATMId": 1241
+                            "ATMId": 1240
                         },
                         {
                             "ATMName": "Tsuen Kam Centre Automated Banking Centre",
@@ -12732,7 +12700,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1242
+                            "ATMId": 1241
                         },
                         {
                             "ATMName": "MTR Sha Tin Wai Station",
@@ -12799,7 +12767,7 @@
                                     "CloseTime": "01:18"
                                 }
                             ],
-                            "ATMId": 1243
+                            "ATMId": 1242
                         },
                         {
                             "ATMName": "Aberdeen Centre Automated Banking Centre",
@@ -12830,7 +12798,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1244
+                            "ATMId": 1243
                         },
                         {
                             "ATMName": "APM",
@@ -12861,7 +12829,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1245
+                            "ATMId": 1244
                         },
                         {
                             "ATMName": "Tseung Kwan O Hospital",
@@ -12928,7 +12896,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1246
+                            "ATMId": 1245
                         },
                         {
                             "ATMName": "St. Teresa's Hospital",
@@ -12995,7 +12963,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1247
+                            "ATMId": 1246
                         },
                         {
                             "ATMName": "MTR Tai Shui Hang Station",
@@ -13062,7 +13030,7 @@
                                     "CloseTime": "01:25"
                                 }
                             ],
-                            "ATMId": 1248
+                            "ATMId": 1247
                         },
                         {
                             "ATMName": "MTR Mong Kok Station",
@@ -13129,7 +13097,7 @@
                                     "CloseTime": "01:16"
                                 }
                             ],
-                            "ATMId": 1249
+                            "ATMId": 1248
                         },
                         {
                             "ATMName": "The Quayside Automated Banking Centre",
@@ -13160,7 +13128,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1250
+                            "ATMId": 1249
                         },
                         {
                             "ATMName": "Shatin Branch",
@@ -13227,7 +13195,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1251
+                            "ATMId": 1250
                         },
                         {
                             "ATMName": "MTR Ocean Park Station",
@@ -13294,7 +13262,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1252
+                            "ATMId": 1251
                         },
                         {
                             "ATMName": "Yuen Long (Kau Yuk Road) Branch",
@@ -13361,7 +13329,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1253
+                            "ATMId": 1252
                         },
                         {
                             "ATMName": "Tsuen Wan KOLOUR Automated Banking Centre",
@@ -13392,7 +13360,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1254
+                            "ATMId": 1253
                         },
                         {
                             "ATMName": "MTR Lok Ma Chau Station",
@@ -13459,7 +13427,7 @@
                                     "CloseTime": "23:05"
                                 }
                             ],
-                            "ATMId": 1255
+                            "ATMId": 1254
                         },
                         {
                             "ATMName": "MTR Wong Chuk Hang Station",
@@ -13526,7 +13494,7 @@
                                     "CloseTime": "01:22"
                                 }
                             ],
-                            "ATMId": 1256
+                            "ATMId": 1255
                         },
                         {
                             "ATMName": "Wonderland Villas",
@@ -13593,7 +13561,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1257
+                            "ATMId": 1256
                         },
                         {
                             "ATMName": "Wah Sum Shopping Centre Automated Banking Centre",
@@ -13624,7 +13592,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1258
+                            "ATMId": 1257
                         },
                         {
                             "ATMName": "MTR Tai Wai Station",
@@ -13692,6 +13660,38 @@
                                     "CloseTime": "01:15"
                                 }
                             ],
+                            "ATMId": 1258
+                        },
+                        {
+                            "ATMName": "MTR Wanchai Station",
+                            "BranchName": "MTR Wanchai Station",
+                            "HotlineNumber": "29972112",
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "Hong Kong Island",
+                                "DistrictName": "Wanchai",
+                                "LatitudeDescription": "22.2774",
+                                "LongitudeDescription": "114.1727",
+                                "AddressLine": [
+                                    "MTR Wan Chai Station (Concourse) (With Voice Navigation ATM)",
+                                    "MTR Wan Chai Station (near Exit A1)"
+                                ]
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": false,
+                                "TalkATMIndicator": true,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": true,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "Around 06:00 - midnight 01:00 (Follows Station First/Last Trains Service Hours)",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "6:00pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [],
                             "ATMId": 1259
                         },
                         {

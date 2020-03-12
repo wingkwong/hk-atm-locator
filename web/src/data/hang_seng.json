@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2020-02-28T07:49:39+08:00",
+        "LastUpdated": "2020-03-12T07:50:10+08:00",
         "TotalResults": 287
     },
     "data": [
@@ -213,8 +213,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tsuen Wan",
-                                "LatitudeDescription": "22.3742",
-                                "LongitudeDescription": "114.1169",
+                                "LatitudeDescription": "22.3734",
+                                "LongitudeDescription": "114.1185",
                                 "AddressLine": [
                                     "MTR Tsuen Wan Station (near Exit C) (With Voice Navigation ATM)"
                                 ]
@@ -373,8 +373,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.3822",
-                                "LongitudeDescription": "114.2052",
+                                "LatitudeDescription": "22.382",
+                                "LongitudeDescription": "114.2054",
                                 "AddressLine": [
                                     "Open space of 1/F, Yu Chui Shopping Centre, Yu Chui Court, Shatin"
                                 ]
@@ -1794,7 +1794,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.3156",
+                                "LatitudeDescription": "22.3152",
                                 "LongitudeDescription": "114.2644",
                                 "AddressLine": [
                                     "MTR Hang Hau Station (near Exit B2) (With Voice Navigation ATM)"
@@ -1861,8 +1861,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
-                                "LatitudeDescription": "22.2977",
-                                "LongitudeDescription": "114.2374",
+                                "LatitudeDescription": "22.298",
+                                "LongitudeDescription": "114.237",
                                 "AddressLine": [
                                     "MTR Yau Tong Station (near Exit A1) (With Voice Navigation ATM)"
                                 ]
@@ -2026,8 +2026,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.3829",
-                                "LongitudeDescription": "114.1876",
+                                "LatitudeDescription": "22.3826",
+                                "LongitudeDescription": "114.1874",
                                 "AddressLine": [
                                     "Shop Unit 40, Citylink Plaza, 1 Shatin Station Circuit (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ]
@@ -2181,8 +2181,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3562",
-                                "LongitudeDescription": "114.1274",
+                                "LatitudeDescription": "22.3575",
+                                "LongitudeDescription": "114.1283",
                                 "AddressLine": [
                                     "MTR Kwai Fong Station (near Exit A)",
                                     "MTR Kwai Fong Station (near Exit B) (With Foreign Currency ATM with 8 notes available)",
@@ -2348,8 +2348,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
-                                "LatitudeDescription": "22.2818",
-                                "LongitudeDescription": "114.1573",
+                                "LatitudeDescription": "22.281",
+                                "LongitudeDescription": "114.1609",
                                 "AddressLine": [
                                     "MTR Central Station (near Exit B) (With Foreign Currency ATM)",
                                     "MTR Central Station (near Exit A) (With Voice Navigation ATM)",
@@ -2681,8 +2681,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3473",
-                                "LongitudeDescription": "114.1117",
+                                "LatitudeDescription": "22.3593",
+                                "LongitudeDescription": "114.1072",
                                 "AddressLine": [
                                     "MTR Tsing Yi Station  (near Exit A1) (With Foreign Currency ATM & Voice Navigation ATM)",
                                     "MTR Tsing Yi Station (near Exit B)",
@@ -3014,8 +3014,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Kowloon City",
-                                "LatitudeDescription": "22.3192",
-                                "LongitudeDescription": "114.1917",
+                                "LatitudeDescription": "22.3181",
+                                "LongitudeDescription": "114.1918",
                                 "AddressLine": [
                                     "33 To Kwa Wan Road (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ]
@@ -3112,8 +3112,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tsuen Wan",
-                                "LatitudeDescription": "22.3742",
-                                "LongitudeDescription": "114.1169",
+                                "LatitudeDescription": "22.3731",
+                                "LongitudeDescription": "114.1182",
                                 "AddressLine": [
                                     "MTR Tsuen Wan Station  (near Exit A)",
                                     "MTR Tsuen Wan Station  (paid concourse)"
@@ -3933,8 +3933,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3138",
-                                "LongitudeDescription": "114.1702",
+                                "LatitudeDescription": "22.3139",
+                                "LongitudeDescription": "114.1707",
                                 "AddressLine": [
                                     "MTR Yau Ma Tei Station (near Exit A)",
                                     "MTR Yau Ma Tei Station (near Exit D) (With Voice Navigation ATM)"
@@ -4791,8 +4791,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3043",
-                                "LongitudeDescription": "114.1655",
+                                "LatitudeDescription": "22.3041",
+                                "LongitudeDescription": "114.1613",
                                 "AddressLine": [
                                     "West Kowloon Station, basement 2 arrival concourse",
                                     "(ATM Service is temporarily suspended until further notice)"
@@ -5584,8 +5584,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Eastern",
-                                "LatitudeDescription": "22.3267",
-                                "LongitudeDescription": "114.2598",
+                                "LatitudeDescription": "22.2785",
+                                "LongitudeDescription": "114.2305",
                                 "AddressLine": [
                                     "2/F , 5 A Kung Ngam Village Road, Shau Kei Wan"
                                 ]
@@ -5713,8 +5713,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.4225",
-                                "LongitudeDescription": "114.2018",
+                                "LatitudeDescription": "22.4185",
+                                "LongitudeDescription": "114.2045",
                                 "AddressLine": [
                                     "Lee Woo Sing College, Chinese University of Hong Kong",
                                     "G/F, John Fulton Centre, Chinese University of Hong Kong"
@@ -6348,8 +6348,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3224",
-                                "LongitudeDescription": "114.1727",
+                                "LatitudeDescription": "22.322",
+                                "LongitudeDescription": "114.1726",
                                 "AddressLine": [
                                     "MTR Mong Kok East Station (Paid concourse) (With Voice Navigation ATM)"
                                 ]
@@ -7067,8 +7067,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4462",
-                                "LongitudeDescription": "114.035",
+                                "LatitudeDescription": "22.446",
+                                "LongitudeDescription": "114.0335",
                                 "AddressLine": [
                                     "MTR Yuen Long Station (Concourse) (With Voice Navigation ATM)"
                                 ]
@@ -7135,7 +7135,7 @@
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
                                 "LatitudeDescription": "22.2866",
-                                "LongitudeDescription": "114.1536",
+                                "LongitudeDescription": "114.1537",
                                 "AddressLine": [
                                     "MTR Sheung Wan Station (near Exit B)"
                                 ]
@@ -7562,8 +7562,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.2871",
-                                "LongitudeDescription": "114.1612",
+                                "LatitudeDescription": "22.2729",
+                                "LongitudeDescription": "114.1637",
                                 "AddressLine": [
                                     "Ground Floor, Cheung Hong Shopping Centre No.1"
                                 ]
@@ -8445,8 +8445,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4645",
-                                "LongitudeDescription": "114.0036",
+                                "LatitudeDescription": "22.4647",
+                                "LongitudeDescription": "114.0033",
                                 "AddressLine": [
                                     "Level 1, One Sky Mall, 8 Tin Sau Road, Tin Shui Wai"
                                 ]
@@ -8708,8 +8708,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
-                                "LatitudeDescription": "22.4137",
-                                "LongitudeDescription": "114.2099",
+                                "LatitudeDescription": "22.3158",
+                                "LongitudeDescription": "113.9363",
                                 "AddressLine": [
                                     "MTR Hong Kong Station (L2 Concourse towards Airport) (With Foreign Currency ATM)",
                                     "MTR Hong Kong Station (LG, near Exit B)",
@@ -10471,8 +10471,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Sham Shui Po",
-                                "LatitudeDescription": "22.3309",
-                                "LongitudeDescription": "114.1617",
+                                "LatitudeDescription": "22.3302",
+                                "LongitudeDescription": "114.1628",
                                 "AddressLine": [
                                     "MTR Sham Shui Po Station (Exit A) (With Voice Navigation ATM)"
                                 ]
@@ -10766,8 +10766,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3041",
-                                "LongitudeDescription": "114.1613",
+                                "LatitudeDescription": "22.3043",
+                                "LongitudeDescription": "114.1614",
                                 "AddressLine": [
                                     "MTR Kowloon Station (near Exit A)(With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ]
@@ -12124,8 +12124,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tuen Mun",
-                                "LatitudeDescription": "22.3942",
-                                "LongitudeDescription": "113.9729",
+                                "LatitudeDescription": "22.3964",
+                                "LongitudeDescription": "113.9735",
                                 "AddressLine": [
                                     "MTR Tuen Mun Station (near Exit F1) (With Voice Navigation ATM)"
                                 ]
@@ -12418,8 +12418,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
-                                "LatitudeDescription": "22.2857",
-                                "LongitudeDescription": "114.1368",
+                                "LatitudeDescription": "22.2841",
+                                "LongitudeDescription": "114.159",
                                 "AddressLine": [
                                     "MTR HKU Station (Concourse) (With Voice Navigation ATM)"
                                 ]
@@ -12743,7 +12743,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Wanchai",
-                                "LatitudeDescription": "22.2773",
+                                "LatitudeDescription": "22.2774",
                                 "LongitudeDescription": "114.1727",
                                 "AddressLine": [
                                     "MTR Wan Chai Station (Concourse) (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)",
@@ -12811,8 +12811,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
-                                "LatitudeDescription": "22.314",
-                                "LongitudeDescription": "114.2228",
+                                "LatitudeDescription": "22.3124",
+                                "LongitudeDescription": "114.2252",
                                 "AddressLine": [
                                     "Concourse Level, APM, Millenium City 5, 418 Kwun Tong Road"
                                 ]
@@ -13275,8 +13275,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4428",
-                                "LongitudeDescription": "114.028",
+                                "LatitudeDescription": "22.4433",
+                                "LongitudeDescription": "114.0285",
                                 "AddressLine": [
                                     "1/F, Fu Ho Building, 5 Kau Yuk Road (With Foreign Currency ATM with 8 notes available)"
                                 ]
@@ -13538,8 +13538,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.3732",
-                                "LongitudeDescription": "114.1786",
+                                "LatitudeDescription": "22.373",
+                                "LongitudeDescription": "114.1789",
                                 "AddressLine": [
                                     "MTR Tai Wai Station  (near Exit A)",
                                     "MTR  Tai Wai Station  (paid concourse)"
@@ -13936,8 +13936,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Outlying Islands",
-                                "LatitudeDescription": "22.2893",
-                                "LongitudeDescription": "113.9412",
+                                "LatitudeDescription": "22.2894",
+                                "LongitudeDescription": "113.9418",
                                 "AddressLine": [
                                     "MTR Tung Chung Station (near Exit B)",
                                     "MTR Tung Chung Station (concourse) (With Voice Navigation ATM)"
@@ -14558,8 +14558,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Tai Po",
-                                "LatitudeDescription": "22.4443",
-                                "LongitudeDescription": "114.1709",
+                                "LatitudeDescription": "22.4446",
+                                "LongitudeDescription": "114.1704",
                                 "AddressLine": [
                                     "MTR Tai Po Market Station (near Exit B)"
                                 ]
@@ -14656,8 +14656,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tuen Mun",
-                                "LatitudeDescription": "22.4119",
-                                "LongitudeDescription": "113.9789",
+                                "LatitudeDescription": "22.4127",
+                                "LongitudeDescription": "113.9791",
                                 "AddressLine": [
                                     "MTR Siu Hong Station (near Exit B)"
                                 ]
@@ -14919,8 +14919,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3049",
-                                "LongitudeDescription": "114.172",
+                                "LatitudeDescription": "22.3113",
+                                "LongitudeDescription": "114.1708",
                                 "AddressLine": [
                                     "363 Nathan Road (With Foreign Currency ATM with 8 notes available)"
                                 ]

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2020-09-30T07:45:42+08:00",
+        "LastUpdated": "2020-10-06T07:45:42+08:00",
         "TotalResults": 283
     },
     "data": [
@@ -3622,8 +3622,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tuen Mun",
-                                "LatitudeDescription": "22.3862",
-                                "LongitudeDescription": "113.9749",
+                                "LatitudeDescription": "22.3869",
+                                "LongitudeDescription": "113.9739",
                                 "AddressLine": [
                                     "G/F Zone S, H.A.N.D.S Yau Oi Estate, Yau Oi Road, Tuen Mun (With Voice Navigation ATM)"
                                 ]

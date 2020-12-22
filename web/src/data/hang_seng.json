@@ -1,7 +1,7 @@
 {
     "meta": {
-        "LastUpdated": "2020-12-15T07:45:42+08:00",
-        "TotalResults": 279
+        "LastUpdated": "2020-12-22T07:45:42+08:00",
+        "TotalResults": 278
     },
     "data": [
         {
@@ -14450,37 +14450,6 @@
                             "ATMId": 1275
                         },
                         {
-                            "ATMName": "Yuen Long Branch",
-                            "BranchName": "Yuen Long Branch",
-                            "HotlineNumber": 29972112,
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "New Territories West",
-                                "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.3707",
-                                "LongitudeDescription": "114.1295",
-                                "AddressLine": [
-                                    "93 Castle Peak Road (With Voice Navigation ATM)"
-                                ]
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": true,
-                                "DisabledAccessIndicator": false,
-                                "RMBATMwithoutForeignCurrencyIndicator": true,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "ATM : 24-hours",
-                                "CashDepositMachineIndicator": false,
-                                "ChequeDepositMachineIndicator": false,
-                                "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [],
-                            "ATMId": 1276
-                        },
-                        {
                             "ATMName": "Johnston Road Branch",
                             "BranchName": "Johnston Road Branch",
                             "HotlineNumber": 29972112,
@@ -14545,7 +14514,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1277
+                            "ATMId": 1276
                         },
                         {
                             "ATMName": "MTR Hang Hau Station",
@@ -14612,7 +14581,7 @@
                                     "CloseTime": "01:35"
                                 }
                             ],
-                            "ATMId": 1278
+                            "ATMId": 1277
                         }
                     ]
                 }

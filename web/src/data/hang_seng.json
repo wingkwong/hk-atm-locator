@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2020-12-25T07:45:42+08:00",
+        "LastUpdated": "2020-12-29T07:45:42+08:00",
         "TotalResults": 277
     },
     "data": [
@@ -1531,8 +1531,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Wanchai",
-                                "LatitudeDescription": "22.2436",
-                                "LongitudeDescription": "114.1534",
+                                "LatitudeDescription": "22.2883",
+                                "LongitudeDescription": "114.146",
                                 "AddressLine": [
                                     "Shop D & E, G/F & 1/F, Eton Tower, No.8 Hysan Avenue (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ]
@@ -5387,8 +5387,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4432",
-                                "LongitudeDescription": "114.0253",
+                                "LatitudeDescription": "22.4428",
+                                "LongitudeDescription": "114.028",
                                 "AddressLine": [
                                     "1/F, Fu Ho Building, 5 Kau Yuk Road (With Foreign Currency ATM with 8 notes available & Voice Navigation ATM)"
                                 ]

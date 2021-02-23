@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-02-19T07:45:42+08:00",
+        "LastUpdated": "2021-02-23T07:45:42+08:00",
         "TotalResults": 279
     },
     "data": [
@@ -3799,7 +3799,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3691",
+                                "LatitudeDescription": "22.3689",
                                 "LongitudeDescription": "114.14",
                                 "AddressLine": [
                                     "50 Shek Yam Road"
@@ -7007,8 +7007,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4558",
-                                "LongitudeDescription": "113.9987",
+                                "LatitudeDescription": "22.4559",
+                                "LongitudeDescription": "113.9983",
                                 "AddressLine": [
                                     "ATM No. 2, G/F, Tin Shui Shopping Centre, 9 Tin Shui Road, Tin Shui Wai"
                                 ]

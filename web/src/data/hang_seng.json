@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-03-02T07:45:42+08:00",
+        "LastUpdated": "2021-03-09T07:45:42+08:00",
         "TotalResults": 279
     },
     "data": [
@@ -3435,8 +3435,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3745",
-                                "LongitudeDescription": "113.963",
+                                "LatitudeDescription": "22.3578",
+                                "LongitudeDescription": "114.1269",
                                 "AddressLine": [
                                     "Shop 146A Level, MOKO"
                                 ]
@@ -5515,7 +5515,7 @@
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
                                 "LatitudeDescription": "22.3826",
-                                "LongitudeDescription": "114.1874",
+                                "LongitudeDescription": "114.1876",
                                 "AddressLine": [
                                     "Shop Unit 40, Citylink Plaza, 1 Shatin Station Circuit"
                                 ]
@@ -6940,8 +6940,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4559",
-                                "LongitudeDescription": "113.9983",
+                                "LatitudeDescription": "22.4558",
+                                "LongitudeDescription": "113.9987",
                                 "AddressLine": [
                                     "ATM No. 2, G/F, Tin Shui Shopping Centre, 9 Tin Shui Road, Tin Shui Wai"
                                 ]
@@ -8001,8 +8001,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Southern",
-                                "LatitudeDescription": "22.2185",
-                                "LongitudeDescription": "114.2125",
+                                "LatitudeDescription": "22.2141",
+                                "LongitudeDescription": "114.2185",
                                 "AddressLine": [
                                     "G/F, Officers’ Club Correctional Services Dept., 51 Tung Tau Wan Road, Stanley"
                                 ]

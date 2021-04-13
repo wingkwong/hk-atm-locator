@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-04-08T07:45:42+08:00",
+        "LastUpdated": "2021-04-13T07:45:42+08:00",
         "TotalResults": 280
     },
     "data": [
@@ -3763,7 +3763,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3691",
+                                "LatitudeDescription": "22.3689",
                                 "LongitudeDescription": "114.14",
                                 "AddressLine": [
                                     "50 Shek Yam Road"
@@ -4063,8 +4063,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
-                                "LatitudeDescription": "22.2818",
-                                "LongitudeDescription": "114.1576",
+                                "LatitudeDescription": "22.282",
+                                "LongitudeDescription": "114.1582",
                                 "AddressLine": [
                                     "MTR Central Station (near Exit B) ",
                                     "MTR Central Station (near Exit A) ",
@@ -4459,8 +4459,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Tai Po",
-                                "LatitudeDescription": "22.2827",
-                                "LongitudeDescription": "114.1392",
+                                "LatitudeDescription": "22.2815",
+                                "LongitudeDescription": "114.161",
                                 "AddressLine": [
                                     "Room C-P-11C, Central Building, The Hong Kong Institute of Education"
                                 ]
@@ -4527,7 +4527,7 @@
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kowloon City",
                                 "LatitudeDescription": "22.3199",
-                                "LongitudeDescription": "114.1706",
+                                "LongitudeDescription": "114.1709",
                                 "AddressLine": [
                                     "G/F, Hang Seng 113, 113 Argyle Street, Mongkok"
                                 ]
@@ -4815,8 +4815,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
-                                "LatitudeDescription": "22.2841",
-                                "LongitudeDescription": "114.159",
+                                "LatitudeDescription": "22.2832",
+                                "LongitudeDescription": "114.1571",
                                 "AddressLine": [
                                     "MTR HKU Station (Concourse)"
                                 ]
@@ -5545,8 +5545,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.3826",
-                                "LongitudeDescription": "114.1874",
+                                "LatitudeDescription": "22.3828",
+                                "LongitudeDescription": "114.1878",
                                 "AddressLine": [
                                     "Shop Unit 40, Citylink Plaza, 1 Shatin Station Circuit"
                                 ]
@@ -7007,8 +7007,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4559",
-                                "LongitudeDescription": "113.9983",
+                                "LatitudeDescription": "22.4558",
+                                "LongitudeDescription": "113.9987",
                                 "AddressLine": [
                                     "ATM No. 2, G/F, Tin Shui Shopping Centre, 9 Tin Shui Road, Tin Shui Wai"
                                 ]
@@ -7105,8 +7105,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.3393",
-                                "LongitudeDescription": "114.263",
+                                "LatitudeDescription": "22.3339",
+                                "LongitudeDescription": "114.2632",
                                 "AddressLine": [
                                     "Shop G201-203, G/F, Academic Building, The Hong Kong University of Science and Technology"
                                 ]
@@ -9484,8 +9484,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.2441",
-                                "LongitudeDescription": "113.8915",
+                                "LatitudeDescription": "22.3214",
+                                "LongitudeDescription": "114.1922",
                                 "AddressLine": [
                                     "G/F, No. 4 Kuk Ting Street, Yuen Long"
                                 ]
@@ -9908,8 +9908,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.3786",
-                                "LongitudeDescription": "114.2113",
+                                "LatitudeDescription": "22.3792",
+                                "LongitudeDescription": "114.2115",
                                 "AddressLine": [
                                     "3/F, Lift Lobby, Teaching Block, The Hang Seng University of Hong Kong, Hang Shin Link, Shatin"
                                 ]
@@ -11723,8 +11723,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Sham Shui Po",
-                                "LatitudeDescription": "22.336",
-                                "LongitudeDescription": "114.1416",
+                                "LatitudeDescription": "22.3364",
+                                "LongitudeDescription": "114.1418",
                                 "AddressLine": [
                                     "Shops No.105, 1/F, Mei Foo Plaza, Mei Foo Sun Chuen"
                                 ]
@@ -11853,8 +11853,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kowloon City",
-                                "LatitudeDescription": "22.331",
-                                "LongitudeDescription": "114.2025",
+                                "LatitudeDescription": "22.3315",
+                                "LongitudeDescription": "114.203",
                                 "AddressLine": [
                                     "Shop A007, G/F, Ching Long Shopping Centre"
                                 ]

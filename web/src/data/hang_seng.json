@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-04-17T07:45:42+08:00",
+        "LastUpdated": "2021-04-20T07:45:42+08:00",
         "TotalResults": 280
     },
     "data": [
@@ -8465,8 +8465,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "North",
-                                "LatitudeDescription": "22.4989",
-                                "LongitudeDescription": "114.1432",
+                                "LatitudeDescription": "22.4984",
+                                "LongitudeDescription": "114.1417",
                                 "AddressLine": [
                                     "9 Luen Hing Street, Luen Wo Market"
                                 ]
@@ -9189,8 +9189,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
-                                "LatitudeDescription": "22.3198",
-                                "LongitudeDescription": "114.2085",
+                                "LatitudeDescription": "22.3201",
+                                "LongitudeDescription": "114.208",
                                 "AddressLine": [
                                     "L2, Tower 2 Enterprise Square V, 38 Wang Chiu Road, Kowloon Bay"
                                 ]
@@ -12214,8 +12214,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.399",
-                                "LongitudeDescription": "114.2124",
+                                "LatitudeDescription": "22.3998",
+                                "LongitudeDescription": "114.2135",
                                 "AddressLine": [
                                     "Lobby, G/F, 33 A Kung Kok Street, Ma On Shan"
                                 ]

@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-04-22T07:45:42+08:00",
+        "LastUpdated": "2021-05-04T07:45:42+08:00",
         "TotalResults": 280
     },
     "data": [
@@ -745,8 +745,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Wanchai",
-                                "LatitudeDescription": "22.278",
-                                "LongitudeDescription": "114.1732",
+                                "LatitudeDescription": "22.2774",
+                                "LongitudeDescription": "114.1727",
                                 "AddressLine": [
                                     "MTR Wan Chai Station (Concourse) ",
                                     "MTR Wan Chai Station (near Exit A1)"
@@ -1134,8 +1134,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Eastern",
-                                "LatitudeDescription": "22.2904",
-                                "LongitudeDescription": "114.1973",
+                                "LatitudeDescription": "22.2905",
+                                "LongitudeDescription": "114.2098",
                                 "AddressLine": [
                                     "2/F., Kerry Centre, 683 King's Road, North Point"
                                 ]
@@ -2172,8 +2172,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3602",
-                                "LongitudeDescription": "114.1076",
+                                "LatitudeDescription": "22.3598",
+                                "LongitudeDescription": "114.1069",
                                 "AddressLine": [
                                     "Shop Unit G11-G14, Maritime Square"
                                 ]
@@ -3229,8 +3229,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
-                                "LatitudeDescription": "22.3233",
-                                "LongitudeDescription": "114.227",
+                                "LatitudeDescription": "22.3226",
+                                "LongitudeDescription": "114.228",
                                 "AddressLine": [
                                     "G/F, Lobby, 130 Hip Wo Street, Kwun Tong"
                                 ]
@@ -3626,8 +3626,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tsuen Wan",
-                                "LatitudeDescription": "22.3688",
-                                "LongitudeDescription": "114.1097",
+                                "LatitudeDescription": "22.3709",
+                                "LongitudeDescription": "114.1112",
                                 "AddressLine": [
                                     "MTR Tsuen Wan West Station (near Exit E)"
                                 ]
@@ -4094,8 +4094,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Central & Western",
-                                "LatitudeDescription": "22.282",
-                                "LongitudeDescription": "114.1582",
+                                "LatitudeDescription": "22.2818",
+                                "LongitudeDescription": "114.1576",
                                 "AddressLine": [
                                     "MTR Central Station (near Exit B) ",
                                     "MTR Central Station (near Exit A) ",
@@ -4232,7 +4232,7 @@
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
                                 "LatitudeDescription": "22.3225",
-                                "LongitudeDescription": "114.2126",
+                                "LongitudeDescription": "114.2128",
                                 "AddressLine": [
                                     "Level 2, Telford Plaza I  ",
                                     "Common Lobby, Level 2, Telford Plaza II"
@@ -4423,8 +4423,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.3045",
-                                "LongitudeDescription": "114.2527",
+                                "LatitudeDescription": "22.3042",
+                                "LongitudeDescription": "114.2526",
                                 "AddressLine": [
                                     "MTR Tiu Keng Leng Station (near Exit A1)"
                                 ]
@@ -5381,7 +5381,7 @@
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
                                 "LatitudeDescription": "22.3108",
-                                "LongitudeDescription": "114.2239",
+                                "LongitudeDescription": "114.2238",
                                 "AddressLine": [
                                     "55 Hoi Yuen Road"
                                 ]
@@ -5576,8 +5576,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.3828",
-                                "LongitudeDescription": "114.1878",
+                                "LatitudeDescription": "22.3826",
+                                "LongitudeDescription": "114.1874",
                                 "AddressLine": [
                                     "Shop Unit 40, Citylink Plaza, 1 Shatin Station Circuit"
                                 ]
@@ -5973,7 +5973,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Eastern",
-                                "LatitudeDescription": "22.2853",
+                                "LatitudeDescription": "22.2854",
                                 "LongitudeDescription": "114.2169",
                                 "AddressLine": [
                                     "MTR Tai Koo Station (near Exit B) ",
@@ -7038,8 +7038,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4558",
-                                "LongitudeDescription": "113.9987",
+                                "LatitudeDescription": "22.4562",
+                                "LongitudeDescription": "113.9985",
                                 "AddressLine": [
                                     "ATM No. 2, G/F, Tin Shui Shopping Centre, 9 Tin Shui Road, Tin Shui Wai"
                                 ]
@@ -7069,8 +7069,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.3339",
-                                "LongitudeDescription": "114.2632",
+                                "LatitudeDescription": "22.3389",
+                                "LongitudeDescription": "114.263",
                                 "AddressLine": [
                                     "Shop G201-203, G/F, Academic Building, The Hong Kong University of Science and Technology"
                                 ]
@@ -8001,7 +8001,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kwun Tong",
-                                "LatitudeDescription": "22.3228",
+                                "LatitudeDescription": "22.3226",
                                 "LongitudeDescription": "114.2111",
                                 "AddressLine": [
                                     "Shop 3B, 1/F, Telford House"
@@ -9085,8 +9085,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3128",
-                                "LongitudeDescription": "114.1704",
+                                "LatitudeDescription": "22.3118",
+                                "LongitudeDescription": "114.1707",
                                 "AddressLine": [
                                     "MTR Yau Ma Tei Station (near Exit A)",
                                     "MTR Yau Ma Tei Station (near Exit D)"
@@ -9670,8 +9670,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Outlying Islands",
-                                "LatitudeDescription": "22.3402",
-                                "LongitudeDescription": "114.1643",
+                                "LatitudeDescription": "22.3187",
+                                "LongitudeDescription": "113.9518",
                                 "AddressLine": [
                                     "Unit No. 313 on G/F of the Passenger Clearance Building (Arrival Hall)"
                                 ]
@@ -9805,8 +9805,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.3486",
-                                "LongitudeDescription": "114.1258",
+                                "LatitudeDescription": "22.3737",
+                                "LongitudeDescription": "114.118",
                                 "AddressLine": [
                                     "MTR Austin Station (near Exit B3)"
                                 ]
@@ -9939,8 +9939,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.2845",
-                                "LongitudeDescription": "114.154",
+                                "LatitudeDescription": "22.466",
+                                "LongitudeDescription": "114.0072",
                                 "AddressLine": [
                                     "Shop Nos.131-132, Level 1, Park Central, No. 9 Tong Tak Street"
                                 ]
@@ -10338,8 +10338,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon West",
                                 "DistrictName": "Yau Tsim Mong",
-                                "LatitudeDescription": "22.2973",
-                                "LongitudeDescription": "114.1743",
+                                "LatitudeDescription": "22.2955",
+                                "LongitudeDescription": "114.1737",
                                 "AddressLine": [
                                     "MTR East Tsim Sha Tsui Station (near Exit K) ",
                                     "MTR East Tsim Sha Tsui Station (near Exit P1)"
@@ -11817,8 +11817,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Kowloon East",
                                 "DistrictName": "Kowloon City",
-                                "LatitudeDescription": "22.3315",
-                                "LongitudeDescription": "114.203",
+                                "LatitudeDescription": "22.331",
+                                "LongitudeDescription": "114.2025",
                                 "AddressLine": [
                                     "Shop A007, G/F, Ching Long Shopping Centre"
                                 ]

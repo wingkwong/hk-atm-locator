@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-05-08T07:45:42+08:00",
+        "LastUpdated": "2021-05-18T07:45:42+08:00",
         "TotalResults": 280
     },
     "data": [
@@ -482,8 +482,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4361",
-                                "LongitudeDescription": "113.9974",
+                                "LatitudeDescription": "22.4363",
+                                "LongitudeDescription": "113.9978",
                                 "AddressLine": [
                                     "Open space near Shop No. 14, Hung Fuk Shopping Centre, Hung Fuk Estate, Yuen Long"
                                 ]
@@ -1263,8 +1263,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Shatin",
-                                "LatitudeDescription": "22.4032",
-                                "LongitudeDescription": "114.209",
+                                "LatitudeDescription": "22.4031",
+                                "LongitudeDescription": "114.2089",
                                 "AddressLine": [
                                     "Shatin Racecourse - Member Stand 2/F ",
                                     "Shatin Racecourse - Members Entrance",
@@ -2172,8 +2172,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3598",
-                                "LongitudeDescription": "114.1069",
+                                "LatitudeDescription": "22.3602",
+                                "LongitudeDescription": "114.1076",
                                 "AddressLine": [
                                     "Shop Unit G11-G14, Maritime Square"
                                 ]
@@ -5148,8 +5148,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "Hong Kong Island",
                                 "DistrictName": "Eastern",
-                                "LatitudeDescription": "22.2908",
-                                "LongitudeDescription": "114.197",
+                                "LatitudeDescription": "22.4064",
+                                "LongitudeDescription": "113.9628",
                                 "AddressLine": [
                                     "335 King's Road"
                                 ]
@@ -7002,8 +7002,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.3389",
-                                "LongitudeDescription": "114.263",
+                                "LatitudeDescription": "22.34",
+                                "LongitudeDescription": "114.2604",
                                 "AddressLine": [
                                     "Shop G201-203, G/F, Academic Building, The Hong Kong University of Science and Technology"
                                 ]
@@ -9216,8 +9216,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Tsuen Wan",
-                                "LatitudeDescription": "22.3702",
-                                "LongitudeDescription": "114.111",
+                                "LatitudeDescription": "22.3736",
+                                "LongitudeDescription": "114.1061",
                                 "AddressLine": [
                                     "G/F, Cable Tower, 9 Hoi Shing Road"
                                 ]
@@ -9381,8 +9381,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.3214",
-                                "LongitudeDescription": "114.1922",
+                                "LatitudeDescription": "22.4509",
+                                "LongitudeDescription": "114.0033",
                                 "AddressLine": [
                                     "G/F, No. 4 Kuk Ting Street, Yuen Long"
                                 ]
@@ -13231,7 +13231,7 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Yuen Long",
-                                "LatitudeDescription": "22.4487",
+                                "LatitudeDescription": "22.4492",
                                 "LongitudeDescription": "114.0027",
                                 "AddressLine": [
                                     "1/F, Tin Shing Shopping Centre, Tin Shing Court, Tin Shui Wai"
@@ -13397,8 +13397,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories East",
                                 "DistrictName": "Sai Kung",
-                                "LatitudeDescription": "22.4266",
-                                "LongitudeDescription": "114.2106",
+                                "LatitudeDescription": "22.3401",
+                                "LongitudeDescription": "114.2606",
                                 "AddressLine": [
                                     "G/F, Lobby, Academic Concourse, The University of Science & Technology  ",
                                     "Atrium, LSK Business Building, The University of Science & Technology"

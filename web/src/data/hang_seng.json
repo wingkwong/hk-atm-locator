@@ -1,7 +1,7 @@
 {
     "meta": {
-        "LastUpdated": "2021-05-26T07:45:42+08:00",
-        "TotalResults": 280
+        "LastUpdated": "2021-05-29T07:45:42+08:00",
+        "TotalResults": 279
     },
     "data": [
         {
@@ -13095,37 +13095,6 @@
                             "ATMId": 1256
                         },
                         {
-                            "ATMName": "Wah Ming Shopping Centre",
-                            "BranchName": "Wah Ming Shopping Centre",
-                            "HotlineNumber": 29972112,
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "New Territories East",
-                                "DistrictName": "North",
-                                "LatitudeDescription": "22.4841",
-                                "LongitudeDescription": "114.1409",
-                                "AddressLine": [
-                                    "1/F., Wah Ming Shopping Centre, 21 Wah Ming Road, Fanling"
-                                ]
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": true,
-                                "RMBATMwithoutForeignCurrencyIndicator": false,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "Subject to Mall Opening Hours",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": false,
-                                "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [],
-                            "ATMId": 1257
-                        },
-                        {
                             "ATMName": "PARK YOHO",
                             "BranchName": "PARK YOHO",
                             "HotlineNumber": 29972112,
@@ -13190,7 +13159,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1258
+                            "ATMId": 1257
                         },
                         {
                             "ATMName": "Chevalier Garden",
@@ -13221,7 +13190,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1259
+                            "ATMId": 1258
                         },
                         {
                             "ATMName": "Tin Shing Shopping Centre",
@@ -13252,7 +13221,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1260
+                            "ATMId": 1259
                         },
                         {
                             "ATMName": "Union Hospital",
@@ -13319,7 +13288,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1261
+                            "ATMId": 1260
                         },
                         {
                             "ATMName": "MTR Causeway Bay Station",
@@ -13387,7 +13356,7 @@
                                     "CloseTime": "01:14"
                                 }
                             ],
-                            "ATMId": 1262
+                            "ATMId": 1261
                         },
                         {
                             "ATMName": "University of Science & Technology",
@@ -13455,7 +13424,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1263
+                            "ATMId": 1262
                         },
                         {
                             "ATMName": "MTR Tin Hau Station (MTR Station Office)",
@@ -13522,7 +13491,7 @@
                                     "CloseTime": "01:16"
                                 }
                             ],
-                            "ATMId": 1264
+                            "ATMId": 1263
                         },
                         {
                             "ATMName": "MTR Tsim Sha Tsui Station",
@@ -13591,7 +13560,7 @@
                                     "CloseTime": "01:09"
                                 }
                             ],
-                            "ATMId": 1265
+                            "ATMId": 1264
                         },
                         {
                             "ATMName": "St. Teresa's Hospital",
@@ -13658,7 +13627,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1266
+                            "ATMId": 1265
                         },
                         {
                             "ATMName": "MTR Sham Shui Po Station",
@@ -13726,7 +13695,7 @@
                                     "CloseTime": "01:18"
                                 }
                             ],
-                            "ATMId": 1267
+                            "ATMId": 1266
                         },
                         {
                             "ATMName": "Tsimshatsui Branch",
@@ -13757,7 +13726,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1268
+                            "ATMId": 1267
                         },
                         {
                             "ATMName": "MTR AsiaWorld-Expo Station",
@@ -13824,7 +13793,7 @@
                                     "CloseTime": "01:22"
                                 }
                             ],
-                            "ATMId": 1269
+                            "ATMId": 1268
                         },
                         {
                             "ATMName": "Chinese University Branch",
@@ -13891,7 +13860,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1270
+                            "ATMId": 1269
                         },
                         {
                             "ATMName": "MTR Cheung Sha Wan Station",
@@ -13959,7 +13928,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1271
+                            "ATMId": 1270
                         },
                         {
                             "ATMName": "Pei Ho Street Branch",
@@ -13990,7 +13959,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1272
+                            "ATMId": 1271
                         },
                         {
                             "ATMName": "Immigration Tower",
@@ -14021,7 +13990,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1273
+                            "ATMId": 1272
                         },
                         {
                             "ATMName": "Tai Po (On Chee Road) Branch",
@@ -14088,7 +14057,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1274
+                            "ATMId": 1273
                         },
                         {
                             "ATMName": "MTR Kowloon Station (MTR Station Office)",
@@ -14155,7 +14124,7 @@
                                     "CloseTime": "01:20"
                                 }
                             ],
-                            "ATMId": 1275
+                            "ATMId": 1274
                         },
                         {
                             "ATMName": "Tsuen Wan Hong Kong Adventist Hospital",
@@ -14222,7 +14191,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1276
+                            "ATMId": 1275
                         },
                         {
                             "ATMName": "Un Chau Street Automated Banking Centre",
@@ -14253,7 +14222,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1277
+                            "ATMId": 1276
                         },
                         {
                             "ATMName": "MTR Quarry Bay Station",
@@ -14321,7 +14290,7 @@
                                     "CloseTime": "01:24"
                                 }
                             ],
-                            "ATMId": 1278
+                            "ATMId": 1277
                         },
                         {
                             "ATMName": "Tseung Kwan O Hospital",
@@ -14388,7 +14357,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1279
+                            "ATMId": 1278
                         }
                     ]
                 }

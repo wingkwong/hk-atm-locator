@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-05-29T07:45:42+08:00",
+        "LastUpdated": "2021-06-01T07:45:42+08:00",
         "TotalResults": 279
     },
     "data": [
@@ -5050,8 +5050,8 @@
                                 "CountryCode": "HK",
                                 "TerritoryName": "New Territories West",
                                 "DistrictName": "Outlying Islands",
-                                "LatitudeDescription": "22.2934",
-                                "LongitudeDescription": "113.9508",
+                                "LatitudeDescription": "22.2921",
+                                "LongitudeDescription": "113.9492",
                                 "AddressLine": [
                                     "No. 1 Kin Tung Road, Tung Chung"
                                 ]

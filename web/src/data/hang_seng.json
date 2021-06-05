@@ -1,6 +1,6 @@
 {
     "meta": {
-        "LastUpdated": "2021-06-01T07:45:42+08:00",
+        "LastUpdated": "2021-06-05T07:45:42+08:00",
         "TotalResults": 279
     },
     "data": [
@@ -10197,73 +10197,6 @@
                             "ATMId": 1201
                         },
                         {
-                            "ATMName": "Sheung Kwai Chung Branch",
-                            "BranchName": "Sheung Kwai Chung Branch",
-                            "HotlineNumber": 29972112,
-                            "ATMAddress": {
-                                "CountryCode": "HK",
-                                "TerritoryName": "New Territories West",
-                                "DistrictName": "Kwai Tsing",
-                                "LatitudeDescription": "22.3689",
-                                "LongitudeDescription": "114.14",
-                                "AddressLine": [
-                                    "50 Shek Yam Road"
-                                ]
-                            },
-                            "ATMServices": {
-                                "RMBandForeignCurrencyATMIndicator": false,
-                                "TalkATMIndicator": false,
-                                "DisabledAccessIndicator": true,
-                                "RMBATMwithoutForeignCurrencyIndicator": false,
-                                "MTRStationOfficeIndicator": false,
-                                "AutomatedTellerMachineIndicator": true,
-                                "AutomatedTellerMachineOperatingHour": "24-hours",
-                                "CashDepositMachineIndicator": true,
-                                "ChequeDepositMachineIndicator": false,
-                                "ChequeDepositMachineCutOffTime": "-"
-                            },
-                            "Bank": "hang_seng",
-                            "Network": "hang_seng",
-                            "OpeningHours": [
-                                {
-                                    "OpenDayDescription": "Monday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Tuesday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Wednesday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Thursday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Friday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Saturday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                },
-                                {
-                                    "OpenDayDescription": "Sunday",
-                                    "OpenTime": "00:00",
-                                    "CloseTime": "23:59"
-                                }
-                            ],
-                            "ATMId": 1202
-                        },
-                        {
                             "ATMName": "Double Cove Place Automated Banking Centre",
                             "BranchName": "Double Cove Place Automated Banking Centre",
                             "HotlineNumber": 29972112,
@@ -10292,7 +10225,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1203
+                            "ATMId": 1202
                         },
                         {
                             "ATMName": "MTR Fo Tan Station",
@@ -10359,7 +10292,7 @@
                                     "CloseTime": "01:04"
                                 }
                             ],
-                            "ATMId": 1204
+                            "ATMId": 1203
                         },
                         {
                             "ATMName": "MTR East Tsim Sha Tsui Station",
@@ -10427,7 +10360,7 @@
                                     "CloseTime": "00:59"
                                 }
                             ],
-                            "ATMId": 1205
+                            "ATMId": 1204
                         },
                         {
                             "ATMName": "Tin Shui Wai Branch",
@@ -10458,7 +10391,7 @@
                             "Bank": "hang_seng",
                             "Network": "hang_seng",
                             "OpeningHours": [],
-                            "ATMId": 1206
+                            "ATMId": 1205
                         },
                         {
                             "ATMName": "Baptist University Branch",
@@ -10525,7 +10458,7 @@
                                     "CloseTime": "23:59"
                                 }
                             ],
-                            "ATMId": 1207
+                            "ATMId": 1206
                         },
                         {
                             "ATMName": "MTR Siu Hong Station",
@@ -10590,6 +10523,73 @@
                                     "OpenDayDescription": "Sunday",
                                     "OpenTime": "05:37",
                                     "CloseTime": "01:08"
+                                }
+                            ],
+                            "ATMId": 1207
+                        },
+                        {
+                            "ATMName": "Sheung Kwai Chung Branch",
+                            "BranchName": "Sheung Kwai Chung Branch",
+                            "HotlineNumber": 29972112,
+                            "ATMAddress": {
+                                "CountryCode": "HK",
+                                "TerritoryName": "New Territories West",
+                                "DistrictName": "Kwai Tsing",
+                                "LatitudeDescription": "22.3689",
+                                "LongitudeDescription": "114.14",
+                                "AddressLine": [
+                                    "50 Shek Yam Road"
+                                ]
+                            },
+                            "ATMServices": {
+                                "RMBandForeignCurrencyATMIndicator": false,
+                                "TalkATMIndicator": false,
+                                "DisabledAccessIndicator": true,
+                                "RMBATMwithoutForeignCurrencyIndicator": false,
+                                "MTRStationOfficeIndicator": false,
+                                "AutomatedTellerMachineIndicator": true,
+                                "AutomatedTellerMachineOperatingHour": "24-hours",
+                                "CashDepositMachineIndicator": true,
+                                "ChequeDepositMachineIndicator": true,
+                                "ChequeDepositMachineCutOffTime": "5:30pm"
+                            },
+                            "Bank": "hang_seng",
+                            "Network": "hang_seng",
+                            "OpeningHours": [
+                                {
+                                    "OpenDayDescription": "Monday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Tuesday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Wednesday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Thursday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Friday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Saturday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
+                                },
+                                {
+                                    "OpenDayDescription": "Sunday",
+                                    "OpenTime": "00:00",
+                                    "CloseTime": "23:59"
                                 }
                             ],
                             "ATMId": 1208

@@ -14,7 +14,7 @@
     "commander": "^2.18.0",
     "dotenv": "^8.0.0",
     "hk-address-parser-lib": "^0.3.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "request": "^2.88.0"
   },
   "devDependencies": {
